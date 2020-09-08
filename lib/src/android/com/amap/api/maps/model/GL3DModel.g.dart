@@ -40,7 +40,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setAngle', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::setAngle', {"var1": var1, "__this__": this});
   
   
     // handle native call
@@ -51,7 +51,6 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -64,7 +63,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::getAngle', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::getAngle', {"__this__": this});
   
   
     // handle native call
@@ -75,7 +74,6 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -88,7 +86,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setModelFixedLength', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::setModelFixedLength', {"var1": var1, "__this__": this});
   
   
     // handle native call
@@ -99,7 +97,6 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -112,7 +109,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setZoomLimit', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::setZoomLimit', {"var1": var1, "__this__": this});
   
   
     // handle native call
@@ -123,7 +120,6 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -148,7 +144,7 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setAngle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::setAngle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -156,7 +152,6 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -168,7 +163,7 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::getAngle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::getAngle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -176,7 +171,6 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -188,7 +182,7 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setModelFixedLength_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::setModelFixedLength_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -196,7 +190,6 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -208,7 +201,7 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setZoomLimit_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GL3DModel::setZoomLimit_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -216,7 +209,6 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }

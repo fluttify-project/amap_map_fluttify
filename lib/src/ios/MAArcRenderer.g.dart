@@ -21,10 +21,8 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
 
   //region creators
   static Future<MAArcRenderer> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAArcRenderer');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAArcRenderer');
     final object = MAArcRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAArcRenderer', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAArcRenderer', {'length': length});
   
     final List<MAArcRenderer> typedResult = resultBatch.map((result) => MAArcRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -43,9 +40,8 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
 
   //region getters
   Future<MAArc> get_arc() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArcRenderer::get_arc", {'refId': refId});
-    kNativeObjectPool.add(MAArc()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return MAArc()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArcRenderer::get_arc", {'__this__': this});
+    return __result__ == null ? null : (MAArc()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   //endregion
@@ -63,7 +59,7 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc', {"arc": arc is Ref ? (arc as Ref)?.refId : arc, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAArcRenderer::initWithArc', {"arc": arc, "__this__": this});
   
   
     // handle native call
@@ -74,7 +70,6 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
       return null;
     } else {
       final __return__ = MAArcRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -85,9 +80,9 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
 extension MAArcRenderer_Batch on List<MAArcRenderer> {
   //region getters
   Future<List<MAArc>> get_arc_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArcRenderer::get_arc_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAArc()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArcRenderer::get_arc_batch", [for (final __item__ in this) {'__this__': __item__}]);
+  
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAArc()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
   }
   
@@ -105,15 +100,14 @@ extension MAArcRenderer_Batch on List<MAArcRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"arc": arc[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAArcRenderer::initWithArc_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"arc": arc[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAArcRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAArcRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }

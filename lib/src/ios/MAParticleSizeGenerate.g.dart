@@ -31,7 +31,7 @@ mixin MAParticleSizeGenerate on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeX', {"timeFrame": timeFrame, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeX', {"timeFrame": timeFrame, "__this__": this});
   
   
     // handle native call
@@ -42,7 +42,6 @@ mixin MAParticleSizeGenerate on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -55,7 +54,7 @@ mixin MAParticleSizeGenerate on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeY', {"timeFrame": timeFrame, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeY', {"timeFrame": timeFrame, "__this__": this});
   
   
     // handle native call
@@ -66,7 +65,6 @@ mixin MAParticleSizeGenerate on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -79,7 +77,7 @@ mixin MAParticleSizeGenerate on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeZ', {"timeFrame": timeFrame, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeZ', {"timeFrame": timeFrame, "__this__": this});
   
   
     // handle native call
@@ -90,7 +88,6 @@ mixin MAParticleSizeGenerate on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -106,7 +103,7 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeX_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeX_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -114,7 +111,6 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -126,7 +122,7 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeY_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeY_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -134,7 +130,6 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -146,7 +141,7 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeZ_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeZ_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -154,7 +149,6 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }

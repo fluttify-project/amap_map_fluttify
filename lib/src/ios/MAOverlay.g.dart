@@ -20,15 +20,13 @@ mixin MAOverlay on MAAnnotation {
   static MAOverlay subInstance() => _MAOverlay_SUB();
 
   Future<CLLocationCoordinate2D> get_coordinate() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlay::get_coordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOverlay::get_coordinate", {'__this__': this});
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   Future<MAMapRect> get_boundingMapRect() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlay::get_boundingMapRect", {'refId': refId});
-    kNativeObjectPool.add(MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOverlay::get_boundingMapRect", {'__this__': this});
+    return __result__ == null ? null : (MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
 

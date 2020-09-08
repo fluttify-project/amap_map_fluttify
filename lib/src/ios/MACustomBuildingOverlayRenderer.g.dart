@@ -21,10 +21,8 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
 
   //region creators
   static Future<MACustomBuildingOverlayRenderer> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACustomBuildingOverlayRenderer');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACustomBuildingOverlayRenderer');
     final object = MACustomBuildingOverlayRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayRenderer', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayRenderer', {'length': length});
   
     final List<MACustomBuildingOverlayRenderer> typedResult = resultBatch.map((result) => MACustomBuildingOverlayRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -43,9 +40,8 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
 
   //region getters
   Future<MACustomBuildingOverlay> get_customBuildingOverlay() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay", {'refId': refId});
-    kNativeObjectPool.add(MACustomBuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return MACustomBuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay", {'__this__': this});
+    return __result__ == null ? null : (MACustomBuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   //endregion
@@ -63,7 +59,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay', {"customBuildingOverlay": customBuildingOverlay is Ref ? (customBuildingOverlay as Ref)?.refId : customBuildingOverlay, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay', {"customBuildingOverlay": customBuildingOverlay, "__this__": this});
   
   
     // handle native call
@@ -74,7 +70,6 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
       return null;
     } else {
       final __return__ = MACustomBuildingOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -85,9 +80,9 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
 extension MACustomBuildingOverlayRenderer_Batch on List<MACustomBuildingOverlayRenderer> {
   //region getters
   Future<List<MACustomBuildingOverlay>> get_customBuildingOverlay_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MACustomBuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay_batch", [for (final __item__ in this) {'__this__': __item__}]);
+  
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACustomBuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
   }
   
@@ -105,15 +100,14 @@ extension MACustomBuildingOverlayRenderer_Batch on List<MACustomBuildingOverlayR
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"customBuildingOverlay": customBuildingOverlay[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"customBuildingOverlay": customBuildingOverlay[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MACustomBuildingOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACustomBuildingOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }

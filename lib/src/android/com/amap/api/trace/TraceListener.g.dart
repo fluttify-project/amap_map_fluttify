@@ -24,31 +24,13 @@ mixin com_amap_api_trace_TraceListener on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onRequestFailed(int var1, String var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onRequestFailed::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onRequestFailed(int var1, String var2) {}
   
   @mustCallSuper
-  Future<void> onTraceProcessing(int var1, int var2, List<com_amap_api_maps_model_LatLng> var3) {
-    kNativeObjectPool.addAll(var3);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onTraceProcessing::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onTraceProcessing(int var1, int var2, List<com_amap_api_maps_model_LatLng> var3) {}
   
   @mustCallSuper
-  Future<void> onFinished(int var1, List<com_amap_api_maps_model_LatLng> var2, int var3, int var4) {
-    kNativeObjectPool.addAll(var2);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onFinished::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onFinished(int var1, List<com_amap_api_maps_model_LatLng> var2, int var3, int var4) {}
   
 }
 

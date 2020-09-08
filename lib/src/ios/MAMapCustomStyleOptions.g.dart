@@ -21,10 +21,8 @@ class MAMapCustomStyleOptions extends NSObject  {
 
   //region creators
   static Future<MAMapCustomStyleOptions> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapCustomStyleOptions');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMapCustomStyleOptions');
     final object = MAMapCustomStyleOptions()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MAMapCustomStyleOptions extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapCustomStyleOptions', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMapCustomStyleOptions', {'length': length});
   
     final List<MAMapCustomStyleOptions> typedResult = resultBatch.map((result) => MAMapCustomStyleOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -43,64 +40,59 @@ class MAMapCustomStyleOptions extends NSObject  {
 
   //region getters
   Future<NSData> get_styleData() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleData", {'refId': refId});
-    kNativeObjectPool.add(NSData()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return NSData()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleData", {'__this__': this});
+    return __result__ == null ? null : (NSData()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   Future<String> get_styleDataOverseaPath() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleDataOverseaPath", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleDataOverseaPath", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
   Future<String> get_styleId() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleId", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleId", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
   Future<NSData> get_styleTextureData() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleTextureData", {'refId': refId});
-    kNativeObjectPool.add(NSData()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return NSData()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleTextureData", {'__this__': this});
+    return __result__ == null ? null : (NSData()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   Future<NSData> get_styleExtraData() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleExtraData", {'refId': refId});
-    kNativeObjectPool.add(NSData()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return NSData()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleExtraData", {'__this__': this});
+    return __result__ == null ? null : (NSData()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   //endregion
 
   //region setters
   Future<void> set_styleData(NSData styleData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData', {'refId': refId, "styleData": styleData.refId});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMapCustomStyleOptions::set_styleData', <String, dynamic>{'__this__': this, "styleData": styleData});
   
   
   }
   
   Future<void> set_styleDataOverseaPath(String styleDataOverseaPath) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleDataOverseaPath', {'refId': refId, "styleDataOverseaPath": styleDataOverseaPath});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMapCustomStyleOptions::set_styleDataOverseaPath', <String, dynamic>{'__this__': this, "styleDataOverseaPath": styleDataOverseaPath});
   
   
   }
   
   Future<void> set_styleId(String styleId) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleId', {'refId': refId, "styleId": styleId});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMapCustomStyleOptions::set_styleId', <String, dynamic>{'__this__': this, "styleId": styleId});
   
   
   }
   
   Future<void> set_styleTextureData(NSData styleTextureData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleTextureData', {'refId': refId, "styleTextureData": styleTextureData.refId});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMapCustomStyleOptions::set_styleTextureData', <String, dynamic>{'__this__': this, "styleTextureData": styleTextureData});
   
   
   }
   
   Future<void> set_styleExtraData(NSData styleExtraData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleExtraData', {'refId': refId, "styleExtraData": styleExtraData.refId});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMapCustomStyleOptions::set_styleExtraData', <String, dynamic>{'__this__': this, "styleExtraData": styleExtraData});
   
   
   }
@@ -115,37 +107,37 @@ class MAMapCustomStyleOptions extends NSObject  {
 extension MAMapCustomStyleOptions_Batch on List<MAMapCustomStyleOptions> {
   //region getters
   Future<List<NSData>> get_styleData_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleData_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => NSData()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleData_batch", [for (final __item__ in this) {'__this__': __item__}]);
+  
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => NSData()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
   }
   
   Future<List<String>> get_styleDataOverseaPath_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleDataOverseaPath_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleDataOverseaPath_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
   Future<List<String>> get_styleId_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleId_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleId_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
   Future<List<NSData>> get_styleTextureData_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleTextureData_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => NSData()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleTextureData_batch", [for (final __item__ in this) {'__this__': __item__}]);
+  
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => NSData()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
   }
   
   Future<List<NSData>> get_styleExtraData_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleExtraData_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => NSData()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMapCustomStyleOptions::get_styleExtraData_batch", [for (final __item__ in this) {'__this__': __item__}]);
+  
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => NSData()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
   }
   
@@ -153,31 +145,31 @@ extension MAMapCustomStyleOptions_Batch on List<MAMapCustomStyleOptions> {
 
   //region setters
   Future<void> set_styleData_batch(List<NSData> styleData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "styleData": styleData[__i__].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapCustomStyleOptions::set_styleData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "styleData": styleData[__i__]}]);
   
   
   }
   
   Future<void> set_styleDataOverseaPath_batch(List<String> styleDataOverseaPath) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleDataOverseaPath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "styleDataOverseaPath": styleDataOverseaPath[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapCustomStyleOptions::set_styleDataOverseaPath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "styleDataOverseaPath": styleDataOverseaPath[__i__]}]);
   
   
   }
   
   Future<void> set_styleId_batch(List<String> styleId) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleId_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "styleId": styleId[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapCustomStyleOptions::set_styleId_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "styleId": styleId[__i__]}]);
   
   
   }
   
   Future<void> set_styleTextureData_batch(List<NSData> styleTextureData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleTextureData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "styleTextureData": styleTextureData[__i__].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapCustomStyleOptions::set_styleTextureData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "styleTextureData": styleTextureData[__i__]}]);
   
   
   }
   
   Future<void> set_styleExtraData_batch(List<NSData> styleExtraData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleExtraData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "styleExtraData": styleExtraData[__i__].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapCustomStyleOptions::set_styleExtraData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "styleExtraData": styleExtraData[__i__]}]);
   
   
   }

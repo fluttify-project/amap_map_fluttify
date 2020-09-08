@@ -24,59 +24,22 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) {
-    kNativeObjectPool.addAll(var2);
-    if (var4 is Ref) kNativeObjectPool.add(var4);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('queryProcessedTrace::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) {}
   
   @mustCallSuper
-  Future<void> setLocationInterval(int var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('setLocationInterval::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> setLocationInterval(int var1) {}
   
   @mustCallSuper
-  Future<void> setTraceStatusInterval(int var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('setTraceStatusInterval::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> setTraceStatusInterval(int var1) {}
   
   @mustCallSuper
-  Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('startTrace::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) {}
   
   @mustCallSuper
-  Future<void> stopTrace() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('stopTrace::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> stopTrace() {}
   
   @mustCallSuper
-  Future<void> destroy() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> destroy() {}
   
 }
 

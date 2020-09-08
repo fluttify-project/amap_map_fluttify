@@ -24,76 +24,28 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onDoubleTap(double var1, double var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onDoubleTap::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onDoubleTap(double var1, double var2) {}
   
   @mustCallSuper
-  Future<void> onSingleTap(double var1, double var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onSingleTap::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onSingleTap(double var1, double var2) {}
   
   @mustCallSuper
-  Future<void> onFling(double var1, double var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onFling::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onFling(double var1, double var2) {}
   
   @mustCallSuper
-  Future<void> onScroll(double var1, double var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onScroll::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onScroll(double var1, double var2) {}
   
   @mustCallSuper
-  Future<void> onLongPress(double var1, double var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onLongPress::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onLongPress(double var1, double var2) {}
   
   @mustCallSuper
-  Future<void> onDown(double var1, double var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onDown::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onDown(double var1, double var2) {}
   
   @mustCallSuper
-  Future<void> onUp(double var1, double var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onUp::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onUp(double var1, double var2) {}
   
   @mustCallSuper
-  Future<void> onMapStable() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onMapStable::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onMapStable() {}
   
 }
 

@@ -21,10 +21,8 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
 
   //region creators
   static Future<MAParticleRectShapeModule> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRectShapeModule');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleRectShapeModule');
     final object = MAParticleRectShapeModule()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRectShapeModule', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleRectShapeModule', {'length': length});
   
     final List<MAParticleRectShapeModule> typedResult = resultBatch.map((result) => MAParticleRectShapeModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -58,7 +55,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio', {"left": left, "top": top, "right": right, "bottom": bottom, "isUseRatio": isUseRatio, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio', {"left": left, "top": top, "right": right, "bottom": bottom, "isUseRatio": isUseRatio, "__this__": this});
   
   
     // handle native call
@@ -69,7 +66,6 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
       return null;
     } else {
       final __return__ = MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -94,15 +90,14 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"left": left[__i__], "top": top[__i__], "right": right[__i__], "bottom": bottom[__i__], "isUseRatio": isUseRatio[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"left": left[__i__], "top": top[__i__], "right": right[__i__], "bottom": bottom[__i__], "isUseRatio": isUseRatio[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }

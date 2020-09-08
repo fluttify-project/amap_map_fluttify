@@ -21,10 +21,8 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
 
   //region creators
   static Future<MAMultiPointOverlay> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPointOverlay');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMultiPointOverlay');
     final object = MAMultiPointOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointOverlay', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMultiPointOverlay', {'length': length});
   
     final List<MAMultiPointOverlay> typedResult = resultBatch.map((result) => MAMultiPointOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -43,9 +40,8 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
 
   //region getters
   Future<List<MAMultiPointItem>> get_items() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlay::get_items", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAMultiPointItem()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => MAMultiPointItem()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiPointOverlay::get_items", {'__this__': this});
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAMultiPointItem()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
   }
   
   //endregion
@@ -63,7 +59,7 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlay::initWithMultiPointItems', {"items": items.map((__it__) => __it__?.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMultiPointOverlay::initWithMultiPointItems', {"items": items, "__this__": this});
   
   
     // handle native call
@@ -74,7 +70,6 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
       return null;
     } else {
       final __return__ = MAMultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -85,9 +80,9 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
 extension MAMultiPointOverlay_Batch on List<MAMultiPointOverlay> {
   //region getters
   Future<List<List<MAMultiPointItem>>> get_items_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlay::get_items_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAMultiPointItem()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
-    kNativeObjectPool.addAll(typedResult.expand((e) => e));
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiPointOverlay::get_items_batch", [for (final __item__ in this) {'__this__': __item__}]);
+  
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAMultiPointItem()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     return typedResult;
   }
   
@@ -105,15 +100,14 @@ extension MAMultiPointOverlay_Batch on List<MAMultiPointOverlay> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlay::initWithMultiPointItems_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"items": items[__i__].map((it) => it.refId).toList(), "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMultiPointOverlay::initWithMultiPointItems_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"items": items[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAMultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAMultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }

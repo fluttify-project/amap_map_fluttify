@@ -19,8 +19,11 @@ import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 import io.flutter.plugin.common.StandardMessageCodec;
+import io.flutter.plugin.common.StandardMethodCodec;
 import io.flutter.plugin.platform.PlatformView;
 import io.flutter.plugin.platform.PlatformViewFactory;
+
+import me.yohom.foundation_fluttify.core.FluttifyMessageCodec;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
@@ -34,7 +37,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
         this.messenger = messenger;
         this.activity = activity;
 
-        new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView").setMethodCallHandler((methodCall, methodResult) -> {
+        new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView", new StandardMethodCodec(new FluttifyMessageCodec())).setMethodCallHandler((methodCall, methodResult) -> {
             Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
             AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
             if (handler != null) {
@@ -57,21 +60,21 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
         // method
         put("com.amap.api.maps.offlinemap.DownloadProgressView::setProgress", (__args__, __methodResult__) -> {
             // args
-            // jsonable arg
+            // ref arg
             int var1 = (int) ((Map<String, Object>) __args__).get("var1");
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.offlinemap.DownloadProgressView ref = (com.amap.api.maps.offlinemap.DownloadProgressView) getHEAP().get(refId);
+            com.amap.api.maps.offlinemap.DownloadProgressView __this__ = (com.amap.api.maps.offlinemap.DownloadProgressView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.DownloadProgressView@" + refId + "::setProgress(" + var1 + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.DownloadProgressView@" + __this__ + "::setProgress(" + var1 + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.setProgress(var1);
+                __this__.setProgress(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -81,10 +84,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
     }};
 
@@ -98,7 +98,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
 
         com.amap.api.maps.offlinemap.DownloadProgressView view = new com.amap.api.maps.offlinemap.DownloadProgressView(activity);
 
-        getHEAP().put(Integer.MAX_VALUE - id, view);
+        getHEAP().put(String.valueOf(Integer.MAX_VALUE - id), view);
         return new PlatformView() {
 
             // add to HEAP

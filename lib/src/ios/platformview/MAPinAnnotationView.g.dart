@@ -25,11 +25,13 @@ class MAPinAnnotationView_iOS extends StatefulWidget {
     this.onViewCreated,
     this.onDispose,
     this.params = const <String, dynamic>{},
+    this.gestureRecognizers,
   }) : super(key: key);
 
   final MAPinAnnotationViewCreatedCallback onViewCreated;
   final _OnUiKitViewDispose onDispose;
   final Map<String, dynamic> params;
+  final Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers;
 
   @override
   _MAPinAnnotationView_iOSState createState() => _MAPinAnnotationView_iOSState();
@@ -40,9 +42,9 @@ class _MAPinAnnotationView_iOSState extends State<MAPinAnnotationView_iOS> {
 
   @override
   Widget build(BuildContext context) {
-    final gestureRecognizers = <Factory<OneSequenceGestureRecognizer>>[
+    final gestureRecognizers = widget.gestureRecognizers ?? <Factory<OneSequenceGestureRecognizer>>{
       Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer()),
-    ].toSet();
+    };
 
     final messageCodec = StandardMessageCodec();
     return UiKitView(
@@ -56,7 +58,7 @@ class _MAPinAnnotationView_iOSState extends State<MAPinAnnotationView_iOS> {
 
   void _onViewCreated(int id) {
     // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
-    _controller = MAPinAnnotationView()..refId = 2147483647 - id;
+    _controller = MAPinAnnotationView()..refId = (2147483647 - id).toString();
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

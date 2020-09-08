@@ -24,22 +24,10 @@ mixin com_amap_api_maps_model_animation_Animation_AnimationListener on java_lang
   
 
   @mustCallSuper
-  Future<void> onAnimationStart() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onAnimationStart::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onAnimationStart() {}
   
   @mustCallSuper
-  Future<void> onAnimationEnd() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onAnimationEnd::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onAnimationEnd() {}
   
 }
 

@@ -19,9 +19,11 @@ import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
+import io.flutter.plugin.common.StandardMethodCodec;
 import io.flutter.plugin.platform.PlatformViewRegistry;
 
 import me.yohom.amap_map_fluttify.AmapMapFluttifyPlugin.Handler;
+import me.yohom.foundation_fluttify.core.FluttifyMessageCodec;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
@@ -35,629 +37,495 @@ public class SubHandler0 {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.utils.overlay.SmoothMoveMarker __this__ = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) __args__.get("__this__");
             
-               float __result__ = ref.MIN_OFFSET_DISTANCE;
+               float __result__ = __this__.MIN_OFFSET_DISTANCE;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.MapsInitializer::get_sdcardDir", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.MapsInitializer ref = (com.amap.api.maps.MapsInitializer) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.MapsInitializer __this__ = (com.amap.api.maps.MapsInitializer) __args__.get("__this__");
             
-               String __result__ = ref.sdcardDir;
+               String __result__ = __this__.sdcardDir;
             
-               String jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.HeatMapLayerOptions::get_DEFAULT_GRADIENT", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.HeatMapLayerOptions ref = (com.amap.api.maps.model.HeatMapLayerOptions) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) __args__.get("__this__");
             
-               com.amap.api.maps.model.Gradient __result__ = ref.DEFAULT_GRADIENT;
+               com.amap.api.maps.model.Gradient __result__ = __this__.DEFAULT_GRADIENT;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_nearLeft", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.nearLeft;
+               com.amap.api.maps.model.LatLng __result__ = __this__.nearLeft;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_nearRight", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.nearRight;
+               com.amap.api.maps.model.LatLng __result__ = __this__.nearRight;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_farLeft", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.farLeft;
+               com.amap.api.maps.model.LatLng __result__ = __this__.farLeft;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_farRight", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.farRight;
+               com.amap.api.maps.model.LatLng __result__ = __this__.farRight;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLngBounds __result__ = ref.latLngBounds;
+               com.amap.api.maps.model.LatLngBounds __result__ = __this__.latLngBounds;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_RED", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_RED;
+               float __result__ = __this__.HUE_RED;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ORANGE", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_ORANGE;
+               float __result__ = __this__.HUE_ORANGE;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_YELLOW", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_YELLOW;
+               float __result__ = __this__.HUE_YELLOW;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_GREEN", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_GREEN;
+               float __result__ = __this__.HUE_GREEN;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_CYAN", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_CYAN;
+               float __result__ = __this__.HUE_CYAN;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_AZURE", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_AZURE;
+               float __result__ = __this__.HUE_AZURE;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_BLUE", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_BLUE;
+               float __result__ = __this__.HUE_BLUE;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_VIOLET", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_VIOLET;
+               float __result__ = __this__.HUE_VIOLET;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_MAGENTA", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_MAGENTA;
+               float __result__ = __this__.HUE_MAGENTA;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ROSE", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = ref.HUE_ROSE;
+               float __result__ = __this__.HUE_ROSE;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.Tile::get_width", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-               int __result__ = ref.width;
+               int __result__ = __this__.width;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.Tile::get_height", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-               int __result__ = ref.height;
+               int __result__ = __this__.height;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.Tile::get_data", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-               byte[] __result__ = ref.data;
+               byte[] __result__ = __this__.data;
             
-               byte[] jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.GroundOverlayOptions::get_NO_DIMENSION", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.GroundOverlayOptions __this__ = (com.amap.api.maps.model.GroundOverlayOptions) __args__.get("__this__");
             
-               float __result__ = ref.NO_DIMENSION;
+               float __result__ = __this__.NO_DIMENSION;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.CameraPosition::get_target", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.target;
+               com.amap.api.maps.model.LatLng __result__ = __this__.target;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.CameraPosition::get_zoom", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               float __result__ = ref.zoom;
+               float __result__ = __this__.zoom;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.CameraPosition::get_tilt", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               float __result__ = ref.tilt;
+               float __result__ = __this__.tilt;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.CameraPosition::get_bearing", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               float __result__ = ref.bearing;
+               float __result__ = __this__.bearing;
             
-               float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.CameraPosition::get_isAbroad", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               boolean __result__ = ref.isAbroad;
+               boolean __result__ = __this__.isAbroad;
             
-               boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.HeatmapTileProvider::get_DEFAULT_GRADIENT", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.HeatmapTileProvider ref = (com.amap.api.maps.model.HeatmapTileProvider) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.HeatmapTileProvider __this__ = (com.amap.api.maps.model.HeatmapTileProvider) __args__.get("__this__");
             
-               com.amap.api.maps.model.Gradient __result__ = ref.DEFAULT_GRADIENT;
+               com.amap.api.maps.model.Gradient __result__ = __this__.DEFAULT_GRADIENT;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.LatLngBounds::get_southwest", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.LatLngBounds __this__ = (com.amap.api.maps.model.LatLngBounds) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.southwest;
+               com.amap.api.maps.model.LatLng __result__ = __this__.southwest;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.LatLngBounds::get_northeast", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.LatLngBounds __this__ = (com.amap.api.maps.model.LatLngBounds) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.northeast;
+               com.amap.api.maps.model.LatLng __result__ = __this__.northeast;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.LatLng::get_latitude", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-               double __result__ = ref.latitude;
+               double __result__ = __this__.latitude;
             
-               double jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.LatLng::get_longitude", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-               double __result__ = ref.longitude;
+               double __result__ = __this__.longitude;
             
-               double jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.TileProjection::get_offsetX", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = ref.offsetX;
+               int __result__ = __this__.offsetX;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.TileProjection::get_offsetY", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = ref.offsetY;
+               int __result__ = __this__.offsetY;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.TileProjection::get_minX", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = ref.minX;
+               int __result__ = __this__.minX;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.TileProjection::get_maxX", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = ref.maxX;
+               int __result__ = __this__.maxX;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.TileProjection::get_minY", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = ref.minY;
+               int __result__ = __this__.minY;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.TileProjection::get_maxY", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = ref.maxY;
+               int __result__ = __this__.maxY;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.WeightedLatLng::get_intensity", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.WeightedLatLng __this__ = (com.amap.api.maps.model.WeightedLatLng) __args__.get("__this__");
             
-               double __result__ = ref.intensity;
+               double __result__ = __this__.intensity;
             
-               double jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.WeightedLatLng::get_latLng", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.WeightedLatLng __this__ = (com.amap.api.maps.model.WeightedLatLng) __args__.get("__this__");
             
-               com.amap.api.maps.model.LatLng __result__ = ref.latLng;
+               com.amap.api.maps.model.LatLng __result__ = __this__.latLng;
             
-               Integer jsonableResult = null;
-               if (__result__ != null) {
-                   jsonableResult = System.identityHashCode(__result__);
-                   getHEAP().put(jsonableResult, __result__);
-               }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-               String __result__ = ref.activeFloorName;
+               String __result__ = __this__.activeFloorName;
             
-               String jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorIndex", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-               int __result__ = ref.activeFloorIndex;
+               int __result__ = __this__.activeFloorIndex;
             
-               int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_poiid", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-               String __result__ = ref.poiid;
+               String __result__ = __this__.poiid;
             
-               String jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-               int[] __result__ = ref.floor_indexs;
+               int[] __result__ = __this__.floor_indexs;
             
-               int[] jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names", (__rawArgs__, __methodResult__) -> {
                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
                // ref object
-               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+               com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-               String[] __result__ = ref.floor_names;
+               String[] __result__ = __this__.floor_names;
             
-               List<String> jsonableResult = new ArrayList<String>(java.util.Arrays.asList(__result__));
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // getter
             put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::get_MIN_OFFSET_DISTANCE_batch", (__argsBatch__, __methodResult__) -> {
@@ -667,13 +535,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.utils.overlay.SmoothMoveMarker __this__ = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) __args__.get("__this__");
             
-                    float __result__ = ref.MIN_OFFSET_DISTANCE;
+                    float __result__ = __this__.MIN_OFFSET_DISTANCE;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -686,151 +552,113 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.MapsInitializer ref = (com.amap.api.maps.MapsInitializer) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.MapsInitializer __this__ = (com.amap.api.maps.MapsInitializer) __args__.get("__this__");
             
-                    String __result__ = ref.sdcardDir;
+                    String __result__ = __this__.sdcardDir;
             
-                    String jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.HeatMapLayerOptions::get_DEFAULT_GRADIENT_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.Gradient> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.HeatMapLayerOptions ref = (com.amap.api.maps.model.HeatMapLayerOptions) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) __args__.get("__this__");
             
-                    com.amap.api.maps.model.Gradient __result__ = ref.DEFAULT_GRADIENT;
+                    com.amap.api.maps.model.Gradient __result__ = __this__.DEFAULT_GRADIENT;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_nearLeft_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.nearLeft;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.nearLeft;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_nearRight_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.nearRight;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.nearRight;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_farLeft_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.farLeft;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.farLeft;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_farRight_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.farRight;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.farRight;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLngBounds> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion __this__ = (com.amap.api.maps.model.VisibleRegion) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLngBounds __result__ = ref.latLngBounds;
+                    com.amap.api.maps.model.LatLngBounds __result__ = __this__.latLngBounds;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -843,13 +671,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_RED;
+                    float __result__ = __this__.HUE_RED;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -862,13 +688,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_ORANGE;
+                    float __result__ = __this__.HUE_ORANGE;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -881,13 +705,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_YELLOW;
+                    float __result__ = __this__.HUE_YELLOW;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -900,13 +722,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_GREEN;
+                    float __result__ = __this__.HUE_GREEN;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -919,13 +739,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_CYAN;
+                    float __result__ = __this__.HUE_CYAN;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -938,13 +756,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_AZURE;
+                    float __result__ = __this__.HUE_AZURE;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -957,13 +773,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_BLUE;
+                    float __result__ = __this__.HUE_BLUE;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -976,13 +790,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_VIOLET;
+                    float __result__ = __this__.HUE_VIOLET;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -995,13 +807,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_MAGENTA;
+                    float __result__ = __this__.HUE_MAGENTA;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1014,13 +824,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.BitmapDescriptorFactory ref = (com.amap.api.maps.model.BitmapDescriptorFactory) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = ref.HUE_ROSE;
+                    float __result__ = __this__.HUE_ROSE;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1033,13 +841,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-                    int __result__ = ref.width;
+                    int __result__ = __this__.width;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1052,13 +858,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-                    int __result__ = ref.height;
+                    int __result__ = __this__.height;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1071,13 +875,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-                    byte[] __result__ = ref.data;
+                    byte[] __result__ = __this__.data;
             
-                    byte[] jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1090,36 +892,28 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.GroundOverlayOptions __this__ = (com.amap.api.maps.model.GroundOverlayOptions) __args__.get("__this__");
             
-                    float __result__ = ref.NO_DIMENSION;
+                    float __result__ = __this__.NO_DIMENSION;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.CameraPosition::get_target_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.target;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.target;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1132,13 +926,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    float __result__ = ref.zoom;
+                    float __result__ = __this__.zoom;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1151,13 +943,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    float __result__ = ref.tilt;
+                    float __result__ = __this__.tilt;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1170,13 +960,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    float __result__ = ref.bearing;
+                    float __result__ = __this__.bearing;
             
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1189,82 +977,62 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    boolean __result__ = ref.isAbroad;
+                    boolean __result__ = __this__.isAbroad;
             
-                    boolean jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.HeatmapTileProvider::get_DEFAULT_GRADIENT_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.Gradient> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.HeatmapTileProvider ref = (com.amap.api.maps.model.HeatmapTileProvider) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.HeatmapTileProvider __this__ = (com.amap.api.maps.model.HeatmapTileProvider) __args__.get("__this__");
             
-                    com.amap.api.maps.model.Gradient __result__ = ref.DEFAULT_GRADIENT;
+                    com.amap.api.maps.model.Gradient __result__ = __this__.DEFAULT_GRADIENT;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.LatLngBounds::get_southwest_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.LatLngBounds __this__ = (com.amap.api.maps.model.LatLngBounds) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.southwest;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.southwest;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.LatLngBounds::get_northeast_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.LatLngBounds __this__ = (com.amap.api.maps.model.LatLngBounds) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.northeast;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.northeast;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1277,13 +1045,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-                    double __result__ = ref.latitude;
+                    double __result__ = __this__.latitude;
             
-                    double jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1296,13 +1062,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-                    double __result__ = ref.longitude;
+                    double __result__ = __this__.longitude;
             
-                    double jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1315,13 +1079,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = ref.offsetX;
+                    int __result__ = __this__.offsetX;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1334,13 +1096,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = ref.offsetY;
+                    int __result__ = __this__.offsetY;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1353,13 +1113,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = ref.minX;
+                    int __result__ = __this__.minX;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1372,13 +1130,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = ref.maxX;
+                    int __result__ = __this__.maxX;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1391,13 +1147,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = ref.minY;
+                    int __result__ = __this__.minY;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1410,13 +1164,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = ref.maxY;
+                    int __result__ = __this__.maxY;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1429,36 +1181,28 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.WeightedLatLng __this__ = (com.amap.api.maps.model.WeightedLatLng) __args__.get("__this__");
             
-                    double __result__ = ref.intensity;
+                    double __result__ = __this__.intensity;
             
-                    double jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.WeightedLatLng::get_latLng_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.LatLng> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.WeightedLatLng __this__ = (com.amap.api.maps.model.WeightedLatLng) __args__.get("__this__");
             
-                    com.amap.api.maps.model.LatLng __result__ = ref.latLng;
+                    com.amap.api.maps.model.LatLng __result__ = __this__.latLng;
             
-                    Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1471,13 +1215,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-                    String __result__ = ref.activeFloorName;
+                    String __result__ = __this__.activeFloorName;
             
-                    String jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1490,13 +1232,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-                    int __result__ = ref.activeFloorIndex;
+                    int __result__ = __this__.activeFloorIndex;
             
-                    int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1509,13 +1249,11 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-                    String __result__ = ref.poiid;
+                    String __result__ = __this__.poiid;
             
-                    String jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
@@ -1528,89 +1266,75 @@ public class SubHandler0 {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-                    int[] __result__ = ref.floor_indexs;
+                    int[] __result__ = __this__.floor_indexs;
             
-                    int[] jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // getter
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names_batch", (__argsBatch__, __methodResult__) -> {
-                List<List<String>> __resultList__ = new ArrayList<>();
+                List<String[]> __resultList__ = new ArrayList<>();
             
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-                    String[] __result__ = ref.floor_names;
+                    String[] __result__ = __this__.floor_names;
             
-                    List<String> jsonableResult = new ArrayList<String>(java.util.Arrays.asList(__result__));
-            
-                    __resultList__.add(jsonableResult);
+                    __resultList__.add(__result__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // setter
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName", (__args__, __methodResult__) -> {
-                // jsonable arg
+                // ref arg
                 String activeFloorName = (String) ((Map<String, Object>) __args__).get("activeFloorName");
+                com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
-            
-                ref.activeFloorName = activeFloorName;
+                __this__.activeFloorName = activeFloorName;
                 __methodResult__.success("success");
             });
             // setter
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorIndex", (__args__, __methodResult__) -> {
-                // jsonable arg
+                // ref arg
                 int activeFloorIndex = (int) ((Map<String, Object>) __args__).get("activeFloorIndex");
+                com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
-            
-                ref.activeFloorIndex = activeFloorIndex;
+                __this__.activeFloorIndex = activeFloorIndex;
                 __methodResult__.success("success");
             });
             // setter
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_poiid", (__args__, __methodResult__) -> {
-                // jsonable arg
+                // ref arg
                 String poiid = (String) ((Map<String, Object>) __args__).get("poiid");
+                com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
-            
-                ref.poiid = poiid;
+                __this__.poiid = poiid;
                 __methodResult__.success("success");
             });
             // setter
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs", (__args__, __methodResult__) -> {
-                // jsonable arg
+                // ref arg
                 int[] floor_indexs = (int[]) ((Map<String, Object>) __args__).get("floor_indexs");
+                com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
-            
-                ref.floor_indexs = floor_indexs;
+                __this__.floor_indexs = floor_indexs;
                 __methodResult__.success("success");
             });
             // setter
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names", (__args__, __methodResult__) -> {
-                // jsonable arg
-                ArrayList<String> floor_names = (ArrayList<String>) ((Map<String, Object>) __args__).get("floor_names");
+                // ref arg
+                String[] floor_names = (String[]) ((Map<String, Object>) __args__).get("floor_names");
+                com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
-            
-                ref.floor_names = floor_names.toArray(new String[floor_names.size()]);
+                __this__.floor_names = floor_names;
                 __methodResult__.success("success");
             });
             // setter batch
@@ -1618,13 +1342,12 @@ public class SubHandler0 {
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
-                    // jsonable arg
+                    // ref arg
                     String activeFloorName = (String) ((Map<String, Object>) __args__).get("activeFloorName");
             
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                    ref.activeFloorName = activeFloorName;
+                    __this__.activeFloorName = activeFloorName;
                 }
             
                 __methodResult__.success("success");
@@ -1634,13 +1357,12 @@ public class SubHandler0 {
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
-                    // jsonable arg
+                    // ref arg
                     int activeFloorIndex = (int) ((Map<String, Object>) __args__).get("activeFloorIndex");
             
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                    ref.activeFloorIndex = activeFloorIndex;
+                    __this__.activeFloorIndex = activeFloorIndex;
                 }
             
                 __methodResult__.success("success");
@@ -1650,13 +1372,12 @@ public class SubHandler0 {
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
-                    // jsonable arg
+                    // ref arg
                     String poiid = (String) ((Map<String, Object>) __args__).get("poiid");
             
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                    ref.poiid = poiid;
+                    __this__.poiid = poiid;
                 }
             
                 __methodResult__.success("success");
@@ -1666,13 +1387,12 @@ public class SubHandler0 {
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
-                    // jsonable arg
+                    // ref arg
                     int[] floor_indexs = (int[]) ((Map<String, Object>) __args__).get("floor_indexs");
             
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                    ref.floor_indexs = floor_indexs;
+                    __this__.floor_indexs = floor_indexs;
                 }
             
                 __methodResult__.success("success");
@@ -1682,13 +1402,12 @@ public class SubHandler0 {
                 for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
                     Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
-                    // jsonable arg
-                    ArrayList<String> floor_names = (ArrayList<String>) ((Map<String, Object>) __args__).get("floor_names");
+                    // ref arg
+                    String[] floor_names = (String[]) ((Map<String, Object>) __args__).get("floor_names");
             
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) ((Map<String, Object>) __args__).get("__this__");
             
-                    ref.floor_names = floor_names.toArray(new String[floor_names.size()]);
+                    __this__.floor_names = floor_names;
                 }
             
                 __methodResult__.success("success");
@@ -1696,25 +1415,25 @@ public class SubHandler0 {
             // method
             put("com.amap.api.offlineservice.AMapPermissionActivity::onRequestPermissionsResult", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                ArrayList<String> var2 = (ArrayList<String>) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
+                String[] var2 = (String[]) ((Map<String, Object>) __args__).get("var2");
+                // ref arg
                 int[] var3 = (int[]) ((Map<String, Object>) __args__).get("var3");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.offlineservice.AMapPermissionActivity ref = (com.amap.api.offlineservice.AMapPermissionActivity) getHEAP().get(refId);
+                com.amap.api.offlineservice.AMapPermissionActivity __this__ = (com.amap.api.offlineservice.AMapPermissionActivity) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.offlineservice.AMapPermissionActivity@" + refId + "::onRequestPermissionsResult(" + var1 + var2 + var3 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.offlineservice.AMapPermissionActivity@" + __this__ + "::onRequestPermissionsResult(" + var1 + var2 + var3 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.onRequestPermissionsResult(var1, var2.toArray(new String[var2.size()]), var3);
+                    __this__.onRequestPermissionsResult(var1, var2, var3);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1724,29 +1443,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setScaleControlsEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setScaleControlsEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setScaleControlsEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setScaleControlsEnabled(var1);
+                    __this__.setScaleControlsEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1756,29 +1472,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setZoomControlsEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setZoomControlsEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setZoomControlsEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setZoomControlsEnabled(var1);
+                    __this__.setZoomControlsEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1788,29 +1501,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setCompassEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setCompassEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setCompassEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setCompassEnabled(var1);
+                    __this__.setCompassEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1820,29 +1530,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setMyLocationButtonEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setMyLocationButtonEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setMyLocationButtonEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setMyLocationButtonEnabled(var1);
+                    __this__.setMyLocationButtonEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1852,29 +1559,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setScrollGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setScrollGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setScrollGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setScrollGesturesEnabled(var1);
+                    __this__.setScrollGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1884,29 +1588,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setZoomGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setZoomGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setZoomGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setZoomGesturesEnabled(var1);
+                    __this__.setZoomGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1916,29 +1617,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setTiltGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setTiltGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setTiltGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setTiltGesturesEnabled(var1);
+                    __this__.setTiltGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1948,29 +1646,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setRotateGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setRotateGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setRotateGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setRotateGesturesEnabled(var1);
+                    __this__.setRotateGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1980,29 +1675,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setAllGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setAllGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setAllGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setAllGesturesEnabled(var1);
+                    __this__.setAllGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2012,29 +1704,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setLogoPosition", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoPosition(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setLogoPosition(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setLogoPosition(var1);
+                    __this__.setLogoPosition(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2044,29 +1733,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setZoomPosition", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setZoomPosition(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setZoomPosition(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setZoomPosition(var1);
+                    __this__.setZoomPosition(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2076,10 +1762,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::getZoomPosition", (__args__, __methodResult__) -> {
@@ -2087,18 +1770,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::getZoomPosition(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::getZoomPosition(" + "" + ")");
                 }
             
                 // invoke native method
-                int __result__;
+                Integer __result__ = null;
                 try {
-                    __result__ = ref.getZoomPosition();
+                    __result__ = __this__.getZoomPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2108,10 +1790,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isScaleControlsEnabled", (__args__, __methodResult__) -> {
@@ -2119,18 +1798,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isScaleControlsEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isScaleControlsEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isScaleControlsEnabled();
+                    __result__ = __this__.isScaleControlsEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2140,10 +1818,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isZoomControlsEnabled", (__args__, __methodResult__) -> {
@@ -2151,18 +1826,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isZoomControlsEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isZoomControlsEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isZoomControlsEnabled();
+                    __result__ = __this__.isZoomControlsEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2172,10 +1846,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isCompassEnabled", (__args__, __methodResult__) -> {
@@ -2183,18 +1854,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isCompassEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isCompassEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isCompassEnabled();
+                    __result__ = __this__.isCompassEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2204,10 +1874,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isMyLocationButtonEnabled", (__args__, __methodResult__) -> {
@@ -2215,18 +1882,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isMyLocationButtonEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isMyLocationButtonEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isMyLocationButtonEnabled();
+                    __result__ = __this__.isMyLocationButtonEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2236,10 +1902,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isScrollGesturesEnabled", (__args__, __methodResult__) -> {
@@ -2247,18 +1910,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isScrollGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isScrollGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isScrollGesturesEnabled();
+                    __result__ = __this__.isScrollGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2268,10 +1930,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isZoomGesturesEnabled", (__args__, __methodResult__) -> {
@@ -2279,18 +1938,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isZoomGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isZoomGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isZoomGesturesEnabled();
+                    __result__ = __this__.isZoomGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2300,10 +1958,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isTiltGesturesEnabled", (__args__, __methodResult__) -> {
@@ -2311,18 +1966,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isTiltGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isTiltGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isTiltGesturesEnabled();
+                    __result__ = __this__.isTiltGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2332,10 +1986,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isRotateGesturesEnabled", (__args__, __methodResult__) -> {
@@ -2343,18 +1994,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isRotateGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isRotateGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isRotateGesturesEnabled();
+                    __result__ = __this__.isRotateGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2364,10 +2014,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::getLogoPosition", (__args__, __methodResult__) -> {
@@ -2375,18 +2022,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::getLogoPosition(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::getLogoPosition(" + "" + ")");
                 }
             
                 // invoke native method
-                int __result__;
+                Integer __result__ = null;
                 try {
-                    __result__ = ref.getLogoPosition();
+                    __result__ = __this__.getLogoPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2396,10 +2042,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isIndoorSwitchEnabled", (__args__, __methodResult__) -> {
@@ -2407,18 +2050,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isIndoorSwitchEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isIndoorSwitchEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isIndoorSwitchEnabled();
+                    __result__ = __this__.isIndoorSwitchEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2428,29 +2070,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setIndoorSwitchEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setIndoorSwitchEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setIndoorSwitchEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setIndoorSwitchEnabled(var1);
+                    __this__.setIndoorSwitchEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2460,31 +2099,28 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setLogoMarginRate", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoMarginRate(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setLogoMarginRate(" + var1 + var2 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setLogoMarginRate(var1, new Double(var2).floatValue());
+                    __this__.setLogoMarginRate(var1, new Double(var2).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2494,30 +2130,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::getLogoMarginRate", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::getLogoMarginRate(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::getLogoMarginRate(" + var1 + ")");
                 }
             
                 // invoke native method
-                float __result__;
+                Float __result__ = null;
                 try {
-                    __result__ = ref.getLogoMarginRate(var1);
+                    __result__ = __this__.getLogoMarginRate(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2527,29 +2159,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setLogoLeftMargin", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoLeftMargin(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setLogoLeftMargin(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setLogoLeftMargin(var1);
+                    __this__.setLogoLeftMargin(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2559,29 +2188,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setLogoBottomMargin", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoBottomMargin(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setLogoBottomMargin(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setLogoBottomMargin(var1);
+                    __this__.setLogoBottomMargin(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2591,29 +2217,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setZoomInByScreenCenter", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setZoomInByScreenCenter(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setZoomInByScreenCenter(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setZoomInByScreenCenter(var1);
+                    __this__.setZoomInByScreenCenter(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2623,29 +2246,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setGestureScaleByMapCenter", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setGestureScaleByMapCenter(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setGestureScaleByMapCenter(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setGestureScaleByMapCenter(var1);
+                    __this__.setGestureScaleByMapCenter(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2655,10 +2275,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::isGestureScaleByMapCenter", (__args__, __methodResult__) -> {
@@ -2666,18 +2283,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isGestureScaleByMapCenter(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::isGestureScaleByMapCenter(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.isGestureScaleByMapCenter();
+                    __result__ = __this__.isGestureScaleByMapCenter();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2687,31 +2303,28 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.UiSettings::setLogoCenter", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings __this__ = (com.amap.api.maps.UiSettings) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoCenter(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + __this__ + "::setLogoCenter(" + var1 + var2 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setLogoCenter(var1, var2);
+                    __this__.setLogoCenter(var1, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2721,34 +2334,28 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.SwipeDismissTouchListener::onTouch", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.view.View var1 = __var1RefId__ != null ? (android.view.View) getHEAP().get(__var1RefId__) : null;
+                android.view.View var1 = (android.view.View) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                android.view.MotionEvent var2 = __var2RefId__ != null ? (android.view.MotionEvent) getHEAP().get(__var2RefId__) : null;
+                android.view.MotionEvent var2 = (android.view.MotionEvent) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.SwipeDismissTouchListener ref = (com.amap.api.maps.SwipeDismissTouchListener) getHEAP().get(refId);
+                com.amap.api.maps.SwipeDismissTouchListener __this__ = (com.amap.api.maps.SwipeDismissTouchListener) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.SwipeDismissTouchListener@" + refId + "::onTouch(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.SwipeDismissTouchListener@" + __this__ + "::onTouch(" + var1 + var2 + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.onTouch(var1, var2);
+                    __result__ = __this__.onTouch(var1, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2758,29 +2365,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::setInfoWindowUpdateTime", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoWindowUpdateTime(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::setInfoWindowUpdateTime(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setInfoWindowUpdateTime(var1);
+                    __this__.setInfoWindowUpdateTime(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2790,10 +2394,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::getInfoWindowUpdateTime", (__args__, __methodResult__) -> {
@@ -2801,18 +2402,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoWindowUpdateTime(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::getInfoWindowUpdateTime(" + "" + ")");
                 }
             
                 // invoke native method
-                long __result__;
+                Long __result__ = null;
                 try {
-                    __result__ = ref.getInfoWindowUpdateTime();
+                    __result__ = __this__.getInfoWindowUpdateTime();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2822,29 +2422,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                long jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::setInfoWindowType", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoWindowType(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::setInfoWindowType(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setInfoWindowType(var1);
+                    __this__.setInfoWindowType(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2854,10 +2451,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::getInfoWindowType", (__args__, __methodResult__) -> {
@@ -2865,18 +2459,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoWindowType(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::getInfoWindowType(" + "" + ")");
                 }
             
                 // invoke native method
-                int __result__;
+                Integer __result__ = null;
                 try {
-                    __result__ = ref.getInfoWindowType();
+                    __result__ = __this__.getInfoWindowType();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2886,10 +2479,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::getInfoWindow", (__args__, __methodResult__) -> {
@@ -2897,18 +2487,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoWindow(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::getInfoWindow(" + "" + ")");
                 }
             
                 // invoke native method
-                android.view.View __result__;
+                android.view.View __result__ = null;
                 try {
-                    __result__ = ref.getInfoWindow();
+                    __result__ = __this__.getInfoWindow();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2918,34 +2507,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::setInfoContent", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.view.View var1 = __var1RefId__ != null ? (android.view.View) getHEAP().get(__var1RefId__) : null;
+                android.view.View var1 = (android.view.View) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoContent(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::setInfoContent(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setInfoContent(var1);
+                    __this__.setInfoContent(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2955,30 +2536,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::setInfoWindow", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.view.View var1 = __var1RefId__ != null ? (android.view.View) getHEAP().get(__var1RefId__) : null;
+                android.view.View var1 = (android.view.View) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoWindow(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::setInfoWindow(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setInfoWindow(var1);
+                    __this__.setInfoWindow(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2988,10 +2565,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.InfoWindowParams::getInfoContents", (__args__, __methodResult__) -> {
@@ -2999,18 +2573,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+                com.amap.api.maps.InfoWindowParams __this__ = (com.amap.api.maps.InfoWindowParams) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoContents(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + __this__ + "::getInfoContents(" + "" + ")");
                 }
             
                 // invoke native method
-                android.view.View __result__;
+                android.view.View __result__ = null;
                 try {
-                    __result__ = ref.getInfoContents();
+                    __result__ = __this__.getInfoContents();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3020,14 +2593,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::zoomIn", (__args__, __methodResult__) -> {
@@ -3043,7 +2609,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.zoomIn();
                 } catch (Throwable throwable) {
@@ -3055,14 +2621,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::zoomOut", (__args__, __methodResult__) -> {
@@ -3078,7 +2637,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.zoomOut();
                 } catch (Throwable throwable) {
@@ -3090,21 +2649,14 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::scrollBy", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
-                // jsonable arg
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
@@ -3116,7 +2668,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.scrollBy(new Double(var0).floatValue(), new Double(var1).floatValue());
                 } catch (Throwable throwable) {
@@ -3128,19 +2680,12 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::zoomTo", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
@@ -3152,7 +2697,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.zoomTo(new Double(var0).floatValue());
                 } catch (Throwable throwable) {
@@ -3164,19 +2709,12 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::zoomBy__double", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
@@ -3188,7 +2726,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.zoomBy(new Double(var0).floatValue());
                 } catch (Throwable throwable) {
@@ -3200,23 +2738,15 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.graphics.Point var1 = __var1RefId__ != null ? (android.graphics.Point) getHEAP().get(__var1RefId__) : null;
+                android.graphics.Point var1 = (android.graphics.Point) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
             
@@ -3227,7 +2757,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.zoomBy(new Double(var0).floatValue(), var1);
                 } catch (Throwable throwable) {
@@ -3239,21 +2769,13 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::newCameraPosition", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var0RefId__ = (Integer) ((Map<String, Object>) __args__).get("var0");
-                com.amap.api.maps.model.CameraPosition var0 = __var0RefId__ != null ? (com.amap.api.maps.model.CameraPosition) getHEAP().get(__var0RefId__) : null;
+                com.amap.api.maps.model.CameraPosition var0 = (com.amap.api.maps.model.CameraPosition) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -3264,7 +2786,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.newCameraPosition(var0);
                 } catch (Throwable throwable) {
@@ -3276,21 +2798,13 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::newLatLng", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var0RefId__ = (Integer) ((Map<String, Object>) __args__).get("var0");
-                com.amap.api.maps.model.LatLng var0 = __var0RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var0RefId__) : null;
+                com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -3301,7 +2815,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.newLatLng(var0);
                 } catch (Throwable throwable) {
@@ -3313,22 +2827,14 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::newLatLngZoom", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var0RefId__ = (Integer) ((Map<String, Object>) __args__).get("var0");
-                com.amap.api.maps.model.LatLng var0 = __var0RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var0RefId__) : null;
-                // jsonable arg
+                com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var0");
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
@@ -3340,7 +2846,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.newLatLngZoom(var0, new Double(var1).floatValue());
                 } catch (Throwable throwable) {
@@ -3352,22 +2858,14 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var0RefId__ = (Integer) ((Map<String, Object>) __args__).get("var0");
-                com.amap.api.maps.model.LatLngBounds var0 = __var0RefId__ != null ? (com.amap.api.maps.model.LatLngBounds) getHEAP().get(__var0RefId__) : null;
-                // jsonable arg
+                com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) ((Map<String, Object>) __args__).get("var0");
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
@@ -3379,7 +2877,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.newLatLngBounds(var0, var1);
                 } catch (Throwable throwable) {
@@ -3391,21 +2889,13 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::changeLatLng", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var0RefId__ = (Integer) ((Map<String, Object>) __args__).get("var0");
-                com.amap.api.maps.model.LatLng var0 = __var0RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var0RefId__) : null;
+                com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -3416,7 +2906,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.changeLatLng(var0);
                 } catch (Throwable throwable) {
@@ -3428,19 +2918,12 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::changeBearing", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
@@ -3452,7 +2935,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.changeBearing(new Double(var0).floatValue());
                 } catch (Throwable throwable) {
@@ -3464,19 +2947,12 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::changeTilt", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
@@ -3488,7 +2964,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.changeTilt(new Double(var0).floatValue());
                 } catch (Throwable throwable) {
@@ -3500,26 +2976,18 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var0RefId__ = (Integer) ((Map<String, Object>) __args__).get("var0");
-                com.amap.api.maps.model.LatLngBounds var0 = __var0RefId__ != null ? (com.amap.api.maps.model.LatLngBounds) getHEAP().get(__var0RefId__) : null;
-                // jsonable arg
+                com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) ((Map<String, Object>) __args__).get("var0");
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 int var3 = (int) ((Map<String, Object>) __args__).get("var3");
             
                 // ref
@@ -3531,7 +2999,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.newLatLngBounds(var0, var1, var2, var3);
                 } catch (Throwable throwable) {
@@ -3543,28 +3011,20 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var0RefId__ = (Integer) ((Map<String, Object>) __args__).get("var0");
-                com.amap.api.maps.model.LatLngBounds var0 = __var0RefId__ != null ? (com.amap.api.maps.model.LatLngBounds) getHEAP().get(__var0RefId__) : null;
-                // jsonable arg
+                com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) ((Map<String, Object>) __args__).get("var0");
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 int var3 = (int) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 int var4 = (int) ((Map<String, Object>) __args__).get("var4");
             
                 // ref
@@ -3576,7 +3036,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.CameraUpdate __result__;
+                com.amap.api.maps.CameraUpdate __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CameraUpdateFactory.newLatLngBoundsRect(var0, var1, var2, var3, var4);
                 } catch (Throwable throwable) {
@@ -3588,14 +3048,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapException::getErrorMessage", (__args__, __methodResult__) -> {
@@ -3603,18 +3056,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapException ref = (com.amap.api.maps.AMapException) getHEAP().get(refId);
+                com.amap.api.maps.AMapException __this__ = (com.amap.api.maps.AMapException) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapException@" + refId + "::getErrorMessage(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapException@" + __this__ + "::getErrorMessage(" + "" + ")");
                 }
             
                 // invoke native method
-                String __result__;
+                String __result__ = null;
                 try {
-                    __result__ = ref.getErrorMessage();
+                    __result__ = __this__.getErrorMessage();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3624,30 +3076,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::logoPosition", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::logoPosition(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::logoPosition(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.logoPosition(var1);
+                    __result__ = __this__.logoPosition(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3657,34 +3105,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::zOrderOnTop", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::zOrderOnTop(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::zOrderOnTop(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.zOrderOnTop(var1);
+                    __result__ = __this__.zOrderOnTop(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3694,34 +3134,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::mapType", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::mapType(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::mapType(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.mapType(var1);
+                    __result__ = __this__.mapType(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3731,35 +3163,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::camera", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.CameraPosition var1 = __var1RefId__ != null ? (com.amap.api.maps.model.CameraPosition) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.CameraPosition var1 = (com.amap.api.maps.model.CameraPosition) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::camera(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::camera(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.camera(var1);
+                    __result__ = __this__.camera(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3769,34 +3192,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::scaleControlsEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::scaleControlsEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::scaleControlsEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.scaleControlsEnabled(var1);
+                    __result__ = __this__.scaleControlsEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3806,34 +3221,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::zoomControlsEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::zoomControlsEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::zoomControlsEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.zoomControlsEnabled(var1);
+                    __result__ = __this__.zoomControlsEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3843,34 +3250,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::compassEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::compassEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::compassEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.compassEnabled(var1);
+                    __result__ = __this__.compassEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3880,34 +3279,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::scrollGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::scrollGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::scrollGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.scrollGesturesEnabled(var1);
+                    __result__ = __this__.scrollGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3917,34 +3308,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::zoomGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::zoomGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::zoomGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.zoomGesturesEnabled(var1);
+                    __result__ = __this__.zoomGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3954,34 +3337,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::tiltGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::tiltGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::tiltGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.tiltGesturesEnabled(var1);
+                    __result__ = __this__.tiltGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3991,34 +3366,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::rotateGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::rotateGesturesEnabled(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::rotateGesturesEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.AMapOptions __result__;
+                com.amap.api.maps.AMapOptions __result__ = null;
                 try {
-                    __result__ = ref.rotateGesturesEnabled(var1);
+                    __result__ = __this__.rotateGesturesEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4028,14 +3395,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getLogoPosition", (__args__, __methodResult__) -> {
@@ -4043,18 +3403,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getLogoPosition(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getLogoPosition(" + "" + ")");
                 }
             
                 // invoke native method
-                int __result__;
+                Integer __result__ = null;
                 try {
-                    __result__ = ref.getLogoPosition();
+                    __result__ = __this__.getLogoPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4064,10 +3423,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getZOrderOnTop", (__args__, __methodResult__) -> {
@@ -4075,18 +3431,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getZOrderOnTop(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getZOrderOnTop(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getZOrderOnTop();
+                    __result__ = __this__.getZOrderOnTop();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4096,10 +3451,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getMapType", (__args__, __methodResult__) -> {
@@ -4107,18 +3459,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getMapType(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getMapType(" + "" + ")");
                 }
             
                 // invoke native method
-                int __result__;
+                Integer __result__ = null;
                 try {
-                    __result__ = ref.getMapType();
+                    __result__ = __this__.getMapType();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4128,10 +3479,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getCamera", (__args__, __methodResult__) -> {
@@ -4139,18 +3487,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getCamera(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getCamera(" + "" + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.CameraPosition __result__;
+                com.amap.api.maps.model.CameraPosition __result__ = null;
                 try {
-                    __result__ = ref.getCamera();
+                    __result__ = __this__.getCamera();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4160,14 +3507,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getScaleControlsEnabled", (__args__, __methodResult__) -> {
@@ -4175,18 +3515,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getScaleControlsEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getScaleControlsEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getScaleControlsEnabled();
+                    __result__ = __this__.getScaleControlsEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4196,10 +3535,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getZoomControlsEnabled", (__args__, __methodResult__) -> {
@@ -4207,18 +3543,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getZoomControlsEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getZoomControlsEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getZoomControlsEnabled();
+                    __result__ = __this__.getZoomControlsEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4228,10 +3563,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getCompassEnabled", (__args__, __methodResult__) -> {
@@ -4239,18 +3571,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getCompassEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getCompassEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getCompassEnabled();
+                    __result__ = __this__.getCompassEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4260,10 +3591,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getScrollGesturesEnabled", (__args__, __methodResult__) -> {
@@ -4271,18 +3599,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getScrollGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getScrollGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getScrollGesturesEnabled();
+                    __result__ = __this__.getScrollGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4292,10 +3619,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getZoomGesturesEnabled", (__args__, __methodResult__) -> {
@@ -4303,18 +3627,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getZoomGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getZoomGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getZoomGesturesEnabled();
+                    __result__ = __this__.getZoomGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4324,10 +3647,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getTiltGesturesEnabled", (__args__, __methodResult__) -> {
@@ -4335,18 +3655,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getTiltGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getTiltGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getTiltGesturesEnabled();
+                    __result__ = __this__.getTiltGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4356,10 +3675,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMapOptions::getRotateGesturesEnabled", (__args__, __methodResult__) -> {
@@ -4367,18 +3683,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+                com.amap.api.maps.AMapOptions __this__ = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getRotateGesturesEnabled(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + __this__ + "::getRotateGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
-                    __result__ = ref.getRotateGesturesEnabled();
+                    __result__ = __this__.getRotateGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4388,10 +3703,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CoordinateConverter::from", (__args__, __methodResult__) -> {
@@ -4400,18 +3712,17 @@ public class SubHandler0 {
                 com.amap.api.maps.CoordinateConverter.CoordType var1 = com.amap.api.maps.CoordinateConverter.CoordType.values()[(int) ((Map<String, Object>) __args__).get("var1")];
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.CoordinateConverter ref = (com.amap.api.maps.CoordinateConverter) getHEAP().get(refId);
+                com.amap.api.maps.CoordinateConverter __this__ = (com.amap.api.maps.CoordinateConverter) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + refId + "::from(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + __this__ + "::from(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.CoordinateConverter __result__;
+                com.amap.api.maps.CoordinateConverter __result__ = null;
                 try {
-                    __result__ = ref.from(var1);
+                    __result__ = __this__.from(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4421,35 +3732,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CoordinateConverter::coord", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.CoordinateConverter ref = (com.amap.api.maps.CoordinateConverter) getHEAP().get(refId);
+                com.amap.api.maps.CoordinateConverter __this__ = (com.amap.api.maps.CoordinateConverter) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + refId + "::coord(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + __this__ + "::coord(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.CoordinateConverter __result__;
+                com.amap.api.maps.CoordinateConverter __result__ = null;
                 try {
-                    __result__ = ref.coord(var1);
+                    __result__ = __this__.coord(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4459,14 +3761,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CoordinateConverter::convert", (__args__, __methodResult__) -> {
@@ -4474,18 +3769,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.CoordinateConverter ref = (com.amap.api.maps.CoordinateConverter) getHEAP().get(refId);
+                com.amap.api.maps.CoordinateConverter __this__ = (com.amap.api.maps.CoordinateConverter) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + refId + "::convert(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + __this__ + "::convert(" + "" + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
+                com.amap.api.maps.model.LatLng __result__ = null;
                 try {
-                    __result__ = ref.convert();
+                    __result__ = __this__.convert();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4495,21 +3789,14 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.CoordinateConverter::isAMapDataAvailable", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 double var0 = (double) ((Map<String, Object>) __args__).get("var0");
-                // jsonable arg
+                // ref arg
                 double var2 = (double) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
@@ -4521,7 +3808,7 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
-                boolean __result__;
+                Boolean __result__ = null;
                 try {
                     __result__ = com.amap.api.maps.CoordinateConverter.isAMapDataAvailable(var0, var2);
                 } catch (Throwable throwable) {
@@ -4533,31 +3820,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMap.InfoWindowAdapter::getInfoWindow", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.Marker var1 = __var1RefId__ != null ? (com.amap.api.maps.model.Marker) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMap.InfoWindowAdapter ref = (com.amap.api.maps.AMap.InfoWindowAdapter) getHEAP().get(refId);
+                com.amap.api.maps.AMap.InfoWindowAdapter __this__ = (com.amap.api.maps.AMap.InfoWindowAdapter) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.InfoWindowAdapter@" + refId + "::getInfoWindow(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.InfoWindowAdapter@" + __this__ + "::getInfoWindow(" + var1 + ")");
                 }
             
                 // invoke native method
-                android.view.View __result__;
+                android.view.View __result__ = null;
                 try {
-                    __result__ = ref.getInfoWindow(var1);
+                    __result__ = __this__.getInfoWindow(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4567,35 +3849,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMap.InfoWindowAdapter::getInfoContents", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.Marker var1 = __var1RefId__ != null ? (com.amap.api.maps.model.Marker) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMap.InfoWindowAdapter ref = (com.amap.api.maps.AMap.InfoWindowAdapter) getHEAP().get(refId);
+                com.amap.api.maps.AMap.InfoWindowAdapter __this__ = (com.amap.api.maps.AMap.InfoWindowAdapter) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.InfoWindowAdapter@" + refId + "::getInfoContents(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.InfoWindowAdapter@" + __this__ + "::getInfoContents(" + var1 + ")");
                 }
             
                 // invoke native method
-                android.view.View __result__;
+                android.view.View __result__ = null;
                 try {
-                    __result__ = ref.getInfoContents(var1);
+                    __result__ = __this__.getInfoContents(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4605,14 +3878,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.AMap.ImageInfoWindowAdapter::getInfoWindowUpdateTime", (__args__, __methodResult__) -> {
@@ -4620,18 +3886,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMap.ImageInfoWindowAdapter ref = (com.amap.api.maps.AMap.ImageInfoWindowAdapter) getHEAP().get(refId);
+                com.amap.api.maps.AMap.ImageInfoWindowAdapter __this__ = (com.amap.api.maps.AMap.ImageInfoWindowAdapter) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.ImageInfoWindowAdapter@" + refId + "::getInfoWindowUpdateTime(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.ImageInfoWindowAdapter@" + __this__ + "::getInfoWindowUpdateTime(" + "" + ")");
                 }
             
                 // invoke native method
-                long __result__;
+                Long __result__ = null;
                 try {
-                    __result__ = ref.getInfoWindowUpdateTime();
+                    __result__ = __this__.getInfoWindowUpdateTime();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4641,33 +3906,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                long jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints", (__args__, __methodResult__) -> {
                 // args
-                // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
-                java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
-                }
+                // ref arg
+                java.util.List<com.amap.api.maps.model.LatLng> var1 = (java.util.List<com.amap.api.maps.model.LatLng>) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setPoints(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::setPoints(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setPoints((ArrayList) var1);
+                    __this__.setPoints(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4677,10 +3935,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex", (__args__, __methodResult__) -> {
@@ -4688,17 +3943,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::resetIndex(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::resetIndex(" + "" + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.resetIndex();
+                    __this__.resetIndex();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4708,29 +3963,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setTotalDuration(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::setTotalDuration(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setTotalDuration(var1);
+                    __this__.setTotalDuration(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4740,10 +3992,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove", (__args__, __methodResult__) -> {
@@ -4751,17 +4000,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::startSmoothMove(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::startSmoothMove(" + "" + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.startSmoothMove();
+                    __this__.startSmoothMove();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4771,10 +4020,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove", (__args__, __methodResult__) -> {
@@ -4782,17 +4028,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::stopMove(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::stopMove(" + "" + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.stopMove();
+                    __this__.stopMove();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4802,10 +4048,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject", (__args__, __methodResult__) -> {
@@ -4813,18 +4056,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::getObject(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::getObject(" + "" + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.BasePointOverlay __result__;
+                com.amap.api.maps.model.BasePointOverlay __result__ = null;
                 try {
-                    __result__ = ref.getObject();
+                    __result__ = __this__.getObject();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4834,14 +4076,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition", (__args__, __methodResult__) -> {
@@ -4849,18 +4084,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::getPosition(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::getPosition(" + "" + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
+                com.amap.api.maps.model.LatLng __result__ = null;
                 try {
-                    __result__ = ref.getPosition();
+                    __result__ = __this__.getPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4870,14 +4104,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex", (__args__, __methodResult__) -> {
@@ -4885,18 +4112,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::getIndex(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::getIndex(" + "" + ")");
                 }
             
                 // invoke native method
-                int __result__;
+                Integer __result__ = null;
                 try {
-                    __result__ = ref.getIndex();
+                    __result__ = __this__.getIndex();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4906,10 +4132,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy", (__args__, __methodResult__) -> {
@@ -4917,17 +4140,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::destroy(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::destroy(" + "" + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.destroy();
+                    __this__.destroy();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4937,10 +4160,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker", (__args__, __methodResult__) -> {
@@ -4948,17 +4168,17 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::removeMarker(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::removeMarker(" + "" + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.removeMarker();
+                    __this__.removeMarker();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4968,30 +4188,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setPosition(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::setPosition(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setPosition(var1);
+                    __this__.setPosition(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5001,29 +4217,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setRotate(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::setRotate(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setRotate(new Double(var1).floatValue());
+                    __this__.setRotate(new Double(var1).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5033,29 +4246,26 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible", (__args__, __methodResult__) -> {
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setVisible(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::setVisible(" + var1 + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setVisible(var1);
+                    __this__.setVisible(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5065,10 +4275,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
             // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener", (__args__, __methodResult__) -> {
@@ -5076,19 +4283,19 @@ public class SubHandler0 {
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay __this__ = (com.amap.api.maps.utils.overlay.MovingPointOverlay) ((Map<String, Object>) __args__).get("__this__");
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setMoveListener(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + __this__ + "::setMoveListener(" + "" + ")");
                 }
             
                 // invoke native method
+                Void __result__ = null;
                 try {
-                    ref.setMoveListener(new com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener() {
+                    __this__.setMoveListener(new com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5099,10 +4306,6 @@ public class SubHandler0 {
                                 Log.d("java-callback", "fluttify-java-callback: move(" + var1 + ")");
                             }
             
-                            // convert to jsonable data
-                            // jsonable arg
-                            double argvar1 = var1;
-            
                             // call dart method
                             handler.post(new Runnable() {
                                 @Override
@@ -5110,7 +4313,7 @@ public class SubHandler0 {
                                     callbackChannel.invokeMethod(
                                         "Callback::com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener::move",
                                         new HashMap<String, Object>() {{
-                                            put("var1", argvar1);
+                                            put("var1", var1);
                                         }}
                                     );
                                 }
@@ -5130,10 +4333,7 @@ public class SubHandler0 {
                     return;
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__result__);
             });
         }};
     }

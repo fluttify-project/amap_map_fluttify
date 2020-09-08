@@ -24,31 +24,13 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   
 
   @mustCallSuper
-  Future<void> onDownload(int var1, int var2, String var3) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onDownload::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onDownload(int var1, int var2, String var3) {}
   
   @mustCallSuper
-  Future<void> onCheckUpdate(bool var1, String var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onCheckUpdate::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onCheckUpdate(bool var1, String var2) {}
   
   @mustCallSuper
-  Future<void> onRemove(bool var1, String var2, String var3) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onRemove::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onRemove(bool var1, String var2, String var3) {}
   
 }
 

@@ -1,19 +1,19 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math';
 import 'dart:typed_data';
 import 'dart:ui';
 
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
+import 'package:amap_search_fluttify/amap_search_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
-import 'package:amap_search_fluttify/amap_search_fluttify.dart';
-import 'dart:math';
+
 import 'enums.dart';
 import 'extensions.dart';
 import 'models.dart';
@@ -22,15 +22,6 @@ part 'amap_controller.dart';
 part 'map_delegates.dart';
 
 typedef Future<void> _OnMapCreated(AmapController controller);
-
-/// 释放所有amap_map_fluttify插件创建的原生对象
-void releaseAmapObjectPool() {
-  final isCurrentPlugin = (Ref it) => it?.tag__ == 'amap_map_fluttify';
-  kNativeObjectPool
-      .where(isCurrentPlugin)
-      .release_batch()
-      .then((_) => kNativeObjectPool.removeWhere(isCurrentPlugin));
-}
 
 /// 高德地图 Widget
 class AmapView extends StatefulWidget {
@@ -171,86 +162,84 @@ class _AmapViewState extends State<AmapView> {
     final centerCoordinate =
         widget.centerCoordinate ?? LatLng(39.91667, 116.41667);
     if (Platform.isAndroid) {
-      return Stack(
-        children: <Widget>[
-          if (_widgetLayer != null) _widgetLayer,
-          com_amap_api_maps_TextureMapView_Android(
-            params: {
-              'mapType': widget.mapType?.index,
-              'showZoomControl': widget.showZoomControl,
-              'showCompass': widget.showCompass,
-              'showScaleControl': widget.showScaleControl,
-              'zoomGesturesEnabled': widget.zoomGesturesEnabled,
-              'scrollGesturesEnabled': widget.scrollGesturesEnabled,
-              'rotateGestureEnabled': widget.rotateGestureEnabled,
-              'tiltGestureEnabled': widget.tiltGestureEnabled,
-              'zoomLevel': widget.zoomLevel,
-              'centerCoordinateLatitude': centerCoordinate.latitude,
-              'centerCoordinateLongitude': centerCoordinate.longitude,
-              'tilt': widget.tilt,
-              'bearing': widget.bearing,
-            },
-            onDispose: _onPlatformViewDispose,
-            onViewCreated: (controller) async {
-              _controller = AmapController.android(controller, this);
+      return ScopedReleasePool(
+        child: Stack(
+          children: <Widget>[
+            if (_widgetLayer != null) _widgetLayer,
+            com_amap_api_maps_TextureMapView_Android(
+              params: {
+                'mapType': widget.mapType?.index,
+                'showZoomControl': widget.showZoomControl,
+                'showCompass': widget.showCompass,
+                'showScaleControl': widget.showScaleControl,
+                'zoomGesturesEnabled': widget.zoomGesturesEnabled,
+                'scrollGesturesEnabled': widget.scrollGesturesEnabled,
+                'rotateGestureEnabled': widget.rotateGestureEnabled,
+                'tiltGestureEnabled': widget.tiltGestureEnabled,
+                'zoomLevel': widget.zoomLevel,
+                'centerCoordinateLatitude': centerCoordinate.latitude,
+                'centerCoordinateLongitude': centerCoordinate.longitude,
+                'tilt': widget.tilt,
+                'bearing': widget.bearing,
+              },
+              onDispose: _onPlatformViewDispose,
+              onViewCreated: (controller) async {
+                _controller = AmapController.android(controller, this);
 
-              final bundle = await android_os_Bundle.create();
-              await controller.onCreate(bundle);
+                final bundle = await android_os_Bundle.create();
+                await controller.onCreate(bundle);
 
-              await _initAndroid();
-              if (widget.onMapCreated != null) {
-                // 主动延迟300毫秒, 等待地图加载完成, 防止在onMapCreated里调用方法时空指针
-                Future.delayed(Duration(milliseconds: 300), () => 0)
-                    .then((value) => widget.onMapCreated(_controller));
-              }
-              await bundle.release__();
-            },
-          ),
-          _mask,
-        ],
+                await _initAndroid();
+                if (widget.onMapCreated != null) {
+                  // 主动延迟300毫秒, 等待地图加载完成, 防止在onMapCreated里调用方法时空指针
+                  Future.delayed(Duration(milliseconds: 300), () => 0)
+                      .then((value) => widget.onMapCreated(_controller));
+                }
+                await bundle.release__();
+              },
+            ),
+            _mask,
+          ],
+        ),
       );
     } else if (Platform.isIOS) {
-      return Stack(
-        children: <Widget>[
-          if (_widgetLayer != null) _widgetLayer,
-          MAMapView_iOS(
-            params: {
-              'mapType': widget.mapType?.index,
-              'showZoomControl': widget.showZoomControl,
-              'showCompass': widget.showCompass,
-              'showScaleControl': widget.showScaleControl,
-              'zoomGesturesEnabled': widget.zoomGesturesEnabled,
-              'scrollGesturesEnabled': widget.scrollGesturesEnabled,
-              'rotateGestureEnabled': widget.rotateGestureEnabled,
-              'tiltGestureEnabled': widget.tiltGestureEnabled,
-              'zoomLevel': widget.zoomLevel,
-              'centerCoordinateLatitude': centerCoordinate.latitude,
-              'centerCoordinateLongitude': centerCoordinate.longitude,
-              'tilt': widget.tilt,
-              'bearing': widget.bearing,
-            },
-            onDispose: _onPlatformViewDispose,
-            onViewCreated: (controller) async {
-              _controller = AmapController.ios(controller, this);
+      return ScopedReleasePool(
+        child: Stack(
+          children: <Widget>[
+            if (_widgetLayer != null) _widgetLayer,
+            MAMapView_iOS(
+              params: {
+                'mapType': widget.mapType?.index,
+                'showZoomControl': widget.showZoomControl,
+                'showCompass': widget.showCompass,
+                'showScaleControl': widget.showScaleControl,
+                'zoomGesturesEnabled': widget.zoomGesturesEnabled,
+                'scrollGesturesEnabled': widget.scrollGesturesEnabled,
+                'rotateGestureEnabled': widget.rotateGestureEnabled,
+                'tiltGestureEnabled': widget.tiltGestureEnabled,
+                'zoomLevel': widget.zoomLevel,
+                'centerCoordinateLatitude': centerCoordinate.latitude,
+                'centerCoordinateLongitude': centerCoordinate.longitude,
+                'tilt': widget.tilt,
+                'bearing': widget.bearing,
+              },
+              onDispose: _onPlatformViewDispose,
+              onViewCreated: (controller) async {
+                _controller = AmapController.ios(controller, this);
 
-              await _initIOS();
-              if (widget.onMapCreated != null) {
-                await widget.onMapCreated(_controller);
-              }
-            },
-          ),
-          _mask,
-        ],
+                await _initIOS();
+                if (widget.onMapCreated != null) {
+                  await widget.onMapCreated(_controller);
+                }
+              },
+            ),
+            _mask,
+          ],
+        ),
       );
     } else {
       return Center(child: Text('未实现的平台'));
     }
-  }
-
-  @override
-  void dispose() {
-    if (widget.autoRelease) releaseAmapObjectPool();
-    super.dispose();
   }
 
   Future<List<Uint8List>> widgetToImageData(List<Widget> markerList) {

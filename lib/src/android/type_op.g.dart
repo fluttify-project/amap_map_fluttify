@@ -17,635 +17,635 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
   // type check
   Future<bool> is__<T>() async {
     final typeName = T.toString();
-    if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
+    if (RegExp(r'^(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)$').hasMatch(typeName)) {
       return this is T;
     }
     else if (T == com_amap_api_offlineservice_AMapPermissionActivity) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_offlineservice_AMapPermissionActivity', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_offlineservice_AMapPermissionActivity', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_UiSettings) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_UiSettings', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_UiSettings', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissTouchListener', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissTouchListener', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_InfoWindowParams) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_InfoWindowParams', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_InfoWindowParams', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_CameraUpdateFactory) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_CameraUpdateFactory', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_CameraUpdateFactory', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMapException) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapException', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapException', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMapOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMapOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_CoordinateConverter) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_CoordinateConverter', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_CoordinateConverter', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMap_InfoWindowAdapter) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap_InfoWindowAdapter', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap_InfoWindowAdapter', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMap_ImageInfoWindowAdapter) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap_ImageInfoWindowAdapter', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap_ImageInfoWindowAdapter', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_utils_SpatialRelationUtil) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_utils_SpatialRelationUtil', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_utils_SpatialRelationUtil', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_utils_overlay_MovingPointOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_utils_overlay_MovingPointOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_utils_overlay_MovingPointOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_utils_overlay_SmoothMoveMarker) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_utils_overlay_SmoothMoveMarker', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_utils_overlay_SmoothMoveMarker', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_CameraUpdate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_CameraUpdate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_CameraUpdate', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_SwipeDismissCallBack) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissCallBack', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissCallBack', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_SwipeDismissView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissView', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_MapsInitializer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_MapsInitializer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_MapsInitializer', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapStatus) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapStatus', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapStatus', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapProvince) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapProvince', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapProvince', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_DownloadProgressView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_DownloadProgressView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_DownloadProgressView', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_Province) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_Province', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_Province', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapManager', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapManager', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapCity) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapCity', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapCity', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapActivity) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapActivity', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapActivity', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_City) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_City', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_City', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_Projection) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_Projection', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_Projection', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap_MultiPositionInfoWindowAdapter', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap_MultiPositionInfoWindowAdapter', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Polygon) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Polygon', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Polygon', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_HeatMapLayerOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapLayerOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapLayerOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptor) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptor', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptor', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_PolygonHoleOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolygonHoleOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolygonHoleOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileOverlayOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileOverlayOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Poi) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Poi', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Poi', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MyLocationStyle', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MyLocationStyle', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_RouteOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_RouteOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_RouteOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_VisibleRegion) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_VisibleRegion', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_VisibleRegion', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_LatLngCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CircleHoleOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CircleHoleOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CircleHoleOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Text) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Text', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Text', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds_Builder) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds_Builder', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds_Builder', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_HeatMapLayer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapLayer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapLayer', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorFactory) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptorFactory', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptorFactory', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_UrlTileProvider) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_UrlTileProvider', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_UrlTileProvider', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MultiPointOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MultiPointOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_PoiCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PoiCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PoiCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_PolylineOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolylineOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolylineOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Tile) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Tile', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Tile', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_GL3DModel) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GL3DModel', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GL3DModel', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Gradient) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Gradient', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Gradient', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TileProvider) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileProvider', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileProvider', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_HeatMapItem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapItem', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapItem', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_NaviPara) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NaviPara', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NaviPara', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GroundOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GroundOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_GL3DModelOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GL3DModelOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GL3DModelOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_GroundOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GroundOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GroundOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MyTrafficStyle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MyTrafficStyle', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MyTrafficStyle', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CameraPosition) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CameraPosition', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CameraPosition', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TextOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TextOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TextOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_PoiPara) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PoiPara', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PoiPara', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MarkerOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MarkerOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MarkerOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_NavigateArrow) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NavigateArrow', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NavigateArrow', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_animation_AnimationSet) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_AnimationSet', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_AnimationSet', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_animation_RotateAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_RotateAnimation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_RotateAnimation', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_animation_TranslateAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_TranslateAnimation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_TranslateAnimation', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_animation_Animation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_Animation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_Animation', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_animation_EmergeAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_EmergeAnimation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_EmergeAnimation', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_animation_AlphaAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_AlphaAnimation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_AlphaAnimation', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_animation_ScaleAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_ScaleAnimation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_animation_ScaleAnimation', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CustomMapStyleOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CustomMapStyleOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CustomMapStyleOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CrossOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CrossOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CrossOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_VisibleRegionCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_VisibleRegionCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_VisibleRegionCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_LatLng) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLng', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLng', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TileProjection) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileProjection', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileProjection', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_AMapPara) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_AMapPara', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_AMapPara', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CameraPosition_Builder) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CameraPosition_Builder', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CameraPosition_Builder', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BasePointOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BasePointOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BasePointOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CircleOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CircleOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CircleOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Arc) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Arc', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Arc', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_AMapCameraInfo) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_AMapCameraInfo', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_AMapCameraInfo', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Circle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Circle', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Circle', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_PolygonOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolygonOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolygonOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_WeightedLatLng) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_WeightedLatLng', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_WeightedLatLng', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyleCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MyLocationStyleCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MyLocationStyleCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MarkerOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MarkerOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MarkerOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MultiPointItem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MultiPointItem', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MultiPointItem', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_LatLngBoundsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngBoundsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngBoundsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_ArcOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_ArcOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_ArcOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptorCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptorCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CircleOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CircleOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CircleOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_RuntimeRemoteException) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_RuntimeRemoteException', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_RuntimeRemoteException', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_AMapGLOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_AMapGLOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_AMapGLOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider_Builder) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider_Builder', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider_Builder', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MultiPointOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MultiPointOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BaseOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BaseOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BaseOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_PolylineOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolylineOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolylineOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BaseOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BaseOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BaseOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Marker) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Marker', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Marker', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_RoutePara) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_RoutePara', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_RoutePara', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_ArcOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_ArcOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_ArcOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CameraPositionCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CameraPositionCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CameraPositionCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_CrossOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CrossOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CrossOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BaseHoleOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BaseHoleOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BaseHoleOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TextOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TextOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TextOptions', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TileOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_PolygonOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolygonOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PolygonOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_TileProjectionCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileProjectionCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileProjectionCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptionsCreator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GroundOverlayOptionsCreator', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_GroundOverlayOptionsCreator', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_IndoorBuildingInfo) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_IndoorBuildingInfo', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_IndoorBuildingInfo', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_Polyline) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Polyline', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Polyline', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlay', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_TextureMapView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_TextureMapView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_TextureMapView', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMapUtils) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapUtils', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMapUtils', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_InfoWindowAnimationManager) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_InfoWindowAnimationManager', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_InfoWindowAnimationManager', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_WearMapView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_WearMapView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_WearMapView', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_BaseMapView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_BaseMapView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_BaseMapView', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_AMap) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_maps_MapView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_MapView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_maps_MapView', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_trace_TraceLocation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_trace_TraceLocation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_trace_TraceLocation', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_trace_LBSTraceClient) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_trace_LBSTraceClient', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_trace_LBSTraceClient', {'__this__': this});
       return result;
     }
     else if (T == com_amap_api_trace_TraceOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_trace_TraceOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfcom_amap_api_trace_TraceOverlay', {'__this__': this});
       return result;
     }
     else if (T == android_content_Context) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_content_Context', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_content_Context', {'__this__': this});
       return result;
     }
     else if (T == android_content_Intent) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_content_Intent', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_content_Intent', {'__this__': this});
       return result;
     }
     else if (T == android_content_ContentProvider) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_content_ContentProvider', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_content_ContentProvider', {'__this__': this});
       return result;
     }
     else if (T == android_app_Application) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_app_Application', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_app_Application', {'__this__': this});
       return result;
     }
     else if (T == android_app_Notification) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_app_Notification', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_app_Notification', {'__this__': this});
       return result;
     }
     else if (T == android_app_Activity) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_app_Activity', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_app_Activity', {'__this__': this});
       return result;
     }
     else if (T == android_app_PendingIntent) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_app_PendingIntent', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_app_PendingIntent', {'__this__': this});
       return result;
     }
     else if (T == android_os_Bundle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_os_Bundle', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_os_Bundle', {'__this__': this});
       return result;
     }
     else if (T == android_os_Binder) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_os_Binder', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_os_Binder', {'__this__': this});
       return result;
     }
     else if (T == android_view_View) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_view_View', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_view_View', {'__this__': this});
       return result;
     }
     else if (T == android_view_SurfaceView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_view_SurfaceView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_view_SurfaceView', {'__this__': this});
       return result;
     }
     else if (T == android_view_ViewGroup) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_view_ViewGroup', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_view_ViewGroup', {'__this__': this});
       return result;
     }
     else if (T == android_graphics_Point) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_graphics_Point', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_graphics_Point', {'__this__': this});
       return result;
     }
     else if (T == android_graphics_PointF) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_graphics_PointF', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_graphics_PointF', {'__this__': this});
       return result;
     }
     else if (T == android_graphics_Bitmap) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_graphics_Bitmap', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_graphics_Bitmap', {'__this__': this});
       return result;
     }
     else if (T == android_widget_ImageView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_widget_ImageView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_widget_ImageView', {'__this__': this});
       return result;
     }
     else if (T == java_io_File) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfjava_io_File', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfjava_io_File', {'__this__': this});
       return result;
     }
     else if (T == android_location_Location) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_location_Location', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_location_Location', {'__this__': this});
       return result;
     }
     else if (T == android_view_MotionEvent) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_view_MotionEvent', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_view_MotionEvent', {'__this__': this});
       return result;
     }
     else if (T == android_graphics_drawable_Drawable) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_graphics_drawable_Drawable', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_graphics_drawable_Drawable', {'__this__': this});
       return result;
     }
     else if (T == android_widget_FrameLayout) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_widget_FrameLayout', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_widget_FrameLayout', {'__this__': this});
       return result;
     }
     else if (T == android_widget_TextView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_widget_TextView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_widget_TextView', {'__this__': this});
       return result;
     }
     else if (T == android_widget_LinearLayout) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_widget_LinearLayout', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_widget_LinearLayout', {'__this__': this});
       return result;
     }
     else if (T == android_widget_RelativeLayout) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_widget_RelativeLayout', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_widget_RelativeLayout', {'__this__': this});
       return result;
     }
     else if (T == android_os_Parcelable) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_os_Parcelable', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_os_Parcelable', {'__this__': this});
       return result;
     }
     else if (T == android_util_Pair) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_util_Pair', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfandroid_util_Pair', {'__this__': this});
       return result;
     }
   }
@@ -654,480 +654,480 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
   T as__<T>() {
     final typeName = T.toString();
     // jsonable 直接造型 返回
-    if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
+    if (RegExp(r'^(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)$').hasMatch(typeName)) {
       return this as T;
     }
     // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
     else if (T == com_amap_api_offlineservice_AMapPermissionActivity) {
-      return (com_amap_api_offlineservice_AMapPermissionActivity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_offlineservice_AMapPermissionActivity()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_UiSettings) {
-      return (com_amap_api_maps_UiSettings()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_UiSettings()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener) {
-      return (com_amap_api_maps_SwipeDismissTouchListener()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissTouchListener()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_InfoWindowParams) {
-      return (com_amap_api_maps_InfoWindowParams()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_InfoWindowParams()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CameraUpdateFactory) {
-      return (com_amap_api_maps_CameraUpdateFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_CameraUpdateFactory()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapException) {
-      return (com_amap_api_maps_AMapException()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapException()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapOptions) {
-      return (com_amap_api_maps_AMapOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapOptionsCreator) {
-      return (com_amap_api_maps_AMapOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CoordinateConverter) {
-      return (com_amap_api_maps_CoordinateConverter()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_CoordinateConverter()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_InfoWindowAdapter) {
-      return (com_amap_api_maps_AMap_InfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap_InfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_ImageInfoWindowAdapter) {
-      return (com_amap_api_maps_AMap_ImageInfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap_ImageInfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_SpatialRelationUtil) {
-      return (com_amap_api_maps_utils_SpatialRelationUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_utils_SpatialRelationUtil()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_overlay_MovingPointOverlay) {
-      return (com_amap_api_maps_utils_overlay_MovingPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_utils_overlay_MovingPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_overlay_SmoothMoveMarker) {
-      return (com_amap_api_maps_utils_overlay_SmoothMoveMarker()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_utils_overlay_SmoothMoveMarker()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CameraUpdate) {
-      return (com_amap_api_maps_CameraUpdate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_CameraUpdate()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissCallBack) {
-      return (com_amap_api_maps_SwipeDismissCallBack()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissCallBack()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissView) {
-      return (com_amap_api_maps_SwipeDismissView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_MapsInitializer) {
-      return (com_amap_api_maps_MapsInitializer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_MapsInitializer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapStatus) {
-      return (com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapProvince) {
-      return (com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_DownloadProgressView) {
-      return (com_amap_api_maps_offlinemap_DownloadProgressView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_DownloadProgressView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_Province) {
-      return (com_amap_api_maps_offlinemap_Province()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_Province()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager) {
-      return (com_amap_api_maps_offlinemap_OfflineMapManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapManager()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapCity) {
-      return (com_amap_api_maps_offlinemap_OfflineMapCity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapCity()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapActivity) {
-      return (com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_City) {
-      return (com_amap_api_maps_offlinemap_City()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_City()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_Projection) {
-      return (com_amap_api_maps_Projection()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_Projection()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter) {
-      return (com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Polygon) {
-      return (com_amap_api_maps_model_Polygon()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Polygon()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatMapLayerOptions) {
-      return (com_amap_api_maps_model_HeatMapLayerOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_HeatMapLayerOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptor) {
-      return (com_amap_api_maps_model_BitmapDescriptor()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BitmapDescriptor()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonHoleOptions) {
-      return (com_amap_api_maps_model_PolygonHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolygonHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptionsCreator) {
-      return (com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Poi) {
-      return (com_amap_api_maps_model_Poi()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Poi()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyle) {
-      return (com_amap_api_maps_model_MyLocationStyle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MyLocationStyle()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RouteOverlay) {
-      return (com_amap_api_maps_model_RouteOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_RouteOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_VisibleRegion) {
-      return (com_amap_api_maps_model_VisibleRegion()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_VisibleRegion()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngCreator) {
-      return (com_amap_api_maps_model_LatLngCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleHoleOptions) {
-      return (com_amap_api_maps_model_CircleHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CircleHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Text) {
-      return (com_amap_api_maps_model_Text()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Text()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds_Builder) {
-      return (com_amap_api_maps_model_LatLngBounds_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngBounds_Builder()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatMapLayer) {
-      return (com_amap_api_maps_model_HeatMapLayer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_HeatMapLayer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptions) {
-      return (com_amap_api_maps_model_NavigateArrowOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NavigateArrowOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorFactory) {
-      return (com_amap_api_maps_model_BitmapDescriptorFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BitmapDescriptorFactory()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_UrlTileProvider) {
-      return (com_amap_api_maps_model_UrlTileProvider()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_UrlTileProvider()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlayOptions) {
-      return (com_amap_api_maps_model_MultiPointOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MultiPointOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PoiCreator) {
-      return (com_amap_api_maps_model_PoiCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PoiCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolylineOptions) {
-      return (com_amap_api_maps_model_PolylineOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolylineOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Tile) {
-      return (com_amap_api_maps_model_Tile()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Tile()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GL3DModel) {
-      return (com_amap_api_maps_model_GL3DModel()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GL3DModel()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Gradient) {
-      return (com_amap_api_maps_model_Gradient()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Gradient()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProvider) {
-      return (com_amap_api_maps_model_TileProvider.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileProvider.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatMapItem) {
-      return (com_amap_api_maps_model_HeatMapItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_HeatMapItem()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NaviPara) {
-      return (com_amap_api_maps_model_NaviPara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NaviPara()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptions) {
-      return (com_amap_api_maps_model_GroundOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GroundOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GL3DModelOptions) {
-      return (com_amap_api_maps_model_GL3DModelOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GL3DModelOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlay) {
-      return (com_amap_api_maps_model_GroundOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GroundOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyTrafficStyle) {
-      return (com_amap_api_maps_model_MyTrafficStyle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MyTrafficStyle()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPosition) {
-      return (com_amap_api_maps_model_CameraPosition()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CameraPosition()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TextOptionsCreator) {
-      return (com_amap_api_maps_model_TextOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TextOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PoiPara) {
-      return (com_amap_api_maps_model_PoiPara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PoiPara()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MarkerOptions) {
-      return (com_amap_api_maps_model_MarkerOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MarkerOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider) {
-      return (com_amap_api_maps_model_HeatmapTileProvider()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_HeatmapTileProvider()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrow) {
-      return (com_amap_api_maps_model_NavigateArrow()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NavigateArrow()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_AnimationSet) {
-      return (com_amap_api_maps_model_animation_AnimationSet()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_AnimationSet()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_RotateAnimation) {
-      return (com_amap_api_maps_model_animation_RotateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_RotateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_TranslateAnimation) {
-      return (com_amap_api_maps_model_animation_TranslateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_TranslateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_Animation) {
-      return (com_amap_api_maps_model_animation_Animation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_Animation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_EmergeAnimation) {
-      return (com_amap_api_maps_model_animation_EmergeAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_EmergeAnimation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_AlphaAnimation) {
-      return (com_amap_api_maps_model_animation_AlphaAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_AlphaAnimation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_ScaleAnimation) {
-      return (com_amap_api_maps_model_animation_ScaleAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_ScaleAnimation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds) {
-      return (com_amap_api_maps_model_LatLngBounds()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngBounds()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CustomMapStyleOptions) {
-      return (com_amap_api_maps_model_CustomMapStyleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CustomMapStyleOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlayOptions) {
-      return (com_amap_api_maps_model_BuildingOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BuildingOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CrossOverlayOptions) {
-      return (com_amap_api_maps_model_CrossOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CrossOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_VisibleRegionCreator) {
-      return (com_amap_api_maps_model_VisibleRegionCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_VisibleRegionCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLng) {
-      return (com_amap_api_maps_model_LatLng()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLng()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProjection) {
-      return (com_amap_api_maps_model_TileProjection()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileProjection()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapPara) {
-      return (com_amap_api_maps_model_AMapPara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_AMapPara()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPosition_Builder) {
-      return (com_amap_api_maps_model_CameraPosition_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CameraPosition_Builder()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BasePointOverlay) {
-      return (com_amap_api_maps_model_BasePointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BasePointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleOptionsCreator) {
-      return (com_amap_api_maps_model_CircleOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CircleOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Arc) {
-      return (com_amap_api_maps_model_Arc()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Arc()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapCameraInfo) {
-      return (com_amap_api_maps_model_AMapCameraInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_AMapCameraInfo()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Circle) {
-      return (com_amap_api_maps_model_Circle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Circle()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonOptions) {
-      return (com_amap_api_maps_model_PolygonOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolygonOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_WeightedLatLng) {
-      return (com_amap_api_maps_model_WeightedLatLng()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_WeightedLatLng()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyleCreator) {
-      return (com_amap_api_maps_model_MyLocationStyleCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MyLocationStyleCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MarkerOptionsCreator) {
-      return (com_amap_api_maps_model_MarkerOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MarkerOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointItem) {
-      return (com_amap_api_maps_model_MultiPointItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MultiPointItem()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBoundsCreator) {
-      return (com_amap_api_maps_model_LatLngBoundsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngBoundsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_ArcOptions) {
-      return (com_amap_api_maps_model_ArcOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_ArcOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorCreator) {
-      return (com_amap_api_maps_model_BitmapDescriptorCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BitmapDescriptorCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleOptions) {
-      return (com_amap_api_maps_model_CircleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CircleOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptionsCreator) {
-      return (com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RuntimeRemoteException) {
-      return (com_amap_api_maps_model_RuntimeRemoteException()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_RuntimeRemoteException()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapGLOverlay) {
-      return (com_amap_api_maps_model_AMapGLOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_AMapGLOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider_Builder) {
-      return (com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlay) {
-      return (com_amap_api_maps_model_MultiPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MultiPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseOptions) {
-      return (com_amap_api_maps_model_BaseOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BaseOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolylineOptionsCreator) {
-      return (com_amap_api_maps_model_PolylineOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolylineOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseOverlay) {
-      return (com_amap_api_maps_model_BaseOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BaseOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Marker) {
-      return (com_amap_api_maps_model_Marker()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Marker()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptions) {
-      return (com_amap_api_maps_model_TileOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RoutePara) {
-      return (com_amap_api_maps_model_RoutePara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_RoutePara()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_ArcOptionsCreator) {
-      return (com_amap_api_maps_model_ArcOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_ArcOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPositionCreator) {
-      return (com_amap_api_maps_model_CameraPositionCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CameraPositionCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CrossOverlay) {
-      return (com_amap_api_maps_model_CrossOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CrossOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory) {
-      return (com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptions) {
-      return (com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlay) {
-      return (com_amap_api_maps_model_particle_ParticleOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseHoleOptions) {
-      return (com_amap_api_maps_model_BaseHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BaseHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TextOptions) {
-      return (com_amap_api_maps_model_TextOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TextOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlay) {
-      return (com_amap_api_maps_model_TileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonOptionsCreator) {
-      return (com_amap_api_maps_model_PolygonOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolygonOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProjectionCreator) {
-      return (com_amap_api_maps_model_TileProjectionCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileProjectionCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptionsCreator) {
-      return (com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_IndoorBuildingInfo) {
-      return (com_amap_api_maps_model_IndoorBuildingInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_IndoorBuildingInfo()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Polyline) {
-      return (com_amap_api_maps_model_Polyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Polyline()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlay) {
-      return (com_amap_api_maps_model_BuildingOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BuildingOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks) {
-      return (com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_TextureMapView) {
-      return (com_amap_api_maps_TextureMapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_TextureMapView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapUtils) {
-      return (com_amap_api_maps_AMapUtils()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapUtils()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_InfoWindowAnimationManager) {
-      return (com_amap_api_maps_InfoWindowAnimationManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_InfoWindowAnimationManager()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_WearMapView) {
-      return (com_amap_api_maps_WearMapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_WearMapView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_BaseMapView) {
-      return (com_amap_api_maps_BaseMapView.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_BaseMapView.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap) {
-      return (com_amap_api_maps_AMap()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_MapView) {
-      return (com_amap_api_maps_MapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_MapView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_TraceLocation) {
-      return (com_amap_api_trace_TraceLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_trace_TraceLocation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_LBSTraceClient) {
-      return (com_amap_api_trace_LBSTraceClient()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_trace_LBSTraceClient()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_TraceOverlay) {
-      return (com_amap_api_trace_TraceOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_trace_TraceOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_Context) {
-      return (android_content_Context()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_content_Context()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_Intent) {
-      return (android_content_Intent()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_content_Intent()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_ContentProvider) {
-      return (android_content_ContentProvider()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_content_ContentProvider()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Application) {
-      return (android_app_Application()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_Application()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Notification) {
-      return (android_app_Notification()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_Notification()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Activity) {
-      return (android_app_Activity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_Activity()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_PendingIntent) {
-      return (android_app_PendingIntent()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_PendingIntent()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Bundle) {
-      return (android_os_Bundle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_os_Bundle()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Binder) {
-      return (android_os_Binder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_os_Binder()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_View) {
-      return (android_view_View()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_View()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_SurfaceView) {
-      return (android_view_SurfaceView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_SurfaceView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_ViewGroup) {
-      return (android_view_ViewGroup()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_ViewGroup()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_Point) {
-      return (android_graphics_Point()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_Point()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_PointF) {
-      return (android_graphics_PointF()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_PointF()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_Bitmap) {
-      return (android_graphics_Bitmap()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_Bitmap()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_ImageView) {
-      return (android_widget_ImageView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_ImageView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == java_io_File) {
-      return (java_io_File()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (java_io_File()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_location_Location) {
-      return (android_location_Location()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_location_Location()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_MotionEvent) {
-      return (android_view_MotionEvent()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_MotionEvent()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_drawable_Drawable) {
-      return (android_graphics_drawable_Drawable()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_drawable_Drawable()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_FrameLayout) {
-      return (android_widget_FrameLayout()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_FrameLayout()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_TextView) {
-      return (android_widget_TextView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_TextView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_LinearLayout) {
-      return (android_widget_LinearLayout()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_LinearLayout()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_RelativeLayout) {
-      return (android_widget_RelativeLayout()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_RelativeLayout()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Parcelable) {
-      return (android_os_Parcelable.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_os_Parcelable.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_util_Pair) {
-      return (android_util_Pair()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (android_util_Pair()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
   }
 }

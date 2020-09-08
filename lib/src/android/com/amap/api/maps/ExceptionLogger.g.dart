@@ -24,13 +24,7 @@ mixin com_amap_api_maps_ExceptionLogger on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onDownloaderException(int var1, int var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onDownloaderException::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onDownloaderException(int var1, int var2) {}
   
 }
 

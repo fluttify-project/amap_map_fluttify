@@ -21,10 +21,8 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
 
   //region creators
   static Future<MAHeatMapVectorOverlayRender> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAHeatMapVectorOverlayRender');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapVectorOverlayRender');
     final object = MAHeatMapVectorOverlayRender()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapVectorOverlayRender', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapVectorOverlayRender', {'length': length});
   
     final List<MAHeatMapVectorOverlayRender> typedResult = resultBatch.map((result) => MAHeatMapVectorOverlayRender()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -43,9 +40,8 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
 
   //region getters
   Future<MAHeatMapVectorOverlay> get_heatOverlay() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapVectorOverlayRender::get_heatOverlay", {'refId': refId});
-    kNativeObjectPool.add(MAHeatMapVectorOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return MAHeatMapVectorOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorOverlayRender::get_heatOverlay", {'__this__': this});
+    return __result__ == null ? null : (MAHeatMapVectorOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   //endregion
@@ -63,7 +59,7 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayRender::initWithHeatOverlay', {"heatOverlay": heatOverlay is Ref ? (heatOverlay as Ref)?.refId : heatOverlay, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAHeatMapVectorOverlayRender::initWithHeatOverlay', {"heatOverlay": heatOverlay, "__this__": this});
   
   
     // handle native call
@@ -74,7 +70,6 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
       return null;
     } else {
       final __return__ = MAHeatMapVectorOverlayRender()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -87,7 +82,7 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayRender::getHeatMapItem', {"coordinate": coordinate is Ref ? (coordinate as Ref)?.refId : coordinate, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAHeatMapVectorOverlayRender::getHeatMapItem', {"coordinate": coordinate, "__this__": this});
   
   
     // handle native call
@@ -98,7 +93,6 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
       return null;
     } else {
       final __return__ = MAHeatMapVectorItem()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -109,9 +103,9 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
 extension MAHeatMapVectorOverlayRender_Batch on List<MAHeatMapVectorOverlayRender> {
   //region getters
   Future<List<MAHeatMapVectorOverlay>> get_heatOverlay_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapVectorOverlayRender::get_heatOverlay_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAHeatMapVectorOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorOverlayRender::get_heatOverlay_batch", [for (final __item__ in this) {'__this__': __item__}]);
+  
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAHeatMapVectorOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
   }
   
@@ -129,15 +123,14 @@ extension MAHeatMapVectorOverlayRender_Batch on List<MAHeatMapVectorOverlayRende
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayRender::initWithHeatOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"heatOverlay": heatOverlay[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAHeatMapVectorOverlayRender::initWithHeatOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"heatOverlay": heatOverlay[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAHeatMapVectorOverlayRender()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAHeatMapVectorOverlayRender()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }
@@ -149,15 +142,14 @@ extension MAHeatMapVectorOverlayRender_Batch on List<MAHeatMapVectorOverlayRende
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayRender::getHeatMapItem_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coordinate": coordinate[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAHeatMapVectorOverlayRender::getHeatMapItem_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coordinate": coordinate[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAHeatMapVectorItem()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAHeatMapVectorItem()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }

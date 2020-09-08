@@ -25,11 +25,13 @@ class com_amap_api_maps_WearMapView_Android extends StatefulWidget {
     this.onViewCreated,
     this.onDispose,
     this.params = const <String, dynamic>{},
+    this.gestureRecognizers,
   }) : super(key: key);
 
   final WearMapViewCreatedCallback onViewCreated;
   final _OnAndroidViewDispose onDispose;
   final Map<String, dynamic> params;
+  final Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers;
 
   @override
   _com_amap_api_maps_WearMapView_AndroidState createState() => _com_amap_api_maps_WearMapView_AndroidState();
@@ -40,9 +42,9 @@ class _com_amap_api_maps_WearMapView_AndroidState extends State<com_amap_api_map
 
   @override
   Widget build(BuildContext context) {
-    final gestureRecognizers = <Factory<OneSequenceGestureRecognizer>>[
+    final gestureRecognizers = widget.gestureRecognizers ?? <Factory<OneSequenceGestureRecognizer>>{
       Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer()),
-    ].toSet();
+    };
 
     final messageCodec = StandardMessageCodec();
     return AndroidView(
@@ -56,7 +58,7 @@ class _com_amap_api_maps_WearMapView_AndroidState extends State<com_amap_api_map
 
   void _onViewCreated(int id) {
     // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
-    _controller = com_amap_api_maps_WearMapView()..refId = 2147483647 - id;
+    _controller = com_amap_api_maps_WearMapView()..refId = (2147483647 - id).toString();
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

@@ -24,197 +24,67 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> updateOption(String var1, com_amap_api_maps_model_BaseOptions var2) {
-    if (var2 is Ref) kNativeObjectPool.add(var2);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('updateOption::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> updateOption(String var1, com_amap_api_maps_model_BaseOptions var2) {}
   
   @mustCallSuper
-  Future<bool> removeOverlay__String(String var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('removeOverlay__String::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<bool> removeOverlay__String(String var1) {}
   
   @mustCallSuper
-  Future<void> prepareIcon(Object var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('prepareIcon::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> prepareIcon(Object var1) {}
   
   @mustCallSuper
-  Future<int> getCurrentParticleNum(String var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('getCurrentParticleNum::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<int> getCurrentParticleNum(String var1) {}
   
   @mustCallSuper
-  Future<void> loadBitmapDescription(android_content_Context var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('loadBitmapDescription::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> loadBitmapDescription(android_content_Context var1) {}
   
   @mustCallSuper
-  Future<com_amap_api_maps_model_BaseOverlay> addOverlayObject(String var1, com_amap_api_maps_model_BaseOverlay var2, com_amap_api_maps_model_BaseOptions var3) {
-    if (var2 is Ref) kNativeObjectPool.add(var2);
-    if (var3 is Ref) kNativeObjectPool.add(var3);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('addOverlayObject::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<com_amap_api_maps_model_BaseOverlay> addOverlayObject(String var1, com_amap_api_maps_model_BaseOverlay var2, com_amap_api_maps_model_BaseOptions var3) {}
   
   @mustCallSuper
-  Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_PolylineOptions var1, com_amap_api_maps_model_LatLng var2) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-    if (var2 is Ref) kNativeObjectPool.add(var2);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('getNearestLatLng::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_PolylineOptions var1, com_amap_api_maps_model_LatLng var2) {}
   
   @mustCallSuper
-  Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-    if (var2 is Ref) kNativeObjectPool.add(var2);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('IsPolygonContainsPoint::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) {}
   
   @mustCallSuper
-  Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('processPolygonHoleOption::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) {}
   
   @mustCallSuper
-  Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-    if (var2 is Ref) kNativeObjectPool.add(var2);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('IsCircleContainPoint::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) {}
   
   @mustCallSuper
-  Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('processCircleHoleOption::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) {}
   
   @mustCallSuper
-  Future<void> draw(bool var1, int var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('draw::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> draw(bool var1, int var2) {}
   
   @mustCallSuper
-  Future<com_amap_api_maps_model_Polyline> getHitOverlay(com_amap_api_maps_model_LatLng var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('getHitOverlay::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<com_amap_api_maps_model_Polyline> getHitOverlay(com_amap_api_maps_model_LatLng var1) {}
   
   @mustCallSuper
-  Future<String> createId(String var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('createId::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<String> createId(String var1) {}
   
   @mustCallSuper
-  Future<void> onCreateAMapInstance() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onCreateAMapInstance::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onCreateAMapInstance() {}
   
   @mustCallSuper
-  Future<Float64List> getFinalMatrix() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('getFinalMatrix::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<Float64List> getFinalMatrix() {}
   
   @mustCallSuper
-  Future<void> clear(String var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('clear::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> clear(String var1) {}
   
   @mustCallSuper
-  Future<void> destroy() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> destroy() {}
   
   @mustCallSuper
-  Future<void> changeOverlayIndex() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('changeOverlayIndex::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> changeOverlayIndex() {}
   
   @mustCallSuper
-  Future<void> setRunLowFrame(bool var1) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('setRunLowFrame::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> setRunLowFrame(bool var1) {}
   
   @mustCallSuper
-  Future<bool> removeOverlay__String__bool(String var1, bool var2) {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('removeOverlay__String__bool::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<bool> removeOverlay__String__bool(String var1, bool var2) {}
   
 }
 

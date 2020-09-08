@@ -25,11 +25,13 @@ class com_amap_api_maps_offlinemap_DownloadProgressView_Android extends Stateful
     this.onViewCreated,
     this.onDispose,
     this.params = const <String, dynamic>{},
+    this.gestureRecognizers,
   }) : super(key: key);
 
   final DownloadProgressViewCreatedCallback onViewCreated;
   final _OnAndroidViewDispose onDispose;
   final Map<String, dynamic> params;
+  final Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers;
 
   @override
   _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState createState() => _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState();
@@ -40,9 +42,9 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
 
   @override
   Widget build(BuildContext context) {
-    final gestureRecognizers = <Factory<OneSequenceGestureRecognizer>>[
+    final gestureRecognizers = widget.gestureRecognizers ?? <Factory<OneSequenceGestureRecognizer>>{
       Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer()),
-    ].toSet();
+    };
 
     final messageCodec = StandardMessageCodec();
     return AndroidView(
@@ -56,7 +58,7 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
 
   void _onViewCreated(int id) {
     // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
-    _controller = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = 2147483647 - id;
+    _controller = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = (2147483647 - id).toString();
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

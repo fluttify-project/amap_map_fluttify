@@ -21,10 +21,8 @@ class com_amap_api_maps_model_TileOverlayOptionsCreator extends java_lang_Object
 
   //region creators
   static Future<com_amap_api_maps_model_TileOverlayOptionsCreator> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__');
     final object = com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class com_amap_api_maps_model_TileOverlayOptionsCreator extends java_lang_Object
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptionsCreator__', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptionsCreator__', {'length': length});
   
     final List<com_amap_api_maps_model_TileOverlayOptionsCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   

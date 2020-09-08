@@ -31,7 +31,7 @@ mixin MAAnimatableAnnotation on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::step', {"timeDelta": timeDelta, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::step', {"timeDelta": timeDelta, "__this__": this});
   
   
     // handle native call
@@ -42,7 +42,6 @@ mixin MAAnimatableAnnotation on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -55,7 +54,7 @@ mixin MAAnimatableAnnotation on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::isAnimationFinished', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::isAnimationFinished', {"__this__": this});
   
   
     // handle native call
@@ -66,7 +65,6 @@ mixin MAAnimatableAnnotation on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -79,7 +77,7 @@ mixin MAAnimatableAnnotation on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::shouldAnimationStart', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::shouldAnimationStart', {"__this__": this});
   
   
     // handle native call
@@ -90,7 +88,6 @@ mixin MAAnimatableAnnotation on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -103,7 +100,7 @@ mixin MAAnimatableAnnotation on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::rotateDegree', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::rotateDegree', {"__this__": this});
   
   
     // handle native call
@@ -114,7 +111,6 @@ mixin MAAnimatableAnnotation on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -130,7 +126,7 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::step_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeDelta": timeDelta[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::step_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeDelta": timeDelta[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -138,7 +134,6 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -150,7 +145,7 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::isAnimationFinished_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::isAnimationFinished_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -158,7 +153,6 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -170,7 +164,7 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::shouldAnimationStart_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::shouldAnimationStart_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -178,7 +172,6 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -190,7 +183,7 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::rotateDegree_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnimatableAnnotation::rotateDegree_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -198,7 +191,6 @@ extension MAAnimatableAnnotation_Batch on List<MAAnimatableAnnotation> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }

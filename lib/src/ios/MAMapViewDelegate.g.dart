@@ -24,366 +24,118 @@ mixin MAMapViewDelegate on NSObject {
   
 
   @mustCallSuper
-  Future<void> mapViewRegionChanged(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewRegionChanged::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewRegionChanged(MAMapView mapView) {}
   
   @mustCallSuper
-  Future<void> mapView_regionWillChangeAnimated(MAMapView mapView, bool animated) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_regionWillChangeAnimated::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_regionWillChangeAnimated(MAMapView mapView, bool animated) {}
   
   @mustCallSuper
-  Future<void> mapView_regionDidChangeAnimated(MAMapView mapView, bool animated) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_regionDidChangeAnimated::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_regionDidChangeAnimated(MAMapView mapView, bool animated) {}
   
   @mustCallSuper
-  Future<void> mapView_regionWillChangeAnimated_wasUserAction(MAMapView mapView, bool animated, bool wasUserAction) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_regionWillChangeAnimated_wasUserAction::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_regionWillChangeAnimated_wasUserAction(MAMapView mapView, bool animated, bool wasUserAction) {}
   
   @mustCallSuper
-  Future<void> mapView_regionDidChangeAnimated_wasUserAction(MAMapView mapView, bool animated, bool wasUserAction) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_regionDidChangeAnimated_wasUserAction::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_regionDidChangeAnimated_wasUserAction(MAMapView mapView, bool animated, bool wasUserAction) {}
   
   @mustCallSuper
-  Future<void> mapView_mapWillMoveByUser(MAMapView mapView, bool wasUserAction) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_mapWillMoveByUser::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_mapWillMoveByUser(MAMapView mapView, bool wasUserAction) {}
   
   @mustCallSuper
-  Future<void> mapView_mapDidMoveByUser(MAMapView mapView, bool wasUserAction) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_mapDidMoveByUser::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_mapDidMoveByUser(MAMapView mapView, bool wasUserAction) {}
   
   @mustCallSuper
-  Future<void> mapView_mapWillZoomByUser(MAMapView mapView, bool wasUserAction) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_mapWillZoomByUser::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_mapWillZoomByUser(MAMapView mapView, bool wasUserAction) {}
   
   @mustCallSuper
-  Future<void> mapView_mapDidZoomByUser(MAMapView mapView, bool wasUserAction) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_mapDidZoomByUser::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_mapDidZoomByUser(MAMapView mapView, bool wasUserAction) {}
   
   @mustCallSuper
-  Future<void> mapViewWillStartLoadingMap(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewWillStartLoadingMap::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewWillStartLoadingMap(MAMapView mapView) {}
   
   @mustCallSuper
-  Future<void> mapViewDidFinishLoadingMap(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewDidFinishLoadingMap::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewDidFinishLoadingMap(MAMapView mapView) {}
   
   @mustCallSuper
-  Future<void> mapViewDidFailLoadingMap_withError(MAMapView mapView, NSError error) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (error is Ref) kNativeObjectPool.add(error);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewDidFailLoadingMap_withError::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewDidFailLoadingMap_withError(MAMapView mapView, NSError error) {}
   
   @mustCallSuper
-  Future<MAAnnotationView> mapView_viewForAnnotation(MAMapView mapView, MAAnnotation annotation) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (annotation is Ref) kNativeObjectPool.add(annotation);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_viewForAnnotation::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<MAAnnotationView> mapView_viewForAnnotation(MAMapView mapView, MAAnnotation annotation) {}
   
   @mustCallSuper
-  Future<void> mapView_didAddAnnotationViews(MAMapView mapView, List<NSObject> views) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    kNativeObjectPool.addAll(views);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didAddAnnotationViews::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didAddAnnotationViews(MAMapView mapView, List<NSObject> views) {}
   
   @mustCallSuper
-  Future<void> mapView_didSelectAnnotationView(MAMapView mapView, MAAnnotationView view) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (view is Ref) kNativeObjectPool.add(view);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didSelectAnnotationView::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didSelectAnnotationView(MAMapView mapView, MAAnnotationView view) {}
   
   @mustCallSuper
-  Future<void> mapView_didDeselectAnnotationView(MAMapView mapView, MAAnnotationView view) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (view is Ref) kNativeObjectPool.add(view);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didDeselectAnnotationView::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didDeselectAnnotationView(MAMapView mapView, MAAnnotationView view) {}
   
   @mustCallSuper
-  Future<void> mapViewWillStartLocatingUser(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewWillStartLocatingUser::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewWillStartLocatingUser(MAMapView mapView) {}
   
   @mustCallSuper
-  Future<void> mapViewDidStopLocatingUser(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewDidStopLocatingUser::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewDidStopLocatingUser(MAMapView mapView) {}
   
   @mustCallSuper
-  Future<void> mapView_didUpdateUserLocation_updatingLocation(MAMapView mapView, MAUserLocation userLocation, bool updatingLocation) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (userLocation is Ref) kNativeObjectPool.add(userLocation);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didUpdateUserLocation_updatingLocation::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didUpdateUserLocation_updatingLocation(MAMapView mapView, MAUserLocation userLocation, bool updatingLocation) {}
   
   @mustCallSuper
-  Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {
-    if (locationManager is Ref) kNativeObjectPool.add(locationManager);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewRequireLocationAuth::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {}
   
   @mustCallSuper
-  Future<void> mapView_didFailToLocateUserWithError(MAMapView mapView, NSError error) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (error is Ref) kNativeObjectPool.add(error);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didFailToLocateUserWithError::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didFailToLocateUserWithError(MAMapView mapView, NSError error) {}
   
   @mustCallSuper
-  Future<void> mapView_annotationView_didChangeDragState_fromOldState(MAMapView mapView, MAAnnotationView view, MAAnnotationViewDragState newState, MAAnnotationViewDragState oldState) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (view is Ref) kNativeObjectPool.add(view);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_annotationView_didChangeDragState_fromOldState::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_annotationView_didChangeDragState_fromOldState(MAMapView mapView, MAAnnotationView view, MAAnnotationViewDragState newState, MAAnnotationViewDragState oldState) {}
   
   @mustCallSuper
-  Future<MAOverlayRenderer> mapView_rendererForOverlay(MAMapView mapView, MAOverlay overlay) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (overlay is Ref) kNativeObjectPool.add(overlay);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_rendererForOverlay::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<MAOverlayRenderer> mapView_rendererForOverlay(MAMapView mapView, MAOverlay overlay) {}
   
   @mustCallSuper
-  Future<void> mapView_didAddOverlayRenderers(MAMapView mapView, List<NSObject> overlayRenderers) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    kNativeObjectPool.addAll(overlayRenderers);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didAddOverlayRenderers::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didAddOverlayRenderers(MAMapView mapView, List<NSObject> overlayRenderers) {}
   
   @mustCallSuper
-  Future<void> mapView_annotationView_calloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (view is Ref) kNativeObjectPool.add(view);
-    if (control is Ref) kNativeObjectPool.add(control);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_annotationView_calloutAccessoryControlTapped::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_annotationView_calloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control) {}
   
   @mustCallSuper
-  Future<void> mapView_didAnnotationViewCalloutTapped(MAMapView mapView, MAAnnotationView view) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (view is Ref) kNativeObjectPool.add(view);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didAnnotationViewCalloutTapped::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didAnnotationViewCalloutTapped(MAMapView mapView, MAAnnotationView view) {}
   
   @mustCallSuper
-  Future<void> mapView_didAnnotationViewTapped(MAMapView mapView, MAAnnotationView view) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (view is Ref) kNativeObjectPool.add(view);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didAnnotationViewTapped::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didAnnotationViewTapped(MAMapView mapView, MAAnnotationView view) {}
   
   @mustCallSuper
-  Future<void> mapView_didChangeUserTrackingMode_animated(MAMapView mapView, MAUserTrackingMode mode, bool animated) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didChangeUserTrackingMode_animated::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didChangeUserTrackingMode_animated(MAMapView mapView, MAUserTrackingMode mode, bool animated) {}
   
   @mustCallSuper
-  Future<void> mapView_didChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didChangeOpenGLESDisabled::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled) {}
   
   @mustCallSuper
-  Future<void> mapView_didTouchPois(MAMapView mapView, List<NSObject> pois) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    kNativeObjectPool.addAll(pois);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didTouchPois::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didTouchPois(MAMapView mapView, List<NSObject> pois) {}
   
   @mustCallSuper
-  Future<void> mapView_didSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (coordinate is Ref) kNativeObjectPool.add(coordinate);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didSingleTappedAtCoordinate::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {}
   
   @mustCallSuper
-  Future<void> mapView_didLongPressedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (coordinate is Ref) kNativeObjectPool.add(coordinate);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didLongPressedAtCoordinate::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didLongPressedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {}
   
   @mustCallSuper
-  Future<void> mapInitComplete(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapInitComplete::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapInitComplete(MAMapView mapView) {}
   
   @mustCallSuper
-  Future<void> mapView_didIndoorMapShowed(MAMapView mapView, MAIndoorInfo indoorInfo) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (indoorInfo is Ref) kNativeObjectPool.add(indoorInfo);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didIndoorMapShowed::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didIndoorMapShowed(MAMapView mapView, MAIndoorInfo indoorInfo) {}
   
   @mustCallSuper
-  Future<void> mapView_didIndoorMapFloorIndexChanged(MAMapView mapView, MAIndoorInfo indoorInfo) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (indoorInfo is Ref) kNativeObjectPool.add(indoorInfo);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didIndoorMapFloorIndexChanged::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didIndoorMapFloorIndexChanged(MAMapView mapView, MAIndoorInfo indoorInfo) {}
   
   @mustCallSuper
-  Future<void> mapView_didIndoorMapHidden(MAMapView mapView, MAIndoorInfo indoorInfo) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-    if (indoorInfo is Ref) kNativeObjectPool.add(indoorInfo);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapView_didIndoorMapHidden::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapView_didIndoorMapHidden(MAMapView mapView, MAIndoorInfo indoorInfo) {}
   
   @mustCallSuper
-  Future<void> offlineDataWillReload(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('offlineDataWillReload::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> offlineDataWillReload(MAMapView mapView) {}
   
   @mustCallSuper
-  Future<void> offlineDataDidReload(MAMapView mapView) {
-    if (mapView is Ref) kNativeObjectPool.add(mapView);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('offlineDataDidReload::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> offlineDataDidReload(MAMapView mapView) {}
   
 }
 

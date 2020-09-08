@@ -24,13 +24,7 @@ mixin com_amap_api_maps_LocationSource_OnLocationChangedListener on java_lang_Ob
   
 
   @mustCallSuper
-  Future<void> onLocationChanged(android_location_Location var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onLocationChanged::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onLocationChanged(android_location_Location var1) {}
   
 }
 

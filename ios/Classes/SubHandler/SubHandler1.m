@@ -3,6 +3,7 @@
 //////////////////////////////////////////////////////////
 
 #import "SubHandler1.h"
+#import "FluttifyMessageCodec.h"
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
 extern NSMutableDictionary<NSString*, NSObject*>* STACK;
@@ -26,16 +27,16 @@ extern BOOL enableLog;
                 CGFloat timeDelta = [args[@"timeDelta"] floatValue];
         
                 // ref
-                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) args[@"__this__"];
         
                 // invoke native method
                 [ref step : timeDelta];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -50,16 +51,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref isAnimationFinished];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -74,16 +75,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref shouldAnimationStart];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -98,16 +99,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) args[@"__this__"];
         
                 // invoke native method
                 CLLocationDirection result = [ref rotateDegree];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -129,10 +130,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -145,11 +145,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
-                CLLocationCoordinate2D coords[coordsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
-                    NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* coordsValueList = (NSArray<NSValue*>*) args[@"coords"];
+                CLLocationCoordinate2D coords[coordsValueList.count];
+                for (int __i__ = 0; __i__ < coordsValueList.count; __i__++) {
+                    NSValue* coordsValue = (NSValue*) [coordsValueList objectAtIndex:__i__];
                     CLLocationCoordinate2D coordsItem;
                     [coordsValue getValue:&coordsItem];
                     coords[__i__] = coordsItem;
@@ -165,10 +164,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -181,11 +179,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
-                MAMapPoint points[pointsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
-                    NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* pointsValueList = (NSArray<NSValue*>*) args[@"points"];
+                MAMapPoint points[pointsValueList.count];
+                for (int __i__ = 0; __i__ < pointsValueList.count; __i__++) {
+                    NSValue* pointsValue = (NSValue*) [pointsValueList objectAtIndex:__i__];
                     MAMapPoint pointsItem;
                     [pointsValue getValue:&pointsItem];
                     points[__i__] = pointsItem;
@@ -201,10 +198,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -217,11 +213,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
-                MAMapPoint points[pointsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
-                    NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* pointsValueList = (NSArray<NSValue*>*) args[@"points"];
+                MAMapPoint points[pointsValueList.count];
+                for (int __i__ = 0; __i__ < pointsValueList.count; __i__++) {
+                    NSValue* pointsValue = (NSValue*) [pointsValueList objectAtIndex:__i__];
                     MAMapPoint pointsItem;
                     [pointsValue getValue:&pointsItem];
                     points[__i__] = pointsItem;
@@ -230,16 +225,16 @@ extern BOOL enableLog;
                 NSInteger count = [args[@"count"] longValue];
         
                 // ref
-                MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolygon* ref = (MAPolygon*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref setPolygonWithPoints: points count: count];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -252,11 +247,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
-                CLLocationCoordinate2D coords[coordsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
-                    NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* coordsValueList = (NSArray<NSValue*>*) args[@"coords"];
+                CLLocationCoordinate2D coords[coordsValueList.count];
+                for (int __i__ = 0; __i__ < coordsValueList.count; __i__++) {
+                    NSValue* coordsValue = (NSValue*) [coordsValueList objectAtIndex:__i__];
                     CLLocationCoordinate2D coordsItem;
                     [coordsValue getValue:&coordsItem];
                     coords[__i__] = coordsItem;
@@ -265,16 +259,16 @@ extern BOOL enableLog;
                 NSInteger count = [args[@"count"] longValue];
         
                 // ref
-                MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolygon* ref = (MAPolygon*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref setPolygonWithCoordinates: coords count: count];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -287,7 +281,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverlayOptions* option = (MAParticleOverlayOptions*) HEAP[args[@"option"]];
+                MAParticleOverlayOptions* option = (MAParticleOverlayOptions*) args[@"option"];
         
                 // ref
         
@@ -297,10 +291,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -313,19 +306,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverlayOptions* overlayOption = (MAParticleOverlayOptions*) HEAP[args[@"overlayOption"]];
+                MAParticleOverlayOptions* overlayOption = (MAParticleOverlayOptions*) args[@"overlayOption"];
         
                 // ref
-                MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleOverlay* ref = (MAParticleOverlay*) args[@"__this__"];
         
                 // invoke native method
                 [ref updateOverlayOption : overlayOption];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -338,11 +331,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
-                MAMapPoint points[pointsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
-                    NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* pointsValueList = (NSArray<NSValue*>*) args[@"points"];
+                MAMapPoint points[pointsValueList.count];
+                for (int __i__ = 0; __i__ < pointsValueList.count; __i__++) {
+                    NSValue* pointsValue = (NSValue*) [pointsValueList objectAtIndex:__i__];
                     MAMapPoint pointsItem;
                     [pointsValue getValue:&pointsItem];
                     points[__i__] = pointsItem;
@@ -358,10 +350,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -374,11 +365,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
-                CLLocationCoordinate2D coords[coordsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
-                    NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* coordsValueList = (NSArray<NSValue*>*) args[@"coords"];
+                CLLocationCoordinate2D coords[coordsValueList.count];
+                for (int __i__ = 0; __i__ < coordsValueList.count; __i__++) {
+                    NSValue* coordsValue = (NSValue*) [coordsValueList objectAtIndex:__i__];
                     CLLocationCoordinate2D coordsItem;
                     [coordsValue getValue:&coordsItem];
                     coords[__i__] = coordsItem;
@@ -394,10 +384,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -410,11 +399,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
-                MAMapPoint points[pointsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
-                    NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* pointsValueList = (NSArray<NSValue*>*) args[@"points"];
+                MAMapPoint points[pointsValueList.count];
+                for (int __i__ = 0; __i__ < pointsValueList.count; __i__++) {
+                    NSValue* pointsValue = (NSValue*) [pointsValueList objectAtIndex:__i__];
                     MAMapPoint pointsItem;
                     [pointsValue getValue:&pointsItem];
                     points[__i__] = pointsItem;
@@ -423,16 +411,16 @@ extern BOOL enableLog;
                 NSInteger count = [args[@"count"] longValue];
         
                 // ref
-                MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolyline* ref = (MAPolyline*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref setPolylineWithPoints: points count: count];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -445,11 +433,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
-                CLLocationCoordinate2D coords[coordsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
-                    NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* coordsValueList = (NSArray<NSValue*>*) args[@"coords"];
+                CLLocationCoordinate2D coords[coordsValueList.count];
+                for (int __i__ = 0; __i__ < coordsValueList.count; __i__++) {
+                    NSValue* coordsValue = (NSValue*) [coordsValueList objectAtIndex:__i__];
                     CLLocationCoordinate2D coordsItem;
                     [coordsValue getValue:&coordsItem];
                     coords[__i__] = coordsItem;
@@ -458,16 +445,16 @@ extern BOOL enableLog;
                 NSInteger count = [args[@"count"] longValue];
         
                 // ref
-                MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolyline* ref = (MAPolyline*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref setPolylineWithCoordinates: coords count: count];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -480,20 +467,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) HEAP[args[@"multiPolyline"]];
+                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) args[@"multiPolyline"];
         
                 // ref
-                MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAMultiColoredPolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -508,21 +494,20 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) args[@"__this__"];
         
                 // invoke native method
                 NSArray<MAAnnotationMoveAnimation*>* result = [ref allMoveAnimations];
         
                 // result
                 // 返回值: 列表
-                NSMutableArray* jsonableResult = [NSMutableArray array];
+                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
                 for (int __i__ = 0; __i__ < result.count; __i__++) {
                     NSObject* object = [result objectAtIndex:__i__];
-                    [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
-                    HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                    [__result__ addObject: object];
                 }
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -537,16 +522,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) args[@"__this__"];
         
                 // invoke native method
                 [ref setNeedsStart ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -559,20 +544,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) HEAP[args[@"multiPolyline"]];
+                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) args[@"multiPolyline"];
         
                 // ref
-                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAMultiTexturePolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -585,24 +569,19 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* textureImagesRefArray = (NSArray<NSNumber*> *) args[@"textureImages"];
-                NSMutableArray<NSObject*>* textureImages = [NSMutableArray arrayWithCapacity:textureImagesRefArray.count];
-                for (int __i__ = 0; __i__ < textureImagesRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[textureImagesRefArray objectAtIndex:__i__]];
-                    [textureImages addObject:item];
-                }
+                NSArray<NSObject*>* textureImages = (NSArray<NSObject*>*) args[@"textureImages"];
         
                 // ref
-                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref loadStrokeTextureImages: textureImages];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -615,20 +594,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAHeatMapVectorOverlay* heatOverlay = (MAHeatMapVectorOverlay*) HEAP[args[@"heatOverlay"]];
+                MAHeatMapVectorOverlay* heatOverlay = (MAHeatMapVectorOverlay*) args[@"heatOverlay"];
         
                 // ref
-                MAHeatMapVectorOverlayRender* ref = (MAHeatMapVectorOverlayRender*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapVectorOverlayRender* ref = (MAHeatMapVectorOverlayRender*) args[@"__this__"];
         
                 // invoke native method
                 MAHeatMapVectorOverlayRender* result = [ref initWithHeatOverlay: heatOverlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -641,22 +619,21 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+                NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
                 // ref
-                MAHeatMapVectorOverlayRender* ref = (MAHeatMapVectorOverlayRender*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapVectorOverlayRender* ref = (MAHeatMapVectorOverlayRender*) args[@"__this__"];
         
                 // invoke native method
                 MAHeatMapVectorItem* result = [ref getHeatMapItem: coordinate];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -669,20 +646,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MATileOverlay* tileOverlay = (MATileOverlay*) HEAP[args[@"tileOverlay"]];
+                MATileOverlay* tileOverlay = (MATileOverlay*) args[@"tileOverlay"];
         
                 // ref
-                MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlayRenderer* ref = (MATileOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MATileOverlayRenderer* result = [ref initWithTileOverlay: tileOverlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -697,16 +673,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlayRenderer* ref = (MATileOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 [ref reloadData ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -728,10 +704,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -746,16 +721,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MATraceManager* ref = (MATraceManager*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATraceManager* ref = (MATraceManager*) args[@"__this__"];
         
                 // invoke native method
                 [ref stopTrace ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -770,16 +745,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MATraceManager* ref = (MATraceManager*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATraceManager* ref = (MATraceManager*) args[@"__this__"];
         
                 // invoke native method
                 [ref start ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -794,16 +769,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MATraceManager* ref = (MATraceManager*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATraceManager* ref = (MATraceManager*) args[@"__this__"];
         
                 // invoke native method
                 [ref stop ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -816,20 +791,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMultiPointOverlay* multiPointOverlay = (MAMultiPointOverlay*) HEAP[args[@"multiPointOverlay"]];
+                MAMultiPointOverlay* multiPointOverlay = (MAMultiPointOverlay*) args[@"multiPointOverlay"];
         
                 // ref
-                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAMultiPointOverlayRenderer* result = [ref initWithMultiPointOverlay: multiPointOverlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -842,20 +816,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAPolyline* polyline = (MAPolyline*) HEAP[args[@"polyline"]];
+                MAPolyline* polyline = (MAPolyline*) args[@"polyline"];
         
                 // ref
-                MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAPolylineRenderer* result = [ref initWithPolyline: polyline];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -870,16 +843,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 NSString* result = [ref name];
         
                 // result
                 // 返回值: jsonable
-                id jsonableResult = result;
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -894,18 +867,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 CLLocationCoordinate2D* result = [ref coordinates];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D*)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D*)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -920,16 +891,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 NSUInteger result = [ref count];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -944,16 +915,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 CGFloat result = [ref duration];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -968,16 +939,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 CGFloat result = [ref elapsedTime];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -992,16 +963,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 [ref cancel ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1016,16 +987,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref isCancelled];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1040,16 +1011,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) args[@"__this__"];
         
                 // invoke native method
                 NSInteger result = [ref passedPointCount];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1067,16 +1038,16 @@ extern BOOL enableLog;
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setSelected : selected animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1089,22 +1060,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
                 // jsonable arg
                 NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 // invoke native method
                 id result = [ref initWithAnnotation: annotation reuseIdentifier: reuseIdentifier];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1119,16 +1089,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 // invoke native method
                 [ref prepareForReuse ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1146,16 +1116,16 @@ extern BOOL enableLog;
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setDragState : newDragState animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1171,17 +1141,16 @@ extern BOOL enableLog;
                 NSString* URLTemplate = (NSString*) args[@"URLTemplate"];
         
                 // ref
-                MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
                 // invoke native method
                 id result = [ref initWithURLTemplate: URLTemplate];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1194,21 +1163,21 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* pathValue = (NSValue*) HEAP[args[@"path"]];
+                NSValue* pathValue = (NSValue*) args[@"path"];
                 MATileOverlayPath path;
                 [pathValue getValue:&path];
         
                 // ref
-                MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
                 // invoke native method
                 [ref cancelLoadOfTileAtPath : path];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1221,20 +1190,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIView* customView = (UIView*) HEAP[args[@"customView"]];
+                UIView* customView = (UIView*) args[@"customView"];
         
                 // ref
-                MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACustomCalloutView* ref = (MACustomCalloutView*) args[@"__this__"];
         
                 // invoke native method
                 id result = [ref initWithCustomView: customView];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1256,10 +1224,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1272,19 +1239,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* item = (MAOfflineItem*) HEAP[args[@"item"]];
+                MAOfflineItem* item = (MAOfflineItem*) args[@"item"];
         
                 // ref
-                MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref isDownloadingForItem: item];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1297,19 +1264,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* item = (MAOfflineItem*) HEAP[args[@"item"]];
+                MAOfflineItem* item = (MAOfflineItem*) args[@"item"];
         
                 // ref
-                MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref pauseItem: item];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1322,19 +1289,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* item = (MAOfflineItem*) HEAP[args[@"item"]];
+                MAOfflineItem* item = (MAOfflineItem*) args[@"item"];
         
                 // ref
-                MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
         
                 // invoke native method
                 [ref deleteItem : item];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1349,16 +1316,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
         
                 // invoke native method
                 [ref cancelAll ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1373,16 +1340,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
         
                 // invoke native method
                 [ref clearDisk ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1395,19 +1362,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineCity* city = (MAOfflineCity*) HEAP[args[@"city"]];
+                MAOfflineCity* city = (MAOfflineCity*) args[@"city"];
         
                 // ref
-                MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref isDownloadingForCity: city];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1420,19 +1387,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineCity* city = (MAOfflineCity*) HEAP[args[@"city"]];
+                MAOfflineCity* city = (MAOfflineCity*) args[@"city"];
         
                 // ref
-                MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
         
                 // invoke native method
                 [ref pause : city];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1445,20 +1412,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACircle* circle = (MACircle*) HEAP[args[@"circle"]];
+                MACircle* circle = (MACircle*) args[@"circle"];
         
                 // ref
-                MACircleRenderer* ref = (MACircleRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACircleRenderer* ref = (MACircleRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MACircleRenderer* result = [ref initWithCircle: circle];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1471,20 +1437,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverlay* particleOverlay = (MAParticleOverlay*) HEAP[args[@"particleOverlay"]];
+                MAParticleOverlay* particleOverlay = (MAParticleOverlay*) args[@"particleOverlay"];
         
                 // ref
-                MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleOverlayRenderer* result = [ref initWithParticleOverlay: particleOverlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1499,18 +1464,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                NSValue* ref = (NSValue*) args[@"__this__"];
         
                 // invoke native method
                 MAMapPoint result = [ref MAMapPointValue];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1525,18 +1488,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                NSValue* ref = (NSValue*) args[@"__this__"];
         
                 // invoke native method
                 MAMapSize result = [ref MAMapSizeValue];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MAMapSize)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1551,18 +1512,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                NSValue* ref = (NSValue*) args[@"__this__"];
         
                 // invoke native method
                 MAMapRect result = [ref MAMapRectValue];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MAMapRect)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1577,18 +1536,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                NSValue* ref = (NSValue*) args[@"__this__"];
         
                 // invoke native method
                 CLLocationCoordinate2D result = [ref MACoordinateValue];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1603,16 +1560,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) args[@"__this__"];
         
                 // invoke native method
                 CGFloat result = [ref getX];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1627,16 +1584,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) args[@"__this__"];
         
                 // invoke native method
                 CGFloat result = [ref getY];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1651,16 +1608,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) args[@"__this__"];
         
                 // invoke native method
                 CGFloat result = [ref getZ];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1686,17 +1643,16 @@ extern BOOL enableLog;
                 float z2 = [args[@"z2"] floatValue];
         
                 // ref
-                MAParticleRandomVelocityGenerate* ref = (MAParticleRandomVelocityGenerate*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleRandomVelocityGenerate* ref = (MAParticleRandomVelocityGenerate*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleRandomVelocityGenerate* result = [ref initWithBoundaryValueX1: x1 Y1: y1 Z1: z1 X2: x2 Y2: y2 Z2: z2];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1711,18 +1667,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAParticleColorGenerate> ref = (id<MAParticleColorGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleColorGenerate> ref = (id<MAParticleColorGenerate>) args[@"__this__"];
         
                 // invoke native method
                 float* result = [ref getColor];
         
                 // result
                 // return a (value)*
-                NSValue* resultValue = [NSValue valueWithPointer:result];
-                HEAP[[NSNumber numberWithLong: (resultValue).hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (resultValue).hash];
+                NSValue* __result__ = [NSValue valueWithPointer:result];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1752,17 +1706,16 @@ extern BOOL enableLog;
                 float a2 = [args[@"a2"] floatValue];
         
                 // ref
-                MAParticleRandomColorGenerate* ref = (MAParticleRandomColorGenerate*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleRandomColorGenerate* ref = (MAParticleRandomColorGenerate*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleRandomColorGenerate* result = [ref initWithBoundaryColorR1: r1 G1: g1 B1: b1 A1: a1 R2: r2 G2: g2 B2: b2 A2: a2];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1777,16 +1730,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAParticleRotationGenerate> ref = (id<MAParticleRotationGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleRotationGenerate> ref = (id<MAParticleRotationGenerate>) args[@"__this__"];
         
                 // invoke native method
                 float result = [ref getRotate];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1802,17 +1755,16 @@ extern BOOL enableLog;
                 float rotate = [args[@"rotate"] floatValue];
         
                 // ref
-                MAParticleConstantRotationGenerate* ref = (MAParticleConstantRotationGenerate*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleConstantRotationGenerate* ref = (MAParticleConstantRotationGenerate*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleConstantRotationGenerate* result = [ref initWithRotate: rotate];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1828,16 +1780,16 @@ extern BOOL enableLog;
                 float timeFrame = [args[@"timeFrame"] floatValue];
         
                 // ref
-                id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) args[@"__this__"];
         
                 // invoke native method
                 float result = [ref getSizeX: timeFrame];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1853,16 +1805,16 @@ extern BOOL enableLog;
                 float timeFrame = [args[@"timeFrame"] floatValue];
         
                 // ref
-                id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) args[@"__this__"];
         
                 // invoke native method
                 float result = [ref getSizeY: timeFrame];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1878,16 +1830,16 @@ extern BOOL enableLog;
                 float timeFrame = [args[@"timeFrame"] floatValue];
         
                 // ref
-                id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) args[@"__this__"];
         
                 // invoke native method
                 float result = [ref getSizeZ: timeFrame];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1907,17 +1859,16 @@ extern BOOL enableLog;
                 float z = [args[@"z"] floatValue];
         
                 // ref
-                MAParticleCurveSizeGenerate* ref = (MAParticleCurveSizeGenerate*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleCurveSizeGenerate* ref = (MAParticleCurveSizeGenerate*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleCurveSizeGenerate* result = [ref initWithCurveX: x Y: y Z: z];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1935,17 +1886,16 @@ extern BOOL enableLog;
                 int rateTime = [args[@"rateTime"] intValue];
         
                 // ref
-                MAParticleEmissionModule* ref = (MAParticleEmissionModule*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleEmissionModule* ref = (MAParticleEmissionModule*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleEmissionModule* result = [ref initWithEmissionRate: rate rateTime: rateTime];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1960,18 +1910,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) args[@"__this__"];
         
                 // invoke native method
                 float* result = [ref getPoint];
         
                 // result
                 // return a (value)*
-                NSValue* resultValue = [NSValue valueWithPointer:result];
-                HEAP[[NSNumber numberWithLong: (resultValue).hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (resultValue).hash];
+                NSValue* __result__ = [NSValue valueWithPointer:result];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -1986,16 +1934,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref isRatioEnable];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2017,17 +1965,16 @@ extern BOOL enableLog;
                 BOOL isUseRatio = [args[@"isUseRatio"] boolValue];
         
                 // ref
-                MAParticleSinglePointShapeModule* ref = (MAParticleSinglePointShapeModule*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleSinglePointShapeModule* ref = (MAParticleSinglePointShapeModule*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleSinglePointShapeModule* result = [ref initWithShapeX: x Y: y Z: z useRatio: isUseRatio];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2051,17 +1998,16 @@ extern BOOL enableLog;
                 BOOL isUseRatio = [args[@"isUseRatio"] boolValue];
         
                 // ref
-                MAParticleRectShapeModule* ref = (MAParticleRectShapeModule*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleRectShapeModule* ref = (MAParticleRectShapeModule*) args[@"__this__"];
         
                 // invoke native method
                 MAParticleRectShapeModule* result = [ref initWithLeft: left top: top right: right bottom: bottom useRatio: isUseRatio];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2074,19 +2020,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleVelocityGenerate> velocity = (id<MAParticleVelocityGenerate>) HEAP[args[@"velocity"]];
+                id<MAParticleVelocityGenerate> velocity = (id<MAParticleVelocityGenerate>) args[@"velocity"];
         
                 // ref
-                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
         
                 // invoke native method
                 [ref setVelocityOverLife : velocity];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2099,19 +2045,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleRotationGenerate> rotation = (id<MAParticleRotationGenerate>) HEAP[args[@"rotation"]];
+                id<MAParticleRotationGenerate> rotation = (id<MAParticleRotationGenerate>) args[@"rotation"];
         
                 // ref
-                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
         
                 // invoke native method
                 [ref setRotationOverLife : rotation];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2124,19 +2070,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleSizeGenerate> size = (id<MAParticleSizeGenerate>) HEAP[args[@"size"]];
+                id<MAParticleSizeGenerate> size = (id<MAParticleSizeGenerate>) args[@"size"];
         
                 // ref
-                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
         
                 // invoke native method
                 [ref setSizeOverLife : size];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2149,19 +2095,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleColorGenerate> color = (id<MAParticleColorGenerate>) HEAP[args[@"color"]];
+                id<MAParticleColorGenerate> color = (id<MAParticleColorGenerate>) args[@"color"];
         
                 // ref
-                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
         
                 // invoke native method
                 [ref setColorOverLife : color];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2184,14 +2130,13 @@ extern BOOL enableLog;
         
                 // result
                 // 返回值: 列表
-                NSMutableArray* jsonableResult = [NSMutableArray array];
+                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
                 for (int __i__ = 0; __i__ < result.count; __i__++) {
                     NSObject* object = [result objectAtIndex:__i__];
-                    [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
-                    HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                    [__result__ addObject: object];
                 }
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2204,20 +2149,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAOverlayRenderer* result = [ref initWithOverlay: overlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2232,18 +2176,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 float* result = [ref getViewMatrix];
         
                 // result
                 // return a (value)*
-                NSValue* resultValue = [NSValue valueWithPointer:result];
-                HEAP[[NSNumber numberWithLong: (resultValue).hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (resultValue).hash];
+                NSValue* __result__ = [NSValue valueWithPointer:result];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2258,18 +2200,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 float* result = [ref getProjectionMatrix];
         
                 // result
                 // return a (value)*
-                NSValue* resultValue = [NSValue valueWithPointer:result];
-                HEAP[[NSNumber numberWithLong: (resultValue).hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (resultValue).hash];
+                NSValue* __result__ = [NSValue valueWithPointer:result];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2284,18 +2224,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAMapPoint result = [ref getOffsetPoint];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2310,16 +2248,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 CGFloat result = [ref getMapZoomLevel];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2332,23 +2270,21 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* mapPointValue = (NSValue*) HEAP[args[@"mapPoint"]];
+                NSValue* mapPointValue = (NSValue*) args[@"mapPoint"];
                 MAMapPoint mapPoint;
                 [mapPointValue getValue:&mapPoint];
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 CGPoint result = [ref glPointForMapPoint: mapPoint];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CGPoint)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2361,11 +2297,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* mapPointsRefIdArray = (NSArray*) args[@"mapPoints"];
-                MAMapPoint mapPoints[mapPointsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < mapPointsRefIdArray.count; __i__++) {
-                    NSValue* mapPointsValue = (NSValue*) HEAP[[mapPointsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* mapPointsValueList = (NSArray<NSValue*>*) args[@"mapPoints"];
+                MAMapPoint mapPoints[mapPointsValueList.count];
+                for (int __i__ = 0; __i__ < mapPointsValueList.count; __i__++) {
+                    NSValue* mapPointsValue = (NSValue*) [mapPointsValueList objectAtIndex:__i__];
                     MAMapPoint mapPointsItem;
                     [mapPointsValue getValue:&mapPointsItem];
                     mapPoints[__i__] = mapPointsItem;
@@ -2374,18 +2309,16 @@ extern BOOL enableLog;
                 NSUInteger count = [args[@"count"] unsignedIntegerValue];
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 CGPoint* result = [ref glPointsForMapPoints: mapPoints count: count];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint*)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CGPoint*)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2401,16 +2334,16 @@ extern BOOL enableLog;
                 CGFloat windowWidth = [args[@"windowWidth"] floatValue];
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 CGFloat result = [ref glWidthForWindowWidth: windowWidth];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2423,11 +2356,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
-                CGPoint points[pointsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
-                    NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* pointsValueList = (NSArray<NSValue*>*) args[@"points"];
+                CGPoint points[pointsValueList.count];
+                for (int __i__ = 0; __i__ < pointsValueList.count; __i__++) {
+                    NSValue* pointsValue = (NSValue*) [pointsValueList objectAtIndex:__i__];
                     CGPoint pointsItem;
                     [pointsValue getValue:&pointsItem];
                     points[__i__] = pointsItem;
@@ -2435,23 +2367,23 @@ extern BOOL enableLog;
                 // jsonable arg
                 NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
                 // ref arg
-                UIColor* strokeColor = (UIColor*) HEAP[args[@"strokeColor"]];
+                UIColor* strokeColor = (UIColor*) args[@"strokeColor"];
                 // jsonable arg
                 CGFloat lineWidth = [args[@"lineWidth"] floatValue];
                 // jsonable arg
                 BOOL looped = [args[@"looped"] boolValue];
         
                 // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 [ref renderLinesWithPoints : points pointCount: pointCount strokeColor: strokeColor lineWidth: lineWidth looped: looped];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2464,7 +2396,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) HEAP[args[@"option"]];
+                MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) args[@"option"];
         
                 // ref
         
@@ -2474,10 +2406,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2490,25 +2421,19 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* itemsRefArray = (NSArray<NSNumber*> *) args[@"items"];
-                NSMutableArray<MAMultiPointItem*>* items = [NSMutableArray arrayWithCapacity:itemsRefArray.count];
-                for (int __i__ = 0; __i__ < itemsRefArray.count; __i__++) {
-                    MAMultiPointItem* item = (MAMultiPointItem*) HEAP[[itemsRefArray objectAtIndex:__i__]];
-                    [items addObject:item];
-                }
+                NSArray<MAMultiPointItem*>* items = (NSArray<MAMultiPointItem*>*) args[@"items"];
         
                 // ref
-                MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiPointOverlay* ref = (MAMultiPointOverlay*) args[@"__this__"];
         
                 // invoke native method
                 MAMultiPointOverlay* result = [ref initWithMultiPointItems: items];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2521,11 +2446,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
-                CLLocationCoordinate2D coords[coordsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
-                    NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* coordsValueList = (NSArray<NSValue*>*) args[@"coords"];
+                CLLocationCoordinate2D coords[coordsValueList.count];
+                for (int __i__ = 0; __i__ < coordsValueList.count; __i__++) {
+                    NSValue* coordsValue = (NSValue*) [coordsValueList objectAtIndex:__i__];
                     CLLocationCoordinate2D coordsItem;
                     [coordsValue getValue:&coordsItem];
                     coords[__i__] = coordsItem;
@@ -2541,10 +2465,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2557,11 +2480,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg struct
-                NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
-                CLLocationCoordinate2D coords[coordsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
-                    NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
+                NSArray<NSValue*>* coordsValueList = (NSArray<NSValue*>*) args[@"coords"];
+                CLLocationCoordinate2D coords[coordsValueList.count];
+                for (int __i__ = 0; __i__ < coordsValueList.count; __i__++) {
+                    NSValue* coordsValue = (NSValue*) [coordsValueList objectAtIndex:__i__];
                     CLLocationCoordinate2D coordsItem;
                     [coordsValue getValue:&coordsItem];
                     coords[__i__] = coordsItem;
@@ -2570,16 +2492,16 @@ extern BOOL enableLog;
                 NSUInteger count = [args[@"count"] unsignedIntegerValue];
         
                 // ref
-                MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
         
                 // invoke native method
                 BOOL result = [ref setOptionWithCoordinates: coords count: count];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2592,19 +2514,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) HEAP[args[@"option"]];
+                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) args[@"option"];
         
                 // ref
-                MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) args[@"__this__"];
         
                 // invoke native method
                 [ref addCustomOption : option];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2617,19 +2539,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) HEAP[args[@"option"]];
+                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) args[@"option"];
         
                 // ref
-                MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) args[@"__this__"];
         
                 // invoke native method
                 [ref removeCustomOption : option];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2642,15 +2564,15 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* startCoordinateValue = (NSValue*) HEAP[args[@"startCoordinate"]];
+                NSValue* startCoordinateValue = (NSValue*) args[@"startCoordinate"];
                 CLLocationCoordinate2D startCoordinate;
                 [startCoordinateValue getValue:&startCoordinate];
                 // struct arg
-                NSValue* passedCoordinateValue = (NSValue*) HEAP[args[@"passedCoordinate"]];
+                NSValue* passedCoordinateValue = (NSValue*) args[@"passedCoordinate"];
                 CLLocationCoordinate2D passedCoordinate;
                 [passedCoordinateValue getValue:&passedCoordinate];
                 // struct arg
-                NSValue* endCoordinateValue = (NSValue*) HEAP[args[@"endCoordinate"]];
+                NSValue* endCoordinateValue = (NSValue*) args[@"endCoordinate"];
                 CLLocationCoordinate2D endCoordinate;
                 [endCoordinateValue getValue:&endCoordinate];
         
@@ -2662,10 +2584,9 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2678,23 +2599,23 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* regionValue = (NSValue*) HEAP[args[@"region"]];
+                NSValue* regionValue = (NSValue*) args[@"region"];
                 MACoordinateRegion region;
                 [regionValue getValue:&region];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setRegion : region animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2707,23 +2628,21 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* regionValue = (NSValue*) HEAP[args[@"region"]];
+                NSValue* regionValue = (NSValue*) args[@"region"];
                 MACoordinateRegion region;
                 [regionValue getValue:&region];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MACoordinateRegion result = [ref regionThatFits: region];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2736,23 +2655,23 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* mapRectValue = (NSValue*) HEAP[args[@"mapRect"]];
+                NSValue* mapRectValue = (NSValue*) args[@"mapRect"];
                 MAMapRect mapRect;
                 [mapRectValue getValue:&mapRect];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setVisibleMapRect : mapRect animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2765,23 +2684,21 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* mapRectValue = (NSValue*) HEAP[args[@"mapRect"]];
+                NSValue* mapRectValue = (NSValue*) args[@"mapRect"];
                 MAMapRect mapRect;
                 [mapRectValue getValue:&mapRect];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MAMapRect result = [ref mapRectThatFits: mapRect];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MAMapRect)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2794,27 +2711,25 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* mapRectValue = (NSValue*) HEAP[args[@"mapRect"]];
+                NSValue* mapRectValue = (NSValue*) args[@"mapRect"];
                 MAMapRect mapRect;
                 [mapRectValue getValue:&mapRect];
                 // struct arg
-                NSValue* insetsValue = (NSValue*) HEAP[args[@"insets"]];
+                NSValue* insetsValue = (NSValue*) args[@"insets"];
                 UIEdgeInsets insets;
                 [insetsValue getValue:&insets];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MAMapRect result = [ref mapRectThatFits: mapRect edgePadding: insets];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MAMapRect)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2827,27 +2742,27 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* mapRectValue = (NSValue*) HEAP[args[@"mapRect"]];
+                NSValue* mapRectValue = (NSValue*) args[@"mapRect"];
                 MAMapRect mapRect;
                 [mapRectValue getValue:&mapRect];
                 // struct arg
-                NSValue* insetsValue = (NSValue*) HEAP[args[@"insets"]];
+                NSValue* insetsValue = (NSValue*) args[@"insets"];
                 UIEdgeInsets insets;
                 [insetsValue getValue:&insets];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setVisibleMapRect : mapRect edgePadding: insets animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2860,23 +2775,23 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+                NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCenterCoordinate : coordinate animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2894,16 +2809,16 @@ extern BOOL enableLog;
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setZoomLevel : zoomLevel animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2918,23 +2833,23 @@ extern BOOL enableLog;
                 // jsonable arg
                 CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
                 // struct arg
-                NSValue* pivotValue = (NSValue*) HEAP[args[@"pivot"]];
+                NSValue* pivotValue = (NSValue*) args[@"pivot"];
                 CGPoint pivot;
                 [pivotValue getValue:&pivot];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setZoomLevel : zoomLevel atPivot: pivot animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2954,16 +2869,16 @@ extern BOOL enableLog;
                 CFTimeInterval duration = [args[@"duration"] doubleValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setRotationDegree : rotationDegree animated: animated duration: duration];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -2983,16 +2898,16 @@ extern BOOL enableLog;
                 CFTimeInterval duration = [args[@"duration"] doubleValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCameraDegree : cameraDegree animated: animated duration: duration];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3007,17 +2922,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MAMapStatus* result = [ref getMapStatus];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3030,21 +2944,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMapStatus* status = (MAMapStatus*) HEAP[args[@"status"]];
+                MAMapStatus* status = (MAMapStatus*) args[@"status"];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setMapStatus : status animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3057,23 +2971,23 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMapStatus* status = (MAMapStatus*) HEAP[args[@"status"]];
+                MAMapStatus* status = (MAMapStatus*) args[@"status"];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
                 // jsonable arg
                 CFTimeInterval duration = [args[@"duration"] doubleValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setMapStatus : status animated: animated duration: duration];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3086,19 +3000,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* image = (UIImage*) HEAP[args[@"image"]];
+                UIImage* image = (UIImage*) args[@"image"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCompassImage : image];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3111,22 +3025,21 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
+                NSValue* rectValue = (NSValue*) args[@"rect"];
                 CGRect rect;
                 [rectValue getValue:&rect];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 UIImage* result = [ref takeSnapshotInRect: rect];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3142,16 +3055,16 @@ extern BOOL enableLog;
                 CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 double result = [ref metersPerPointForZoomLevel: zoomLevel];
         
                 // result
                 // 返回值: Value
-                NSObject* jsonableResult = @(result);
+                NSObject* __result__ = @(result);
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3164,25 +3077,23 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+                NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
                 // ref arg
-                UIView* view = (UIView*) HEAP[args[@"view"]];
+                UIView* view = (UIView*) args[@"view"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 CGPoint result = [ref convertCoordinate: coordinate toPointToView: view];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CGPoint)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3195,25 +3106,23 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
+                NSValue* pointValue = (NSValue*) args[@"point"];
                 CGPoint point;
                 [pointValue getValue:&point];
                 // ref arg
-                UIView* view = (UIView*) HEAP[args[@"view"]];
+                UIView* view = (UIView*) args[@"view"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 CLLocationCoordinate2D result = [ref convertPoint: point toCoordinateFromView: view];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3226,25 +3135,23 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* regionValue = (NSValue*) HEAP[args[@"region"]];
+                NSValue* regionValue = (NSValue*) args[@"region"];
                 MACoordinateRegion region;
                 [regionValue getValue:&region];
                 // ref arg
-                UIView* view = (UIView*) HEAP[args[@"view"]];
+                UIView* view = (UIView*) args[@"view"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 CGRect result = [ref convertRegion: region toRectToView: view];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CGRect)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3257,25 +3164,23 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
+                NSValue* rectValue = (NSValue*) args[@"rect"];
                 CGRect rect;
                 [rectValue getValue:&rect];
                 // ref arg
-                UIView* view = (UIView*) HEAP[args[@"view"]];
+                UIView* view = (UIView*) args[@"view"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MACoordinateRegion result = [ref convertRect: rect toRegionFromView: view];
         
                 // result
                 // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+                NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3290,16 +3195,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref reloadMap ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3314,16 +3219,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref clearDisk ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3338,16 +3243,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref reloadInternalTexture ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3362,16 +3267,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 NSString* result = [ref mapContentApprovalNumber];
         
                 // result
                 // 返回值: jsonable
-                id jsonableResult = result;
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3386,16 +3291,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 NSString* result = [ref satelliteImageApprovalNumber];
         
                 // result
                 // 返回值: jsonable
-                id jsonableResult = result;
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3410,16 +3315,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref forceRefresh ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3432,19 +3337,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref addAnnotation : annotation];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3457,24 +3362,19 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
-                NSMutableArray<NSObject*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-                for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
-                    [annotations addObject:item];
-                }
+                NSArray<NSObject*>* annotations = (NSArray<NSObject*>*) args[@"annotations"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref addAnnotations : annotations];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3487,19 +3387,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref removeAnnotation : annotation];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3512,24 +3412,19 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
-                NSMutableArray<NSObject*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-                for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
-                    [annotations addObject:item];
-                }
+                NSArray<NSObject*>* annotations = (NSArray<NSObject*>*) args[@"annotations"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref removeAnnotations : annotations];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3542,20 +3437,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MAAnnotationView* result = [ref viewForAnnotation: annotation];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3571,17 +3465,16 @@ extern BOOL enableLog;
                 NSString* identifier = (NSString*) args[@"identifier"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MAAnnotationView* result = [ref dequeueReusableAnnotationViewWithIdentifier: identifier];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3594,21 +3487,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref selectAnnotation : annotation animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3621,21 +3514,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref deselectAnnotation : annotation animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3648,26 +3541,21 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
-                NSMutableArray<NSObject*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-                for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
-                    [annotations addObject:item];
-                }
+                NSArray<NSObject*>* annotations = (NSArray<NSObject*>*) args[@"annotations"];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref showAnnotations : annotations animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3680,30 +3568,25 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
-                NSMutableArray<NSObject*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-                for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
-                    [annotations addObject:item];
-                }
+                NSArray<NSObject*>* annotations = (NSArray<NSObject*>*) args[@"annotations"];
                 // struct arg
-                NSValue* insetsValue = (NSValue*) HEAP[args[@"insets"]];
+                NSValue* insetsValue = (NSValue*) args[@"insets"];
                 UIEdgeInsets insets;
                 [insetsValue getValue:&insets];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref showAnnotations : annotations edgePadding: insets animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3721,16 +3604,16 @@ extern BOOL enableLog;
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setUserTrackingMode : mode animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3743,19 +3626,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) HEAP[args[@"representation"]];
+                MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) args[@"representation"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref updateUserLocationRepresentation : representation];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3771,21 +3654,20 @@ extern BOOL enableLog;
                 MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 NSArray* result = [ref overlaysInLevel: level];
         
                 // result
                 // 返回值: 列表
-                NSMutableArray* jsonableResult = [NSMutableArray array];
+                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
                 for (int __i__ = 0; __i__ < result.count; __i__++) {
                     NSObject* object = [result objectAtIndex:__i__];
-                    [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
-                    HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                    [__result__ addObject: object];
                 }
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3798,19 +3680,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref addOverlay : overlay];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3823,24 +3705,19 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
-                NSMutableArray<NSObject*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-                for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
-                    [overlays addObject:item];
-                }
+                NSArray<NSObject*>* overlays = (NSArray<NSObject*>*) args[@"overlays"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref addOverlays : overlays];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3853,21 +3730,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
                 // enum arg
                 MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref addOverlay : overlay level: level];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3880,26 +3757,21 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
-                NSMutableArray<NSObject*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-                for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
-                    [overlays addObject:item];
-                }
+                NSArray<NSObject*>* overlays = (NSArray<NSObject*>*) args[@"overlays"];
                 // enum arg
                 MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref addOverlays : overlays level: level];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3912,19 +3784,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref removeOverlay : overlay];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3937,24 +3809,19 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
-                NSMutableArray<NSObject*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-                for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
-                    [overlays addObject:item];
-                }
+                NSArray<NSObject*>* overlays = (NSArray<NSObject*>*) args[@"overlays"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref removeOverlays : overlays];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3967,23 +3834,23 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
                 // jsonable arg
                 NSUInteger index = [args[@"index"] unsignedIntegerValue];
                 // enum arg
                 MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref insertOverlay : overlay atIndex: index level: level];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -3996,21 +3863,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
                 // ref arg
-                id<MAOverlay> sibling = (id<MAOverlay>) HEAP[args[@"sibling"]];
+                id<MAOverlay> sibling = (id<MAOverlay>) args[@"sibling"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref insertOverlay : overlay aboveOverlay: sibling];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4023,21 +3890,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
                 // ref arg
-                id<MAOverlay> sibling = (id<MAOverlay>) HEAP[args[@"sibling"]];
+                id<MAOverlay> sibling = (id<MAOverlay>) args[@"sibling"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref insertOverlay : overlay belowOverlay: sibling];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4050,21 +3917,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
                 // jsonable arg
                 NSUInteger index = [args[@"index"] unsignedIntegerValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref insertOverlay : overlay atIndex: index];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4082,16 +3949,16 @@ extern BOOL enableLog;
                 NSUInteger index2 = [args[@"index2"] unsignedIntegerValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4111,16 +3978,16 @@ extern BOOL enableLog;
                 MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2 atLevel: level];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4133,21 +4000,21 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay1 = (id<MAOverlay>) HEAP[args[@"overlay1"]];
+                id<MAOverlay> overlay1 = (id<MAOverlay>) args[@"overlay1"];
                 // ref arg
-                id<MAOverlay> overlay2 = (id<MAOverlay>) HEAP[args[@"overlay2"]];
+                id<MAOverlay> overlay2 = (id<MAOverlay>) args[@"overlay2"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref exchangeOverlay : overlay1 withOverlay: overlay2];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4160,20 +4027,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) HEAP[args[@"overlay"]];
+                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 MAOverlayRenderer* result = [ref rendererForOverlay: overlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4186,26 +4052,21 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
-                NSMutableArray<NSObject*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-                for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
-                    [overlays addObject:item];
-                }
+                NSArray<NSObject*>* overlays = (NSArray<NSObject*>*) args[@"overlays"];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref showOverlays : overlays animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4218,30 +4079,25 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
-                NSMutableArray<NSObject*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-                for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
-                    [overlays addObject:item];
-                }
+                NSArray<NSObject*>* overlays = (NSArray<NSObject*>*) args[@"overlays"];
                 // struct arg
-                NSValue* insetsValue = (NSValue*) HEAP[args[@"insets"]];
+                NSValue* insetsValue = (NSValue*) args[@"insets"];
                 UIEdgeInsets insets;
                 [insetsValue getValue:&insets];
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref showOverlays : overlays edgePadding: insets animated: animated];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4254,28 +4110,27 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* tappedCoordValue = (NSValue*) HEAP[args[@"tappedCoord"]];
+                NSValue* tappedCoordValue = (NSValue*) args[@"tappedCoord"];
                 CLLocationCoordinate2D tappedCoord;
                 [tappedCoordValue getValue:&tappedCoord];
                 // jsonable arg
                 BOOL traverseAll = [args[@"traverseAll"] boolValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 NSArray* result = [ref getHittedPolylinesWith: tappedCoord traverseAll: traverseAll];
         
                 // result
                 // 返回值: 列表
-                NSMutableArray* jsonableResult = [NSMutableArray array];
+                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
                 for (int __i__ = 0; __i__ < result.count; __i__++) {
                     NSObject* object = [result objectAtIndex:__i__];
-                    [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
-                    HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                    [__result__ addObject: object];
                 }
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4288,21 +4143,21 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* originValue = (NSValue*) HEAP[args[@"origin"]];
+                NSValue* originValue = (NSValue*) args[@"origin"];
                 CGPoint origin;
                 [originValue getValue:&origin];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setIndoorMapControlOrigin : origin];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4318,16 +4173,16 @@ extern BOOL enableLog;
                 NSInteger floorIndex = [args[@"floorIndex"] longValue];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCurrentIndoorMapFloorIndex : floorIndex];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4342,16 +4197,16 @@ extern BOOL enableLog;
         
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref clearIndoorMapCache ];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4364,19 +4219,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* data = (NSData*) HEAP[args[@"data"]];
+                NSData* data = (NSData*) args[@"data"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCustomMapStyleWithWebData : data];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4392,16 +4247,16 @@ extern BOOL enableLog;
                 NSString* customTextureResourcePath = (NSString*) args[@"customTextureResourcePath"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCustomTextureResourcePath : customTextureResourcePath];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4417,16 +4272,16 @@ extern BOOL enableLog;
                 NSString* customMapStyleID = (NSString*) args[@"customMapStyleID"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCustomMapStyleID : customMapStyleID];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4439,19 +4294,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) HEAP[args[@"styleOptions"]];
+                MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) args[@"styleOptions"];
         
                 // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapView* ref = (MAMapView*) args[@"__this__"];
         
                 // invoke native method
                 [ref setCustomMapStyleOptions : styleOptions];
         
                 // result
                 // 无返回值
-                NSString* jsonableResult = @"success";
+                NSString* __result__ = @"success";
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4464,20 +4319,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAGroundOverlay* groundOverlay = (MAGroundOverlay*) HEAP[args[@"groundOverlay"]];
+                MAGroundOverlay* groundOverlay = (MAGroundOverlay*) args[@"groundOverlay"];
         
                 // ref
-                MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MAGroundOverlayRenderer* result = [ref initWithGroundOverlay: groundOverlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4490,20 +4344,19 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomBuildingOverlay* customBuildingOverlay = (MACustomBuildingOverlay*) HEAP[args[@"customBuildingOverlay"]];
+                MACustomBuildingOverlay* customBuildingOverlay = (MACustomBuildingOverlay*) args[@"customBuildingOverlay"];
         
                 // ref
-                MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) args[@"__this__"];
         
                 // invoke native method
                 MACustomBuildingOverlayRenderer* result = [ref initWithCustomBuildingOverlay: customBuildingOverlay];
         
                 // result
                 // return a ref
-                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+                id __result__ = result;
         
-                [resultList addObject:jsonableResult];
+                [resultList addObject:__result__];
             }
         
             methodResult(resultList);
@@ -4543,15 +4396,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOfflineCity* ref = (MAOfflineCity*) args[@"__this__"];
         
             // invoke native method
             NSString* result = ref.cityCode;
         
             // 返回值: jsonable
-            id jsonableResult = result;
+            id __result__ = result;
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAOfflineCity::get_cityName": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4561,15 +4414,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOfflineCity* ref = (MAOfflineCity*) args[@"__this__"];
         
             // invoke native method
             NSString* result = ref.cityName;
         
             // 返回值: jsonable
-            id jsonableResult = result;
+            id __result__ = result;
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAOfflineCity::get_urlString": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4579,15 +4432,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOfflineCity* ref = (MAOfflineCity*) args[@"__this__"];
         
             // invoke native method
             NSString* result = ref.urlString;
         
             // 返回值: jsonable
-            id jsonableResult = result;
+            id __result__ = result;
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMultiPoint::get_points": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4597,17 +4450,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMultiPoint* ref = (MAMultiPoint*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMultiPoint* ref = (MAMultiPoint*) args[@"__this__"];
         
             // invoke native method
             MAMapPoint* result = ref.points;
         
             // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint*)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+            NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MAMapPoint*)];
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMultiPoint::get_pointCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4617,15 +4468,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMultiPoint* ref = (MAMultiPoint*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMultiPoint* ref = (MAMultiPoint*) args[@"__this__"];
         
             // invoke native method
             NSUInteger result = ref.pointCount;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMultiPoint::get_cross180Longitude": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4635,15 +4486,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMultiPoint* ref = (MAMultiPoint*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMultiPoint* ref = (MAMultiPoint*) args[@"__this__"];
         
             // invoke native method
             BOOL result = ref.cross180Longitude;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAGroundOverlay::get_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4653,16 +4504,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAGroundOverlay* ref = (MAGroundOverlay*) args[@"__this__"];
         
             // invoke native method
             UIImage* result = ref.icon;
         
             // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+            id __result__ = result;
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAGroundOverlay::get_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4672,15 +4522,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAGroundOverlay* ref = (MAGroundOverlay*) args[@"__this__"];
         
             // invoke native method
             CGFloat result = ref.alpha;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAGroundOverlay::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4690,15 +4540,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAGroundOverlay* ref = (MAGroundOverlay*) args[@"__this__"];
         
             // invoke native method
             CGFloat result = ref.zoomLevel;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAGroundOverlay::get_bounds": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4708,17 +4558,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAGroundOverlay* ref = (MAGroundOverlay*) args[@"__this__"];
         
             // invoke native method
             MACoordinateBounds result = ref.bounds;
         
             // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateBounds)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+            NSValue* __result__ = [NSValue value:&result withObjCType:@encode(MACoordinateBounds)];
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAPolygonRenderer::get_polygon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4728,16 +4576,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPolygonRenderer* ref = (MAPolygonRenderer*) args[@"__this__"];
         
             // invoke native method
             MAPolygon* result = ref.polygon;
         
             // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+            id __result__ = result;
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAPinAnnotationView::get_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4747,15 +4594,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPinAnnotationView* ref = (MAPinAnnotationView*) args[@"__this__"];
         
             // invoke native method
             MAPinAnnotationColor result = ref.pinColor;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAPinAnnotationView::get_animatesDrop": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4765,15 +4612,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPinAnnotationView* ref = (MAPinAnnotationView*) args[@"__this__"];
         
             // invoke native method
             BOOL result = ref.animatesDrop;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapNode::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4783,17 +4630,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapNode* ref = (MAHeatMapNode*) args[@"__this__"];
         
             // invoke native method
             CLLocationCoordinate2D result = ref.coordinate;
         
             // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+            NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapNode::get_intensity": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4803,15 +4648,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapNode* ref = (MAHeatMapNode*) args[@"__this__"];
         
             // invoke native method
             float result = ref.intensity;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapGradient::get_colors": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4821,20 +4666,19 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapGradient* ref = (MAHeatMapGradient*) args[@"__this__"];
         
             // invoke native method
             NSArray<UIColor*>* result = ref.colors;
         
             // 返回值: 列表
-            NSMutableArray* jsonableResult = [NSMutableArray array];
+            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
             for (int __i__ = 0; __i__ < result.count; __i__++) {
                 NSObject* object = [result objectAtIndex:__i__];
-                [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
-                HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                [__result__ addObject: object];
             }
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapGradient::get_startPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4844,15 +4688,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapGradient* ref = (MAHeatMapGradient*) args[@"__this__"];
         
             // invoke native method
             NSArray<NSNumber*>* result = ref.startPoints;
         
             // 返回值: jsonable
-            id jsonableResult = result;
+            id __result__ = result;
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapTileOverlay::get_data": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4862,20 +4706,19 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
             // invoke native method
             NSArray<MAHeatMapNode*>* result = ref.data;
         
             // 返回值: 列表
-            NSMutableArray* jsonableResult = [NSMutableArray array];
+            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
             for (int __i__ = 0; __i__ < result.count; __i__++) {
                 NSObject* object = [result objectAtIndex:__i__];
-                [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
-                HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                [__result__ addObject: object];
             }
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapTileOverlay::get_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4885,15 +4728,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
             // invoke native method
             NSInteger result = ref.radius;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapTileOverlay::get_opacity": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4903,15 +4746,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
             // invoke native method
             CGFloat result = ref.opacity;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapTileOverlay::get_gradient": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4921,16 +4764,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
             // invoke native method
             MAHeatMapGradient* result = ref.gradient;
         
             // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+            id __result__ = result;
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAHeatMapTileOverlay::get_allowRetinaAdapting": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4940,15 +4782,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
             // invoke native method
             BOOL result = ref.allowRetinaAdapting;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMapStatus::get_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4958,17 +4800,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
             // invoke native method
             CLLocationCoordinate2D result = ref.centerCoordinate;
         
             // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+            NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMapStatus::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4978,15 +4818,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
             // invoke native method
             CGFloat result = ref.zoomLevel;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMapStatus::get_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -4996,15 +4836,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
             // invoke native method
             CGFloat result = ref.rotationDegree;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMapStatus::get_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -5014,15 +4854,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
             // invoke native method
             CGFloat result = ref.cameraDegree;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAMapStatus::get_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -5032,17 +4872,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
             // invoke native method
             CGPoint result = ref.screenAnchor;
         
             // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+            NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CGPoint)];
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAPointAnnotation::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -5052,17 +4890,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPointAnnotation* ref = (MAPointAnnotation*) args[@"__this__"];
         
             // invoke native method
             CLLocationCoordinate2D result = ref.coordinate;
         
             // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+            NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAPointAnnotation::get_isLockedToScreen": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -5072,15 +4908,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPointAnnotation* ref = (MAPointAnnotation*) args[@"__this__"];
         
             // invoke native method
             BOOL result = ref.lockedToScreen;
         
             // 返回值: Value
-            NSObject* jsonableResult = @(result);
+            NSObject* __result__ = @(result);
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
         @"MAPointAnnotation::get_lockedScreenPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
@@ -5090,17 +4926,15 @@ extern BOOL enableLog;
             }
         
             // ref object
-            MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPointAnnotation* ref = (MAPointAnnotation*) args[@"__this__"];
         
             // invoke native method
             CGPoint result = ref.lockedScreenPoint;
         
             // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+            NSValue* __result__ = [NSValue value:&result withObjCType:@encode(CGPoint)];
         
-            methodResult(jsonableResult);
+            methodResult(__result__);
         },
         
     };

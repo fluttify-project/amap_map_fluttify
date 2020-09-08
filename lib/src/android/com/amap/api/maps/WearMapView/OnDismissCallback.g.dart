@@ -24,22 +24,10 @@ mixin com_amap_api_maps_WearMapView_OnDismissCallback on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onDismiss() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onDismiss::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onDismiss() {}
   
   @mustCallSuper
-  Future<void> onNotifySwipe() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onNotifySwipe() {}
   
 }
 

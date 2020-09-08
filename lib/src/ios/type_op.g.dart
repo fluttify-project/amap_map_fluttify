@@ -17,427 +17,427 @@ extension TypeOpAmapMapFluttifyIOS on Object {
   // type check
   Future<bool> is__<T>() async {
     final typeName = T.toString();
-    if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
+    if (RegExp(r'^(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)$').hasMatch(typeName)) {
       return this is T;
     }
     else if (T == MAOfflineCity) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineCity', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineCity', {'__this__': this});
       return result;
     }
     else if (T == MAOfflineItemNationWide) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineItemNationWide', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineItemNationWide', {'__this__': this});
       return result;
     }
     else if (T == MAMultiPoint) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMultiPoint', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMultiPoint', {'__this__': this});
       return result;
     }
     else if (T == MAGroundOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAGroundOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAGroundOverlay', {'__this__': this});
       return result;
     }
     else if (T == MAPolygonRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPolygonRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAPolygonRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAPinAnnotationView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPinAnnotationView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAPinAnnotationView', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapNode) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapNode', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapNode', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapGradient) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapGradient', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapGradient', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapTileOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapTileOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapTileOverlay', {'__this__': this});
       return result;
     }
     else if (T == MAMapStatus) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMapStatus', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMapStatus', {'__this__': this});
       return result;
     }
     else if (T == MAPointAnnotation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPointAnnotation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAPointAnnotation', {'__this__': this});
       return result;
     }
     else if (T == MACircle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACircle', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACircle', {'__this__': this});
       return result;
     }
     else if (T == MAArcRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAArcRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAArcRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAAnnotation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAAnnotation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAAnnotation', {'__this__': this});
       return result;
     }
     else if (T == MAAnimatableAnnotation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAAnimatableAnnotation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAAnimatableAnnotation', {'__this__': this});
       return result;
     }
     else if (T == MAOfflineMapViewController) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineMapViewController', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineMapViewController', {'__this__': this});
       return result;
     }
     else if (T == MAMapCustomStyleOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMapCustomStyleOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMapCustomStyleOptions', {'__this__': this});
       return result;
     }
     else if (T == MAPolygon) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPolygon', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAPolygon', {'__this__': this});
       return result;
     }
     else if (T == MAParticleOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleOverlay', {'__this__': this});
       return result;
     }
     else if (T == MAPolyline) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPolyline', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAPolyline', {'__this__': this});
       return result;
     }
     else if (T == MAMultiColoredPolylineRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMultiColoredPolylineRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMultiColoredPolylineRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAAnimatedAnnotation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAAnimatedAnnotation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAAnimatedAnnotation', {'__this__': this});
       return result;
     }
     else if (T == MAOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOverlay', {'__this__': this});
       return result;
     }
     else if (T == MAMultiTexturePolylineRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMultiTexturePolylineRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMultiTexturePolylineRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAOfflineProvince) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineProvince', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineProvince', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapVectorOverlayRender) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlayRender', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlayRender', {'__this__': this});
       return result;
     }
     else if (T == MATileOverlayRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATileOverlayRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMATileOverlayRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAOfflineItem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineItem', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineItem', {'__this__': this});
       return result;
     }
     else if (T == MAGeodesicPolyline) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAGeodesicPolyline', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAGeodesicPolyline', {'__this__': this});
       return result;
     }
     else if (T == MATouchPoi) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATouchPoi', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMATouchPoi', {'__this__': this});
       return result;
     }
     else if (T == MAPathShowRange) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPathShowRange', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAPathShowRange', {'__this__': this});
       return result;
     }
     else if (T == MAOfflineItemMunicipality) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineItemMunicipality', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineItemMunicipality', {'__this__': this});
       return result;
     }
     else if (T == MAMultiPolyline) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMultiPolyline', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMultiPolyline', {'__this__': this});
       return result;
     }
     else if (T == MATraceManager) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATraceManager', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMATraceManager', {'__this__': this});
       return result;
     }
     else if (T == MAMultiPointOverlayRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMultiPointOverlayRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMultiPointOverlayRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAIndoorFloorInfo) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAIndoorFloorInfo', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAIndoorFloorInfo', {'__this__': this});
       return result;
     }
     else if (T == MAIndoorInfo) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAIndoorInfo', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAIndoorInfo', {'__this__': this});
       return result;
     }
     else if (T == MAPolylineRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPolylineRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAPolylineRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAAnnotationMoveAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAAnnotationMoveAnimation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAAnnotationMoveAnimation', {'__this__': this});
       return result;
     }
     else if (T == MAShape) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAShape', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAShape', {'__this__': this});
       return result;
     }
     else if (T == MAAnnotationView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAAnnotationView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAAnnotationView', {'__this__': this});
       return result;
     }
     else if (T == MATileOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATileOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMATileOverlay', {'__this__': this});
       return result;
     }
     else if (T == MATileOverlayPath) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATileOverlayPath', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMATileOverlayPath', {'__this__': this});
       return result;
     }
     else if (T == MACustomCalloutView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACustomCalloutView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACustomCalloutView', {'__this__': this});
       return result;
     }
     else if (T == MAOfflineItemCommonCity) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineItemCommonCity', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineItemCommonCity', {'__this__': this});
       return result;
     }
     else if (T == MAOfflineMap) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineMap', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOfflineMap', {'__this__': this});
       return result;
     }
     else if (T == MACircleRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACircleRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACircleRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAParticleOverlayRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleOverlayRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleOverlayRenderer', {'__this__': this});
       return result;
     }
     else if (T == MACoordinateBounds) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACoordinateBounds', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACoordinateBounds', {'__this__': this});
       return result;
     }
     else if (T == MACoordinateSpan) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACoordinateSpan', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACoordinateSpan', {'__this__': this});
       return result;
     }
     else if (T == MACoordinateRegion) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACoordinateRegion', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACoordinateRegion', {'__this__': this});
       return result;
     }
     else if (T == MAMapPoint) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMapPoint', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMapPoint', {'__this__': this});
       return result;
     }
     else if (T == MAMapSize) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMapSize', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMapSize', {'__this__': this});
       return result;
     }
     else if (T == MAMapRect) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMapRect', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMapRect', {'__this__': this});
       return result;
     }
     else if (T == MAParticleVelocityGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleVelocityGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleVelocityGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleRandomVelocityGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleRandomVelocityGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleRandomVelocityGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleColorGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleColorGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleColorGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleRandomColorGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleRandomColorGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleRandomColorGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleRotationGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleRotationGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleRotationGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleConstantRotationGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleConstantRotationGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleConstantRotationGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleSizeGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleSizeGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleSizeGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleCurveSizeGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleCurveSizeGenerate', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleCurveSizeGenerate', {'__this__': this});
       return result;
     }
     else if (T == MAParticleEmissionModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleEmissionModule', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleEmissionModule', {'__this__': this});
       return result;
     }
     else if (T == MAParticleShapeModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleShapeModule', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleShapeModule', {'__this__': this});
       return result;
     }
     else if (T == MAParticleSinglePointShapeModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleSinglePointShapeModule', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleSinglePointShapeModule', {'__this__': this});
       return result;
     }
     else if (T == MAParticleRectShapeModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleRectShapeModule', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleRectShapeModule', {'__this__': this});
       return result;
     }
     else if (T == MAParticleOverLifeModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleOverLifeModule', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleOverLifeModule', {'__this__': this});
       return result;
     }
     else if (T == MAParticleOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == MAParticleOverlayOptionsFactory) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAParticleOverlayOptionsFactory', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAParticleOverlayOptionsFactory', {'__this__': this});
       return result;
     }
     else if (T == MAOverlayRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOverlayRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOverlayRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAUserLocation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAUserLocation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAUserLocation', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapVectorNode) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorNode', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapVectorNode', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapVectorItem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorItem', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapVectorItem', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapVectorOverlayOptions) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlayOptions', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlayOptions', {'__this__': this});
       return result;
     }
     else if (T == MAHeatMapVectorOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlay', {'__this__': this});
       return result;
     }
     else if (T == MAMultiPointItem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMultiPointItem', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMultiPointItem', {'__this__': this});
       return result;
     }
     else if (T == MAMultiPointOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMultiPointOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMultiPointOverlay', {'__this__': this});
       return result;
     }
     else if (T == MACustomBuildingOverlayOption) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACustomBuildingOverlayOption', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACustomBuildingOverlayOption', {'__this__': this});
       return result;
     }
     else if (T == MACustomBuildingOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACustomBuildingOverlay', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACustomBuildingOverlay', {'__this__': this});
       return result;
     }
     else if (T == MATracePoint) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATracePoint', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMATracePoint', {'__this__': this});
       return result;
     }
     else if (T == MATraceLocation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATraceLocation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMATraceLocation', {'__this__': this});
       return result;
     }
     else if (T == MAArc) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAArc', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAArc', {'__this__': this});
       return result;
     }
     else if (T == MAUserLocationRepresentation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAUserLocationRepresentation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAUserLocationRepresentation', {'__this__': this});
       return result;
     }
     else if (T == MAMapView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMapView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAMapView', {'__this__': this});
       return result;
     }
     else if (T == MAOverlayPathRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOverlayPathRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAOverlayPathRenderer', {'__this__': this});
       return result;
     }
     else if (T == MAGroundOverlayRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAGroundOverlayRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMAGroundOverlayRenderer', {'__this__': this});
       return result;
     }
     else if (T == MACustomBuildingOverlayRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACustomBuildingOverlayRenderer', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfMACustomBuildingOverlayRenderer', {'__this__': this});
       return result;
     }
     else if (T == CLLocation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLLocation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfCLLocation', {'__this__': this});
       return result;
     }
     else if (T == CLHeading) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLHeading', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfCLHeading', {'__this__': this});
       return result;
     }
     else if (T == CGRect) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCGRect', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfCGRect', {'__this__': this});
       return result;
     }
     else if (T == CGPoint) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCGPoint', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfCGPoint', {'__this__': this});
       return result;
     }
     else if (T == CGSize) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCGSize', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfCGSize', {'__this__': this});
       return result;
     }
     else if (T == UIEdgeInsets) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfUIEdgeInsets', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfUIEdgeInsets', {'__this__': this});
       return result;
     }
     else if (T == CLLocationCoordinate2D) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLLocationCoordinate2D', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfCLLocationCoordinate2D', {'__this__': this});
       return result;
     }
     else if (T == CLLocationManager) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLLocationManager', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfCLLocationManager', {'__this__': this});
       return result;
     }
     else if (T == NSError) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfNSError', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfNSError', {'__this__': this});
       return result;
     }
     else if (T == NSCoding) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfNSCoding', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfNSCoding', {'__this__': this});
       return result;
     }
     else if (T == NSCopying) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfNSCopying', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfNSCopying', {'__this__': this});
       return result;
     }
     else if (T == UIView) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfUIView', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfUIView', {'__this__': this});
       return result;
     }
     else if (T == UIViewController) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfUIViewController', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfUIViewController', {'__this__': this});
       return result;
     }
     else if (T == UIControl) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfUIControl', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfUIControl', {'__this__': this});
       return result;
     }
     else if (T == UIImage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfUIImage', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfUIImage', {'__this__': this});
       return result;
     }
     else if (T == UIColor) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfUIColor', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfUIColor', {'__this__': this});
       return result;
     }
     else if (T == NSData) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfNSData', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfNSData', {'__this__': this});
       return result;
     }
     else if (T == NSOperation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfNSOperation', {'refId': (this as Ref).refId});
+      final result = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('RefClass::isKindOfNSOperation', {'__this__': this});
       return result;
     }
   }
@@ -446,324 +446,324 @@ extension TypeOpAmapMapFluttifyIOS on Object {
   T as__<T>() {
     final typeName = T.toString();
     // jsonable 直接造型 返回
-    if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
+    if (RegExp(r'^(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)$').hasMatch(typeName)) {
       return this as T;
     }
     // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
     else if (T == MAOfflineCity) {
-      return (MAOfflineCity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineCity()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemNationWide) {
-      return (MAOfflineItemNationWide()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItemNationWide()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPoint) {
-      return (MAMultiPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPoint()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGroundOverlay) {
-      return (MAGroundOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAGroundOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolygonRenderer) {
-      return (MAPolygonRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolygonRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPinAnnotationView) {
-      return (MAPinAnnotationView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAPinAnnotationView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapNode) {
-      return (MAHeatMapNode()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapNode()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapGradient) {
-      return (MAHeatMapGradient()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapGradient()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapTileOverlay) {
-      return (MAHeatMapTileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapTileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapStatus) {
-      return (MAMapStatus()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapStatus()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPointAnnotation) {
-      return (MAPointAnnotation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAPointAnnotation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACircle) {
-      return (MACircle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACircle()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAArcRenderer) {
-      return (MAArcRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAArcRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotation) {
-      return (MAAnnotation.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnnotation.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnimatableAnnotation) {
-      return (MAAnimatableAnnotation.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnimatableAnnotation.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineMapViewController) {
-      return (MAOfflineMapViewController()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineMapViewController()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapCustomStyleOptions) {
-      return (MAMapCustomStyleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapCustomStyleOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolygon) {
-      return (MAPolygon()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolygon()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlay) {
-      return (MAParticleOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolyline) {
-      return (MAPolyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolyline()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiColoredPolylineRenderer) {
-      return (MAMultiColoredPolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiColoredPolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnimatedAnnotation) {
-      return (MAAnimatedAnnotation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnimatedAnnotation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlay) {
-      return (MAOverlay.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOverlay.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiTexturePolylineRenderer) {
-      return (MAMultiTexturePolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiTexturePolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineProvince) {
-      return (MAOfflineProvince()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineProvince()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapVectorOverlayRender) {
-      return (MAHeatMapVectorOverlayRender()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapVectorOverlayRender()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlayRenderer) {
-      return (MATileOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MATileOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItem) {
-      return (MAOfflineItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItem()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGeodesicPolyline) {
-      return (MAGeodesicPolyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAGeodesicPolyline()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATouchPoi) {
-      return (MATouchPoi()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MATouchPoi()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPathShowRange) {
-      return (MAPathShowRange()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAPathShowRange()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemMunicipality) {
-      return (MAOfflineItemMunicipality()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItemMunicipality()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPolyline) {
-      return (MAMultiPolyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPolyline()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATraceManager) {
-      return (MATraceManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MATraceManager()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointOverlayRenderer) {
-      return (MAMultiPointOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPointOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAIndoorFloorInfo) {
-      return (MAIndoorFloorInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAIndoorFloorInfo()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAIndoorInfo) {
-      return (MAIndoorInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAIndoorInfo()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolylineRenderer) {
-      return (MAPolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotationMoveAnimation) {
-      return (MAAnnotationMoveAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnnotationMoveAnimation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAShape) {
-      return (MAShape()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAShape()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotationView) {
-      return (MAAnnotationView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnnotationView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlay) {
-      return (MATileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MATileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlayPath) {
-      return (MATileOverlayPath()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MATileOverlayPath()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomCalloutView) {
-      return (MACustomCalloutView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomCalloutView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemCommonCity) {
-      return (MAOfflineItemCommonCity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItemCommonCity()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineMap) {
-      return (MAOfflineMap()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineMap()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACircleRenderer) {
-      return (MACircleRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACircleRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayRenderer) {
-      return (MAParticleOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateBounds) {
-      return (MACoordinateBounds()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACoordinateBounds()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateSpan) {
-      return (MACoordinateSpan()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACoordinateSpan()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateRegion) {
-      return (MACoordinateRegion()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACoordinateRegion()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapPoint) {
-      return (MAMapPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapPoint()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapSize) {
-      return (MAMapSize()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapSize()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapRect) {
-      return (MAMapRect()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapRect()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleVelocityGenerate) {
-      return (MAParticleVelocityGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleVelocityGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRandomVelocityGenerate) {
-      return (MAParticleRandomVelocityGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRandomVelocityGenerate()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleColorGenerate) {
-      return (MAParticleColorGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleColorGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRandomColorGenerate) {
-      return (MAParticleRandomColorGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRandomColorGenerate()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRotationGenerate) {
-      return (MAParticleRotationGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRotationGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleConstantRotationGenerate) {
-      return (MAParticleConstantRotationGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleConstantRotationGenerate()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleSizeGenerate) {
-      return (MAParticleSizeGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleSizeGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleCurveSizeGenerate) {
-      return (MAParticleCurveSizeGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleCurveSizeGenerate()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleEmissionModule) {
-      return (MAParticleEmissionModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleEmissionModule()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleShapeModule) {
-      return (MAParticleShapeModule.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleShapeModule.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleSinglePointShapeModule) {
-      return (MAParticleSinglePointShapeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleSinglePointShapeModule()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRectShapeModule) {
-      return (MAParticleRectShapeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRectShapeModule()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverLifeModule) {
-      return (MAParticleOverLifeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverLifeModule()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayOptions) {
-      return (MAParticleOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayOptionsFactory) {
-      return (MAParticleOverlayOptionsFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlayOptionsFactory()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlayRenderer) {
-      return (MAOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAUserLocation) {
-      return (MAUserLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAUserLocation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapVectorNode) {
-      return (MAHeatMapVectorNode()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapVectorNode()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapVectorItem) {
-      return (MAHeatMapVectorItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapVectorItem()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapVectorOverlayOptions) {
-      return (MAHeatMapVectorOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapVectorOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapVectorOverlay) {
-      return (MAHeatMapVectorOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapVectorOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointItem) {
-      return (MAMultiPointItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPointItem()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointOverlay) {
-      return (MAMultiPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlayOption) {
-      return (MACustomBuildingOverlayOption()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomBuildingOverlayOption()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlay) {
-      return (MACustomBuildingOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomBuildingOverlay()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATracePoint) {
-      return (MATracePoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MATracePoint()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATraceLocation) {
-      return (MATraceLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MATraceLocation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAArc) {
-      return (MAArc()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAArc()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAUserLocationRepresentation) {
-      return (MAUserLocationRepresentation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAUserLocationRepresentation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapView) {
-      return (MAMapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlayPathRenderer) {
-      return (MAOverlayPathRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAOverlayPathRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGroundOverlayRenderer) {
-      return (MAGroundOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MAGroundOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlayRenderer) {
-      return (MACustomBuildingOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomBuildingOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLLocation) {
-      return (CLLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (CLLocation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLHeading) {
-      return (CLHeading()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (CLHeading()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGRect) {
-      return (CGRect()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (CGRect()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGPoint) {
-      return (CGPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (CGPoint()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGSize) {
-      return (CGSize()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (CGSize()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIEdgeInsets) {
-      return (UIEdgeInsets()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (UIEdgeInsets()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLLocationCoordinate2D) {
-      return (CLLocationCoordinate2D()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (CLLocationCoordinate2D()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLLocationManager) {
-      return (CLLocationManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (CLLocationManager()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSError) {
-      return (NSError()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (NSError()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSCoding) {
-      return (NSCoding.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (NSCoding.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSCopying) {
-      return (NSCopying.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (NSCopying.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIView) {
-      return (UIView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (UIView()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIViewController) {
-      return (UIViewController()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (UIViewController()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIControl) {
-      return (UIControl()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (UIControl()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIImage) {
-      return (UIImage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (UIImage()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIColor) {
-      return (UIColor()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (UIColor()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSData) {
-      return (NSData()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (NSData()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSOperation) {
-      return (NSOperation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+      return (NSOperation()..refId = (this is Ref ? (this as Ref).refId : this as String)..tag__ = 'amap_map_fluttify') as T;
     }
   }
 }

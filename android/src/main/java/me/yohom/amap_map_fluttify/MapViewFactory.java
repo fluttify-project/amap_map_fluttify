@@ -19,8 +19,11 @@ import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 import io.flutter.plugin.common.StandardMessageCodec;
+import io.flutter.plugin.common.StandardMethodCodec;
 import io.flutter.plugin.platform.PlatformView;
 import io.flutter.plugin.platform.PlatformViewFactory;
+
+import me.yohom.foundation_fluttify.core.FluttifyMessageCodec;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
@@ -34,7 +37,7 @@ class MapViewFactory extends PlatformViewFactory {
         this.messenger = messenger;
         this.activity = activity;
 
-        new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_MapView").setMethodCallHandler((methodCall, methodResult) -> {
+        new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_MapView", new StandardMethodCodec(new FluttifyMessageCodec())).setMethodCallHandler((methodCall, methodResult) -> {
             Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
             AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
             if (handler != null) {
@@ -60,18 +63,17 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::getMap(" + "" + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::getMap(" + "" + ")");
             }
         
             // invoke native method
-            com.amap.api.maps.AMap __result__;
+            com.amap.api.maps.AMap __result__ = null;
             try {
-                __result__ = ref.getMap();
+                __result__ = __this__.getMap();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -81,34 +83,26 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            Integer jsonableResult = null;
-            if (__result__ != null) {
-                jsonableResult = System.identityHashCode(__result__);
-                getHEAP().put(jsonableResult, __result__);
-            }
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
         // method
         put("com.amap.api.maps.MapView::onCreate", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-            android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
+            android.os.Bundle var1 = (android.os.Bundle) ((Map<String, Object>) __args__).get("var1");
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onCreate(" + var1 + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::onCreate(" + var1 + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.onCreate(var1);
+                __this__.onCreate(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -118,10 +112,7 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
         // method
         put("com.amap.api.maps.MapView::onResume", (__args__, __methodResult__) -> {
@@ -129,17 +120,17 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onResume(" + "" + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::onResume(" + "" + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.onResume();
+                __this__.onResume();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -149,10 +140,7 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
         // method
         put("com.amap.api.maps.MapView::onPause", (__args__, __methodResult__) -> {
@@ -160,17 +148,17 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onPause(" + "" + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::onPause(" + "" + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.onPause();
+                __this__.onPause();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -180,10 +168,7 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
         // method
         put("com.amap.api.maps.MapView::onDestroy", (__args__, __methodResult__) -> {
@@ -191,17 +176,17 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onDestroy(" + "" + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::onDestroy(" + "" + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.onDestroy();
+                __this__.onDestroy();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -211,10 +196,7 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
         // method
         put("com.amap.api.maps.MapView::onLowMemory", (__args__, __methodResult__) -> {
@@ -222,17 +204,17 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onLowMemory(" + "" + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::onLowMemory(" + "" + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.onLowMemory();
+                __this__.onLowMemory();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -242,30 +224,26 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
         // method
         put("com.amap.api.maps.MapView::onSaveInstanceState", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-            android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
+            android.os.Bundle var1 = (android.os.Bundle) ((Map<String, Object>) __args__).get("var1");
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::onSaveInstanceState(" + var1 + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.onSaveInstanceState(var1);
+                __this__.onSaveInstanceState(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -275,29 +253,26 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
         // method
         put("com.amap.api.maps.MapView::setVisibility", (__args__, __methodResult__) -> {
             // args
-            // jsonable arg
+            // ref arg
             int var1 = (int) ((Map<String, Object>) __args__).get("var1");
         
             // ref
-            int refId = (int) ((Map<String, Object>) __args__).get("refId");
-            com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::setVisibility(" + var1 + ")");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + __this__ + "::setVisibility(" + var1 + ")");
             }
         
             // invoke native method
+            Void __result__ = null;
             try {
-                ref.setVisibility(var1);
+                __this__.setVisibility(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -307,10 +282,7 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // convert result to jsonable result
-            String jsonableResult = "success";
-        
-            __methodResult__.success(jsonableResult);
+            __methodResult__.success(__result__);
         });
     }};
 
@@ -324,7 +296,7 @@ class MapViewFactory extends PlatformViewFactory {
 
         com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(activity);
 
-        getHEAP().put(Integer.MAX_VALUE - id, view);
+        getHEAP().put(String.valueOf(Integer.MAX_VALUE - id), view);
         return new PlatformView() {
 
             // add to HEAP

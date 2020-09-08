@@ -24,22 +24,10 @@ mixin com_amap_api_maps_AMap_OnCameraChangeListener on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onCameraChange(com_amap_api_maps_model_CameraPosition var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onCameraChange::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onCameraChange(com_amap_api_maps_model_CameraPosition var1) {}
   
   @mustCallSuper
-  Future<void> onCameraChangeFinish(com_amap_api_maps_model_CameraPosition var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onCameraChangeFinish::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onCameraChangeFinish(com_amap_api_maps_model_CameraPosition var1) {}
   
 }
 

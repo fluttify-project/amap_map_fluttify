@@ -24,22 +24,10 @@ mixin com_amap_api_maps_AMap_CancelableCallback on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onFinish() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onFinish::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onFinish() {}
   
   @mustCallSuper
-  Future<void> onCancel() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onCancel::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onCancel() {}
   
 }
 

@@ -3,6 +3,7 @@
 //////////////////////////////////////////////////////////
 
 #import "SubHandler5.h"
+#import "FluttifyMessageCodec.h"
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
 extern NSMutableDictionary<NSString*, NSObject*>* STACK;
@@ -23,12 +24,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* tileSizeValue = (NSValue*) HEAP[args[@"tileSize"]];
+            NSValue* tileSizeValue = (NSValue*) args[@"tileSize"];
             CGSize tileSize;
             [tileSizeValue getValue:&tileSize];
         
             // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
             ref.tileSize = tileSize;
             methodResult(@"success");
@@ -45,7 +46,7 @@ extern BOOL enableLog;
             NSInteger minimumZ = [args[@"minimumZ"] longValue];
         
             // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
             ref.minimumZ = minimumZ;
             methodResult(@"success");
@@ -62,7 +63,7 @@ extern BOOL enableLog;
             NSInteger maximumZ = [args[@"maximumZ"] longValue];
         
             // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
             ref.maximumZ = maximumZ;
             methodResult(@"success");
@@ -79,7 +80,7 @@ extern BOOL enableLog;
             BOOL canReplaceMapContent = [args[@"canReplaceMapContent"] boolValue];
         
             // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
             ref.canReplaceMapContent = canReplaceMapContent;
             methodResult(@"success");
@@ -93,12 +94,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* boundingMapRectValue = (NSValue*) HEAP[args[@"boundingMapRect"]];
+            NSValue* boundingMapRectValue = (NSValue*) args[@"boundingMapRect"];
             MAMapRect boundingMapRect;
             [boundingMapRectValue getValue:&boundingMapRect];
         
             // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
             ref.boundingMapRect = boundingMapRect;
             methodResult(@"success");
@@ -115,7 +116,7 @@ extern BOOL enableLog;
             BOOL disableOffScreenTileLoading = [args[@"disableOffScreenTileLoading"] boolValue];
         
             // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
             ref.disableOffScreenTileLoading = disableOffScreenTileLoading;
             methodResult(@"success");
@@ -132,7 +133,7 @@ extern BOOL enableLog;
             NSInteger x = [args[@"x"] longValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MATileOverlayPath ref;
             [dataValue getValue:&ref];
         
@@ -151,7 +152,7 @@ extern BOOL enableLog;
             NSInteger y = [args[@"y"] longValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MATileOverlayPath ref;
             [dataValue getValue:&ref];
         
@@ -170,7 +171,7 @@ extern BOOL enableLog;
             NSInteger z = [args[@"z"] longValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MATileOverlayPath ref;
             [dataValue getValue:&ref];
         
@@ -189,7 +190,7 @@ extern BOOL enableLog;
             CGFloat contentScaleFactor = [args[@"contentScaleFactor"] floatValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MATileOverlayPath ref;
             [dataValue getValue:&ref];
         
@@ -219,7 +220,7 @@ extern BOOL enableLog;
             }
         
             // ref
-            MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACustomCalloutView* ref = (MACustomCalloutView*) args[@"__this__"];
         
             ref.userData = userData;
             methodResult(@"success");
@@ -233,10 +234,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MAOfflineItem* province = (MAOfflineItem*) HEAP[args[@"province"]];
+            MAOfflineItem* province = (MAOfflineItem*) args[@"province"];
         
             // ref
-            MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) args[@"__this__"];
         
             ref.province = province;
             methodResult(@"success");
@@ -250,12 +251,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* northEastValue = (NSValue*) HEAP[args[@"northEast"]];
+            NSValue* northEastValue = (NSValue*) args[@"northEast"];
             CLLocationCoordinate2D northEast;
             [northEastValue getValue:&northEast];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MACoordinateBounds ref;
             [dataValue getValue:&ref];
         
@@ -271,12 +272,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* southWestValue = (NSValue*) HEAP[args[@"southWest"]];
+            NSValue* southWestValue = (NSValue*) args[@"southWest"];
             CLLocationCoordinate2D southWest;
             [southWestValue getValue:&southWest];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MACoordinateBounds ref;
             [dataValue getValue:&ref];
         
@@ -295,7 +296,7 @@ extern BOOL enableLog;
             CLLocationDegrees latitudeDelta = [args[@"latitudeDelta"] doubleValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MACoordinateSpan ref;
             [dataValue getValue:&ref];
         
@@ -314,7 +315,7 @@ extern BOOL enableLog;
             CLLocationDegrees longitudeDelta = [args[@"longitudeDelta"] doubleValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MACoordinateSpan ref;
             [dataValue getValue:&ref];
         
@@ -330,12 +331,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* centerValue = (NSValue*) HEAP[args[@"center"]];
+            NSValue* centerValue = (NSValue*) args[@"center"];
             CLLocationCoordinate2D center;
             [centerValue getValue:&center];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MACoordinateRegion ref;
             [dataValue getValue:&ref];
         
@@ -351,12 +352,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* spanValue = (NSValue*) HEAP[args[@"span"]];
+            NSValue* spanValue = (NSValue*) args[@"span"];
             MACoordinateSpan span;
             [spanValue getValue:&span];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MACoordinateRegion ref;
             [dataValue getValue:&ref];
         
@@ -375,7 +376,7 @@ extern BOOL enableLog;
             double x = [args[@"x"] doubleValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MAMapPoint ref;
             [dataValue getValue:&ref];
         
@@ -394,7 +395,7 @@ extern BOOL enableLog;
             double y = [args[@"y"] doubleValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MAMapPoint ref;
             [dataValue getValue:&ref];
         
@@ -413,7 +414,7 @@ extern BOOL enableLog;
             double width = [args[@"width"] doubleValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MAMapSize ref;
             [dataValue getValue:&ref];
         
@@ -432,7 +433,7 @@ extern BOOL enableLog;
             double height = [args[@"height"] doubleValue];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MAMapSize ref;
             [dataValue getValue:&ref];
         
@@ -448,12 +449,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* originValue = (NSValue*) HEAP[args[@"origin"]];
+            NSValue* originValue = (NSValue*) args[@"origin"];
             MAMapPoint origin;
             [originValue getValue:&origin];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MAMapRect ref;
             [dataValue getValue:&ref];
         
@@ -469,12 +470,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* sizeValue = (NSValue*) HEAP[args[@"size"]];
+            NSValue* sizeValue = (NSValue*) args[@"size"];
             MAMapSize size;
             [sizeValue getValue:&size];
         
             // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
             MAMapRect ref;
             [dataValue getValue:&ref];
         
@@ -493,7 +494,7 @@ extern BOOL enableLog;
             BOOL visibile = [args[@"visibile"] boolValue];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.visibile = visibile;
             methodResult(@"success");
@@ -510,7 +511,7 @@ extern BOOL enableLog;
             NSTimeInterval duration = [args[@"duration"] doubleValue];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.duration = duration;
             methodResult(@"success");
@@ -527,7 +528,7 @@ extern BOOL enableLog;
             BOOL loop = [args[@"loop"] boolValue];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.loop = loop;
             methodResult(@"success");
@@ -544,7 +545,7 @@ extern BOOL enableLog;
             NSInteger maxParticles = [args[@"maxParticles"] longValue];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.maxParticles = maxParticles;
             methodResult(@"success");
@@ -558,10 +559,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* icon = (UIImage*) HEAP[args[@"icon"]];
+            UIImage* icon = (UIImage*) args[@"icon"];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.icon = icon;
             methodResult(@"success");
@@ -575,12 +576,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* startParticleSizeValue = (NSValue*) HEAP[args[@"startParticleSize"]];
+            NSValue* startParticleSizeValue = (NSValue*) args[@"startParticleSize"];
             CGSize startParticleSize;
             [startParticleSizeValue getValue:&startParticleSize];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.startParticleSize = startParticleSize;
             methodResult(@"success");
@@ -597,7 +598,7 @@ extern BOOL enableLog;
             NSTimeInterval particleLifeTime = [args[@"particleLifeTime"] doubleValue];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.particleLifeTime = particleLifeTime;
             methodResult(@"success");
@@ -611,10 +612,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) HEAP[args[@"particleStartColor"]];
+            id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) args[@"particleStartColor"];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.particleStartColor = particleStartColor;
             methodResult(@"success");
@@ -628,10 +629,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) HEAP[args[@"particleStartSpeed"]];
+            id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) args[@"particleStartSpeed"];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.particleStartSpeed = particleStartSpeed;
             methodResult(@"success");
@@ -645,10 +646,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) HEAP[args[@"particleEmissionModule"]];
+            MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) args[@"particleEmissionModule"];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.particleEmissionModule = particleEmissionModule;
             methodResult(@"success");
@@ -662,10 +663,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) HEAP[args[@"particleShapeModule"]];
+            id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) args[@"particleShapeModule"];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.particleShapeModule = particleShapeModule;
             methodResult(@"success");
@@ -679,10 +680,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) HEAP[args[@"particleOverLifeModule"]];
+            MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) args[@"particleOverLifeModule"];
         
             // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
         
             ref.particleOverLifeModule = particleOverLifeModule;
             methodResult(@"success");
@@ -696,10 +697,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* strokeImage = (UIImage*) HEAP[args[@"strokeImage"]];
+            UIImage* strokeImage = (UIImage*) args[@"strokeImage"];
         
             // ref
-            MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
             ref.strokeImage = strokeImage;
             methodResult(@"success");
@@ -716,7 +717,7 @@ extern BOOL enableLog;
             CGFloat alpha = [args[@"alpha"] floatValue];
         
             // ref
-            MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
         
             ref.alpha = alpha;
             methodResult(@"success");
@@ -730,12 +731,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+            NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
             CLLocationCoordinate2D coordinate;
             [coordinateValue getValue:&coordinate];
         
             // ref
-            MAHeatMapVectorNode* ref = (MAHeatMapVectorNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorNode* ref = (MAHeatMapVectorNode*) args[@"__this__"];
         
             ref.coordinate = coordinate;
             methodResult(@"success");
@@ -752,7 +753,7 @@ extern BOOL enableLog;
             float weight = [args[@"weight"] floatValue];
         
             // ref
-            MAHeatMapVectorNode* ref = (MAHeatMapVectorNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorNode* ref = (MAHeatMapVectorNode*) args[@"__this__"];
         
             ref.weight = weight;
             methodResult(@"success");
@@ -769,7 +770,7 @@ extern BOOL enableLog;
             MAHeatMapType type = (MAHeatMapType) [args[@"type"] integerValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.type = type;
             methodResult(@"success");
@@ -786,7 +787,7 @@ extern BOOL enableLog;
             BOOL visible = [args[@"visible"] boolValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.visible = visible;
             methodResult(@"success");
@@ -800,15 +801,10 @@ extern BOOL enableLog;
         
             // args
             // list arg
-            NSArray<NSNumber*>* inputNodesRefArray = (NSArray<NSNumber*> *) args[@"inputNodes"];
-            NSMutableArray<MAHeatMapVectorNode*>* inputNodes = [NSMutableArray arrayWithCapacity:inputNodesRefArray.count];
-            for (int __i__ = 0; __i__ < inputNodesRefArray.count; __i__++) {
-                MAHeatMapVectorNode* item = (MAHeatMapVectorNode*) HEAP[[inputNodesRefArray objectAtIndex:__i__]];
-                [inputNodes addObject:item];
-            }
+            NSArray<MAHeatMapVectorNode*>* inputNodes = (NSArray<MAHeatMapVectorNode*>*) args[@"inputNodes"];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.inputNodes = inputNodes;
             methodResult(@"success");
@@ -825,7 +821,7 @@ extern BOOL enableLog;
             CLLocationDistance size = [args[@"size"] doubleValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.size = size;
             methodResult(@"success");
@@ -842,7 +838,7 @@ extern BOOL enableLog;
             CGFloat gap = [args[@"gap"] floatValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.gap = gap;
             methodResult(@"success");
@@ -856,15 +852,10 @@ extern BOOL enableLog;
         
             // args
             // list arg
-            NSArray<NSNumber*>* colorsRefArray = (NSArray<NSNumber*> *) args[@"colors"];
-            NSMutableArray<UIColor*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
-            for (int __i__ = 0; __i__ < colorsRefArray.count; __i__++) {
-                UIColor* item = (UIColor*) HEAP[[colorsRefArray objectAtIndex:__i__]];
-                [colors addObject:item];
-            }
+            NSArray<UIColor*>* colors = (NSArray<UIColor*>*) args[@"colors"];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.colors = colors;
             methodResult(@"success");
@@ -881,7 +872,7 @@ extern BOOL enableLog;
             NSArray<NSNumber*>* startPoints = (NSArray<NSNumber*>*) args[@"startPoints"];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.startPoints = startPoints;
             methodResult(@"success");
@@ -898,7 +889,7 @@ extern BOOL enableLog;
             CGFloat opacity = [args[@"opacity"] floatValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.opacity = opacity;
             methodResult(@"success");
@@ -915,7 +906,7 @@ extern BOOL enableLog;
             int maxIntensity = [args[@"maxIntensity"] intValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.maxIntensity = maxIntensity;
             methodResult(@"success");
@@ -932,7 +923,7 @@ extern BOOL enableLog;
             CGFloat minZoom = [args[@"minZoom"] floatValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.minZoom = minZoom;
             methodResult(@"success");
@@ -949,7 +940,7 @@ extern BOOL enableLog;
             CGFloat maxZoom = [args[@"maxZoom"] floatValue];
         
             // ref
-            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) args[@"__this__"];
         
             ref.maxZoom = maxZoom;
             methodResult(@"success");
@@ -963,10 +954,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) HEAP[args[@"option"]];
+            MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) args[@"option"];
         
             // ref
-            MAHeatMapVectorOverlay* ref = (MAHeatMapVectorOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAHeatMapVectorOverlay* ref = (MAHeatMapVectorOverlay*) args[@"__this__"];
         
             ref.option = option;
             methodResult(@"success");
@@ -980,12 +971,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+            NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
             CLLocationCoordinate2D coordinate;
             [coordinateValue getValue:&coordinate];
         
             // ref
-            MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMultiPointItem* ref = (MAMultiPointItem*) args[@"__this__"];
         
             ref.coordinate = coordinate;
             methodResult(@"success");
@@ -1002,7 +993,7 @@ extern BOOL enableLog;
             NSString* customID = (NSString*) args[@"customID"];
         
             // ref
-            MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMultiPointItem* ref = (MAMultiPointItem*) args[@"__this__"];
         
             ref.customID = customID;
             methodResult(@"success");
@@ -1019,7 +1010,7 @@ extern BOOL enableLog;
             NSString* title = (NSString*) args[@"title"];
         
             // ref
-            MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMultiPointItem* ref = (MAMultiPointItem*) args[@"__this__"];
         
             ref.title = title;
             methodResult(@"success");
@@ -1036,7 +1027,7 @@ extern BOOL enableLog;
             NSString* subtitle = (NSString*) args[@"subtitle"];
         
             // ref
-            MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMultiPointItem* ref = (MAMultiPointItem*) args[@"__this__"];
         
             ref.subtitle = subtitle;
             methodResult(@"success");
@@ -1053,7 +1044,7 @@ extern BOOL enableLog;
             CGFloat height = [args[@"height"] floatValue];
         
             // ref
-            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
         
             ref.height = height;
             methodResult(@"success");
@@ -1070,7 +1061,7 @@ extern BOOL enableLog;
             CGFloat heightScale = [args[@"heightScale"] floatValue];
         
             // ref
-            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
         
             ref.heightScale = heightScale;
             methodResult(@"success");
@@ -1084,10 +1075,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* topColor = (UIColor*) HEAP[args[@"topColor"]];
+            UIColor* topColor = (UIColor*) args[@"topColor"];
         
             // ref
-            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
         
             ref.topColor = topColor;
             methodResult(@"success");
@@ -1101,10 +1092,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* sideColor = (UIColor*) HEAP[args[@"sideColor"]];
+            UIColor* sideColor = (UIColor*) args[@"sideColor"];
         
             // ref
-            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
         
             ref.sideColor = sideColor;
             methodResult(@"success");
@@ -1121,7 +1112,7 @@ extern BOOL enableLog;
             BOOL visibile = [args[@"visibile"] boolValue];
         
             // ref
-            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
         
             ref.visibile = visibile;
             methodResult(@"success");
@@ -1138,7 +1129,7 @@ extern BOOL enableLog;
             CLLocationDegrees latitude = [args[@"latitude"] doubleValue];
         
             // ref
-            MATracePoint* ref = (MATracePoint*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATracePoint* ref = (MATracePoint*) args[@"__this__"];
         
             ref.latitude = latitude;
             methodResult(@"success");
@@ -1155,7 +1146,7 @@ extern BOOL enableLog;
             CLLocationDegrees longitude = [args[@"longitude"] doubleValue];
         
             // ref
-            MATracePoint* ref = (MATracePoint*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATracePoint* ref = (MATracePoint*) args[@"__this__"];
         
             ref.longitude = longitude;
             methodResult(@"success");
@@ -1169,12 +1160,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* locValue = (NSValue*) HEAP[args[@"loc"]];
+            NSValue* locValue = (NSValue*) args[@"loc"];
             CLLocationCoordinate2D loc;
             [locValue getValue:&loc];
         
             // ref
-            MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATraceLocation* ref = (MATraceLocation*) args[@"__this__"];
         
             ref.loc = loc;
             methodResult(@"success");
@@ -1191,7 +1182,7 @@ extern BOOL enableLog;
             double angle = [args[@"angle"] doubleValue];
         
             // ref
-            MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATraceLocation* ref = (MATraceLocation*) args[@"__this__"];
         
             ref.angle = angle;
             methodResult(@"success");
@@ -1208,7 +1199,7 @@ extern BOOL enableLog;
             double speed = [args[@"speed"] doubleValue];
         
             // ref
-            MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATraceLocation* ref = (MATraceLocation*) args[@"__this__"];
         
             ref.speed = speed;
             methodResult(@"success");
@@ -1225,7 +1216,7 @@ extern BOOL enableLog;
             double time = [args[@"time"] doubleValue];
         
             // ref
-            MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MATraceLocation* ref = (MATraceLocation*) args[@"__this__"];
         
             ref.time = time;
             methodResult(@"success");
@@ -1239,12 +1230,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* startCoordinateValue = (NSValue*) HEAP[args[@"startCoordinate"]];
+            NSValue* startCoordinateValue = (NSValue*) args[@"startCoordinate"];
             CLLocationCoordinate2D startCoordinate;
             [startCoordinateValue getValue:&startCoordinate];
         
             // ref
-            MAArc* ref = (MAArc*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAArc* ref = (MAArc*) args[@"__this__"];
         
             ref.startCoordinate = startCoordinate;
             methodResult(@"success");
@@ -1258,12 +1249,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* passedCoordinateValue = (NSValue*) HEAP[args[@"passedCoordinate"]];
+            NSValue* passedCoordinateValue = (NSValue*) args[@"passedCoordinate"];
             CLLocationCoordinate2D passedCoordinate;
             [passedCoordinateValue getValue:&passedCoordinate];
         
             // ref
-            MAArc* ref = (MAArc*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAArc* ref = (MAArc*) args[@"__this__"];
         
             ref.passedCoordinate = passedCoordinate;
             methodResult(@"success");
@@ -1277,12 +1268,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* endCoordinateValue = (NSValue*) HEAP[args[@"endCoordinate"]];
+            NSValue* endCoordinateValue = (NSValue*) args[@"endCoordinate"];
             CLLocationCoordinate2D endCoordinate;
             [endCoordinateValue getValue:&endCoordinate];
         
             // ref
-            MAArc* ref = (MAArc*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAArc* ref = (MAArc*) args[@"__this__"];
         
             ref.endCoordinate = endCoordinate;
             methodResult(@"success");
@@ -1299,7 +1290,7 @@ extern BOOL enableLog;
             BOOL showsAccuracyRing = [args[@"showsAccuracyRing"] boolValue];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.showsAccuracyRing = showsAccuracyRing;
             methodResult(@"success");
@@ -1316,7 +1307,7 @@ extern BOOL enableLog;
             BOOL showsHeadingIndicator = [args[@"showsHeadingIndicator"] boolValue];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.showsHeadingIndicator = showsHeadingIndicator;
             methodResult(@"success");
@@ -1330,10 +1321,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* fillColor = (UIColor*) HEAP[args[@"fillColor"]];
+            UIColor* fillColor = (UIColor*) args[@"fillColor"];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.fillColor = fillColor;
             methodResult(@"success");
@@ -1347,10 +1338,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* strokeColor = (UIColor*) HEAP[args[@"strokeColor"]];
+            UIColor* strokeColor = (UIColor*) args[@"strokeColor"];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.strokeColor = strokeColor;
             methodResult(@"success");
@@ -1367,7 +1358,7 @@ extern BOOL enableLog;
             CGFloat lineWidth = [args[@"lineWidth"] floatValue];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.lineWidth = lineWidth;
             methodResult(@"success");
@@ -1381,10 +1372,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* locationDotBgColor = (UIColor*) HEAP[args[@"locationDotBgColor"]];
+            UIColor* locationDotBgColor = (UIColor*) args[@"locationDotBgColor"];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.locationDotBgColor = locationDotBgColor;
             methodResult(@"success");
@@ -1398,10 +1389,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* locationDotFillColor = (UIColor*) HEAP[args[@"locationDotFillColor"]];
+            UIColor* locationDotFillColor = (UIColor*) args[@"locationDotFillColor"];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.locationDotFillColor = locationDotFillColor;
             methodResult(@"success");
@@ -1418,7 +1409,7 @@ extern BOOL enableLog;
             BOOL enablePulseAnnimation = [args[@"enablePulseAnnimation"] boolValue];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.enablePulseAnnimation = enablePulseAnnimation;
             methodResult(@"success");
@@ -1432,10 +1423,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* image = (UIImage*) HEAP[args[@"image"]];
+            UIImage* image = (UIImage*) args[@"image"];
         
             // ref
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
         
             ref.image = image;
             methodResult(@"success");
@@ -1451,7 +1442,7 @@ extern BOOL enableLog;
         
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.delegate = weakSelf;
             methodResult(@"success");
@@ -1468,7 +1459,7 @@ extern BOOL enableLog;
             MAMapType mapType = (MAMapType) [args[@"mapType"] integerValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.mapType = mapType;
             methodResult(@"success");
@@ -1482,12 +1473,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* centerCoordinateValue = (NSValue*) HEAP[args[@"centerCoordinate"]];
+            NSValue* centerCoordinateValue = (NSValue*) args[@"centerCoordinate"];
             CLLocationCoordinate2D centerCoordinate;
             [centerCoordinateValue getValue:&centerCoordinate];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.centerCoordinate = centerCoordinate;
             methodResult(@"success");
@@ -1501,12 +1492,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* regionValue = (NSValue*) HEAP[args[@"region"]];
+            NSValue* regionValue = (NSValue*) args[@"region"];
             MACoordinateRegion region;
             [regionValue getValue:&region];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.region = region;
             methodResult(@"success");
@@ -1520,12 +1511,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* visibleMapRectValue = (NSValue*) HEAP[args[@"visibleMapRect"]];
+            NSValue* visibleMapRectValue = (NSValue*) args[@"visibleMapRect"];
             MAMapRect visibleMapRect;
             [visibleMapRectValue getValue:&visibleMapRect];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.visibleMapRect = visibleMapRect;
             methodResult(@"success");
@@ -1539,12 +1530,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* limitRegionValue = (NSValue*) HEAP[args[@"limitRegion"]];
+            NSValue* limitRegionValue = (NSValue*) args[@"limitRegion"];
             MACoordinateRegion limitRegion;
             [limitRegionValue getValue:&limitRegion];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.limitRegion = limitRegion;
             methodResult(@"success");
@@ -1558,12 +1549,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* limitMapRectValue = (NSValue*) HEAP[args[@"limitMapRect"]];
+            NSValue* limitMapRectValue = (NSValue*) args[@"limitMapRect"];
             MAMapRect limitMapRect;
             [limitMapRectValue getValue:&limitMapRect];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.limitMapRect = limitMapRect;
             methodResult(@"success");
@@ -1580,7 +1571,7 @@ extern BOOL enableLog;
             CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.zoomLevel = zoomLevel;
             methodResult(@"success");
@@ -1597,7 +1588,7 @@ extern BOOL enableLog;
             CGFloat minZoomLevel = [args[@"minZoomLevel"] floatValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.minZoomLevel = minZoomLevel;
             methodResult(@"success");
@@ -1614,7 +1605,7 @@ extern BOOL enableLog;
             CGFloat maxZoomLevel = [args[@"maxZoomLevel"] floatValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.maxZoomLevel = maxZoomLevel;
             methodResult(@"success");
@@ -1631,7 +1622,7 @@ extern BOOL enableLog;
             CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.rotationDegree = rotationDegree;
             methodResult(@"success");
@@ -1648,7 +1639,7 @@ extern BOOL enableLog;
             CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.cameraDegree = cameraDegree;
             methodResult(@"success");
@@ -1665,7 +1656,7 @@ extern BOOL enableLog;
             BOOL zoomingInPivotsAroundAnchorPoint = [args[@"zoomingInPivotsAroundAnchorPoint"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.zoomingInPivotsAroundAnchorPoint = zoomingInPivotsAroundAnchorPoint;
             methodResult(@"success");
@@ -1682,7 +1673,7 @@ extern BOOL enableLog;
             BOOL zoomEnabled = [args[@"zoomEnabled"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.zoomEnabled = zoomEnabled;
             methodResult(@"success");
@@ -1699,7 +1690,7 @@ extern BOOL enableLog;
             BOOL scrollEnabled = [args[@"scrollEnabled"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.scrollEnabled = scrollEnabled;
             methodResult(@"success");
@@ -1716,7 +1707,7 @@ extern BOOL enableLog;
             BOOL rotateEnabled = [args[@"rotateEnabled"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.rotateEnabled = rotateEnabled;
             methodResult(@"success");
@@ -1733,7 +1724,7 @@ extern BOOL enableLog;
             BOOL rotateCameraEnabled = [args[@"rotateCameraEnabled"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.rotateCameraEnabled = rotateCameraEnabled;
             methodResult(@"success");
@@ -1750,7 +1741,7 @@ extern BOOL enableLog;
             BOOL skyModelEnable = [args[@"skyModelEnable"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.skyModelEnable = skyModelEnable;
             methodResult(@"success");
@@ -1767,7 +1758,7 @@ extern BOOL enableLog;
             BOOL showsBuildings = [args[@"showsBuildings"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsBuildings = showsBuildings;
             methodResult(@"success");
@@ -1784,7 +1775,7 @@ extern BOOL enableLog;
             BOOL showsLabels = [args[@"showsLabels"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsLabels = showsLabels;
             methodResult(@"success");
@@ -1801,7 +1792,7 @@ extern BOOL enableLog;
             BOOL showTraffic = [args[@"showTraffic"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showTraffic = showTraffic;
             methodResult(@"success");
@@ -1818,7 +1809,7 @@ extern BOOL enableLog;
             CGFloat trafficRatio = [args[@"trafficRatio"] floatValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.trafficRatio = trafficRatio;
             methodResult(@"success");
@@ -1835,7 +1826,7 @@ extern BOOL enableLog;
             BOOL touchPOIEnabled = [args[@"touchPOIEnabled"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.touchPOIEnabled = touchPOIEnabled;
             methodResult(@"success");
@@ -1852,7 +1843,7 @@ extern BOOL enableLog;
             BOOL showsCompass = [args[@"showsCompass"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsCompass = showsCompass;
             methodResult(@"success");
@@ -1866,12 +1857,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* compassOriginValue = (NSValue*) HEAP[args[@"compassOrigin"]];
+            NSValue* compassOriginValue = (NSValue*) args[@"compassOrigin"];
             CGPoint compassOrigin;
             [compassOriginValue getValue:&compassOrigin];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.compassOrigin = compassOrigin;
             methodResult(@"success");
@@ -1888,7 +1879,7 @@ extern BOOL enableLog;
             BOOL showsScale = [args[@"showsScale"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsScale = showsScale;
             methodResult(@"success");
@@ -1902,12 +1893,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* scaleOriginValue = (NSValue*) HEAP[args[@"scaleOrigin"]];
+            NSValue* scaleOriginValue = (NSValue*) args[@"scaleOrigin"];
             CGPoint scaleOrigin;
             [scaleOriginValue getValue:&scaleOrigin];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.scaleOrigin = scaleOrigin;
             methodResult(@"success");
@@ -1921,12 +1912,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* logoCenterValue = (NSValue*) HEAP[args[@"logoCenter"]];
+            NSValue* logoCenterValue = (NSValue*) args[@"logoCenter"];
             CGPoint logoCenter;
             [logoCenterValue getValue:&logoCenter];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.logoCenter = logoCenter;
             methodResult(@"success");
@@ -1943,7 +1934,7 @@ extern BOOL enableLog;
             NSUInteger maxRenderFrame = [args[@"maxRenderFrame"] unsignedIntegerValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.maxRenderFrame = maxRenderFrame;
             methodResult(@"success");
@@ -1960,7 +1951,7 @@ extern BOOL enableLog;
             BOOL isAllowDecreaseFrame = [args[@"isAllowDecreaseFrame"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.isAllowDecreaseFrame = isAllowDecreaseFrame;
             methodResult(@"success");
@@ -1977,7 +1968,7 @@ extern BOOL enableLog;
             BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.openGLESDisabled = openGLESDisabled;
             methodResult(@"success");
@@ -1991,12 +1982,12 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* screenAnchorValue = (NSValue*) HEAP[args[@"screenAnchor"]];
+            NSValue* screenAnchorValue = (NSValue*) args[@"screenAnchor"];
             CGPoint screenAnchor;
             [screenAnchorValue getValue:&screenAnchor];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.screenAnchor = screenAnchor;
             methodResult(@"success");
@@ -2013,7 +2004,7 @@ extern BOOL enableLog;
             NSNumber* showsWorldMap = (NSNumber*) args[@"showsWorldMap"];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsWorldMap = showsWorldMap;
             methodResult(@"success");
@@ -2030,7 +2021,7 @@ extern BOOL enableLog;
             NSNumber* mapLanguage = (NSNumber*) args[@"mapLanguage"];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.mapLanguage = mapLanguage;
             methodResult(@"success");
@@ -2044,15 +2035,10 @@ extern BOOL enableLog;
         
             // args
             // list arg
-            NSArray<NSNumber*>* selectedAnnotationsRefArray = (NSArray<NSNumber*> *) args[@"selectedAnnotations"];
-            NSMutableArray<NSObject*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
-            for (int __i__ = 0; __i__ < selectedAnnotationsRefArray.count; __i__++) {
-                NSObject* item = (NSObject*) HEAP[[selectedAnnotationsRefArray objectAtIndex:__i__]];
-                [selectedAnnotations addObject:item];
-            }
+            NSArray<NSObject*>* selectedAnnotations = (NSArray<NSObject*>*) args[@"selectedAnnotations"];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.selectedAnnotations = selectedAnnotations;
             methodResult(@"success");
@@ -2069,7 +2055,7 @@ extern BOOL enableLog;
             BOOL allowsAnnotationViewSorting = [args[@"allowsAnnotationViewSorting"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.allowsAnnotationViewSorting = allowsAnnotationViewSorting;
             methodResult(@"success");
@@ -2086,7 +2072,7 @@ extern BOOL enableLog;
             BOOL showsUserLocation = [args[@"showsUserLocation"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsUserLocation = showsUserLocation;
             methodResult(@"success");
@@ -2103,7 +2089,7 @@ extern BOOL enableLog;
             BOOL customizeUserLocationAccuracyCircleRepresentation = [args[@"customizeUserLocationAccuracyCircleRepresentation"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.customizeUserLocationAccuracyCircleRepresentation = customizeUserLocationAccuracyCircleRepresentation;
             methodResult(@"success");
@@ -2120,7 +2106,7 @@ extern BOOL enableLog;
             MAUserTrackingMode userTrackingMode = (MAUserTrackingMode) [args[@"userTrackingMode"] integerValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.userTrackingMode = userTrackingMode;
             methodResult(@"success");
@@ -2137,7 +2123,7 @@ extern BOOL enableLog;
             CLLocationDistance distanceFilter = [args[@"distanceFilter"] doubleValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.distanceFilter = distanceFilter;
             methodResult(@"success");
@@ -2154,7 +2140,7 @@ extern BOOL enableLog;
             CLLocationAccuracy desiredAccuracy = [args[@"desiredAccuracy"] doubleValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.desiredAccuracy = desiredAccuracy;
             methodResult(@"success");
@@ -2171,7 +2157,7 @@ extern BOOL enableLog;
             CLLocationDegrees headingFilter = [args[@"headingFilter"] doubleValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.headingFilter = headingFilter;
             methodResult(@"success");
@@ -2188,7 +2174,7 @@ extern BOOL enableLog;
             BOOL pausesLocationUpdatesAutomatically = [args[@"pausesLocationUpdatesAutomatically"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.pausesLocationUpdatesAutomatically = pausesLocationUpdatesAutomatically;
             methodResult(@"success");
@@ -2205,7 +2191,7 @@ extern BOOL enableLog;
             BOOL allowsBackgroundLocationUpdates = [args[@"allowsBackgroundLocationUpdates"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.allowsBackgroundLocationUpdates = allowsBackgroundLocationUpdates;
             methodResult(@"success");
@@ -2222,7 +2208,7 @@ extern BOOL enableLog;
             BOOL showsIndoorMap = [args[@"showsIndoorMap"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsIndoorMap = showsIndoorMap;
             methodResult(@"success");
@@ -2239,7 +2225,7 @@ extern BOOL enableLog;
             BOOL showsIndoorMapControl = [args[@"showsIndoorMapControl"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.showsIndoorMapControl = showsIndoorMapControl;
             methodResult(@"success");
@@ -2256,7 +2242,7 @@ extern BOOL enableLog;
             BOOL customMapStyleEnabled = [args[@"customMapStyleEnabled"] boolValue];
         
             // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAMapView* ref = (MAMapView*) args[@"__this__"];
         
             ref.customMapStyleEnabled = customMapStyleEnabled;
             methodResult(@"success");
@@ -2270,10 +2256,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* fillColor = (UIColor*) HEAP[args[@"fillColor"]];
+            UIColor* fillColor = (UIColor*) args[@"fillColor"];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.fillColor = fillColor;
             methodResult(@"success");
@@ -2287,10 +2273,10 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* strokeColor = (UIColor*) HEAP[args[@"strokeColor"]];
+            UIColor* strokeColor = (UIColor*) args[@"strokeColor"];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.strokeColor = strokeColor;
             methodResult(@"success");
@@ -2307,7 +2293,7 @@ extern BOOL enableLog;
             CGFloat lineWidth = [args[@"lineWidth"] floatValue];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.lineWidth = lineWidth;
             methodResult(@"success");
@@ -2324,7 +2310,7 @@ extern BOOL enableLog;
             MALineJoinType lineJoinType = (MALineJoinType) [args[@"lineJoinType"] integerValue];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.lineJoinType = lineJoinType;
             methodResult(@"success");
@@ -2341,7 +2327,7 @@ extern BOOL enableLog;
             MALineCapType lineCapType = (MALineCapType) [args[@"lineCapType"] integerValue];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.lineCapType = lineCapType;
             methodResult(@"success");
@@ -2358,7 +2344,7 @@ extern BOOL enableLog;
             CGFloat miterLimit = [args[@"miterLimit"] floatValue];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.miterLimit = miterLimit;
             methodResult(@"success");
@@ -2375,7 +2361,7 @@ extern BOOL enableLog;
             BOOL lineDash = [args[@"lineDash"] boolValue];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.lineDash = lineDash;
             methodResult(@"success");
@@ -2392,7 +2378,7 @@ extern BOOL enableLog;
             MALineDashType lineDashType = (MALineDashType) [args[@"lineDashType"] integerValue];
         
             // ref
-            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
         
             ref.lineDashType = lineDashType;
             methodResult(@"success");
@@ -2407,7 +2393,7 @@ extern BOOL enableLog;
                 CGFloat alpha = [args[@"alpha"] floatValue];
         
                 // ref
-                MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAGroundOverlay* ref = (MAGroundOverlay*) args[@"__this__"];
         
                 ref.alpha = alpha;
                 methodResult(@"success");
@@ -2425,7 +2411,7 @@ extern BOOL enableLog;
                 MAPinAnnotationColor pinColor = (MAPinAnnotationColor) [args[@"pinColor"] integerValue];
         
                 // ref
-                MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPinAnnotationView* ref = (MAPinAnnotationView*) args[@"__this__"];
         
                 ref.pinColor = pinColor;
                 methodResult(@"success");
@@ -2443,7 +2429,7 @@ extern BOOL enableLog;
                 BOOL animatesDrop = [args[@"animatesDrop"] boolValue];
         
                 // ref
-                MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPinAnnotationView* ref = (MAPinAnnotationView*) args[@"__this__"];
         
                 ref.animatesDrop = animatesDrop;
                 methodResult(@"success");
@@ -2458,12 +2444,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+                NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
                 // ref
-                MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapNode* ref = (MAHeatMapNode*) args[@"__this__"];
         
                 ref.coordinate = coordinate;
                 methodResult(@"success");
@@ -2481,7 +2467,7 @@ extern BOOL enableLog;
                 float intensity = [args[@"intensity"] floatValue];
         
                 // ref
-                MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapNode* ref = (MAHeatMapNode*) args[@"__this__"];
         
                 ref.intensity = intensity;
                 methodResult(@"success");
@@ -2496,15 +2482,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* dataRefArray = (NSArray<NSNumber*> *) args[@"data"];
-                NSMutableArray<MAHeatMapNode*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
-                for (int __i__ = 0; __i__ < dataRefArray.count; __i__++) {
-                    MAHeatMapNode* item = (MAHeatMapNode*) HEAP[[dataRefArray objectAtIndex:__i__]];
-                    [data addObject:item];
-                }
+                NSArray<MAHeatMapNode*>* data = (NSArray<MAHeatMapNode*>*) args[@"data"];
         
                 // ref
-                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
                 ref.data = data;
                 methodResult(@"success");
@@ -2522,7 +2503,7 @@ extern BOOL enableLog;
                 NSInteger radius = [args[@"radius"] longValue];
         
                 // ref
-                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
                 ref.radius = radius;
                 methodResult(@"success");
@@ -2540,7 +2521,7 @@ extern BOOL enableLog;
                 CGFloat opacity = [args[@"opacity"] floatValue];
         
                 // ref
-                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
                 ref.opacity = opacity;
                 methodResult(@"success");
@@ -2555,10 +2536,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAHeatMapGradient* gradient = (MAHeatMapGradient*) HEAP[args[@"gradient"]];
+                MAHeatMapGradient* gradient = (MAHeatMapGradient*) args[@"gradient"];
         
                 // ref
-                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
                 ref.gradient = gradient;
                 methodResult(@"success");
@@ -2576,7 +2557,7 @@ extern BOOL enableLog;
                 BOOL allowRetinaAdapting = [args[@"allowRetinaAdapting"] boolValue];
         
                 // ref
-                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
         
                 ref.allowRetinaAdapting = allowRetinaAdapting;
                 methodResult(@"success");
@@ -2591,12 +2572,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* centerCoordinateValue = (NSValue*) HEAP[args[@"centerCoordinate"]];
+                NSValue* centerCoordinateValue = (NSValue*) args[@"centerCoordinate"];
                 CLLocationCoordinate2D centerCoordinate;
                 [centerCoordinateValue getValue:&centerCoordinate];
         
                 // ref
-                MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
                 ref.centerCoordinate = centerCoordinate;
                 methodResult(@"success");
@@ -2614,7 +2595,7 @@ extern BOOL enableLog;
                 CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
         
                 // ref
-                MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
                 ref.zoomLevel = zoomLevel;
                 methodResult(@"success");
@@ -2632,7 +2613,7 @@ extern BOOL enableLog;
                 CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
         
                 // ref
-                MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
                 ref.rotationDegree = rotationDegree;
                 methodResult(@"success");
@@ -2650,7 +2631,7 @@ extern BOOL enableLog;
                 CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
         
                 // ref
-                MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
                 ref.cameraDegree = cameraDegree;
                 methodResult(@"success");
@@ -2665,12 +2646,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* screenAnchorValue = (NSValue*) HEAP[args[@"screenAnchor"]];
+                NSValue* screenAnchorValue = (NSValue*) args[@"screenAnchor"];
                 CGPoint screenAnchor;
                 [screenAnchorValue getValue:&screenAnchor];
         
                 // ref
-                MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapStatus* ref = (MAMapStatus*) args[@"__this__"];
         
                 ref.screenAnchor = screenAnchor;
                 methodResult(@"success");
@@ -2685,12 +2666,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+                NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
                 // ref
-                MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPointAnnotation* ref = (MAPointAnnotation*) args[@"__this__"];
         
                 ref.coordinate = coordinate;
                 methodResult(@"success");
@@ -2708,7 +2689,7 @@ extern BOOL enableLog;
                 BOOL lockedToScreen = [args[@"lockedToScreen"] boolValue];
         
                 // ref
-                MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPointAnnotation* ref = (MAPointAnnotation*) args[@"__this__"];
         
                 ref.lockedToScreen = lockedToScreen;
                 methodResult(@"success");
@@ -2723,12 +2704,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* lockedScreenPointValue = (NSValue*) HEAP[args[@"lockedScreenPoint"]];
+                NSValue* lockedScreenPointValue = (NSValue*) args[@"lockedScreenPoint"];
                 CGPoint lockedScreenPoint;
                 [lockedScreenPointValue getValue:&lockedScreenPoint];
         
                 // ref
-                MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPointAnnotation* ref = (MAPointAnnotation*) args[@"__this__"];
         
                 ref.lockedScreenPoint = lockedScreenPoint;
                 methodResult(@"success");
@@ -2743,12 +2724,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
+                NSValue* coordinateValue = (NSValue*) args[@"coordinate"];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
                 // ref
-                MACircle* ref = (MACircle*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACircle* ref = (MACircle*) args[@"__this__"];
         
                 ref.coordinate = coordinate;
                 methodResult(@"success");
@@ -2766,7 +2747,7 @@ extern BOOL enableLog;
                 CLLocationDistance radius = [args[@"radius"] doubleValue];
         
                 // ref
-                MACircle* ref = (MACircle*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACircle* ref = (MACircle*) args[@"__this__"];
         
                 ref.radius = radius;
                 methodResult(@"success");
@@ -2784,7 +2765,7 @@ extern BOOL enableLog;
                 NSString* title = (NSString*) args[@"title"];
         
                 // ref
-                id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAAnnotation> ref = (id<MAAnnotation>) args[@"__this__"];
         
                 ref.title = title;
                 methodResult(@"success");
@@ -2802,7 +2783,7 @@ extern BOOL enableLog;
                 NSString* subtitle = (NSString*) args[@"subtitle"];
         
                 // ref
-                id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                id<MAAnnotation> ref = (id<MAAnnotation>) args[@"__this__"];
         
                 ref.subtitle = subtitle;
                 methodResult(@"success");
@@ -2817,10 +2798,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* styleData = (NSData*) HEAP[args[@"styleData"]];
+                NSData* styleData = (NSData*) args[@"styleData"];
         
                 // ref
-                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
         
                 ref.styleData = styleData;
                 methodResult(@"success");
@@ -2838,7 +2819,7 @@ extern BOOL enableLog;
                 NSString* styleDataOverseaPath = (NSString*) args[@"styleDataOverseaPath"];
         
                 // ref
-                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
         
                 ref.styleDataOverseaPath = styleDataOverseaPath;
                 methodResult(@"success");
@@ -2856,7 +2837,7 @@ extern BOOL enableLog;
                 NSString* styleId = (NSString*) args[@"styleId"];
         
                 // ref
-                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
         
                 ref.styleId = styleId;
                 methodResult(@"success");
@@ -2871,10 +2852,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* styleTextureData = (NSData*) HEAP[args[@"styleTextureData"]];
+                NSData* styleTextureData = (NSData*) args[@"styleTextureData"];
         
                 // ref
-                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
         
                 ref.styleTextureData = styleTextureData;
                 methodResult(@"success");
@@ -2889,10 +2870,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* styleExtraData = (NSData*) HEAP[args[@"styleExtraData"]];
+                NSData* styleExtraData = (NSData*) args[@"styleExtraData"];
         
                 // ref
-                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
         
                 ref.styleExtraData = styleExtraData;
                 methodResult(@"success");
@@ -2907,15 +2888,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
-                NSMutableArray<UIColor*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
-                for (int __i__ = 0; __i__ < strokeColorsRefArray.count; __i__++) {
-                    UIColor* item = (UIColor*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
-                    [strokeColors addObject:item];
-                }
+                NSArray<UIColor*>* strokeColors = (NSArray<UIColor*>*) args[@"strokeColors"];
         
                 // ref
-                MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) args[@"__this__"];
         
                 ref.strokeColors = strokeColors;
                 methodResult(@"success");
@@ -2933,7 +2909,7 @@ extern BOOL enableLog;
                 BOOL gradient = [args[@"gradient"] boolValue];
         
                 // ref
-                MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) args[@"__this__"];
         
                 ref.gradient = gradient;
                 methodResult(@"success");
@@ -2951,7 +2927,7 @@ extern BOOL enableLog;
                 CLLocationDirection movingDirection = [args[@"movingDirection"] doubleValue];
         
                 // ref
-                MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) args[@"__this__"];
         
                 ref.movingDirection = movingDirection;
                 methodResult(@"success");
@@ -2966,15 +2942,10 @@ extern BOOL enableLog;
         
                 // args
                 // list arg
-                NSArray<NSNumber*>* strokeTextureImagesRefArray = (NSArray<NSNumber*> *) args[@"strokeTextureImages"];
-                NSMutableArray<NSObject*>* strokeTextureImages = [NSMutableArray arrayWithCapacity:strokeTextureImagesRefArray.count];
-                for (int __i__ = 0; __i__ < strokeTextureImagesRefArray.count; __i__++) {
-                    NSObject* item = (NSObject*) HEAP[[strokeTextureImagesRefArray objectAtIndex:__i__]];
-                    [strokeTextureImages addObject:item];
-                }
+                NSArray<NSObject*>* strokeTextureImages = (NSArray<NSObject*>*) args[@"strokeTextureImages"];
         
                 // ref
-                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) args[@"__this__"];
         
                 ref.strokeTextureImages = strokeTextureImages;
                 methodResult(@"success");
@@ -2992,7 +2963,7 @@ extern BOOL enableLog;
                 BOOL showRangeEnabled = [args[@"showRangeEnabled"] boolValue];
         
                 // ref
-                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) args[@"__this__"];
         
                 ref.showRangeEnabled = showRangeEnabled;
                 methodResult(@"success");
@@ -3007,12 +2978,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* showRangeValue = (NSValue*) HEAP[args[@"showRange"]];
+                NSValue* showRangeValue = (NSValue*) args[@"showRange"];
                 MAPathShowRange showRange;
                 [showRangeValue getValue:&showRange];
         
                 // ref
-                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) args[@"__this__"];
         
                 ref.showRange = showRange;
                 methodResult(@"success");
@@ -3030,7 +3001,7 @@ extern BOOL enableLog;
                 float begin = [args[@"begin"] floatValue];
         
                 // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
                 MAPathShowRange ref;
                 [dataValue getValue:&ref];
         
@@ -3050,7 +3021,7 @@ extern BOOL enableLog;
                 float end = [args[@"end"] floatValue];
         
                 // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                NSValue* dataValue = (NSValue*) ((NSDictionary<NSString*, NSObject*>*) args)[@"__this__"];
                 MAPathShowRange ref;
                 [dataValue getValue:&ref];
         
@@ -3070,7 +3041,7 @@ extern BOOL enableLog;
                 NSArray<NSNumber*>* drawStyleIndexes = (NSArray<NSNumber*>*) args[@"drawStyleIndexes"];
         
                 // ref
-                MAMultiPolyline* ref = (MAMultiPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiPolyline* ref = (MAMultiPolyline*) args[@"__this__"];
         
                 ref.drawStyleIndexes = drawStyleIndexes;
                 methodResult(@"success");
@@ -3085,10 +3056,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* icon = (UIImage*) HEAP[args[@"icon"]];
+                UIImage* icon = (UIImage*) args[@"icon"];
         
                 // ref
-                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) args[@"__this__"];
         
                 ref.icon = icon;
                 methodResult(@"success");
@@ -3103,12 +3074,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* pointSizeValue = (NSValue*) HEAP[args[@"pointSize"]];
+                NSValue* pointSizeValue = (NSValue*) args[@"pointSize"];
                 CGSize pointSize;
                 [pointSizeValue getValue:&pointSize];
         
                 // ref
-                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) args[@"__this__"];
         
                 ref.pointSize = pointSize;
                 methodResult(@"success");
@@ -3123,12 +3094,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* anchorValue = (NSValue*) HEAP[args[@"anchor"]];
+                NSValue* anchorValue = (NSValue*) args[@"anchor"];
                 CGPoint anchor;
                 [anchorValue getValue:&anchor];
         
                 // ref
-                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) args[@"__this__"];
         
                 ref.anchor = anchor;
                 methodResult(@"success");
@@ -3146,7 +3117,7 @@ extern BOOL enableLog;
                 BOOL is3DArrowLine = [args[@"is3DArrowLine"] boolValue];
         
                 // ref
-                MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
         
                 ref.is3DArrowLine = is3DArrowLine;
                 methodResult(@"success");
@@ -3161,10 +3132,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* sideColor = (UIColor*) HEAP[args[@"sideColor"]];
+                UIColor* sideColor = (UIColor*) args[@"sideColor"];
         
                 // ref
-                MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
         
                 ref.sideColor = sideColor;
                 methodResult(@"success");
@@ -3182,7 +3153,7 @@ extern BOOL enableLog;
                 BOOL userInteractionEnabled = [args[@"userInteractionEnabled"] boolValue];
         
                 // ref
-                MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
         
                 ref.userInteractionEnabled = userInteractionEnabled;
                 methodResult(@"success");
@@ -3200,7 +3171,7 @@ extern BOOL enableLog;
                 CGFloat hitTestInset = [args[@"hitTestInset"] floatValue];
         
                 // ref
-                MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
         
                 ref.hitTestInset = hitTestInset;
                 methodResult(@"success");
@@ -3218,7 +3189,7 @@ extern BOOL enableLog;
                 BOOL showRangeEnabled = [args[@"showRangeEnabled"] boolValue];
         
                 // ref
-                MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
         
                 ref.showRangeEnabled = showRangeEnabled;
                 methodResult(@"success");
@@ -3233,12 +3204,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* showRangeValue = (NSValue*) HEAP[args[@"showRange"]];
+                NSValue* showRangeValue = (NSValue*) args[@"showRange"];
                 MAPathShowRange showRange;
                 [showRangeValue getValue:&showRange];
         
                 // ref
-                MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
         
                 ref.showRange = showRange;
                 methodResult(@"success");
@@ -3256,7 +3227,7 @@ extern BOOL enableLog;
                 NSString* title = (NSString*) args[@"title"];
         
                 // ref
-                MAShape* ref = (MAShape*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAShape* ref = (MAShape*) args[@"__this__"];
         
                 ref.title = title;
                 methodResult(@"success");
@@ -3274,7 +3245,7 @@ extern BOOL enableLog;
                 NSString* subtitle = (NSString*) args[@"subtitle"];
         
                 // ref
-                MAShape* ref = (MAShape*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAShape* ref = (MAShape*) args[@"__this__"];
         
                 ref.subtitle = subtitle;
                 methodResult(@"success");
@@ -3292,7 +3263,7 @@ extern BOOL enableLog;
                 NSInteger zIndex = [args[@"zIndex"] longValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.zIndex = zIndex;
                 methodResult(@"success");
@@ -3307,10 +3278,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.annotation = annotation;
                 methodResult(@"success");
@@ -3325,10 +3296,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* image = (UIImage*) HEAP[args[@"image"]];
+                UIImage* image = (UIImage*) args[@"image"];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.image = image;
                 methodResult(@"success");
@@ -3343,10 +3314,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomCalloutView* customCalloutView = (MACustomCalloutView*) HEAP[args[@"customCalloutView"]];
+                MACustomCalloutView* customCalloutView = (MACustomCalloutView*) args[@"customCalloutView"];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.customCalloutView = customCalloutView;
                 methodResult(@"success");
@@ -3361,12 +3332,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* centerOffsetValue = (NSValue*) HEAP[args[@"centerOffset"]];
+                NSValue* centerOffsetValue = (NSValue*) args[@"centerOffset"];
                 CGPoint centerOffset;
                 [centerOffsetValue getValue:&centerOffset];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.centerOffset = centerOffset;
                 methodResult(@"success");
@@ -3381,12 +3352,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* calloutOffsetValue = (NSValue*) HEAP[args[@"calloutOffset"]];
+                NSValue* calloutOffsetValue = (NSValue*) args[@"calloutOffset"];
                 CGPoint calloutOffset;
                 [calloutOffsetValue getValue:&calloutOffset];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.calloutOffset = calloutOffset;
                 methodResult(@"success");
@@ -3404,7 +3375,7 @@ extern BOOL enableLog;
                 BOOL enabled = [args[@"enabled"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.enabled = enabled;
                 methodResult(@"success");
@@ -3422,7 +3393,7 @@ extern BOOL enableLog;
                 BOOL highlighted = [args[@"highlighted"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.highlighted = highlighted;
                 methodResult(@"success");
@@ -3440,7 +3411,7 @@ extern BOOL enableLog;
                 BOOL selected = [args[@"selected"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.selected = selected;
                 methodResult(@"success");
@@ -3458,7 +3429,7 @@ extern BOOL enableLog;
                 BOOL canShowCallout = [args[@"canShowCallout"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.canShowCallout = canShowCallout;
                 methodResult(@"success");
@@ -3473,10 +3444,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIView* leftCalloutAccessoryView = (UIView*) HEAP[args[@"leftCalloutAccessoryView"]];
+                UIView* leftCalloutAccessoryView = (UIView*) args[@"leftCalloutAccessoryView"];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.leftCalloutAccessoryView = leftCalloutAccessoryView;
                 methodResult(@"success");
@@ -3491,10 +3462,10 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIView* rightCalloutAccessoryView = (UIView*) HEAP[args[@"rightCalloutAccessoryView"]];
+                UIView* rightCalloutAccessoryView = (UIView*) args[@"rightCalloutAccessoryView"];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.rightCalloutAccessoryView = rightCalloutAccessoryView;
                 methodResult(@"success");
@@ -3512,7 +3483,7 @@ extern BOOL enableLog;
                 BOOL draggable = [args[@"draggable"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.draggable = draggable;
                 methodResult(@"success");
@@ -3530,7 +3501,7 @@ extern BOOL enableLog;
                 MAAnnotationViewDragState dragState = (MAAnnotationViewDragState) [args[@"dragState"] integerValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.dragState = dragState;
                 methodResult(@"success");
@@ -3548,7 +3519,7 @@ extern BOOL enableLog;
                 BOOL canAdjustPositon = [args[@"canAdjustPositon"] boolValue];
         
                 // ref
-                MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
         
                 ref.canAdjustPositon = canAdjustPositon;
                 methodResult(@"success");
@@ -3563,12 +3534,12 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* tileSizeValue = (NSValue*) HEAP[args[@"tileSize"]];
+                NSValue* tileSizeValue = (NSValue*) args[@"tileSize"];
                 CGSize tileSize;
                 [tileSizeValue getValue:&tileSize];
         
                 // ref
-                MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
                 ref.tileSize = tileSize;
                 methodResult(@"success");
@@ -3586,7 +3557,7 @@ extern BOOL enableLog;
                 NSInteger minimumZ = [args[@"minimumZ"] longValue];
         
                 // ref
-                MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
                 ref.minimumZ = minimumZ;
                 methodResult(@"success");
@@ -3604,7 +3575,7 @@ extern BOOL enableLog;
                 NSInteger maximumZ = [args[@"maximumZ"] longValue];
         
                 // ref
-                MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
                 ref.maximumZ = maximumZ;
                 methodResult(@"success");
@@ -3622,7 +3593,7 @@ extern BOOL enableLog;
                 BOOL canReplaceMapContent = [args[@"canReplaceMapContent"] boolValue];
         
                 // ref
-                MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MATileOverlay* ref = (MATileOverlay*) args[@"__this__"];
         
                 ref.canReplaceMapContent = canReplaceMapContent;
                 methodResult(@"success");

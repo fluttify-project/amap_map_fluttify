@@ -21,10 +21,8 @@ class MATileOverlayPath extends NSObject  {
 
   //region creators
   static Future<MATileOverlayPath> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATileOverlayPath');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATileOverlayPath');
     final object = MATileOverlayPath()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MATileOverlayPath extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATileOverlayPath', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATileOverlayPath', {'length': length});
   
     final List<MATileOverlayPath> typedResult = resultBatch.map((result) => MATileOverlayPath()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -43,52 +40,48 @@ class MATileOverlayPath extends NSObject  {
 
   //region getters
   Future<int> get_x() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_x", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_x", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
   Future<int> get_y() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_y", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_y", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
   Future<int> get_z() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_z", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_z", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
   Future<double> get_contentScaleFactor() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_contentScaleFactor", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_contentScaleFactor", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
   //endregion
 
   //region setters
   Future<void> set_x(int x) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_x', {'refId': refId, "x": x});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATileOverlayPath::set_x', <String, dynamic>{'__this__': this, "x": x});
   
   
   }
   
   Future<void> set_y(int y) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_y', {'refId': refId, "y": y});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATileOverlayPath::set_y', <String, dynamic>{'__this__': this, "y": y});
   
   
   }
   
   Future<void> set_z(int z) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_z', {'refId': refId, "z": z});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATileOverlayPath::set_z', <String, dynamic>{'__this__': this, "z": z});
   
   
   }
   
   Future<void> set_contentScaleFactor(double contentScaleFactor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_contentScaleFactor', {'refId': refId, "contentScaleFactor": contentScaleFactor});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATileOverlayPath::set_contentScaleFactor', <String, dynamic>{'__this__': this, "contentScaleFactor": contentScaleFactor});
   
   
   }
@@ -103,30 +96,30 @@ class MATileOverlayPath extends NSObject  {
 extension MATileOverlayPath_Batch on List<MATileOverlayPath> {
   //region getters
   Future<List<int>> get_x_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_x_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_x_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
   Future<List<int>> get_y_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_y_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_y_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
   Future<List<int>> get_z_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_z_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_z_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
   Future<List<double>> get_contentScaleFactor_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_contentScaleFactor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATileOverlayPath::get_contentScaleFactor_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
@@ -134,25 +127,25 @@ extension MATileOverlayPath_Batch on List<MATileOverlayPath> {
 
   //region setters
   Future<void> set_x_batch(List<int> x) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "x": x[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "x": x[__i__]}]);
   
   
   }
   
   Future<void> set_y_batch(List<int> y) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "y": y[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "y": y[__i__]}]);
   
   
   }
   
   Future<void> set_z_batch(List<int> z) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_z_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "z": z[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_z_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "z": z[__i__]}]);
   
   
   }
   
   Future<void> set_contentScaleFactor_batch(List<double> contentScaleFactor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_contentScaleFactor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "contentScaleFactor": contentScaleFactor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_contentScaleFactor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "contentScaleFactor": contentScaleFactor[__i__]}]);
   
   
   }

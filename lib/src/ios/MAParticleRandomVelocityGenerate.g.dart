@@ -21,10 +21,8 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
 
   //region creators
   static Future<MAParticleRandomVelocityGenerate> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRandomVelocityGenerate');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleRandomVelocityGenerate');
     final object = MAParticleRandomVelocityGenerate()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomVelocityGenerate', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleRandomVelocityGenerate', {'length': length});
   
     final List<MAParticleRandomVelocityGenerate> typedResult = resultBatch.map((result) => MAParticleRandomVelocityGenerate()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -58,7 +55,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "__this__": this});
   
   
     // handle native call
@@ -69,7 +66,6 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
       return null;
     } else {
       final __return__ = MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -94,15 +90,14 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"x1": x1[__i__], "y1": y1[__i__], "z1": z1[__i__], "x2": x2[__i__], "y2": y2[__i__], "z2": z2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"x1": x1[__i__], "y1": y1[__i__], "z1": z1[__i__], "x2": x2[__i__], "y2": y2[__i__], "z2": z2[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }

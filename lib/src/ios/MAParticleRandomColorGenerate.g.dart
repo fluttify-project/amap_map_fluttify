@@ -21,10 +21,8 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
 
   //region creators
   static Future<MAParticleRandomColorGenerate> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRandomColorGenerate');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleRandomColorGenerate');
     final object = MAParticleRandomColorGenerate()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomColorGenerate', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleRandomColorGenerate', {'length': length});
   
     final List<MAParticleRandomColorGenerate> typedResult = resultBatch.map((result) => MAParticleRandomColorGenerate()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -58,7 +55,7 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2', {"r1": r1, "g1": g1, "b1": b1, "a1": a1, "r2": r2, "g2": g2, "b2": b2, "a2": a2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2', {"r1": r1, "g1": g1, "b1": b1, "a1": a1, "r2": r2, "g2": g2, "b2": b2, "a2": a2, "__this__": this});
   
   
     // handle native call
@@ -69,7 +66,6 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
       return null;
     } else {
       final __return__ = MAParticleRandomColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -94,15 +90,14 @@ extension MAParticleRandomColorGenerate_Batch on List<MAParticleRandomColorGener
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"r1": r1[__i__], "g1": g1[__i__], "b1": b1[__i__], "a1": a1[__i__], "r2": r2[__i__], "g2": g2[__i__], "b2": b2[__i__], "a2": a2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"r1": r1[__i__], "g1": g1[__i__], "b1": b1[__i__], "a1": a1[__i__], "r2": r2[__i__], "g2": g2[__i__], "b2": b2[__i__], "a2": a2[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAParticleRandomColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleRandomColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       return typedResult;
     }
   }

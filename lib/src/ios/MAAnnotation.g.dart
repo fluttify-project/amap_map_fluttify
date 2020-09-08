@@ -20,32 +20,29 @@ mixin MAAnnotation on NSObject {
   static MAAnnotation subInstance() => _MAAnnotation_SUB();
 
   Future<CLLocationCoordinate2D> get_coordinate() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnnotation::get_coordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAAnnotation::get_coordinate", {'__this__': this});
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
   Future<String> get_title() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnnotation::get_title", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAAnnotation::get_title", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
   Future<String> get_subtitle() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnnotation::get_subtitle", {'refId': refId});
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAAnnotation::get_subtitle", {'__this__': this});
+    return __result__ == null ? null : (__result__);
   }
   
 
   Future<void> set_title(String title) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotation::set_title', {'refId': refId, "title": title});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnnotation::set_title', <String, dynamic>{'__this__': this, "title": title});
   
   
   }
   
   Future<void> set_subtitle(String subtitle) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotation::set_subtitle', {'refId': refId, "subtitle": subtitle});
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnnotation::set_subtitle', <String, dynamic>{'__this__': this, "subtitle": subtitle});
   
   
   }
@@ -59,7 +56,7 @@ mixin MAAnnotation on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotation::setCoordinate', {"newCoordinate": newCoordinate is Ref ? (newCoordinate as Ref)?.refId : newCoordinate, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnnotation::setCoordinate', {"newCoordinate": newCoordinate, "__this__": this});
   
   
     // handle native call
@@ -70,7 +67,6 @@ mixin MAAnnotation on NSObject {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -86,7 +82,7 @@ extension MAAnnotation_Batch on List<MAAnnotation> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotation::setCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"newCoordinate": newCoordinate[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnnotation::setCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"newCoordinate": newCoordinate[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -94,7 +90,6 @@ extension MAAnnotation_Batch on List<MAAnnotation> {
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }

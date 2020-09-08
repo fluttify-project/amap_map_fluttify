@@ -19,9 +19,11 @@ import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
+import io.flutter.plugin.common.StandardMethodCodec;
 import io.flutter.plugin.platform.PlatformViewRegistry;
 
 import me.yohom.amap_map_fluttify.AmapMapFluttifyPlugin.Handler;
+import me.yohom.foundation_fluttify.core.FluttifyMessageCodec;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
@@ -32,479 +34,411 @@ public class SubHandler12 {
         return new HashMap<String, Handler>() {{
             put("RefClass::isKindOfcom_amap_api_maps_model_MarkerOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.MarkerOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.MarkerOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.HeatmapTileProvider);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.HeatmapTileProvider);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_NavigateArrow", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.NavigateArrow);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.NavigateArrow);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_animation_AnimationSet", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.AnimationSet);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.animation.AnimationSet);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_animation_RotateAnimation", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.RotateAnimation);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.animation.RotateAnimation);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_animation_TranslateAnimation", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.TranslateAnimation);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.animation.TranslateAnimation);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_animation_Animation", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.Animation);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.animation.Animation);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_animation_EmergeAnimation", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.EmergeAnimation);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.animation.EmergeAnimation);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_animation_AlphaAnimation", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.AlphaAnimation);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.animation.AlphaAnimation);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_animation_ScaleAnimation", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.ScaleAnimation);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.animation.ScaleAnimation);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLngBounds);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.LatLngBounds);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_CustomMapStyleOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.CustomMapStyleOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.CustomMapStyleOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlayOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.BuildingOverlayOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.BuildingOverlayOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_CrossOverlayOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.CrossOverlayOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.CrossOverlayOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_VisibleRegionCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.VisibleRegionCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.VisibleRegionCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLng);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.LatLng);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_TileProjection", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.TileProjection);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.TileProjection);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_AMapPara", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.AMapPara);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.AMapPara);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_CameraPosition_Builder", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.CameraPosition.Builder);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.CameraPosition.Builder);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_BasePointOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.BasePointOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.BasePointOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_CircleOptionsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.CircleOptionsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.CircleOptionsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_Arc", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.Arc);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.Arc);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_AMapCameraInfo", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.AMapCameraInfo);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.AMapCameraInfo);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_Circle", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.Circle);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.Circle);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_PolygonOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.PolygonOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.PolygonOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_WeightedLatLng", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.WeightedLatLng);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.WeightedLatLng);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_MyLocationStyleCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.MyLocationStyleCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.MyLocationStyleCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_MarkerOptionsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.MarkerOptionsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.MarkerOptionsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_MultiPointItem", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.MultiPointItem);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.MultiPointItem);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_LatLngBoundsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLngBoundsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.LatLngBoundsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_ArcOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.ArcOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.ArcOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptorCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.BitmapDescriptorCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.BitmapDescriptorCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_CircleOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.CircleOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.CircleOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptionsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.NavigateArrowOptionsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.NavigateArrowOptionsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_RuntimeRemoteException", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.RuntimeRemoteException);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.RuntimeRemoteException);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_AMapGLOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.AMapGLOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.AMapGLOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider_Builder", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.HeatmapTileProvider.Builder);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.HeatmapTileProvider.Builder);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_MultiPointOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.MultiPointOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.MultiPointOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_BaseOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.BaseOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.BaseOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_PolylineOptionsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.PolylineOptionsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.PolylineOptionsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_BaseOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.BaseOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.BaseOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_Marker", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.Marker);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.Marker);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_TileOverlayOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.TileOverlayOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.TileOverlayOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_RoutePara", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.RoutePara);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.RoutePara);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_ArcOptionsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.ArcOptionsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.ArcOptionsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_CameraPositionCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.CameraPositionCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.CameraPositionCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_CrossOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.CrossOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.CrossOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlayOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.particle.ParticleOverlayOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.particle.ParticleOverlayOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.particle.ParticleOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.particle.ParticleOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_BaseHoleOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.BaseHoleOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.BaseHoleOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_TextOptions", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.TextOptions);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.TextOptions);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_TileOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.TileOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.TileOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_PolygonOptionsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.PolygonOptionsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.PolygonOptionsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_TileProjectionCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.TileProjectionCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.TileProjectionCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_GroundOverlayOptionsCreator", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.GroundOverlayOptionsCreator);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.GroundOverlayOptionsCreator);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_IndoorBuildingInfo", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.IndoorBuildingInfo);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.IndoorBuildingInfo);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_Polyline", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.Polyline);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.Polyline);
             });
             put("RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.model.BuildingOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.model.BuildingOverlay);
             });
             put("RefClass::isKindOfcom_amap_api_maps_TextureMapView", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.TextureMapView);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.TextureMapView);
             });
             put("RefClass::isKindOfcom_amap_api_maps_AMapUtils", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.AMapUtils);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.AMapUtils);
             });
             put("RefClass::isKindOfcom_amap_api_maps_InfoWindowAnimationManager", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.InfoWindowAnimationManager);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.InfoWindowAnimationManager);
             });
             put("RefClass::isKindOfcom_amap_api_maps_WearMapView", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.WearMapView);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.WearMapView);
             });
             put("RefClass::isKindOfcom_amap_api_maps_AMap", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.AMap);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.AMap);
             });
             put("RefClass::isKindOfcom_amap_api_maps_MapView", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.maps.MapView);
+                __methodResult__.success(__this__ instanceof com.amap.api.maps.MapView);
             });
             put("RefClass::isKindOfcom_amap_api_trace_TraceLocation", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.trace.TraceLocation);
+                __methodResult__.success(__this__ instanceof com.amap.api.trace.TraceLocation);
             });
             put("RefClass::isKindOfcom_amap_api_trace_LBSTraceClient", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.trace.LBSTraceClient);
+                __methodResult__.success(__this__ instanceof com.amap.api.trace.LBSTraceClient);
             });
             put("RefClass::isKindOfcom_amap_api_trace_TraceOverlay", (__args__, __methodResult__) -> {
                 // 引用对象
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                Object ref = getHEAP().get(refId);
+                Object __this__ = ((Map<String, Object>) __args__).get("__this__");
             
-                __methodResult__.success(ref instanceof com.amap.api.trace.TraceOverlay);
+                __methodResult__.success(__this__ instanceof com.amap.api.trace.TraceOverlay);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__", (__args__, __methodResult__) -> {
@@ -517,14 +451,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.offlineservice.AMapPermissionActivity __obj__ = new com.amap.api.offlineservice.AMapPermissionActivity();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks", (__args__, __methodResult__) -> {
@@ -534,24 +467,21 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.view.View var1 = __var1RefId__ != null ? (android.view.View) getHEAP().get(__var1RefId__) : null;
-                // jsonable arg
+                android.view.View var1 = (android.view.View) ((Map<String, Object>) __args__).get("var1");
+                // ref arg
                 java.lang.Object var2 = (java.lang.Object) ((Map<String, Object>) __args__).get("var2");
                 // ref arg
-                Integer __var3RefId__ = (Integer) ((Map<String, Object>) __args__).get("var3");
-                com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = __var3RefId__ != null ? (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get(__var3RefId__) : null;
+                com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.SwipeDismissTouchListener __obj__ = new com.amap.api.maps.SwipeDismissTouchListener(var1, var2, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_InfoWindowParams__", (__args__, __methodResult__) -> {
@@ -564,14 +494,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.InfoWindowParams __obj__ = new com.amap.api.maps.InfoWindowParams();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__", (__args__, __methodResult__) -> {
@@ -584,14 +513,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.CameraUpdateFactory __obj__ = new com.amap.api.maps.CameraUpdateFactory();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapException__String", (__args__, __methodResult__) -> {
@@ -600,19 +528,18 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapException__", (__args__, __methodResult__) -> {
@@ -625,14 +552,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapOptions__", (__args__, __methodResult__) -> {
@@ -645,14 +571,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.AMapOptions __obj__ = new com.amap.api.maps.AMapOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__", (__args__, __methodResult__) -> {
@@ -665,14 +590,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.AMapOptionsCreator __obj__ = new com.amap.api.maps.AMapOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context", (__args__, __methodResult__) -> {
@@ -682,19 +606,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.CoordinateConverter __obj__ = new com.amap.api.maps.CoordinateConverter(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__", (__args__, __methodResult__) -> {
@@ -707,14 +629,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.utils.SpatialRelationUtil __obj__ = new com.amap.api.maps.utils.SpatialRelationUtil();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (__args__, __methodResult__) -> {
@@ -724,22 +645,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.AMap var1 = __var1RefId__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.BasePointOverlay var2 = __var2RefId__ != null ? (com.amap.api.maps.model.BasePointOverlay) getHEAP().get(__var2RefId__) : null;
+                com.amap.api.maps.model.BasePointOverlay var2 = (com.amap.api.maps.model.BasePointOverlay) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.utils.overlay.MovingPointOverlay __obj__ = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (__args__, __methodResult__) -> {
@@ -749,19 +667,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.AMap var1 = __var1RefId__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.utils.overlay.SmoothMoveMarker __obj__ = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (__args__, __methodResult__) -> {
@@ -771,19 +687,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.SwipeDismissView var1 = __var1RefId__ != null ? (com.amap.api.maps.SwipeDismissView) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.SwipeDismissView var1 = (com.amap.api.maps.SwipeDismissView) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.SwipeDismissCallBack __obj__ = new com.amap.api.maps.SwipeDismissCallBack(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (__args__, __methodResult__) -> {
@@ -793,22 +707,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                android.view.View var2 = __var2RefId__ != null ? (android.view.View) getHEAP().get(__var2RefId__) : null;
+                android.view.View var2 = (android.view.View) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.SwipeDismissView __obj__ = new com.amap.api.maps.SwipeDismissView(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapsInitializer__", (__args__, __methodResult__) -> {
@@ -821,14 +732,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.MapsInitializer __obj__ = new com.amap.api.maps.MapsInitializer();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__", (__args__, __methodResult__) -> {
@@ -841,14 +751,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.OfflineMapStatus __obj__ = new com.amap.api.maps.offlinemap.OfflineMapStatus();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__", (__args__, __methodResult__) -> {
@@ -861,14 +770,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.OfflineMapProvince __obj__ = new com.amap.api.maps.offlinemap.OfflineMapProvince();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (__args__, __methodResult__) -> {
@@ -878,19 +786,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.offlinemap.DownloadProgressView __obj__ = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_Province__", (__args__, __methodResult__) -> {
@@ -903,14 +809,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.Province __obj__ = new com.amap.api.maps.offlinemap.Province();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__", (__args__, __methodResult__) -> {
@@ -923,14 +828,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.OfflineMapCity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapCity();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__", (__args__, __methodResult__) -> {
@@ -943,14 +847,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.OfflineMapActivity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapActivity();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_City__", (__args__, __methodResult__) -> {
@@ -963,14 +866,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.City __obj__ = new com.amap.api.maps.offlinemap.City();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_HeatMapLayerOptions__", (__args__, __methodResult__) -> {
@@ -983,14 +885,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.HeatMapLayerOptions __obj__ = new com.amap.api.maps.model.HeatMapLayerOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__", (__args__, __methodResult__) -> {
@@ -1003,14 +904,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.PolygonHoleOptions __obj__ = new com.amap.api.maps.model.PolygonHoleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__", (__args__, __methodResult__) -> {
@@ -1023,14 +923,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.TileOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.TileOverlayOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (__args__, __methodResult__) -> {
@@ -1039,24 +938,22 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 String var1 = (String) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.LatLng var2 = __var2RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2RefId__) : null;
-                // jsonable arg
+                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var2");
+                // ref arg
                 String var3 = (String) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.Poi __obj__ = new com.amap.api.maps.model.Poi(var1, var2, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__", (__args__, __methodResult__) -> {
@@ -1069,14 +966,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.MyLocationStyle __obj__ = new com.amap.api.maps.model.MyLocationStyle();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (__args__, __methodResult__) -> {
@@ -1086,31 +982,25 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.LatLng var2 = __var2RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2RefId__) : null;
+                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var2");
                 // ref arg
-                Integer __var3RefId__ = (Integer) ((Map<String, Object>) __args__).get("var3");
-                com.amap.api.maps.model.LatLng var3 = __var3RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var3RefId__) : null;
+                com.amap.api.maps.model.LatLng var3 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var3");
                 // ref arg
-                Integer __var4RefId__ = (Integer) ((Map<String, Object>) __args__).get("var4");
-                com.amap.api.maps.model.LatLng var4 = __var4RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var4RefId__) : null;
+                com.amap.api.maps.model.LatLng var4 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var4");
                 // ref arg
-                Integer __var5RefId__ = (Integer) ((Map<String, Object>) __args__).get("var5");
-                com.amap.api.maps.model.LatLngBounds var5 = __var5RefId__ != null ? (com.amap.api.maps.model.LatLngBounds) getHEAP().get(__var5RefId__) : null;
+                com.amap.api.maps.model.LatLngBounds var5 = (com.amap.api.maps.model.LatLngBounds) ((Map<String, Object>) __args__).get("var5");
             
                 // create target object
                 com.amap.api.maps.model.VisibleRegion __obj__ = new com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__", (__args__, __methodResult__) -> {
@@ -1123,14 +1013,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.LatLngCreator __obj__ = new com.amap.api.maps.model.LatLngCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__", (__args__, __methodResult__) -> {
@@ -1143,14 +1032,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.CircleHoleOptions __obj__ = new com.amap.api.maps.model.CircleHoleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__", (__args__, __methodResult__) -> {
@@ -1163,14 +1051,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.LatLngBounds.Builder __obj__ = new com.amap.api.maps.model.LatLngBounds.Builder();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__", (__args__, __methodResult__) -> {
@@ -1183,14 +1070,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.NavigateArrowOptions __obj__ = new com.amap.api.maps.model.NavigateArrowOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__", (__args__, __methodResult__) -> {
@@ -1203,14 +1089,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.BitmapDescriptorFactory __obj__ = new com.amap.api.maps.model.BitmapDescriptorFactory();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__", (__args__, __methodResult__) -> {
@@ -1223,14 +1108,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.MultiPointOverlayOptions __obj__ = new com.amap.api.maps.model.MultiPointOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PoiCreator__", (__args__, __methodResult__) -> {
@@ -1243,14 +1127,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.PoiCreator __obj__ = new com.amap.api.maps.model.PoiCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__", (__args__, __methodResult__) -> {
@@ -1263,14 +1146,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.PolylineOptions __obj__ = new com.amap.api.maps.model.PolylineOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray", (__args__, __methodResult__) -> {
@@ -1279,23 +1161,22 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 byte[] var3 = (byte[]) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.Tile __obj__ = new com.amap.api.maps.model.Tile(var1, var2, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray", (__args__, __methodResult__) -> {
@@ -1304,21 +1185,20 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 int[] var1 = (int[]) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 float[] var2 = (float[]) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.Gradient __obj__ = new com.amap.api.maps.model.Gradient(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_HeatMapItem__", (__args__, __methodResult__) -> {
@@ -1331,14 +1211,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.HeatMapItem __obj__ = new com.amap.api.maps.model.HeatMapItem();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NaviPara__", (__args__, __methodResult__) -> {
@@ -1351,14 +1230,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.NaviPara __obj__ = new com.amap.api.maps.model.NaviPara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__", (__args__, __methodResult__) -> {
@@ -1371,14 +1249,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.GroundOverlayOptions __obj__ = new com.amap.api.maps.model.GroundOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__", (__args__, __methodResult__) -> {
@@ -1391,14 +1268,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.GL3DModelOptions __obj__ = new com.amap.api.maps.model.GL3DModelOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__", (__args__, __methodResult__) -> {
@@ -1411,14 +1287,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.MyTrafficStyle __obj__ = new com.amap.api.maps.model.MyTrafficStyle();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (__args__, __methodResult__) -> {
@@ -1428,25 +1303,23 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
-                // jsonable arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
+                // ref arg
                 Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.amap.api.maps.model.CameraPosition __obj__ = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__", (__args__, __methodResult__) -> {
@@ -1459,14 +1332,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.TextOptionsCreator __obj__ = new com.amap.api.maps.model.TextOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PoiPara__", (__args__, __methodResult__) -> {
@@ -1479,14 +1351,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.PoiPara __obj__ = new com.amap.api.maps.model.PoiPara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__", (__args__, __methodResult__) -> {
@@ -1499,14 +1370,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.MarkerOptions __obj__ = new com.amap.api.maps.model.MarkerOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean", (__args__, __methodResult__) -> {
@@ -1515,19 +1385,18 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.animation.AnimationSet __obj__ = new com.amap.api.maps.model.animation.AnimationSet(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (__args__, __methodResult__) -> {
@@ -1536,27 +1405,26 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
-                // jsonable arg
+                // ref arg
                 Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
             
                 // create target object
                 com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float", (__args__, __methodResult__) -> {
@@ -1565,21 +1433,20 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
@@ -1589,19 +1456,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.animation.TranslateAnimation __obj__ = new com.amap.api.maps.model.animation.TranslateAnimation(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
@@ -1611,19 +1476,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.animation.EmergeAnimation __obj__ = new com.amap.api.maps.model.animation.EmergeAnimation(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (__args__, __methodResult__) -> {
@@ -1632,21 +1495,20 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.animation.AlphaAnimation __obj__ = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (__args__, __methodResult__) -> {
@@ -1655,25 +1517,24 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.amap.api.maps.model.animation.ScaleAnimation __obj__ = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
@@ -1683,22 +1544,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.LatLng var2 = __var2RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2RefId__) : null;
+                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.LatLngBounds __obj__ = new com.amap.api.maps.model.LatLngBounds(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__", (__args__, __methodResult__) -> {
@@ -1711,14 +1569,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.CustomMapStyleOptions __obj__ = new com.amap.api.maps.model.CustomMapStyleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__", (__args__, __methodResult__) -> {
@@ -1731,14 +1588,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.BuildingOverlayOptions __obj__ = new com.amap.api.maps.model.BuildingOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__", (__args__, __methodResult__) -> {
@@ -1751,14 +1607,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.CrossOverlayOptions __obj__ = new com.amap.api.maps.model.CrossOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__", (__args__, __methodResult__) -> {
@@ -1771,14 +1626,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.VisibleRegionCreator __obj__ = new com.amap.api.maps.model.VisibleRegionCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double", (__args__, __methodResult__) -> {
@@ -1787,21 +1641,20 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 double var1 = (double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 double var3 = (double) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean", (__args__, __methodResult__) -> {
@@ -1810,23 +1663,22 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 double var1 = (double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 double var3 = (double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 boolean var5 = (boolean) ((Map<String, Object>) __args__).get("var5");
             
                 // create target object
                 com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3, var5);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (__args__, __methodResult__) -> {
@@ -1835,29 +1687,28 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 int var3 = (int) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 int var4 = (int) ((Map<String, Object>) __args__).get("var4");
-                // jsonable arg
+                // ref arg
                 int var5 = (int) ((Map<String, Object>) __args__).get("var5");
-                // jsonable arg
+                // ref arg
                 int var6 = (int) ((Map<String, Object>) __args__).get("var6");
             
                 // create target object
                 com.amap.api.maps.model.TileProjection __obj__ = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_AMapPara__", (__args__, __methodResult__) -> {
@@ -1870,14 +1721,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.AMapPara __obj__ = new com.amap.api.maps.model.AMapPara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__", (__args__, __methodResult__) -> {
@@ -1890,14 +1740,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.CameraPosition.Builder __obj__ = new com.amap.api.maps.model.CameraPosition.Builder();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition", (__args__, __methodResult__) -> {
@@ -1907,19 +1756,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.CameraPosition var1 = __var1RefId__ != null ? (com.amap.api.maps.model.CameraPosition) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.CameraPosition var1 = (com.amap.api.maps.model.CameraPosition) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.CameraPosition.Builder __obj__ = new com.amap.api.maps.model.CameraPosition.Builder(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__", (__args__, __methodResult__) -> {
@@ -1932,14 +1779,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.CircleOptionsCreator __obj__ = new com.amap.api.maps.model.CircleOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (__args__, __methodResult__) -> {
@@ -1948,29 +1794,28 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
+                // ref arg
                 Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
-                // jsonable arg
+                // ref arg
                 Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
-                // jsonable arg
+                // ref arg
                 Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
             
                 // create target object
                 com.amap.api.maps.model.AMapCameraInfo __obj__ = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__", (__args__, __methodResult__) -> {
@@ -1983,14 +1828,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.PolygonOptions __obj__ = new com.amap.api.maps.model.PolygonOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (__args__, __methodResult__) -> {
@@ -2000,21 +1844,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
-                // jsonable arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
+                // ref arg
                 double var2 = (double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
@@ -2024,19 +1866,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__", (__args__, __methodResult__) -> {
@@ -2049,14 +1889,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.MyLocationStyleCreator __obj__ = new com.amap.api.maps.model.MyLocationStyleCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__", (__args__, __methodResult__) -> {
@@ -2069,14 +1908,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.MarkerOptionsCreator __obj__ = new com.amap.api.maps.model.MarkerOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
@@ -2086,19 +1924,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.MultiPointItem __obj__ = new com.amap.api.maps.model.MultiPointItem(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__", (__args__, __methodResult__) -> {
@@ -2111,14 +1947,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.LatLngBoundsCreator __obj__ = new com.amap.api.maps.model.LatLngBoundsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_ArcOptions__", (__args__, __methodResult__) -> {
@@ -2131,14 +1966,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.ArcOptions __obj__ = new com.amap.api.maps.model.ArcOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__", (__args__, __methodResult__) -> {
@@ -2151,14 +1985,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.BitmapDescriptorCreator __obj__ = new com.amap.api.maps.model.BitmapDescriptorCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleOptions__", (__args__, __methodResult__) -> {
@@ -2171,14 +2004,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.CircleOptions __obj__ = new com.amap.api.maps.model.CircleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (__args__, __methodResult__) -> {
@@ -2191,14 +2023,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.NavigateArrowOptionsCreator __obj__ = new com.amap.api.maps.model.NavigateArrowOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String", (__args__, __methodResult__) -> {
@@ -2207,19 +2038,18 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.RuntimeRemoteException __obj__ = new com.amap.api.maps.model.RuntimeRemoteException(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (__args__, __methodResult__) -> {
@@ -2232,14 +2062,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.HeatmapTileProvider.Builder __obj__ = new com.amap.api.maps.model.HeatmapTileProvider.Builder();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BaseOptions__", (__args__, __methodResult__) -> {
@@ -2252,14 +2081,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.BaseOptions __obj__ = new com.amap.api.maps.model.BaseOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__", (__args__, __methodResult__) -> {
@@ -2272,14 +2100,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.PolylineOptionsCreator __obj__ = new com.amap.api.maps.model.PolylineOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__String", (__args__, __methodResult__) -> {
@@ -2288,19 +2115,18 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.BaseOverlay __obj__ = new com.amap.api.maps.model.BaseOverlay(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__", (__args__, __methodResult__) -> {
@@ -2313,14 +2139,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.TileOverlayOptions __obj__ = new com.amap.api.maps.model.TileOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_RoutePara__", (__args__, __methodResult__) -> {
@@ -2333,14 +2158,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.RoutePara __obj__ = new com.amap.api.maps.model.RoutePara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__", (__args__, __methodResult__) -> {
@@ -2353,14 +2177,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.ArcOptionsCreator __obj__ = new com.amap.api.maps.model.ArcOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__", (__args__, __methodResult__) -> {
@@ -2373,14 +2196,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.CameraPositionCreator __obj__ = new com.amap.api.maps.model.CameraPositionCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (__args__, __methodResult__) -> {
@@ -2393,14 +2215,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory __obj__ = new com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (__args__, __methodResult__) -> {
@@ -2413,14 +2234,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleOverlayOptions __obj__ = new com.amap.api.maps.model.particle.ParticleOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TextOptions__", (__args__, __methodResult__) -> {
@@ -2433,14 +2253,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.TextOptions __obj__ = new com.amap.api.maps.model.TextOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__", (__args__, __methodResult__) -> {
@@ -2453,14 +2272,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.PolygonOptionsCreator __obj__ = new com.amap.api.maps.model.PolygonOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__", (__args__, __methodResult__) -> {
@@ -2473,14 +2291,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.TileProjectionCreator __obj__ = new com.amap.api.maps.model.TileProjectionCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (__args__, __methodResult__) -> {
@@ -2493,14 +2310,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.GroundOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.GroundOverlayOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__", (__args__, __methodResult__) -> {
@@ -2513,14 +2329,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.model.IndoorBuildingInfo __obj__ = new com.amap.api.maps.model.IndoorBuildingInfo();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context", (__args__, __methodResult__) -> {
@@ -2530,19 +2345,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
@@ -2552,22 +2365,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.AMapOptions var2 = __var2RefId__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2RefId__) : null;
+                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapUtils__", (__args__, __methodResult__) -> {
@@ -2580,14 +2390,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.maps.AMapUtils __obj__ = new com.amap.api.maps.AMapUtils();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context", (__args__, __methodResult__) -> {
@@ -2597,19 +2406,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
@@ -2619,22 +2426,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.AMapOptions var2 = __var2RefId__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2RefId__) : null;
+                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context", (__args__, __methodResult__) -> {
@@ -2644,19 +2448,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
@@ -2666,22 +2468,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.AMapOptions var2 = __var2RefId__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2RefId__) : null;
+                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long", (__args__, __methodResult__) -> {
@@ -2690,27 +2489,26 @@ public class SubHandler12 {
                 }
             
                 // args
-                // jsonable arg
+                // ref arg
                 double var1 = (double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
+                // ref arg
                 double var3 = (double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
+                // ref arg
                 Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
-                // jsonable arg
+                // ref arg
                 Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
-                // jsonable arg
-                long var7 = (long) (int) ((Map<String, Object>) __args__).get("var7");
+                // ref arg
+                Integer var7 = (Integer) ((Map<String, Object>) __args__).get("var7");
             
                 // create target object
                 com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceLocation__", (__args__, __methodResult__) -> {
@@ -2723,14 +2521,13 @@ public class SubHandler12 {
             
                 // create target object
                 com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context", (__args__, __methodResult__) -> {
@@ -2740,19 +2537,17 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.trace.LBSTraceClient __obj__ = new com.amap.api.trace.LBSTraceClient(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_", (__args__, __methodResult__) -> {
@@ -2762,25 +2557,19 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.AMap var1 = __var1RefId__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1RefId__) : null;
-                // list arg
-                List<Integer> var2RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var2");
-                java.util.List<com.amap.api.maps.model.LatLng> var2 = new ArrayList<>();
-                for (int refId : var2RefIdList) {
-                    ((ArrayList<com.amap.api.maps.model.LatLng>) var2).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
-                }
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) ((Map<String, Object>) __args__).get("var1");
+                // ref arg
+                java.util.List<com.amap.api.maps.model.LatLng> var2 = (java.util.List<com.amap.api.maps.model.LatLng>) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
-                com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1, (ArrayList) var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+                com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1, var2);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (__args__, __methodResult__) -> {
@@ -2790,23 +2579,21 @@ public class SubHandler12 {
             
                 // args
                 // ref arg
-                Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.AMap var1 = __var1RefId__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1RefId__) : null;
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(__obj__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_offlineservice_AMapPermissionActivity__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.offlineservice.AMapPermissionActivity> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -2831,21 +2618,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.offlineservice.AMapPermissionActivity __obj__ = new com.amap.api.offlineservice.AMapPermissionActivity();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.SwipeDismissTouchListener> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -2867,31 +2653,28 @@ public class SubHandler12 {
             
                     // args
                     // ref arg
-                    Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                    android.view.View var1 = __var1RefId__ != null ? (android.view.View) getHEAP().get(__var1RefId__) : null;
-                    // jsonable arg
+                    android.view.View var1 = (android.view.View) ((Map<String, Object>) __args__).get("var1");
+                    // ref arg
                     java.lang.Object var2 = (java.lang.Object) ((Map<String, Object>) __args__).get("var2");
                     // ref arg
-                    Integer __var3RefId__ = (Integer) ((Map<String, Object>) __args__).get("var3");
-                    com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = __var3RefId__ != null ? (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get(__var3RefId__) : null;
+                    com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
                     com.amap.api.maps.SwipeDismissTouchListener __obj__ = new com.amap.api.maps.SwipeDismissTouchListener(var1, var2, var3);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_InfoWindowParams__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.InfoWindowParams> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -2916,21 +2699,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.InfoWindowParams __obj__ = new com.amap.api.maps.InfoWindowParams();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_CameraUpdateFactory__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.CameraUpdateFactory> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -2955,21 +2737,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.CameraUpdateFactory __obj__ = new com.amap.api.maps.CameraUpdateFactory();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_AMapException__String", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.AMapException> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -2990,26 +2771,25 @@ public class SubHandler12 {
                     }
             
                     // args
-                    // jsonable arg
+                    // ref arg
                     String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_AMapException__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.AMapException> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3034,21 +2814,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_AMapOptions__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.AMapOptions> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3073,21 +2852,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.AMapOptions __obj__ = new com.amap.api.maps.AMapOptions();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_AMapOptionsCreator__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.AMapOptionsCreator> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3112,21 +2890,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.AMapOptionsCreator __obj__ = new com.amap.api.maps.AMapOptionsCreator();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_CoordinateConverter__android_content_Context", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.CoordinateConverter> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3148,26 +2925,24 @@ public class SubHandler12 {
             
                     // args
                     // ref arg
-                    Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                    android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                    android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.amap.api.maps.CoordinateConverter __obj__ = new com.amap.api.maps.CoordinateConverter(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_utils_SpatialRelationUtil__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.utils.SpatialRelationUtil> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3192,21 +2967,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.utils.SpatialRelationUtil __obj__ = new com.amap.api.maps.utils.SpatialRelationUtil();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.utils.overlay.MovingPointOverlay> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3228,29 +3002,26 @@ public class SubHandler12 {
             
                     // args
                     // ref arg
-                    Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                    com.amap.api.maps.AMap var1 = __var1RefId__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1RefId__) : null;
+                    com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                    com.amap.api.maps.model.BasePointOverlay var2 = __var2RefId__ != null ? (com.amap.api.maps.model.BasePointOverlay) getHEAP().get(__var2RefId__) : null;
+                    com.amap.api.maps.model.BasePointOverlay var2 = (com.amap.api.maps.model.BasePointOverlay) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
                     com.amap.api.maps.utils.overlay.MovingPointOverlay __obj__ = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.utils.overlay.SmoothMoveMarker> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3272,26 +3043,24 @@ public class SubHandler12 {
             
                     // args
                     // ref arg
-                    Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                    com.amap.api.maps.AMap var1 = __var1RefId__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1RefId__) : null;
+                    com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.amap.api.maps.utils.overlay.SmoothMoveMarker __obj__ = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.SwipeDismissCallBack> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3313,26 +3082,24 @@ public class SubHandler12 {
             
                     // args
                     // ref arg
-                    Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                    com.amap.api.maps.SwipeDismissView var1 = __var1RefId__ != null ? (com.amap.api.maps.SwipeDismissView) getHEAP().get(__var1RefId__) : null;
+                    com.amap.api.maps.SwipeDismissView var1 = (com.amap.api.maps.SwipeDismissView) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.amap.api.maps.SwipeDismissCallBack __obj__ = new com.amap.api.maps.SwipeDismissCallBack(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.SwipeDismissView> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3354,29 +3121,26 @@ public class SubHandler12 {
             
                     // args
                     // ref arg
-                    Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                    android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                    android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                    android.view.View var2 = __var2RefId__ != null ? (android.view.View) getHEAP().get(__var2RefId__) : null;
+                    android.view.View var2 = (android.view.View) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
                     com.amap.api.maps.SwipeDismissView __obj__ = new com.amap.api.maps.SwipeDismissView(var1, var2);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_MapsInitializer__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.MapsInitializer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3401,21 +3165,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.MapsInitializer __obj__ = new com.amap.api.maps.MapsInitializer();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapStatus__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.offlinemap.OfflineMapStatus> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3440,21 +3203,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.OfflineMapStatus __obj__ = new com.amap.api.maps.offlinemap.OfflineMapStatus();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapProvince__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.offlinemap.OfflineMapProvince> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3479,21 +3241,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.OfflineMapProvince __obj__ = new com.amap.api.maps.offlinemap.OfflineMapProvince();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.offlinemap.DownloadProgressView> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3515,26 +3276,24 @@ public class SubHandler12 {
             
                     // args
                     // ref arg
-                    Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                    android.content.Context var1 = __var1RefId__ != null ? (android.content.Context) getHEAP().get(__var1RefId__) : null;
+                    android.content.Context var1 = (android.content.Context) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.amap.api.maps.offlinemap.DownloadProgressView __obj__ = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_Province__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.offlinemap.Province> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3559,21 +3318,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.Province __obj__ = new com.amap.api.maps.offlinemap.Province();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapCity__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.offlinemap.OfflineMapCity> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3598,21 +3356,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.OfflineMapCity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapCity();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapActivity__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.offlinemap.OfflineMapActivity> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3637,21 +3394,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.OfflineMapActivity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapActivity();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_City__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.offlinemap.City> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3676,21 +3432,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.City __obj__ = new com.amap.api.maps.offlinemap.City();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_model_HeatMapLayerOptions__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.HeatMapLayerOptions> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3715,21 +3470,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.model.HeatMapLayerOptions __obj__ = new com.amap.api.maps.model.HeatMapLayerOptions();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_model_PolygonHoleOptions__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.PolygonHoleOptions> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3754,21 +3508,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.model.PolygonHoleOptions __obj__ = new com.amap.api.maps.model.PolygonHoleOptions();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptionsCreator__", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.TileOverlayOptionsCreator> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3793,21 +3546,20 @@ public class SubHandler12 {
             
                     // create target object
                     com.amap.api.maps.model.TileOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.TileOverlayOptionsCreator();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);
             });
             // factory
             put("ObjectFactory::create_batchcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
+                List<com.amap.api.maps.model.Poi> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
@@ -3828,24 +3580,22 @@ public class SubHandler12 {
                     }
             
                     // args
-                    // jsonable arg
+                    // ref arg
                     String var1 = (String) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                    com.amap.api.maps.model.LatLng var2 = __var2RefId__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2RefId__) : null;
-                    // jsonable arg
+                    com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var2");
+                    // ref arg
                     String var3 = (String) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
                     com.amap.api.maps.model.Poi __obj__ = new com.amap.api.maps.model.Poi(var1, var2, var3);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    __resultList__.add(System.identityHashCode(__obj__));
+                    __resultList__.add(__obj__);
                 }
             
                 __methodResult__.success(__resultList__);

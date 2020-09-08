@@ -21,10 +21,8 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
 
   //region creators
   static Future<com_amap_api_maps_SwipeDismissView> create__android_content_Context__android_view_View(android_content_Context var1, android_view_View var2) async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', {"var1": var1.refId, "var2": var2.refId});
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', {"var1": var1, "var2": var2});
     final object = com_amap_api_maps_SwipeDismissView()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -32,10 +30,9 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__].refId}]);
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__]}]);
   
     final List<com_amap_api_maps_SwipeDismissView> typedResult = resultBatch.map((result) => com_amap_api_maps_SwipeDismissView()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -58,34 +55,39 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.SwipeDismissView::setCallback', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.SwipeDismissView::setCallback', {"__this__": this});
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.SwipeDismissView::setCallback::Callback')
+    MethodChannel('com.amap.api.maps.SwipeDismissView::setCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          switch (methodCall.method) {
-            case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
-              // print log
-              if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onDismiss([])');
-              }
-        
-              // handle the native call
-              var1?.onDismiss();
-              break;
-            case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
-              // print log
-              if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onNotifySwipe([])');
-              }
-        
-              // handle the native call
-              var1?.onNotifySwipe();
-              break;
-            default:
-              break;
+          try {
+            final args = methodCall.arguments as Map;
+            switch (methodCall.method) {
+              case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
+                // print log
+                if (fluttifyLogEnabled) {
+                  debugPrint('fluttify-dart-callback: onDismiss([])');
+                }
+          
+                // handle the native call
+                var1?.onDismiss();
+                break;
+              case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
+                // print log
+                if (fluttifyLogEnabled) {
+                  debugPrint('fluttify-dart-callback: onNotifySwipe([])');
+                }
+          
+                // handle the native call
+                var1?.onNotifySwipe();
+                break;
+              default:
+                break;
+            }
+          } catch (e) {
+            debugPrint(e);
+            throw e;
           }
         });
   
@@ -94,7 +96,6 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }

@@ -24,22 +24,10 @@ mixin com_amap_api_maps_AMap_OnMapScreenShotListener on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onMapScreenShot__android_graphics_Bitmap(android_graphics_Bitmap var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onMapScreenShot__android_graphics_Bitmap::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onMapScreenShot__android_graphics_Bitmap(android_graphics_Bitmap var1) {}
   
   @mustCallSuper
-  Future<void> onMapScreenShot__android_graphics_Bitmap__int(android_graphics_Bitmap var1, int var2) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onMapScreenShot__android_graphics_Bitmap__int::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onMapScreenShot__android_graphics_Bitmap__int(android_graphics_Bitmap var1, int var2) {}
   
 }
 

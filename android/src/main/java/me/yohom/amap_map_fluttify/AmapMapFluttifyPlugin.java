@@ -22,10 +22,12 @@ import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
+import io.flutter.plugin.common.StandardMethodCodec;
 import io.flutter.plugin.platform.PlatformViewRegistry;
 
 import me.yohom.amap_map_fluttify.sub_handler.*;
 import me.yohom.amap_map_fluttify.sub_handler.custom.SubHandlerCustom;
+import me.yohom.foundation_fluttify.core.FluttifyMessageCodec;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
@@ -37,7 +39,7 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
 
     // v1 android embedding for compatible
     public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify");
+        final MethodChannel channel = new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify", new StandardMethodCodec(new FluttifyMessageCodec()));
 
         AmapMapFluttifyPlugin plugin = new AmapMapFluttifyPlugin();
 
@@ -84,7 +86,7 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             Log.d("fluttify-java", "AmapMapFluttifyPlugin::onAttachedToEngine@" + binding);
         }
 
-        final MethodChannel channel = new MethodChannel(binding.getBinaryMessenger(), "me.yohom/amap_map_fluttify");
+        final MethodChannel channel = new MethodChannel(binding.getBinaryMessenger(), "me.yohom/amap_map_fluttify", new StandardMethodCodec(new FluttifyMessageCodec()));
 
         messenger = binding.getBinaryMessenger();
         platformViewRegistry = binding.getPlatformViewRegistry();

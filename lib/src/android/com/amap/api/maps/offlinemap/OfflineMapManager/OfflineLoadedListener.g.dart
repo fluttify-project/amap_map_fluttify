@@ -24,13 +24,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener on ja
   
 
   @mustCallSuper
-  Future<void> onVerifyComplete() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('onVerifyComplete::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> onVerifyComplete() {}
   
 }
 

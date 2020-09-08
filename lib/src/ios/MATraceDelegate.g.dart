@@ -24,25 +24,10 @@ mixin MATraceDelegate on NSObject {
   
 
   @mustCallSuper
-  Future<void> traceManager_didTrace_correct_distance_withError(MATraceManager manager, List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error) {
-    if (manager is Ref) kNativeObjectPool.add(manager);
-    kNativeObjectPool.addAll(locations);
-    kNativeObjectPool.addAll(tracePoints);
-    if (error is Ref) kNativeObjectPool.add(error);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('traceManager_didTrace_correct_distance_withError::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> traceManager_didTrace_correct_distance_withError(MATraceManager manager, List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error) {}
   
   @mustCallSuper
-  Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {
-    if (locationManager is Ref) kNativeObjectPool.add(locationManager);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('mapViewRequireLocationAuth::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {}
   
 }
 

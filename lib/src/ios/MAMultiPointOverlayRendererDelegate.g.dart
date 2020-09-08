@@ -24,14 +24,7 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
   
 
   @mustCallSuper
-  Future<void> multiPointOverlayRenderer_didItemTapped(MAMultiPointOverlayRenderer renderer, MAMultiPointItem item) {
-    if (renderer is Ref) kNativeObjectPool.add(renderer);
-    if (item is Ref) kNativeObjectPool.add(item);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('multiPointOverlayRenderer_didItemTapped::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> multiPointOverlayRenderer_didItemTapped(MAMultiPointOverlayRenderer renderer, MAMultiPointItem item) {}
   
 }
 

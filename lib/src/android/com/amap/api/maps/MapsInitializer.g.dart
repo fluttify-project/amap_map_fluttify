@@ -22,10 +22,8 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
 
   //region creators
   static Future<com_amap_api_maps_MapsInitializer> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_MapsInitializer__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_MapsInitializer__');
     final object = com_amap_api_maps_MapsInitializer()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
     return object;
   }
   
@@ -33,10 +31,9 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_MapsInitializer__', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_MapsInitializer__', {'length': length});
   
     final List<com_amap_api_maps_MapsInitializer> typedResult = resultBatch.map((result) => com_amap_api_maps_MapsInitializer()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
@@ -44,9 +41,8 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
 
   //region getters
   static Future<String> get_static_sdcardDir() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir", );
-  
-    return __result__;
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir", );
+    return __result__ == null ? null : (__result__);
   }
   
   //endregion
@@ -64,7 +60,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::initialize', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::initialize', {"var0": var0});
   
   
     // handle native call
@@ -75,7 +71,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -88,7 +83,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable', {"var0": var0});
   
   
     // handle native call
@@ -99,7 +94,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -112,7 +106,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable', );
   
   
     // handle native call
@@ -123,7 +117,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -136,7 +129,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey', {"var0": var0});
   
   
     // handle native call
@@ -147,7 +140,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -160,7 +152,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getVersion', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getVersion', );
   
   
     // handle native call
@@ -171,7 +163,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -184,7 +175,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap', {"var0": var0});
   
   
     // handle native call
@@ -195,7 +186,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -208,7 +198,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap', );
   
   
     // handle native call
@@ -219,7 +209,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -232,7 +221,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldVectorMap', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldVectorMap', {"var0": var0});
   
   
     // handle native call
@@ -243,7 +232,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -256,7 +244,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldVectorMap', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldVectorMap', );
   
   
     // handle native call
@@ -267,7 +255,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -280,7 +267,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight', {"var0": var0});
   
   
     // handle native call
@@ -291,7 +278,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -304,7 +290,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary', {"var0": var0});
   
   
     // handle native call
@@ -315,7 +301,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -328,7 +313,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary', );
   
   
     // handle native call
@@ -339,7 +324,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -352,7 +336,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setHost', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setHost', {"var0": var0});
   
   
     // handle native call
@@ -363,7 +347,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -376,7 +359,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol', {"var0": var0});
   
   
     // handle native call
@@ -387,7 +370,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -400,7 +382,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol', );
   
   
     // handle native call
@@ -411,7 +393,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -424,7 +405,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureViewDestorySync', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setTextureViewDestorySync', {"var0": var0});
   
   
     // handle native call
@@ -435,7 +416,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -448,7 +428,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureViewDestorySync', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getTextureViewDestorySync', );
   
   
     // handle native call
@@ -459,7 +439,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -472,7 +451,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleFilePath', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleFilePath', {"var0": var0});
   
   
     // handle native call
@@ -483,7 +462,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -496,7 +474,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleFilePath', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleFilePath', );
   
   
     // handle native call
@@ -507,7 +485,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -520,7 +497,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleAssetsPath', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleAssetsPath', {"var0": var0});
   
   
     // handle native call
@@ -531,7 +508,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -544,7 +520,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleAssetsPath', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleAssetsPath', );
   
   
     // handle native call
@@ -555,7 +531,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -568,7 +543,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureDestroyedRender', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setTextureDestroyedRender', {"var0": var0});
   
   
     // handle native call
@@ -579,7 +554,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -592,7 +566,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureDestroyRender', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getTextureDestroyRender', );
   
   
     // handle native call
@@ -603,7 +577,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -616,7 +589,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureSizeChangedInvoked', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setTextureSizeChangedInvoked', {"var0": var0});
   
   
     // handle native call
@@ -627,7 +600,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -640,7 +612,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureSizeChangedInvoked', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getTextureSizeChangedInvoked', );
   
   
     // handle native call
@@ -651,7 +623,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -664,25 +635,30 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setExceptionLogger', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setExceptionLogger', );
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.MapsInitializer::setExceptionLogger::Callback')
+    MethodChannel('com.amap.api.maps.MapsInitializer::setExceptionLogger::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          switch (methodCall.method) {
-            case 'Callback::com.amap.api.maps.ExceptionLogger::onDownloaderException':
-              // print log
-              if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onDownloaderException([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
-              }
-        
-              // handle the native call
-              var0?.onDownloaderException(args['var1'], args['var2']);
-              break;
-            default:
-              break;
+          try {
+            final args = methodCall.arguments as Map;
+            switch (methodCall.method) {
+              case 'Callback::com.amap.api.maps.ExceptionLogger::onDownloaderException':
+                // print log
+                if (fluttifyLogEnabled) {
+                  debugPrint('fluttify-dart-callback: onDownloaderException([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                }
+          
+                // handle the native call
+                var0?.onDownloaderException(args['var1'], args['var2']);
+                break;
+              default:
+                break;
+            }
+          } catch (e) {
+            debugPrint(e);
+            throw e;
           }
         });
   
@@ -691,7 +667,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -704,7 +679,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::disableCachedMapDataUpdate', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::disableCachedMapDataUpdate', {"var0": var0});
   
   
     // handle native call
@@ -715,7 +690,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -728,7 +702,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDisableCachedMapDataUpdate', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isDisableCachedMapDataUpdate', );
   
   
     // handle native call
@@ -739,7 +713,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -752,7 +725,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isSupportRecycleView', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isSupportRecycleView', );
   
   
     // handle native call
@@ -763,7 +736,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -776,7 +748,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setSupportRecycleView', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setSupportRecycleView', {"var0": var0});
   
   
     // handle native call
@@ -787,7 +759,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -800,7 +771,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setPolyline2Enable', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setPolyline2Enable', {"var0": var0});
   
   
     // handle native call
@@ -811,7 +782,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -824,7 +794,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getPolyline2Enable', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getPolyline2Enable', );
   
   
     // handle native call
@@ -835,7 +805,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
       return null;
     } else {
       final __return__ = __result__;
-    
       return __return__;
     }
   }
@@ -846,9 +815,9 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
 extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_MapsInitializer> {
   //region getters
   Future<List<String>> get_static_sdcardDir_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
@@ -866,7 +835,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::initialize_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::initialize_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -874,7 +843,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -886,7 +854,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -894,7 +862,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -906,7 +873,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable_batch', );
   
   
     // convert native result to dart side object
@@ -914,7 +881,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -926,7 +892,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -934,7 +900,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -946,7 +911,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getVersion_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getVersion_batch', );
   
   
     // convert native result to dart side object
@@ -954,7 +919,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -966,7 +930,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -974,7 +938,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -986,7 +949,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap_batch', );
   
   
     // convert native result to dart side object
@@ -994,7 +957,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1006,7 +968,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldVectorMap_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldVectorMap_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1014,7 +976,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1026,7 +987,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldVectorMap_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldVectorMap_batch', );
   
   
     // convert native result to dart side object
@@ -1034,7 +995,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1046,7 +1006,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1054,7 +1014,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1066,7 +1025,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1074,7 +1033,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1086,7 +1044,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary_batch', );
   
   
     // convert native result to dart side object
@@ -1094,7 +1052,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1106,7 +1063,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setHost_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setHost_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1114,7 +1071,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1126,7 +1082,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1134,7 +1090,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1146,7 +1101,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol_batch', );
   
   
     // convert native result to dart side object
@@ -1154,7 +1109,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1166,7 +1120,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureViewDestorySync_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setTextureViewDestorySync_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1174,7 +1128,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1186,7 +1139,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureViewDestorySync_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getTextureViewDestorySync_batch', );
   
   
     // convert native result to dart side object
@@ -1194,7 +1147,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1206,7 +1158,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleFilePath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleFilePath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1214,7 +1166,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1226,7 +1177,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleFilePath_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleFilePath_batch', );
   
   
     // convert native result to dart side object
@@ -1234,7 +1185,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1246,7 +1196,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleAssetsPath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleAssetsPath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1254,7 +1204,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1266,7 +1215,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleAssetsPath_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleAssetsPath_batch', );
   
   
     // convert native result to dart side object
@@ -1274,7 +1223,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1286,7 +1234,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureDestroyedRender_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setTextureDestroyedRender_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1294,7 +1242,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1306,7 +1253,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureDestroyRender_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getTextureDestroyRender_batch', );
   
   
     // convert native result to dart side object
@@ -1314,7 +1261,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1326,7 +1272,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureSizeChangedInvoked_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setTextureSizeChangedInvoked_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1334,7 +1280,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1346,7 +1291,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureSizeChangedInvoked_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getTextureSizeChangedInvoked_batch', );
   
   
     // convert native result to dart side object
@@ -1354,7 +1299,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1366,7 +1310,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::disableCachedMapDataUpdate_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::disableCachedMapDataUpdate_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1374,7 +1318,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1386,7 +1329,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDisableCachedMapDataUpdate_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isDisableCachedMapDataUpdate_batch', );
   
   
     // convert native result to dart side object
@@ -1394,7 +1337,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1406,7 +1348,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isSupportRecycleView_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::isSupportRecycleView_batch', );
   
   
     // convert native result to dart side object
@@ -1414,7 +1356,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1426,7 +1367,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setSupportRecycleView_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setSupportRecycleView_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1434,7 +1375,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1446,7 +1386,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setPolyline2Enable_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::setPolyline2Enable_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1454,7 +1394,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -1466,7 +1405,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getPolyline2Enable_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.MapsInitializer::getPolyline2Enable_batch', );
   
   
     // convert native result to dart side object
@@ -1474,7 +1413,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }

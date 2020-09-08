@@ -24,22 +24,10 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) {
-    if (var1 is Ref) kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('activate::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) {}
   
   @mustCallSuper
-  Future<void> deactivate() {
-  
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('deactivate::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
+  Future<void> deactivate() {}
   
 }
 
