@@ -174,4 +174,6 @@ export 'com/amap/api/trace/TraceListener.g.dart';
 export 'com/amap/api/trace/TraceOverlay.g.dart';
 export 'com/amap/api/trace/LBSTraceClient.g.dart';
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
+export 'package:amap_location_fluttify/amap_location_fluttify.dart';
+export 'package:amap_search_fluttify/amap_search_fluttify.dart';
 export 'package:url_launcher/url_launcher.dart';

@@ -87,7 +87,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -149,7 +149,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.trace.LBSTraceClient::startTrace::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.trace.LBSTraceClient::startTrace::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

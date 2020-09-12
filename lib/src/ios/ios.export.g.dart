@@ -111,4 +111,6 @@ export 'MALineJoinType.g.dart';
 export 'MACustomBuildingOverlay.g.dart';
 export 'MAOfflineItemMunicipality.g.dart';
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
+export 'package:amap_location_fluttify/amap_location_fluttify.dart';
+export 'package:amap_search_fluttify/amap_search_fluttify.dart';
 export 'package:url_launcher/url_launcher.dart';

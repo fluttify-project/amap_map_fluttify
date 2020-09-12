@@ -39,7 +39,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.utils.overlay.SmoothMoveMarker __this__ = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) __args__.get("__this__");
             
-               float __result__ = __this__.MIN_OFFSET_DISTANCE;
+               Float __result__ = __this__.MIN_OFFSET_DISTANCE;
             
                 __methodResult__.success(__result__);
             });
@@ -127,7 +127,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_RED;
+               Float __result__ = __this__.HUE_RED;
             
                 __methodResult__.success(__result__);
             });
@@ -138,7 +138,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_ORANGE;
+               Float __result__ = __this__.HUE_ORANGE;
             
                 __methodResult__.success(__result__);
             });
@@ -149,7 +149,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_YELLOW;
+               Float __result__ = __this__.HUE_YELLOW;
             
                 __methodResult__.success(__result__);
             });
@@ -160,7 +160,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_GREEN;
+               Float __result__ = __this__.HUE_GREEN;
             
                 __methodResult__.success(__result__);
             });
@@ -171,7 +171,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_CYAN;
+               Float __result__ = __this__.HUE_CYAN;
             
                 __methodResult__.success(__result__);
             });
@@ -182,7 +182,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_AZURE;
+               Float __result__ = __this__.HUE_AZURE;
             
                 __methodResult__.success(__result__);
             });
@@ -193,7 +193,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_BLUE;
+               Float __result__ = __this__.HUE_BLUE;
             
                 __methodResult__.success(__result__);
             });
@@ -204,7 +204,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_VIOLET;
+               Float __result__ = __this__.HUE_VIOLET;
             
                 __methodResult__.success(__result__);
             });
@@ -215,7 +215,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_MAGENTA;
+               Float __result__ = __this__.HUE_MAGENTA;
             
                 __methodResult__.success(__result__);
             });
@@ -226,7 +226,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-               float __result__ = __this__.HUE_ROSE;
+               Float __result__ = __this__.HUE_ROSE;
             
                 __methodResult__.success(__result__);
             });
@@ -237,7 +237,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-               int __result__ = __this__.width;
+               Integer __result__ = __this__.width;
             
                 __methodResult__.success(__result__);
             });
@@ -248,7 +248,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-               int __result__ = __this__.height;
+               Integer __result__ = __this__.height;
             
                 __methodResult__.success(__result__);
             });
@@ -270,7 +270,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.GroundOverlayOptions __this__ = (com.amap.api.maps.model.GroundOverlayOptions) __args__.get("__this__");
             
-               float __result__ = __this__.NO_DIMENSION;
+               Float __result__ = __this__.NO_DIMENSION;
             
                 __methodResult__.success(__result__);
             });
@@ -292,7 +292,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               float __result__ = __this__.zoom;
+               Float __result__ = __this__.zoom;
             
                 __methodResult__.success(__result__);
             });
@@ -303,7 +303,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               float __result__ = __this__.tilt;
+               Float __result__ = __this__.tilt;
             
                 __methodResult__.success(__result__);
             });
@@ -314,7 +314,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               float __result__ = __this__.bearing;
+               Float __result__ = __this__.bearing;
             
                 __methodResult__.success(__result__);
             });
@@ -325,7 +325,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-               boolean __result__ = __this__.isAbroad;
+               Boolean __result__ = __this__.isAbroad;
             
                 __methodResult__.success(__result__);
             });
@@ -369,7 +369,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-               double __result__ = __this__.latitude;
+               Double __result__ = __this__.latitude;
             
                 __methodResult__.success(__result__);
             });
@@ -380,7 +380,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-               double __result__ = __this__.longitude;
+               Double __result__ = __this__.longitude;
             
                 __methodResult__.success(__result__);
             });
@@ -391,7 +391,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = __this__.offsetX;
+               Integer __result__ = __this__.offsetX;
             
                 __methodResult__.success(__result__);
             });
@@ -402,7 +402,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = __this__.offsetY;
+               Integer __result__ = __this__.offsetY;
             
                 __methodResult__.success(__result__);
             });
@@ -413,7 +413,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = __this__.minX;
+               Integer __result__ = __this__.minX;
             
                 __methodResult__.success(__result__);
             });
@@ -424,7 +424,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = __this__.maxX;
+               Integer __result__ = __this__.maxX;
             
                 __methodResult__.success(__result__);
             });
@@ -435,7 +435,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = __this__.minY;
+               Integer __result__ = __this__.minY;
             
                 __methodResult__.success(__result__);
             });
@@ -446,7 +446,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-               int __result__ = __this__.maxY;
+               Integer __result__ = __this__.maxY;
             
                 __methodResult__.success(__result__);
             });
@@ -457,7 +457,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.WeightedLatLng __this__ = (com.amap.api.maps.model.WeightedLatLng) __args__.get("__this__");
             
-               double __result__ = __this__.intensity;
+               Double __result__ = __this__.intensity;
             
                 __methodResult__.success(__result__);
             });
@@ -490,7 +490,7 @@ public class SubHandler0 {
                // ref object
                com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-               int __result__ = __this__.activeFloorIndex;
+               Integer __result__ = __this__.activeFloorIndex;
             
                 __methodResult__.success(__result__);
             });
@@ -537,7 +537,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.utils.overlay.SmoothMoveMarker __this__ = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) __args__.get("__this__");
             
-                    float __result__ = __this__.MIN_OFFSET_DISTANCE;
+                    Float __result__ = __this__.MIN_OFFSET_DISTANCE;
             
                     __resultList__.add(__result__);
                 }
@@ -673,7 +673,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_RED;
+                    Float __result__ = __this__.HUE_RED;
             
                     __resultList__.add(__result__);
                 }
@@ -690,7 +690,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_ORANGE;
+                    Float __result__ = __this__.HUE_ORANGE;
             
                     __resultList__.add(__result__);
                 }
@@ -707,7 +707,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_YELLOW;
+                    Float __result__ = __this__.HUE_YELLOW;
             
                     __resultList__.add(__result__);
                 }
@@ -724,7 +724,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_GREEN;
+                    Float __result__ = __this__.HUE_GREEN;
             
                     __resultList__.add(__result__);
                 }
@@ -741,7 +741,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_CYAN;
+                    Float __result__ = __this__.HUE_CYAN;
             
                     __resultList__.add(__result__);
                 }
@@ -758,7 +758,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_AZURE;
+                    Float __result__ = __this__.HUE_AZURE;
             
                     __resultList__.add(__result__);
                 }
@@ -775,7 +775,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_BLUE;
+                    Float __result__ = __this__.HUE_BLUE;
             
                     __resultList__.add(__result__);
                 }
@@ -792,7 +792,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_VIOLET;
+                    Float __result__ = __this__.HUE_VIOLET;
             
                     __resultList__.add(__result__);
                 }
@@ -809,7 +809,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_MAGENTA;
+                    Float __result__ = __this__.HUE_MAGENTA;
             
                     __resultList__.add(__result__);
                 }
@@ -826,7 +826,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.BitmapDescriptorFactory __this__ = (com.amap.api.maps.model.BitmapDescriptorFactory) __args__.get("__this__");
             
-                    float __result__ = __this__.HUE_ROSE;
+                    Float __result__ = __this__.HUE_ROSE;
             
                     __resultList__.add(__result__);
                 }
@@ -843,7 +843,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-                    int __result__ = __this__.width;
+                    Integer __result__ = __this__.width;
             
                     __resultList__.add(__result__);
                 }
@@ -860,7 +860,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.Tile __this__ = (com.amap.api.maps.model.Tile) __args__.get("__this__");
             
-                    int __result__ = __this__.height;
+                    Integer __result__ = __this__.height;
             
                     __resultList__.add(__result__);
                 }
@@ -894,7 +894,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.GroundOverlayOptions __this__ = (com.amap.api.maps.model.GroundOverlayOptions) __args__.get("__this__");
             
-                    float __result__ = __this__.NO_DIMENSION;
+                    Float __result__ = __this__.NO_DIMENSION;
             
                     __resultList__.add(__result__);
                 }
@@ -928,7 +928,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    float __result__ = __this__.zoom;
+                    Float __result__ = __this__.zoom;
             
                     __resultList__.add(__result__);
                 }
@@ -945,7 +945,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    float __result__ = __this__.tilt;
+                    Float __result__ = __this__.tilt;
             
                     __resultList__.add(__result__);
                 }
@@ -962,7 +962,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    float __result__ = __this__.bearing;
+                    Float __result__ = __this__.bearing;
             
                     __resultList__.add(__result__);
                 }
@@ -979,7 +979,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.CameraPosition __this__ = (com.amap.api.maps.model.CameraPosition) __args__.get("__this__");
             
-                    boolean __result__ = __this__.isAbroad;
+                    Boolean __result__ = __this__.isAbroad;
             
                     __resultList__.add(__result__);
                 }
@@ -1047,7 +1047,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-                    double __result__ = __this__.latitude;
+                    Double __result__ = __this__.latitude;
             
                     __resultList__.add(__result__);
                 }
@@ -1064,7 +1064,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.LatLng __this__ = (com.amap.api.maps.model.LatLng) __args__.get("__this__");
             
-                    double __result__ = __this__.longitude;
+                    Double __result__ = __this__.longitude;
             
                     __resultList__.add(__result__);
                 }
@@ -1081,7 +1081,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = __this__.offsetX;
+                    Integer __result__ = __this__.offsetX;
             
                     __resultList__.add(__result__);
                 }
@@ -1098,7 +1098,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = __this__.offsetY;
+                    Integer __result__ = __this__.offsetY;
             
                     __resultList__.add(__result__);
                 }
@@ -1115,7 +1115,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = __this__.minX;
+                    Integer __result__ = __this__.minX;
             
                     __resultList__.add(__result__);
                 }
@@ -1132,7 +1132,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = __this__.maxX;
+                    Integer __result__ = __this__.maxX;
             
                     __resultList__.add(__result__);
                 }
@@ -1149,7 +1149,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = __this__.minY;
+                    Integer __result__ = __this__.minY;
             
                     __resultList__.add(__result__);
                 }
@@ -1166,7 +1166,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.TileProjection __this__ = (com.amap.api.maps.model.TileProjection) __args__.get("__this__");
             
-                    int __result__ = __this__.maxY;
+                    Integer __result__ = __this__.maxY;
             
                     __resultList__.add(__result__);
                 }
@@ -1183,7 +1183,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.WeightedLatLng __this__ = (com.amap.api.maps.model.WeightedLatLng) __args__.get("__this__");
             
-                    double __result__ = __this__.intensity;
+                    Double __result__ = __this__.intensity;
             
                     __resultList__.add(__result__);
                 }
@@ -1234,7 +1234,7 @@ public class SubHandler0 {
                     // ref object
                     com.amap.api.maps.model.IndoorBuildingInfo __this__ = (com.amap.api.maps.model.IndoorBuildingInfo) __args__.get("__this__");
             
-                    int __result__ = __this__.activeFloorIndex;
+                    Integer __result__ = __this__.activeFloorIndex;
             
                     __resultList__.add(__result__);
                 }
@@ -4295,7 +4295,7 @@ public class SubHandler0 {
                 try {
                     __this__.setMoveListener(new com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method

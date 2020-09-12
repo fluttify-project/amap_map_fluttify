@@ -111,7 +111,7 @@ class MAOfflineMap extends NSObject  {
   
   
     // handle native call
-    MethodChannel('void|BOOL#setupSuccess::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('void|BOOL#setupSuccess::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -155,7 +155,7 @@ class MAOfflineMap extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MAOfflineMapDownloadBlock::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MAOfflineMapDownloadBlock::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -314,7 +314,7 @@ class MAOfflineMap extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MAOfflineMapNewestVersionBlock::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MAOfflineMapNewestVersionBlock::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -358,7 +358,7 @@ class MAOfflineMap extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MAOfflineMapDownloadBlock::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MAOfflineMapDownloadBlock::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -402,7 +402,7 @@ class MAOfflineMap extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MAOfflineMapDownloadBlock::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MAOfflineMapDownloadBlock::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

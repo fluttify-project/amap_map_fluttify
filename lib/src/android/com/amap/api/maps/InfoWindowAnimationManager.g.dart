@@ -44,7 +44,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

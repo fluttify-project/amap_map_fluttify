@@ -59,7 +59,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.SwipeDismissView::setCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.SwipeDismissView::setCallback::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

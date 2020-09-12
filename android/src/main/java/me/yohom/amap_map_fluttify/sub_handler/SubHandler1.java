@@ -448,7 +448,7 @@ public class SubHandler1 {
                 try {
                     __this__.setMoveListener(new com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -506,7 +506,7 @@ public class SubHandler1 {
                 try {
                     __this__.setCallback(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.SwipeDismissView::setCallback::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.SwipeDismissView::setCallback::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -2753,7 +2753,7 @@ public class SubHandler1 {
                 try {
                     __this__.setOnOfflineLoadedListener(new com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method

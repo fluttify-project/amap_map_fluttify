@@ -68,7 +68,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   
     // handle native call
-    MethodChannel('void|BOOL#isFinished::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('void|BOOL#isFinished::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -112,7 +112,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   
     // handle native call
-    MethodChannel('void|BOOL#isFinished::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('void|BOOL#isFinished::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -134,7 +134,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
             throw e;
           }
         });
-    MethodChannel('void|MAAnnotationMoveAnimation*#currentAni::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('void|MAAnnotationMoveAnimation*#currentAni::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

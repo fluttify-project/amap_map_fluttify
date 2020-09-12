@@ -2018,7 +2018,7 @@ public class SubHandler5 {
                 try {
                     __this__.setInfoWindowAnimation(var1, new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -2531,7 +2531,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -2870,7 +2870,7 @@ public class SubHandler5 {
                 try {
                     __this__.animateCamera(var1, new com.amap.api.maps.AMap.CancelableCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -2955,7 +2955,7 @@ public class SubHandler5 {
                 try {
                     __this__.animateCamera(var1, var2, new com.amap.api.maps.AMap.CancelableCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -3929,7 +3929,7 @@ public class SubHandler5 {
                 try {
                     __this__.setLocationSource(new com.amap.api.maps.LocationSource() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setLocationSource::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setLocationSource::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4182,7 +4182,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnCameraChangeListener(new com.amap.api.maps.AMap.OnCameraChangeListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnCameraChangeListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnCameraChangeListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4264,7 +4264,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMapClickListener(new com.amap.api.maps.AMap.OnMapClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4322,7 +4322,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMapTouchListener(new com.amap.api.maps.AMap.OnMapTouchListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapTouchListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapTouchListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4380,7 +4380,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnPOIClickListener(new com.amap.api.maps.AMap.OnPOIClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPOIClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPOIClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4438,7 +4438,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMyLocationChangeListener(new com.amap.api.maps.AMap.OnMyLocationChangeListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4496,7 +4496,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMapLongClickListener(new com.amap.api.maps.AMap.OnMapLongClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLongClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLongClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4554,7 +4554,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMarkerClickListener(new com.amap.api.maps.AMap.OnMarkerClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4612,7 +4612,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnPolylineClickListener(new com.amap.api.maps.AMap.OnPolylineClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPolylineClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPolylineClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4670,7 +4670,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMarkerDragListener(new com.amap.api.maps.AMap.OnMarkerDragListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerDragListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerDragListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4776,7 +4776,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnInfoWindowClickListener(new com.amap.api.maps.AMap.OnInfoWindowClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4863,7 +4863,7 @@ public class SubHandler5 {
                 try {
                     __this__.setCommonInfoWindowAdapter(new com.amap.api.maps.AMap.CommonInfoWindowAdapter() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4921,7 +4921,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMapLoadedListener(new com.amap.api.maps.AMap.OnMapLoadedListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLoadedListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLoadedListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4979,7 +4979,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnIndoorBuildingActiveListener(new com.amap.api.maps.AMap.OnIndoorBuildingActiveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5037,7 +5037,7 @@ public class SubHandler5 {
                 try {
                     __this__.setOnMultiPointClickListener(new com.amap.api.maps.AMap.OnMultiPointClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5095,7 +5095,7 @@ public class SubHandler5 {
                 try {
                     __this__.getMapPrintScreen(new com.amap.api.maps.AMap.onMapPrintScreenListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapPrintScreen::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapPrintScreen::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5153,7 +5153,7 @@ public class SubHandler5 {
                 try {
                     __this__.getMapScreenShot(new com.amap.api.maps.AMap.OnMapScreenShotListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapScreenShot::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapScreenShot::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5320,7 +5320,7 @@ public class SubHandler5 {
                 try {
                     __this__.removecache(new com.amap.api.maps.AMap.OnCacheRemoveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5609,7 +5609,7 @@ public class SubHandler5 {
                 try {
                     __this__.setAMapGestureListener(new com.amap.api.maps.model.AMapGestureListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setAMapGestureListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setAMapGestureListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -6574,7 +6574,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnCameraChangeListener(new com.amap.api.maps.AMap.OnCameraChangeListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnCameraChangeListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnCameraChangeListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -6656,7 +6656,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnMapClickListener(new com.amap.api.maps.AMap.OnMapClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -6714,7 +6714,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnMarkerDragListener(new com.amap.api.maps.AMap.OnMarkerDragListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMarkerDragListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMarkerDragListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -6820,7 +6820,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnMapLoadedListener(new com.amap.api.maps.AMap.OnMapLoadedListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapLoadedListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapLoadedListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -6878,7 +6878,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnMapTouchListener(new com.amap.api.maps.AMap.OnMapTouchListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapTouchListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapTouchListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -6936,7 +6936,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnMarkerClickListener(new com.amap.api.maps.AMap.OnMarkerClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMarkerClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMarkerClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -6994,7 +6994,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnPolylineClickListener(new com.amap.api.maps.AMap.OnPolylineClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnPolylineClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnPolylineClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -7052,7 +7052,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnPOIClickListener(new com.amap.api.maps.AMap.OnPOIClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnPOIClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnPOIClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -7110,7 +7110,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnMapLongClickListener(new com.amap.api.maps.AMap.OnMapLongClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapLongClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnMapLongClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -7168,7 +7168,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnInfoWindowClickListener(new com.amap.api.maps.AMap.OnInfoWindowClickListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnInfoWindowClickListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnInfoWindowClickListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -7226,7 +7226,7 @@ public class SubHandler5 {
                 try {
                     __this__.addOnIndoorBuildingActiveListener(new com.amap.api.maps.AMap.OnIndoorBuildingActiveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnIndoorBuildingActiveListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::addOnIndoorBuildingActiveListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method

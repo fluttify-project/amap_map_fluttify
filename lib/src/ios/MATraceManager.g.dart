@@ -117,7 +117,7 @@ class MATraceManager extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MAProcessingCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MAProcessingCallback::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -139,7 +139,7 @@ class MATraceManager extends NSObject  {
             throw e;
           }
         });
-    MethodChannel('MAFinishCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MAFinishCallback::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -161,7 +161,7 @@ class MATraceManager extends NSObject  {
             throw e;
           }
         });
-    MethodChannel('MAFailedCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MAFailedCallback::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -205,7 +205,7 @@ class MATraceManager extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MATraceLocationCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('MATraceLocationCallback::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

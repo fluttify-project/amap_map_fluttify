@@ -810,7 +810,7 @@ extern BOOL enableLog;
             // invoke native method
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"void|BOOL#isFinished::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"void|BOOL#isFinished::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -866,7 +866,7 @@ extern BOOL enableLog;
             // invoke native method
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"void|BOOL#isFinished::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"void|BOOL#isFinished::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -885,7 +885,7 @@ extern BOOL enableLog;
         
             } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"void|MAAnnotationMoveAnimation*#currentAni::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"void|MAAnnotationMoveAnimation*#currentAni::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1132,7 +1132,7 @@ extern BOOL enableLog;
             // invoke native method
             NSOperation* result = [ref queryProcessedTraceWith: locations type: type processingCallback: ^(int index, NSArray<MATracePoint*>* points) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAProcessingCallback::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MAProcessingCallback::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1153,7 +1153,7 @@ extern BOOL enableLog;
         
             } finishCallback: ^(NSArray<MATracePoint*>* points, double distance) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAFinishCallback::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MAFinishCallback::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1174,7 +1174,7 @@ extern BOOL enableLog;
         
             } failedCallback: ^(int errorCode, NSString* errorDesc) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAFailedCallback::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MAFailedCallback::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1216,7 +1216,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref startTraceWith : ^(NSArray<CLLocation*>* locations, NSArray<MATracePoint*>* tracePoints, double distance, NSError* error) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MATraceLocationCallback::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MATraceLocationCallback::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1657,7 +1657,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref loadTileAtPath : path result: ^(NSData* tileData, NSError* error) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"void|NSData*#tileData,NSError*#error::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"void|NSData*#tileData,NSError*#error::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1768,7 +1768,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref setupWithCompletionBlock : ^(BOOL setupSuccess) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"void|BOOL#setupSuccess::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"void|BOOL#setupSuccess::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1812,7 +1812,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAOfflineMapDownloadBlock::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MAOfflineMapDownloadBlock::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -1966,7 +1966,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref checkNewestVersion : ^(BOOL hasNewestVersion) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAOfflineMapNewestVersionBlock::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MAOfflineMapNewestVersionBlock::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -2008,7 +2008,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref downloadCity : city downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAOfflineMapDownloadBlock::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MAOfflineMapDownloadBlock::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -2058,7 +2058,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref downloadCity : city shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAOfflineMapDownloadBlock::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"MAOfflineMapDownloadBlock::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         
@@ -3612,7 +3612,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"void|UIImage*#resultImage,NSInteger#state::Callback"
+                      methodChannelWithName:[NSString stringWithFormat:@"void|UIImage*#resultImage,NSInteger#state::Callback@%@", @(ref.hash)]
                             binaryMessenger:[[weakSelf registrar] messenger]
                                       codec:[FlutterStandardMethodCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]]];
         

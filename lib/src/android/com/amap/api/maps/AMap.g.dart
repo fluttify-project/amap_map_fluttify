@@ -174,7 +174,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -227,7 +227,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -993,7 +993,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setLocationSource::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setLocationSource::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1175,7 +1175,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnCameraChangeListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnCameraChangeListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1228,7 +1228,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMapClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1272,7 +1272,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapTouchListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMapTouchListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1316,7 +1316,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnPOIClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnPOIClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1360,7 +1360,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1404,7 +1404,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapLongClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLongClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1448,7 +1448,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMarkerClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMarkerClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1492,7 +1492,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnPolylineClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnPolylineClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1536,7 +1536,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMarkerDragListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMarkerDragListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1598,7 +1598,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1665,7 +1665,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1709,7 +1709,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapLoadedListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLoadedListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1753,7 +1753,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1797,7 +1797,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1841,7 +1841,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::getMapPrintScreen::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::getMapPrintScreen::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -1885,7 +1885,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::getMapScreenShot::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::getMapScreenShot::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -2007,7 +2007,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -2235,7 +2235,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setAMapGestureListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::setAMapGestureListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -2917,7 +2917,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnCameraChangeListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnCameraChangeListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -2970,7 +2970,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnMapClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnMapClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3014,7 +3014,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnMarkerDragListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnMarkerDragListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3076,7 +3076,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnMapLoadedListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnMapLoadedListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3120,7 +3120,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnMapTouchListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnMapTouchListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3164,7 +3164,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnMarkerClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnMarkerClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3208,7 +3208,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnPolylineClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnPolylineClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3252,7 +3252,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnPOIClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnPOIClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3296,7 +3296,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnMapLongClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnMapLongClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3340,7 +3340,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnInfoWindowClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnInfoWindowClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3384,7 +3384,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnIndoorBuildingActiveListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnIndoorBuildingActiveListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3428,7 +3428,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::addOnMyLocationChangeListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::addOnMyLocationChangeListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3472,7 +3472,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnCameraChangeListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnCameraChangeListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3525,7 +3525,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnMapClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3569,7 +3569,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnMarkerDragListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnMarkerDragListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3631,7 +3631,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnMapLoadedListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapLoadedListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3675,7 +3675,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnMapTouchListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapTouchListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3719,7 +3719,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnMarkerClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnMarkerClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3763,7 +3763,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnPolylineClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnPolylineClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3807,7 +3807,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnPOIClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnPOIClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3851,7 +3851,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnMapLongClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapLongClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3895,7 +3895,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnInfoWindowClickListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnInfoWindowClickListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3939,7 +3939,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnIndoorBuildingActiveListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnIndoorBuildingActiveListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;
@@ -3983,7 +3983,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removeOnMyLocationChangeListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.AMap::removeOnMyLocationChangeListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

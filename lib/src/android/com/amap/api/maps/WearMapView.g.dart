@@ -259,7 +259,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup with com_amap
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

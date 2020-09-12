@@ -358,7 +358,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

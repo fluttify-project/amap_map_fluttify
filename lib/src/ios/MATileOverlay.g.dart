@@ -151,7 +151,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   
   
     // handle native call
-    MethodChannel('void|NSData*#tileData,NSError*#error::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('void|NSData*#tileData,NSError*#error::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

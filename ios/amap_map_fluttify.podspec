@@ -18,6 +18,8 @@ A new flutter plugin project.
   s.dependency 'foundation_fluttify'
   # flutter plugin dependency
   s.dependency 'amap_core_fluttify'
+  s.dependency 'amap_location_fluttify'
+  s.dependency 'amap_search_fluttify'
   s.dependency 'url_launcher'
   # sdk dependency
   s.dependency 'AMap3DMap', '~> 7.5.0'

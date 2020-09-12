@@ -98,7 +98,9 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
 
         com.amap.api.maps.offlinemap.DownloadProgressView view = new com.amap.api.maps.offlinemap.DownloadProgressView(activity);
 
+        // 同时存放viewId和refId的对象, 供后续viewId转refId使用
         getHEAP().put(String.valueOf(Integer.MAX_VALUE - id), view);
+        getHEAP().put(String.valueOf(System.identityHashCode(view)), view);
         return new PlatformView() {
 
             // add to HEAP

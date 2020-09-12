@@ -458,7 +458,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.Marker::setAnimationListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.model.Marker::setAnimationListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

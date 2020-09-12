@@ -504,7 +504,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

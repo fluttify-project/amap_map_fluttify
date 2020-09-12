@@ -2625,7 +2625,7 @@ public class SubHandler4 {
                 try {
                     __this__.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.Marker::setAnimationListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.Marker::setAnimationListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4162,7 +4162,7 @@ public class SubHandler4 {
                 try {
                     __this__.setGenerateCrossImageListener(new com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback", new StandardMethodCodec(new FluttifyMessageCodec()));
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback@" + String.valueOf(System.identityHashCode(__this__)), new StandardMethodCodec(new FluttifyMessageCodec()));
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method

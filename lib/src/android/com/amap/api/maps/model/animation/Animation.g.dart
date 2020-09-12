@@ -48,7 +48,7 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

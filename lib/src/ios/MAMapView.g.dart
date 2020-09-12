@@ -1351,7 +1351,7 @@ class MAMapView extends UIView  {
   
   
     // handle native call
-    MethodChannel('void|UIImage*#resultImage,NSInteger#state::Callback', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
+    MethodChannel('void|UIImage*#resultImage,NSInteger#state::Callback@$refId', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify')))
         .setMethodCallHandler((methodCall) async {
           try {
             final args = methodCall.arguments as Map;

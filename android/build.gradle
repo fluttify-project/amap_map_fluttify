@@ -70,6 +70,8 @@ dependencies {
     compileOnly rootProject.findProject(":foundation_fluttify")
     // flutter plugin dependency
     compileOnly rootProject.findProject(":amap_core_fluttify")
+    compileOnly rootProject.findProject(":amap_location_fluttify")
+    compileOnly rootProject.findProject(":amap_search_fluttify")
     compileOnly rootProject.findProject(":url_launcher")
     // sdk dependency
     api 'com.amap.api:3dmap:7.5.0'
