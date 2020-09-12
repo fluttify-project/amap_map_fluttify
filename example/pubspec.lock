@@ -14,28 +14,28 @@ packages:
       name: amap_core_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.10.0-pre.3"
+    version: "0.10.0"
   amap_location_fluttify:
     dependency: transitive
     description:
       name: amap_location_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.15.0-pre.1"
+    version: "0.15.0"
   amap_map_fluttify:
     dependency: "direct dev"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.25.1"
+    version: "0.26.0-pre.1"
   amap_search_fluttify:
     dependency: transitive
     description:
       name: amap_search_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.12.0-pre.1"
+    version: "0.12.0"
   analyzer:
     dependency: transitive
     description:
@@ -133,7 +133,7 @@ packages:
       name: core_location_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.0-pre.1"
+    version: "0.3.0"
   coverage:
     dependency: transitive
     description:
@@ -263,7 +263,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.0-pre.10"
+    version: "0.9.0"
   fuchsia_remote_debug_protocol:
     dependency: transitive
     description: flutter
