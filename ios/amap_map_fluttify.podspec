@@ -22,7 +22,7 @@ A new flutter plugin project.
   s.dependency 'amap_search_fluttify'
   s.dependency 'url_launcher'
   # sdk dependency
-  s.dependency 'AMap3DMap', '~> 7.5.0'
+  s.dependency 'AMap3DMap-NO-IDFA', '~> 7.5.0'
 
   s.static_framework = true
   s.ios.deployment_target = '8.0'
