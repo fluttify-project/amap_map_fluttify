@@ -34,10 +34,9 @@ class _ScreenShotScreenState extends State<ScreenShotScreen> {
               children: <Widget>[
                 RaisedButton(
                   onPressed: () async {
-                    _controller.screenShot((data) async {
-                      setState(() {
-                        _data = data;
-                      });
+                    final data = await _controller.screenShot();
+                    setState(() {
+                      _data = data;
                     });
                   },
                   child: Text('截图'),

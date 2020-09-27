@@ -18,22 +18,6 @@ class _IOSMapDelegate extends NSObject
   OnMultiPointClicked onMultiPointClicked;
 
   MAMapView iosController;
-  Completer<List<MAAnnotationView>> annotationViewCompleter;
-
-  @override
-  Future<void> mapView_didAddAnnotationViews(
-    MAMapView mapView,
-    List<NSObject> views,
-  ) async {
-    super.mapView_didAddAnnotationViews(mapView, views);
-    if (annotationViewCompleter?.isCompleted == false) {
-      List<MAAnnotationView> result = [
-        for (final view in views)
-          TypeOpAmapMapFluttifyIOS(view).as__<MAAnnotationView>()
-      ];
-      annotationViewCompleter.complete(result);
-    }
-  }
 
   @override
   Future<void> mapView_didAnnotationViewTapped(
@@ -274,7 +258,7 @@ class _IOSMapDelegate extends NSObject
   @override
   Future<void> mapView_didAddOverlayRenderers(
     MAMapView mapView,
-    List<NSObject> overlayRenderers,
+    List<dynamic> overlayRenderers,
   ) async {
     super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
     if (overlayRenderers.length == 1 &&
@@ -323,7 +307,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnMapMove onMapMoveEnd;
   OnMapClicked onMapClicked;
   OnMapClicked onMapLongClicked;
-  OnScreenShot onSnapshot;
+  ValueChanged<Uint8List> onSnapshot;
   OnLocationChange onLocationChange;
   OnMarkerClicked onInfoWindowClicked;
   OnMultiPointClicked onMultiPointClicked;
