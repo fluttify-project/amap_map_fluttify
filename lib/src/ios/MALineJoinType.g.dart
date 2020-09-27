@@ -15,6 +15,7 @@ extension MALineJoinTypeToX on MALineJoinType {
       case MALineJoinType.kMALineJoinBevel: return MALineJoinType.kMALineJoinBevel.index + 0;
       case MALineJoinType.kMALineJoinMiter: return MALineJoinType.kMALineJoinMiter.index + 0;
       case MALineJoinType.kMALineJoinRound: return MALineJoinType.kMALineJoinRound.index + 0;
+      default: return 0;
     }
   }
 }

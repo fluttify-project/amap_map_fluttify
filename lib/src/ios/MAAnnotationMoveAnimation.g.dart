@@ -20,17 +20,17 @@ class MAAnnotationMoveAnimation extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAAnnotationMoveAnimation> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAAnnotationMoveAnimation');
+  static Future<MAAnnotationMoveAnimation> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAAnnotationMoveAnimation', {'init': init});
     final object = MAAnnotationMoveAnimation()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAAnnotationMoveAnimation>> create_batch__(int length) async {
+  static Future<List<MAAnnotationMoveAnimation>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAAnnotationMoveAnimation', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAAnnotationMoveAnimation', {'length': length, 'init': init});
   
     final List<MAAnnotationMoveAnimation> typedResult = resultBatch.map((result) => MAAnnotationMoveAnimation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

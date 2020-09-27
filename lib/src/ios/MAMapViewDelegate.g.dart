@@ -63,7 +63,7 @@ mixin MAMapViewDelegate on NSObject {
   Future<MAAnnotationView> mapView_viewForAnnotation(MAMapView mapView, MAAnnotation annotation) {}
   
   @mustCallSuper
-  Future<void> mapView_didAddAnnotationViews(MAMapView mapView, List<NSObject> views) {}
+  Future<void> mapView_didAddAnnotationViews(MAMapView mapView, List<dynamic> views) {}
   
   @mustCallSuper
   Future<void> mapView_didSelectAnnotationView(MAMapView mapView, MAAnnotationView view) {}
@@ -93,7 +93,7 @@ mixin MAMapViewDelegate on NSObject {
   Future<MAOverlayRenderer> mapView_rendererForOverlay(MAMapView mapView, MAOverlay overlay) {}
   
   @mustCallSuper
-  Future<void> mapView_didAddOverlayRenderers(MAMapView mapView, List<NSObject> overlayRenderers) {}
+  Future<void> mapView_didAddOverlayRenderers(MAMapView mapView, List<dynamic> overlayRenderers) {}
   
   @mustCallSuper
   Future<void> mapView_annotationView_calloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control) {}
@@ -111,7 +111,7 @@ mixin MAMapViewDelegate on NSObject {
   Future<void> mapView_didChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled) {}
   
   @mustCallSuper
-  Future<void> mapView_didTouchPois(MAMapView mapView, List<NSObject> pois) {}
+  Future<void> mapView_didTouchPois(MAMapView mapView, List<dynamic> pois) {}
   
   @mustCallSuper
   Future<void> mapView_didSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {}

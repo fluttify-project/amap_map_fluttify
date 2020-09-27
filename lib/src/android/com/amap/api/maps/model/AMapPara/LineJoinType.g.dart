@@ -15,6 +15,7 @@ extension com_amap_api_maps_model_AMapPara_LineJoinTypeToX on com_amap_api_maps_
       case com_amap_api_maps_model_AMapPara_LineJoinType.LineJoinBevel: return com_amap_api_maps_model_AMapPara_LineJoinType.LineJoinBevel.index + 0;
       case com_amap_api_maps_model_AMapPara_LineJoinType.LineJoinMiter: return com_amap_api_maps_model_AMapPara_LineJoinType.LineJoinMiter.index + 0;
       case com_amap_api_maps_model_AMapPara_LineJoinType.LineJoinRound: return com_amap_api_maps_model_AMapPara_LineJoinType.LineJoinRound.index + 0;
+      default: return 0;
     }
   }
 }

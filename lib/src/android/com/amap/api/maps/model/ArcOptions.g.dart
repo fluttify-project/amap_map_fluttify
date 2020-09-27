@@ -21,7 +21,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
 
   //region creators
   static Future<com_amap_api_maps_model_ArcOptions> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_ArcOptions__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_ArcOptions__', );
     final object = com_amap_api_maps_model_ArcOptions()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

@@ -35,7 +35,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
 
   //region creators
   static Future<com_amap_api_maps_AMapUtils> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapUtils__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapUtils__', );
     final object = com_amap_api_maps_AMapUtils()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

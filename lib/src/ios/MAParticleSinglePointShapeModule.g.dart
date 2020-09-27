@@ -20,17 +20,17 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   //endregion
 
   //region creators
-  static Future<MAParticleSinglePointShapeModule> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleSinglePointShapeModule');
+  static Future<MAParticleSinglePointShapeModule> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleSinglePointShapeModule', {'init': init});
     final object = MAParticleSinglePointShapeModule()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAParticleSinglePointShapeModule>> create_batch__(int length) async {
+  static Future<List<MAParticleSinglePointShapeModule>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleSinglePointShapeModule', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleSinglePointShapeModule', {'length': length, 'init': init});
   
     final List<MAParticleSinglePointShapeModule> typedResult = resultBatch.map((result) => MAParticleSinglePointShapeModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

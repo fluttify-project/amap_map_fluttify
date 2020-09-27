@@ -17,6 +17,7 @@ extension com_amap_api_maps_model_AMapPara_LineCapTypeToX on com_amap_api_maps_m
       case com_amap_api_maps_model_AMapPara_LineCapType.LineCapSquare: return com_amap_api_maps_model_AMapPara_LineCapType.LineCapSquare.index + 0;
       case com_amap_api_maps_model_AMapPara_LineCapType.LineCapArrow: return com_amap_api_maps_model_AMapPara_LineCapType.LineCapArrow.index + 0;
       case com_amap_api_maps_model_AMapPara_LineCapType.LineCapRound: return com_amap_api_maps_model_AMapPara_LineCapType.LineCapRound.index + 0;
+      default: return 0;
     }
   }
 }

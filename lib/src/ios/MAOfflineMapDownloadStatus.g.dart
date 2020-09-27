@@ -25,6 +25,7 @@ extension MAOfflineMapDownloadStatusToX on MAOfflineMapDownloadStatus {
       case MAOfflineMapDownloadStatus.MAOfflineMapDownloadStatusUnzip: return MAOfflineMapDownloadStatus.MAOfflineMapDownloadStatusUnzip.index + 0;
       case MAOfflineMapDownloadStatus.MAOfflineMapDownloadStatusFinished: return MAOfflineMapDownloadStatus.MAOfflineMapDownloadStatusFinished.index + 0;
       case MAOfflineMapDownloadStatus.MAOfflineMapDownloadStatusError: return MAOfflineMapDownloadStatus.MAOfflineMapDownloadStatusError.index + 0;
+      default: return 0;
     }
   }
 }

@@ -20,17 +20,17 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   //endregion
 
   //region creators
-  static Future<MAPolyline> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAPolyline');
+  static Future<MAPolyline> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAPolyline', {'init': init});
     final object = MAPolyline()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAPolyline>> create_batch__(int length) async {
+  static Future<List<MAPolyline>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAPolyline', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAPolyline', {'length': length, 'init': init});
   
     final List<MAPolyline> typedResult = resultBatch.map((result) => MAPolyline()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

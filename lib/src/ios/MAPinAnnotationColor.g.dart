@@ -15,6 +15,7 @@ extension MAPinAnnotationColorToX on MAPinAnnotationColor {
       case MAPinAnnotationColor.MAPinAnnotationColorRed: return 0;
       case MAPinAnnotationColor.MAPinAnnotationColorGreen: return MAPinAnnotationColor.MAPinAnnotationColorGreen.index + 0;
       case MAPinAnnotationColor.MAPinAnnotationColorPurple: return MAPinAnnotationColor.MAPinAnnotationColorPurple.index + 0;
+      default: return 0;
     }
   }
 }

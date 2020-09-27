@@ -20,17 +20,17 @@ class MAOfflineItem extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAOfflineItem> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAOfflineItem');
+  static Future<MAOfflineItem> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAOfflineItem', {'init': init});
     final object = MAOfflineItem()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAOfflineItem>> create_batch__(int length) async {
+  static Future<List<MAOfflineItem>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAOfflineItem', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAOfflineItem', {'length': length, 'init': init});
   
     final List<MAOfflineItem> typedResult = resultBatch.map((result) => MAOfflineItem()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

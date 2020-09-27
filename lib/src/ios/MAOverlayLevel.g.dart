@@ -13,6 +13,7 @@ extension MAOverlayLevelToX on MAOverlayLevel {
     switch (this) {
       case MAOverlayLevel.MAOverlayLevelAboveRoads: return 0;
       case MAOverlayLevel.MAOverlayLevelAboveLabels: return MAOverlayLevel.MAOverlayLevelAboveLabels.index + 0;
+      default: return 0;
     }
   }
 }

@@ -46,7 +46,7 @@ class _MAPinAnnotationView_iOSState extends State<MAPinAnnotationView_iOS> {
       Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer()),
     };
 
-    final messageCodec = StandardMessageCodec();
+    final messageCodec = FluttifyMessageCodec('amap_map_fluttify');
     return UiKitView(
       viewType: 'me.yohom/MAPinAnnotationView',
       gestureRecognizers: gestureRecognizers,

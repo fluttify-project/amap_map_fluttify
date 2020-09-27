@@ -24,7 +24,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
 
   //region creators
   static Future<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__', );
     final object = com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

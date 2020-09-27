@@ -13,6 +13,7 @@ extension MAHeatMapTypeToX on MAHeatMapType {
     switch (this) {
       case MAHeatMapType.MAHeatMapTypeSquare: return 1;
       case MAHeatMapType.MAHeatMapTypeHoneycomb: return 2;
+      default: return 0;
     }
   }
 }

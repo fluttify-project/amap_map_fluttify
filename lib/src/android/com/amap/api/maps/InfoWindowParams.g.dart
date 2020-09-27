@@ -22,7 +22,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
 
   //region creators
   static Future<com_amap_api_maps_InfoWindowParams> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_InfoWindowParams__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_InfoWindowParams__', );
     final object = com_amap_api_maps_InfoWindowParams()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

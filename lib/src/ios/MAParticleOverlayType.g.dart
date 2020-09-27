@@ -17,6 +17,7 @@ extension MAParticleOverlayTypeToX on MAParticleOverlayType {
       case MAParticleOverlayType.MAParticleOverlayTypeRain: return MAParticleOverlayType.MAParticleOverlayTypeRain.index + 1;
       case MAParticleOverlayType.MAParticleOverlayTypeSnowy: return MAParticleOverlayType.MAParticleOverlayTypeSnowy.index + 1;
       case MAParticleOverlayType.MAParticleOverlayTypeHaze: return MAParticleOverlayType.MAParticleOverlayTypeHaze.index + 1;
+      default: return 0;
     }
   }
 }

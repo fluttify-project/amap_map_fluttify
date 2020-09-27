@@ -20,17 +20,17 @@ class MACustomCalloutView extends UIView  {
   //endregion
 
   //region creators
-  static Future<MACustomCalloutView> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACustomCalloutView');
+  static Future<MACustomCalloutView> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACustomCalloutView', {'init': init});
     final object = MACustomCalloutView()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MACustomCalloutView>> create_batch__(int length) async {
+  static Future<List<MACustomCalloutView>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACustomCalloutView', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACustomCalloutView', {'length': length, 'init': init});
   
     final List<MACustomCalloutView> typedResult = resultBatch.map((result) => MACustomCalloutView()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
@@ -46,7 +46,7 @@ class MACustomCalloutView extends UIView  {
   
   Future<dynamic> get_userData({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomCalloutView::get_userData", {'__this__': this});
-    return __result__ == null ? null : (Ref()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (__result__);
   }
   
   //endregion
@@ -79,7 +79,7 @@ class MACustomCalloutView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = __result__;
       return __return__;
     }
   }
@@ -99,7 +99,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
   Future<List<dynamic>> get_userData_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomCalloutView::get_userData_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => Ref()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     return typedResult;
   }
   
@@ -129,7 +129,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => Ref()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
       return typedResult;
     }
   }

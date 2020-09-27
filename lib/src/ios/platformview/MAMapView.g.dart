@@ -46,7 +46,7 @@ class _MAMapView_iOSState extends State<MAMapView_iOS> {
       Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer()),
     };
 
-    final messageCodec = StandardMessageCodec();
+    final messageCodec = FluttifyMessageCodec('amap_map_fluttify');
     return UiKitView(
       viewType: 'me.yohom/MAMapView',
       gestureRecognizers: gestureRecognizers,

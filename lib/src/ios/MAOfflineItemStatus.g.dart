@@ -17,6 +17,7 @@ extension MAOfflineItemStatusToX on MAOfflineItemStatus {
       case MAOfflineItemStatus.MAOfflineItemStatusCached: return MAOfflineItemStatus.MAOfflineItemStatusCached.index + 0;
       case MAOfflineItemStatus.MAOfflineItemStatusInstalled: return MAOfflineItemStatus.MAOfflineItemStatusInstalled.index + 0;
       case MAOfflineItemStatus.MAOfflineItemStatusExpired: return MAOfflineItemStatus.MAOfflineItemStatusExpired.index + 0;
+      default: return 0;
     }
   }
 }

@@ -20,17 +20,17 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MATileOverlay> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATileOverlay');
+  static Future<MATileOverlay> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATileOverlay', {'init': init});
     final object = MATileOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MATileOverlay>> create_batch__(int length) async {
+  static Future<List<MATileOverlay>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATileOverlay', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATileOverlay', {'length': length, 'init': init});
   
     final List<MATileOverlay> typedResult = resultBatch.map((result) => MATileOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
@@ -134,7 +134,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = __result__;
       return __return__;
     }
   }
@@ -316,7 +316,7 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => Ref()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
       return typedResult;
     }
   }

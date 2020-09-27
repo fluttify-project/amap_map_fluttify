@@ -19,6 +19,7 @@ extension MAMapTypeToX on MAMapType {
       case MAMapType.MAMapTypeStandardNight: return MAMapType.MAMapTypeStandardNight.index + 0;
       case MAMapType.MAMapTypeNavi: return MAMapType.MAMapTypeNavi.index + 0;
       case MAMapType.MAMapTypeBus: return MAMapType.MAMapTypeBus.index + 0;
+      default: return 0;
     }
   }
 }

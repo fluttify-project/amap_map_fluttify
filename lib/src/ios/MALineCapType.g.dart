@@ -17,6 +17,7 @@ extension MALineCapTypeToX on MALineCapType {
       case MALineCapType.kMALineCapSquare: return MALineCapType.kMALineCapSquare.index + 0;
       case MALineCapType.kMALineCapArrow: return MALineCapType.kMALineCapArrow.index + 0;
       case MALineCapType.kMALineCapRound: return MALineCapType.kMALineCapRound.index + 0;
+      default: return 0;
     }
   }
 }

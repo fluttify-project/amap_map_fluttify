@@ -20,17 +20,17 @@ class MAHeatMapVectorNode extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAHeatMapVectorNode> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapVectorNode');
+  static Future<MAHeatMapVectorNode> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapVectorNode', {'init': init});
     final object = MAHeatMapVectorNode()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAHeatMapVectorNode>> create_batch__(int length) async {
+  static Future<List<MAHeatMapVectorNode>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapVectorNode', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapVectorNode', {'length': length, 'init': init});
   
     final List<MAHeatMapVectorNode> typedResult = resultBatch.map((result) => MAHeatMapVectorNode()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

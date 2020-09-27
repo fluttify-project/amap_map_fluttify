@@ -22,7 +22,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
 
   //region creators
   static Future<com_amap_api_maps_model_PolylineOptions> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__', );
     final object = com_amap_api_maps_model_PolylineOptions()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

@@ -27,7 +27,7 @@ extern BOOL enableLog;
 }
 
 - (NSObject<FlutterMessageCodec>*)createArgsCodec {
-  return [FlutterStandardMessageCodec sharedInstance];
+  return [FlutterStandardMessageCodec codecWithReaderWriter:[[FluttifyReaderWriter alloc] init]];
 }
 
 - (NSObject <FlutterPlatformView> *)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args {
@@ -564,8 +564,7 @@ extern BOOL enableLog;
       
               // 构造可以直接传输的参数
               // ref callback arg
-              NSObject* argresultImage = resultImage;
-      
+              UIImage* argresultImage = resultImage;
               // primitive callback arg
               NSNumber* argstate = @(state);
       
@@ -3595,17 +3594,15 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmanager = manager;
-  
-  // list callback arg
-  NSArray<NSObject*>* arglocations = locations;
-  // list callback arg
-  NSArray<NSObject*>* argtracePoints = tracePoints;
+  MATraceManager* argmanager = manager;
+  // ref callback arg
+  NSArray<CLLocation*>* arglocations = locations;
+  // ref callback arg
+  NSArray<MATracePoint*>* argtracePoints = tracePoints;
   // primitive callback arg
   NSNumber* argdistance = @(distance);
   // ref callback arg
-  NSObject* argerror = error;
-  
+  NSError* argerror = error;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError" arguments:@{@"manager": argmanager == nil ? [NSNull null] : argmanager, @"locations": arglocations == nil ? [NSNull null] : arglocations, @"tracePoints": argtracePoints == nil ? [NSNull null] : argtracePoints, @"distance": argdistance == nil ? [NSNull null] : argdistance, @"error": argerror == nil ? [NSNull null] : argerror}];
@@ -3626,8 +3623,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* arglocationManager = locationManager;
-  
+  CLLocationManager* arglocationManager = locationManager;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MATraceDelegate::mapViewRequireLocationAuth" arguments:@{@"locationManager": arglocationManager == nil ? [NSNull null] : arglocationManager}];
@@ -3648,11 +3644,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argrenderer = renderer;
-  
+  MAMultiPointOverlayRenderer* argrenderer = renderer;
   // ref callback arg
-  NSObject* argitem = item;
-  
+  MAMultiPointItem* argitem = item;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped" arguments:@{@"renderer": argrenderer == nil ? [NSNull null] : argrenderer, @"item": argitem == nil ? [NSNull null] : argitem}];
@@ -3673,8 +3667,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionChanged" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];
@@ -3695,8 +3688,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
@@ -3719,8 +3711,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
@@ -3743,8 +3734,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
   // primitive callback arg
@@ -3769,8 +3759,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
   // primitive callback arg
@@ -3795,8 +3784,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -3819,8 +3807,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -3843,8 +3830,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -3867,8 +3853,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -3891,8 +3876,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLoadingMap" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];
@@ -3913,8 +3897,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];
@@ -3935,11 +3918,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argerror = error;
-  
+  NSError* argerror = error;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"error": argerror == nil ? [NSNull null] : argerror}];
@@ -3960,15 +3941,13 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argannotation = annotation;
-  
+  id<MAAnnotation> argannotation = annotation;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_viewForAnnotation"
-                arguments:@{}
+                arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"annotation": argannotation == nil ? [NSNull null] : argannotation}
                    result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   });
   
@@ -4042,10 +4021,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
-  // list callback arg
-  NSArray<NSObject*>* argviews = views;
+  MAMapView* argmapView = mapView;
+  // ref callback arg
+  NSArray* argviews = views;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAddAnnotationViews" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"views": argviews == nil ? [NSNull null] : argviews}];
@@ -4066,11 +4044,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argview = view;
-  
+  MAAnnotationView* argview = view;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didSelectAnnotationView" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"view": argview == nil ? [NSNull null] : argview}];
@@ -4091,11 +4067,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argview = view;
-  
+  MAAnnotationView* argview = view;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"view": argview == nil ? [NSNull null] : argview}];
@@ -4116,8 +4090,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLocatingUser" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];
@@ -4138,8 +4111,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidStopLocatingUser" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];
@@ -4160,11 +4132,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* arguserLocation = userLocation;
-  
+  MAUserLocation* arguserLocation = userLocation;
   // primitive callback arg
   NSNumber* argupdatingLocation = @(updatingLocation);
 
@@ -4187,11 +4157,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argerror = error;
-  
+  NSError* argerror = error;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"error": argerror == nil ? [NSNull null] : argerror}];
@@ -4212,11 +4180,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argview = view;
-  
+  MAAnnotationView* argview = view;
   // enum callback arg
   NSNumber* argnewState = @((NSInteger) newState);
   // enum callback arg
@@ -4241,15 +4207,13 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argoverlay = overlay;
-  
+  id<MAOverlay> argoverlay = overlay;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_rendererForOverlay"
-                arguments:@{}
+                arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"overlay": argoverlay == nil ? [NSNull null] : argoverlay}
                    result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   });
   
@@ -4403,10 +4367,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
-  // list callback arg
-  NSArray<NSObject*>* argoverlayRenderers = overlayRenderers;
+  MAMapView* argmapView = mapView;
+  // ref callback arg
+  NSArray* argoverlayRenderers = overlayRenderers;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"overlayRenderers": argoverlayRenderers == nil ? [NSNull null] : argoverlayRenderers}];
@@ -4427,14 +4390,11 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argview = view;
-  
+  MAAnnotationView* argview = view;
   // ref callback arg
-  NSObject* argcontrol = control;
-  
+  UIControl* argcontrol = control;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"view": argview == nil ? [NSNull null] : argview, @"control": argcontrol == nil ? [NSNull null] : argcontrol}];
@@ -4455,11 +4415,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argview = view;
-  
+  MAAnnotationView* argview = view;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"view": argview == nil ? [NSNull null] : argview}];
@@ -4480,11 +4438,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argview = view;
-  
+  MAAnnotationView* argview = view;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"view": argview == nil ? [NSNull null] : argview}];
@@ -4505,8 +4461,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // enum callback arg
   NSNumber* argmode = @((NSInteger) mode);
   // primitive callback arg
@@ -4531,8 +4486,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // primitive callback arg
   NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
@@ -4555,10 +4509,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
-  // list callback arg
-  NSArray<NSObject*>* argpois = pois;
+  MAMapView* argmapView = mapView;
+  // ref callback arg
+  NSArray* argpois = pois;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didTouchPois" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"pois": argpois == nil ? [NSNull null] : argpois}];
@@ -4579,8 +4532,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // struct callback arg
   NSValue* argcoordinate = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   
@@ -4604,8 +4556,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // struct callback arg
   NSValue* argcoordinate = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   
@@ -4629,8 +4580,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapInitComplete" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];
@@ -4651,11 +4601,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argindoorInfo = indoorInfo;
-  
+  MAIndoorInfo* argindoorInfo = indoorInfo;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapShowed" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"indoorInfo": argindoorInfo == nil ? [NSNull null] : argindoorInfo}];
@@ -4676,11 +4624,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argindoorInfo = indoorInfo;
-  
+  MAIndoorInfo* argindoorInfo = indoorInfo;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"indoorInfo": argindoorInfo == nil ? [NSNull null] : argindoorInfo}];
@@ -4701,11 +4647,9 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
   // ref callback arg
-  NSObject* argindoorInfo = indoorInfo;
-  
+  MAIndoorInfo* argindoorInfo = indoorInfo;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapHidden" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView, @"indoorInfo": argindoorInfo == nil ? [NSNull null] : argindoorInfo}];
@@ -4726,8 +4670,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataWillReload" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];
@@ -4748,8 +4691,7 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSObject* argmapView = mapView;
-  
+  MAMapView* argmapView = mapView;
 
   dispatch_async(dispatch_get_main_queue(), ^{
     [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataDidReload" arguments:@{@"mapView": argmapView == nil ? [NSNull null] : argmapView}];

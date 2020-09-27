@@ -20,17 +20,17 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   //endregion
 
   //region creators
-  static Future<MAParticleCurveSizeGenerate> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleCurveSizeGenerate');
+  static Future<MAParticleCurveSizeGenerate> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleCurveSizeGenerate', {'init': init});
     final object = MAParticleCurveSizeGenerate()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAParticleCurveSizeGenerate>> create_batch__(int length) async {
+  static Future<List<MAParticleCurveSizeGenerate>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleCurveSizeGenerate', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleCurveSizeGenerate', {'length': length, 'init': init});
   
     final List<MAParticleCurveSizeGenerate> typedResult = resultBatch.map((result) => MAParticleCurveSizeGenerate()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

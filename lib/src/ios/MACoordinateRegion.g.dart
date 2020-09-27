@@ -20,17 +20,17 @@ class MACoordinateRegion extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MACoordinateRegion> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACoordinateRegion');
+  static Future<MACoordinateRegion> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACoordinateRegion', {'init': init});
     final object = MACoordinateRegion()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MACoordinateRegion>> create_batch__(int length) async {
+  static Future<List<MACoordinateRegion>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACoordinateRegion', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACoordinateRegion', {'length': length, 'init': init});
   
     final List<MACoordinateRegion> typedResult = resultBatch.map((result) => MACoordinateRegion()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

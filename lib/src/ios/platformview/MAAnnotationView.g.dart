@@ -46,7 +46,7 @@ class _MAAnnotationView_iOSState extends State<MAAnnotationView_iOS> {
       Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer()),
     };
 
-    final messageCodec = StandardMessageCodec();
+    final messageCodec = FluttifyMessageCodec('amap_map_fluttify');
     return UiKitView(
       viewType: 'me.yohom/MAAnnotationView',
       gestureRecognizers: gestureRecognizers,

@@ -15,6 +15,7 @@ extension MAUserTrackingModeToX on MAUserTrackingMode {
       case MAUserTrackingMode.MAUserTrackingModeNone: return 0;
       case MAUserTrackingMode.MAUserTrackingModeFollow: return 1;
       case MAUserTrackingMode.MAUserTrackingModeFollowWithHeading: return 2;
+      default: return 0;
     }
   }
 }

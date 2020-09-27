@@ -17,6 +17,7 @@ extension MATrafficStatusToX on MATrafficStatus {
       case MATrafficStatus.MATrafficStatusSlow: return MATrafficStatus.MATrafficStatusSlow.index + 1;
       case MATrafficStatus.MATrafficStatusJam: return MATrafficStatus.MATrafficStatusJam.index + 1;
       case MATrafficStatus.MATrafficStatusSeriousJam: return MATrafficStatus.MATrafficStatusSeriousJam.index + 1;
+      default: return 0;
     }
   }
 }

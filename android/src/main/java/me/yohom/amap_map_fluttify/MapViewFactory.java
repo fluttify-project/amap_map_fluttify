@@ -259,7 +259,7 @@ class MapViewFactory extends PlatformViewFactory {
         put("com.amap.api.maps.MapView::setVisibility", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
         
             // ref
             com.amap.api.maps.MapView __this__ = (com.amap.api.maps.MapView) ((Map<String, Object>) __args__).get("__this__");
@@ -272,7 +272,7 @@ class MapViewFactory extends PlatformViewFactory {
             // invoke native method
             Void __result__ = null;
             try {
-                __this__.setVisibility(var1);
+                __this__.setVisibility(var1.intValue());
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {

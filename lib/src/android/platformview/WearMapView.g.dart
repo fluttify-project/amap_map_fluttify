@@ -46,7 +46,7 @@ class _com_amap_api_maps_WearMapView_AndroidState extends State<com_amap_api_map
       Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer()),
     };
 
-    final messageCodec = StandardMessageCodec();
+    final messageCodec = FluttifyMessageCodec('amap_map_fluttify');
     return AndroidView(
       viewType: 'me.yohom/com.amap.api.maps.WearMapView',
       gestureRecognizers: gestureRecognizers,

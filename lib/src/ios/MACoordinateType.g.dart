@@ -23,6 +23,7 @@ extension MACoordinateTypeToX on MACoordinateType {
       case MACoordinateType.MACoordinateTypeAliYun: return MACoordinateType.MACoordinateTypeAliYun.index + 0;
       case MACoordinateType.MACoordinateTypeGoogle: return MACoordinateType.MACoordinateTypeGoogle.index + 0;
       case MACoordinateType.MACoordinateTypeGPS: return MACoordinateType.MACoordinateTypeGPS.index + 0;
+      default: return 0;
     }
   }
 }

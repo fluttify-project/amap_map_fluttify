@@ -896,8 +896,7 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSObject* argcurrentAni = currentAni;
-        
+                MAAnnotationMoveAnimation* argcurrentAni = currentAni;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                   [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation*#currentAni::void|MAAnnotationMoveAnimation*#currentAni" arguments:@{@"currentAni": argcurrentAni == nil ? [NSNull null] : argcurrentAni}];
@@ -1144,8 +1143,8 @@ extern BOOL enableLog;
                 // 构造可以直接传输的参数
                 // primitive callback arg
                 NSNumber* argindex = @(index);
-                // list callback arg
-                NSArray<NSObject*>* argpoints = points;
+                // ref callback arg
+                NSArray<MATracePoint*>* argpoints = points;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                   [channel invokeMethod:@"Callback::MAProcessingCallback::MAProcessingCallback" arguments:@{@"index": argindex == nil ? [NSNull null] : argindex, @"points": argpoints == nil ? [NSNull null] : argpoints}];
@@ -1163,8 +1162,8 @@ extern BOOL enableLog;
                 }
         
                 // 构造可以直接传输的参数
-                // list callback arg
-                NSArray<NSObject*>* argpoints = points;
+                // ref callback arg
+                NSArray<MATracePoint*>* argpoints = points;
                 // primitive callback arg
                 NSNumber* argdistance = @(distance);
         
@@ -1186,7 +1185,7 @@ extern BOOL enableLog;
                 // 构造可以直接传输的参数
                 // primitive callback arg
                 NSNumber* argerrorCode = @(errorCode);
-                // jsonable callback arg
+                // ref callback arg
                 NSString* argerrorDesc = errorDesc;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -1226,15 +1225,14 @@ extern BOOL enableLog;
                 }
         
                 // 构造可以直接传输的参数
-                // list callback arg
-                NSArray<NSObject*>* arglocations = locations;
-                // list callback arg
-                NSArray<NSObject*>* argtracePoints = tracePoints;
+                // ref callback arg
+                NSArray<CLLocation*>* arglocations = locations;
+                // ref callback arg
+                NSArray<MATracePoint*>* argtracePoints = tracePoints;
                 // primitive callback arg
                 NSNumber* argdistance = @(distance);
                 // ref callback arg
-                NSObject* argerror = error;
-        
+                NSError* argerror = error;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                   [channel invokeMethod:@"Callback::MATraceLocationCallback::MATraceLocationCallback" arguments:@{@"locations": arglocations == nil ? [NSNull null] : arglocations, @"tracePoints": argtracePoints == nil ? [NSNull null] : argtracePoints, @"distance": argdistance == nil ? [NSNull null] : argdistance, @"error": argerror == nil ? [NSNull null] : argerror}];
@@ -1668,11 +1666,9 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSObject* argtileData = tileData;
-        
+                NSData* argtileData = tileData;
                 // ref callback arg
-                NSObject* argerror = error;
-        
+                NSError* argerror = error;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                   [channel invokeMethod:@"Callback::void|NSData*#tileData,NSError*#error::void|NSData*#tileData,NSError*#error" arguments:@{@"tileData": argtileData == nil ? [NSNull null] : argtileData, @"error": argerror == nil ? [NSNull null] : argerror}];
@@ -1823,13 +1819,11 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSObject* argdownloadItem = downloadItem;
-        
+                MAOfflineItem* argdownloadItem = downloadItem;
                 // enum callback arg
                 NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
                 // ref callback arg
-                NSObject* arginfo = ((NSObject*) info);
-        
+                id arginfo = info;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                   [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem == nil ? [NSNull null] : argdownloadItem, @"downloadStatus": argdownloadStatus == nil ? [NSNull null] : argdownloadStatus, @"info": arginfo == nil ? [NSNull null] : arginfo}];
@@ -2019,13 +2013,11 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSObject* argdownloadItem = downloadItem;
-        
+                MAOfflineItem* argdownloadItem = downloadItem;
                 // enum callback arg
                 NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
                 // ref callback arg
-                NSObject* arginfo = ((NSObject*) info);
-        
+                id arginfo = info;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                   [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem == nil ? [NSNull null] : argdownloadItem, @"downloadStatus": argdownloadStatus == nil ? [NSNull null] : argdownloadStatus, @"info": arginfo == nil ? [NSNull null] : arginfo}];
@@ -2069,13 +2061,11 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSObject* argdownloadItem = downloadItem;
-        
+                MAOfflineItem* argdownloadItem = downloadItem;
                 // enum callback arg
                 NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
                 // ref callback arg
-                NSObject* arginfo = ((NSObject*) info);
-        
+                id arginfo = info;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                   [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem == nil ? [NSNull null] : argdownloadItem, @"downloadStatus": argdownloadStatus == nil ? [NSNull null] : argdownloadStatus, @"info": arginfo == nil ? [NSNull null] : arginfo}];
@@ -3623,8 +3613,7 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSObject* argresultImage = resultImage;
-        
+                UIImage* argresultImage = resultImage;
                 // primitive callback arg
                 NSNumber* argstate = @(state);
         

@@ -20,17 +20,17 @@ class MATraceLocation extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MATraceLocation> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATraceLocation');
+  static Future<MATraceLocation> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATraceLocation', {'init': init});
     final object = MATraceLocation()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MATraceLocation>> create_batch__(int length) async {
+  static Future<List<MATraceLocation>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATraceLocation', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATraceLocation', {'length': length, 'init': init});
   
     final List<MATraceLocation> typedResult = resultBatch.map((result) => MATraceLocation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

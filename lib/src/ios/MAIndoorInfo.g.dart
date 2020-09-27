@@ -20,17 +20,17 @@ class MAIndoorInfo extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAIndoorInfo> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAIndoorInfo');
+  static Future<MAIndoorInfo> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAIndoorInfo', {'init': init});
     final object = MAIndoorInfo()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAIndoorInfo>> create_batch__(int length) async {
+  static Future<List<MAIndoorInfo>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAIndoorInfo', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAIndoorInfo', {'length': length, 'init': init});
   
     final List<MAIndoorInfo> typedResult = resultBatch.map((result) => MAIndoorInfo()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
@@ -69,9 +69,9 @@ class MAIndoorInfo extends NSObject  {
     return __result__ == null ? null : (__result__);
   }
   
-  Future<List<NSObject>> get_floorInfo() async {
+  Future<List<dynamic>> get_floorInfo() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAIndoorInfo::get_floorInfo", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<dynamic>());
   }
   
   Future<int> get_numberOfFloor() async {
@@ -139,10 +139,10 @@ extension MAIndoorInfo_Batch on List<MAIndoorInfo> {
     return typedResult;
   }
   
-  Future<List<List<NSObject>>> get_floorInfo_batch() async {
+  Future<List<List<dynamic>>> get_floorInfo_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAIndoorInfo::get_floorInfo_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<dynamic>()).toList();
     return typedResult;
   }
   

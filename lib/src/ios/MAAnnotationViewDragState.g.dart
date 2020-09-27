@@ -19,6 +19,7 @@ extension MAAnnotationViewDragStateToX on MAAnnotationViewDragState {
       case MAAnnotationViewDragState.MAAnnotationViewDragStateDragging: return MAAnnotationViewDragState.MAAnnotationViewDragStateDragging.index + 0;
       case MAAnnotationViewDragState.MAAnnotationViewDragStateCanceling: return MAAnnotationViewDragState.MAAnnotationViewDragStateCanceling.index + 0;
       case MAAnnotationViewDragState.MAAnnotationViewDragStateEnding: return MAAnnotationViewDragState.MAAnnotationViewDragStateEnding.index + 0;
+      default: return 0;
     }
   }
 }

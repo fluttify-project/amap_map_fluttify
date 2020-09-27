@@ -33,7 +33,7 @@ class com_amap_api_maps_offlinemap_OfflineMapStatus extends java_lang_Object  {
 
   //region creators
   static Future<com_amap_api_maps_offlinemap_OfflineMapStatus> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__', );
     final object = com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

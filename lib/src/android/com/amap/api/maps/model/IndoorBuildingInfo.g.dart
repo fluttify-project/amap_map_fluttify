@@ -21,7 +21,7 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
 
   //region creators
   static Future<com_amap_api_maps_model_IndoorBuildingInfo> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__', );
     final object = com_amap_api_maps_model_IndoorBuildingInfo()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

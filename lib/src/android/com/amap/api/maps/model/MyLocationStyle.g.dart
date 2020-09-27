@@ -31,7 +31,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
 
   //region creators
   static Future<com_amap_api_maps_model_MyLocationStyle> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__', );
     final object = com_amap_api_maps_model_MyLocationStyle()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

@@ -20,17 +20,17 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   //endregion
 
   //region creators
-  static Future<MAMultiTexturePolylineRenderer> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMultiTexturePolylineRenderer');
+  static Future<MAMultiTexturePolylineRenderer> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMultiTexturePolylineRenderer', {'init': init});
     final object = MAMultiTexturePolylineRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAMultiTexturePolylineRenderer>> create_batch__(int length) async {
+  static Future<List<MAMultiTexturePolylineRenderer>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMultiTexturePolylineRenderer', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMultiTexturePolylineRenderer', {'length': length, 'init': init});
   
     final List<MAMultiTexturePolylineRenderer> typedResult = resultBatch.map((result) => MAMultiTexturePolylineRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
@@ -44,9 +44,9 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     return __result__ == null ? null : (MAMultiPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
   }
   
-  Future<List<NSObject>> get_strokeTextureImages() async {
+  Future<List<dynamic>> get_strokeTextureImages() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<dynamic>());
   }
   
   Future<List<num>> get_strokeTextureIDs() async {
@@ -67,7 +67,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   //endregion
 
   //region setters
-  Future<void> set_strokeTextureImages(List<NSObject> strokeTextureImages) async {
+  Future<void> set_strokeTextureImages(List<dynamic> strokeTextureImages) async {
     await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages', <String, dynamic>{'__this__': this, "strokeTextureImages": strokeTextureImages});
   
   
@@ -112,7 +112,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   }
   
   @deprecated
-  Future<bool> loadStrokeTextureImages(List<NSObject> textureImages) async {
+  Future<bool> loadStrokeTextureImages(List<dynamic> textureImages) async {
     // print log
     if (fluttifyLogEnabled) {
       debugPrint('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::loadStrokeTextureImages([])');
@@ -146,10 +146,10 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
     return typedResult;
   }
   
-  Future<List<List<NSObject>>> get_strokeTextureImages_batch() async {
+  Future<List<List<dynamic>>> get_strokeTextureImages_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<dynamic>()).toList();
     return typedResult;
   }
   
@@ -177,7 +177,7 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
   //endregion
 
   //region setters
-  Future<void> set_strokeTextureImages_batch(List<List<NSObject>> strokeTextureImages) async {
+  Future<void> set_strokeTextureImages_batch(List<List<dynamic>> strokeTextureImages) async {
     await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "strokeTextureImages": strokeTextureImages[__i__]}]);
   
   
@@ -218,7 +218,7 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
   }
   
   @deprecated
-  Future<List<bool>> loadStrokeTextureImages_batch(List<List<NSObject>> textureImages) async {
+  Future<List<bool>> loadStrokeTextureImages_batch(List<List<dynamic>> textureImages) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

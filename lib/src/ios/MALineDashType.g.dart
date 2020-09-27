@@ -15,6 +15,7 @@ extension MALineDashTypeToX on MALineDashType {
       case MALineDashType.kMALineDashTypeNone: return 0;
       case MALineDashType.kMALineDashTypeSquare: return MALineDashType.kMALineDashTypeSquare.index + 0;
       case MALineDashType.kMALineDashTypeDot: return MALineDashType.kMALineDashTypeDot.index + 0;
+      default: return 0;
     }
   }
 }

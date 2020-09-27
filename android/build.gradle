@@ -74,5 +74,5 @@ dependencies {
     compileOnly rootProject.findProject(":amap_search_fluttify")
     compileOnly rootProject.findProject(":url_launcher")
     // sdk dependency
-    api 'com.amap.api:3dmap:7.5.0'
+    api 'com.amap.api:3dmap:7.6.0'
 }

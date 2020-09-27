@@ -30,9 +30,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineCity");
             }
         
-            MAOfflineCity* ref = [[MAOfflineCity alloc] init];
+            MAOfflineCity* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineCity alloc] init];
+            } else {
+                __this__ = [MAOfflineCity alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -43,9 +48,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineItemNationWide");
             }
         
-            MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
+            MAOfflineItemNationWide* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineItemNationWide alloc] init];
+            } else {
+                __this__ = [MAOfflineItemNationWide alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -56,9 +66,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMultiPoint");
             }
         
-            MAMultiPoint* ref = [[MAMultiPoint alloc] init];
+            MAMultiPoint* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMultiPoint alloc] init];
+            } else {
+                __this__ = [MAMultiPoint alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -69,9 +84,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAGroundOverlay");
             }
         
-            MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
+            MAGroundOverlay* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAGroundOverlay alloc] init];
+            } else {
+                __this__ = [MAGroundOverlay alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -82,9 +102,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAPolygonRenderer");
             }
         
-            MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
+            MAPolygonRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAPolygonRenderer alloc] init];
+            } else {
+                __this__ = [MAPolygonRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -95,9 +120,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAPinAnnotationView");
             }
         
-            MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
+            MAPinAnnotationView* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAPinAnnotationView alloc] init];
+            } else {
+                __this__ = [MAPinAnnotationView alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -108,9 +138,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapNode");
             }
         
-            MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
+            MAHeatMapNode* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapNode alloc] init];
+            } else {
+                __this__ = [MAHeatMapNode alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -121,9 +156,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapGradient");
             }
         
-            MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
+            MAHeatMapGradient* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapGradient alloc] init];
+            } else {
+                __this__ = [MAHeatMapGradient alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -134,9 +174,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapTileOverlay");
             }
         
-            MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
+            MAHeatMapTileOverlay* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapTileOverlay alloc] init];
+            } else {
+                __this__ = [MAHeatMapTileOverlay alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -147,9 +192,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMapStatus");
             }
         
-            MAMapStatus* ref = [[MAMapStatus alloc] init];
+            MAMapStatus* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMapStatus alloc] init];
+            } else {
+                __this__ = [MAMapStatus alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -160,9 +210,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAPointAnnotation");
             }
         
-            MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
+            MAPointAnnotation* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAPointAnnotation alloc] init];
+            } else {
+                __this__ = [MAPointAnnotation alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -173,9 +228,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMACircle");
             }
         
-            MACircle* ref = [[MACircle alloc] init];
+            MACircle* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MACircle alloc] init];
+            } else {
+                __this__ = [MACircle alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -186,9 +246,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAArcRenderer");
             }
         
-            MAArcRenderer* ref = [[MAArcRenderer alloc] init];
+            MAArcRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAArcRenderer alloc] init];
+            } else {
+                __this__ = [MAArcRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -199,9 +264,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineMapViewController");
             }
         
-            MAOfflineMapViewController* ref = [[MAOfflineMapViewController alloc] init];
+            MAOfflineMapViewController* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineMapViewController alloc] init];
+            } else {
+                __this__ = [MAOfflineMapViewController alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -212,9 +282,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMapCustomStyleOptions");
             }
         
-            MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
+            MAMapCustomStyleOptions* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMapCustomStyleOptions alloc] init];
+            } else {
+                __this__ = [MAMapCustomStyleOptions alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -225,9 +300,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAPolygon");
             }
         
-            MAPolygon* ref = [[MAPolygon alloc] init];
+            MAPolygon* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAPolygon alloc] init];
+            } else {
+                __this__ = [MAPolygon alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -238,9 +318,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleOverlay");
             }
         
-            MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
+            MAParticleOverlay* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleOverlay alloc] init];
+            } else {
+                __this__ = [MAParticleOverlay alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -251,9 +336,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAPolyline");
             }
         
-            MAPolyline* ref = [[MAPolyline alloc] init];
+            MAPolyline* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAPolyline alloc] init];
+            } else {
+                __this__ = [MAPolyline alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -264,9 +354,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMultiColoredPolylineRenderer");
             }
         
-            MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
+            MAMultiColoredPolylineRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMultiColoredPolylineRenderer alloc] init];
+            } else {
+                __this__ = [MAMultiColoredPolylineRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -277,9 +372,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAAnimatedAnnotation");
             }
         
-            MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
+            MAAnimatedAnnotation* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAAnimatedAnnotation alloc] init];
+            } else {
+                __this__ = [MAAnimatedAnnotation alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -290,9 +390,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMultiTexturePolylineRenderer");
             }
         
-            MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
+            MAMultiTexturePolylineRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMultiTexturePolylineRenderer alloc] init];
+            } else {
+                __this__ = [MAMultiTexturePolylineRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -303,9 +408,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineProvince");
             }
         
-            MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
+            MAOfflineProvince* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineProvince alloc] init];
+            } else {
+                __this__ = [MAOfflineProvince alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -316,9 +426,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapVectorOverlayRender");
             }
         
-            MAHeatMapVectorOverlayRender* ref = [[MAHeatMapVectorOverlayRender alloc] init];
+            MAHeatMapVectorOverlayRender* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapVectorOverlayRender alloc] init];
+            } else {
+                __this__ = [MAHeatMapVectorOverlayRender alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -329,9 +444,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMATileOverlayRenderer");
             }
         
-            MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
+            MATileOverlayRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MATileOverlayRenderer alloc] init];
+            } else {
+                __this__ = [MATileOverlayRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -342,9 +462,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineItem");
             }
         
-            MAOfflineItem* ref = [[MAOfflineItem alloc] init];
+            MAOfflineItem* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineItem alloc] init];
+            } else {
+                __this__ = [MAOfflineItem alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -355,9 +480,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAGeodesicPolyline");
             }
         
-            MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
+            MAGeodesicPolyline* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAGeodesicPolyline alloc] init];
+            } else {
+                __this__ = [MAGeodesicPolyline alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -368,9 +498,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMATouchPoi");
             }
         
-            MATouchPoi* ref = [[MATouchPoi alloc] init];
+            MATouchPoi* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MATouchPoi alloc] init];
+            } else {
+                __this__ = [MATouchPoi alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -396,9 +531,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineItemMunicipality");
             }
         
-            MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
+            MAOfflineItemMunicipality* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineItemMunicipality alloc] init];
+            } else {
+                __this__ = [MAOfflineItemMunicipality alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -409,9 +549,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMultiPolyline");
             }
         
-            MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
+            MAMultiPolyline* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMultiPolyline alloc] init];
+            } else {
+                __this__ = [MAMultiPolyline alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -422,9 +567,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMATraceManager");
             }
         
-            MATraceManager* ref = [[MATraceManager alloc] init];
+            MATraceManager* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MATraceManager alloc] init];
+            } else {
+                __this__ = [MATraceManager alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -435,9 +585,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMultiPointOverlayRenderer");
             }
         
-            MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
+            MAMultiPointOverlayRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMultiPointOverlayRenderer alloc] init];
+            } else {
+                __this__ = [MAMultiPointOverlayRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -448,9 +603,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAIndoorFloorInfo");
             }
         
-            MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
+            MAIndoorFloorInfo* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAIndoorFloorInfo alloc] init];
+            } else {
+                __this__ = [MAIndoorFloorInfo alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -461,9 +621,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAIndoorInfo");
             }
         
-            MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
+            MAIndoorInfo* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAIndoorInfo alloc] init];
+            } else {
+                __this__ = [MAIndoorInfo alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -474,9 +639,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAPolylineRenderer");
             }
         
-            MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
+            MAPolylineRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAPolylineRenderer alloc] init];
+            } else {
+                __this__ = [MAPolylineRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -487,9 +657,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAAnnotationMoveAnimation");
             }
         
-            MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
+            MAAnnotationMoveAnimation* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAAnnotationMoveAnimation alloc] init];
+            } else {
+                __this__ = [MAAnnotationMoveAnimation alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -500,9 +675,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAShape");
             }
         
-            MAShape* ref = [[MAShape alloc] init];
+            MAShape* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAShape alloc] init];
+            } else {
+                __this__ = [MAShape alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -513,9 +693,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAAnnotationView");
             }
         
-            MAAnnotationView* ref = [[MAAnnotationView alloc] init];
+            MAAnnotationView* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAAnnotationView alloc] init];
+            } else {
+                __this__ = [MAAnnotationView alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -526,9 +711,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMATileOverlay");
             }
         
-            MATileOverlay* ref = [[MATileOverlay alloc] init];
+            MATileOverlay* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MATileOverlay alloc] init];
+            } else {
+                __this__ = [MATileOverlay alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -554,9 +744,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMACustomCalloutView");
             }
         
-            MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
+            MACustomCalloutView* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MACustomCalloutView alloc] init];
+            } else {
+                __this__ = [MACustomCalloutView alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -567,9 +762,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineItemCommonCity");
             }
         
-            MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
+            MAOfflineItemCommonCity* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineItemCommonCity alloc] init];
+            } else {
+                __this__ = [MAOfflineItemCommonCity alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -580,9 +780,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOfflineMap");
             }
         
-            MAOfflineMap* ref = [[MAOfflineMap alloc] init];
+            MAOfflineMap* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOfflineMap alloc] init];
+            } else {
+                __this__ = [MAOfflineMap alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -593,9 +798,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMACircleRenderer");
             }
         
-            MACircleRenderer* ref = [[MACircleRenderer alloc] init];
+            MACircleRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MACircleRenderer alloc] init];
+            } else {
+                __this__ = [MACircleRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -606,9 +816,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleOverlayRenderer");
             }
         
-            MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
+            MAParticleOverlayRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleOverlayRenderer alloc] init];
+            } else {
+                __this__ = [MAParticleOverlayRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -709,9 +924,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleRandomVelocityGenerate");
             }
         
-            MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
+            MAParticleRandomVelocityGenerate* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleRandomVelocityGenerate alloc] init];
+            } else {
+                __this__ = [MAParticleRandomVelocityGenerate alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -722,9 +942,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleRandomColorGenerate");
             }
         
-            MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
+            MAParticleRandomColorGenerate* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleRandomColorGenerate alloc] init];
+            } else {
+                __this__ = [MAParticleRandomColorGenerate alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -735,9 +960,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleConstantRotationGenerate");
             }
         
-            MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
+            MAParticleConstantRotationGenerate* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleConstantRotationGenerate alloc] init];
+            } else {
+                __this__ = [MAParticleConstantRotationGenerate alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -748,9 +978,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleCurveSizeGenerate");
             }
         
-            MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
+            MAParticleCurveSizeGenerate* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleCurveSizeGenerate alloc] init];
+            } else {
+                __this__ = [MAParticleCurveSizeGenerate alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -761,9 +996,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleEmissionModule");
             }
         
-            MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
+            MAParticleEmissionModule* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleEmissionModule alloc] init];
+            } else {
+                __this__ = [MAParticleEmissionModule alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -774,9 +1014,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleSinglePointShapeModule");
             }
         
-            MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
+            MAParticleSinglePointShapeModule* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleSinglePointShapeModule alloc] init];
+            } else {
+                __this__ = [MAParticleSinglePointShapeModule alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -787,9 +1032,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleRectShapeModule");
             }
         
-            MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
+            MAParticleRectShapeModule* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleRectShapeModule alloc] init];
+            } else {
+                __this__ = [MAParticleRectShapeModule alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -800,9 +1050,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleOverLifeModule");
             }
         
-            MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
+            MAParticleOverLifeModule* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleOverLifeModule alloc] init];
+            } else {
+                __this__ = [MAParticleOverLifeModule alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -813,9 +1068,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleOverlayOptions");
             }
         
-            MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
+            MAParticleOverlayOptions* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleOverlayOptions alloc] init];
+            } else {
+                __this__ = [MAParticleOverlayOptions alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -826,9 +1086,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAParticleOverlayOptionsFactory");
             }
         
-            MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
+            MAParticleOverlayOptionsFactory* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAParticleOverlayOptionsFactory alloc] init];
+            } else {
+                __this__ = [MAParticleOverlayOptionsFactory alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -839,9 +1104,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOverlayRenderer");
             }
         
-            MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
+            MAOverlayRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOverlayRenderer alloc] init];
+            } else {
+                __this__ = [MAOverlayRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -852,9 +1122,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAUserLocation");
             }
         
-            MAUserLocation* ref = [[MAUserLocation alloc] init];
+            MAUserLocation* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAUserLocation alloc] init];
+            } else {
+                __this__ = [MAUserLocation alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -865,9 +1140,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapVectorNode");
             }
         
-            MAHeatMapVectorNode* ref = [[MAHeatMapVectorNode alloc] init];
+            MAHeatMapVectorNode* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapVectorNode alloc] init];
+            } else {
+                __this__ = [MAHeatMapVectorNode alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -878,9 +1158,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapVectorItem");
             }
         
-            MAHeatMapVectorItem* ref = [[MAHeatMapVectorItem alloc] init];
+            MAHeatMapVectorItem* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapVectorItem alloc] init];
+            } else {
+                __this__ = [MAHeatMapVectorItem alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -891,9 +1176,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapVectorOverlayOptions");
             }
         
-            MAHeatMapVectorOverlayOptions* ref = [[MAHeatMapVectorOverlayOptions alloc] init];
+            MAHeatMapVectorOverlayOptions* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapVectorOverlayOptions alloc] init];
+            } else {
+                __this__ = [MAHeatMapVectorOverlayOptions alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -904,9 +1194,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAHeatMapVectorOverlay");
             }
         
-            MAHeatMapVectorOverlay* ref = [[MAHeatMapVectorOverlay alloc] init];
+            MAHeatMapVectorOverlay* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAHeatMapVectorOverlay alloc] init];
+            } else {
+                __this__ = [MAHeatMapVectorOverlay alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -917,9 +1212,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMultiPointItem");
             }
         
-            MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
+            MAMultiPointItem* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMultiPointItem alloc] init];
+            } else {
+                __this__ = [MAMultiPointItem alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -930,9 +1230,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMultiPointOverlay");
             }
         
-            MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
+            MAMultiPointOverlay* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMultiPointOverlay alloc] init];
+            } else {
+                __this__ = [MAMultiPointOverlay alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -943,9 +1248,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMACustomBuildingOverlayOption");
             }
         
-            MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
+            MACustomBuildingOverlayOption* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MACustomBuildingOverlayOption alloc] init];
+            } else {
+                __this__ = [MACustomBuildingOverlayOption alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -956,9 +1266,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMACustomBuildingOverlay");
             }
         
-            MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
+            MACustomBuildingOverlay* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MACustomBuildingOverlay alloc] init];
+            } else {
+                __this__ = [MACustomBuildingOverlay alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -969,9 +1284,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMATracePoint");
             }
         
-            MATracePoint* ref = [[MATracePoint alloc] init];
+            MATracePoint* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MATracePoint alloc] init];
+            } else {
+                __this__ = [MATracePoint alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -982,9 +1302,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMATraceLocation");
             }
         
-            MATraceLocation* ref = [[MATraceLocation alloc] init];
+            MATraceLocation* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MATraceLocation alloc] init];
+            } else {
+                __this__ = [MATraceLocation alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -995,9 +1320,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAArc");
             }
         
-            MAArc* ref = [[MAArc alloc] init];
+            MAArc* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAArc alloc] init];
+            } else {
+                __this__ = [MAArc alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1008,9 +1338,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAUserLocationRepresentation");
             }
         
-            MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
+            MAUserLocationRepresentation* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAUserLocationRepresentation alloc] init];
+            } else {
+                __this__ = [MAUserLocationRepresentation alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1021,9 +1356,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAMapView");
             }
         
-            MAMapView* ref = [[MAMapView alloc] init];
+            MAMapView* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAMapView alloc] init];
+            } else {
+                __this__ = [MAMapView alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1034,9 +1374,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAOverlayPathRenderer");
             }
         
-            MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
+            MAOverlayPathRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAOverlayPathRenderer alloc] init];
+            } else {
+                __this__ = [MAOverlayPathRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1047,9 +1392,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMAGroundOverlayRenderer");
             }
         
-            MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
+            MAGroundOverlayRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MAGroundOverlayRenderer alloc] init];
+            } else {
+                __this__ = [MAGroundOverlayRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1060,9 +1410,14 @@ extern BOOL enableLog;
                 NSLog(@"ObjectFactory::createMACustomBuildingOverlayRenderer");
             }
         
-            MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
+            MACustomBuildingOverlayRenderer* __this__;
+            if ([((NSDictionary<NSString*, id>*) args)[@"init"] boolValue]) {
+                __this__ = [[MACustomBuildingOverlayRenderer alloc] init];
+            } else {
+                __this__ = [MACustomBuildingOverlayRenderer alloc];
+            }
         
-            methodResult(ref);
+            methodResult(__this__);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1070,9 +1425,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineCity": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineCity* ref = [[MAOfflineCity alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineCity* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineCity alloc] init];
+                } else {
+                    __this__ = [MAOfflineCity alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1083,9 +1445,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItemNationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineItemNationWide* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineItemNationWide alloc] init];
+                } else {
+                    __this__ = [MAOfflineItemNationWide alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1096,9 +1465,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMultiPoint* ref = [[MAMultiPoint alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMultiPoint* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMultiPoint alloc] init];
+                } else {
+                    __this__ = [MAMultiPoint alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1109,9 +1485,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAGroundOverlay* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAGroundOverlay alloc] init];
+                } else {
+                    __this__ = [MAGroundOverlay alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1122,9 +1505,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolygonRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAPolygonRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAPolygonRenderer alloc] init];
+                } else {
+                    __this__ = [MAPolygonRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1135,9 +1525,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPinAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAPinAnnotationView* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAPinAnnotationView alloc] init];
+                } else {
+                    __this__ = [MAPinAnnotationView alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1148,9 +1545,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapNode": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapNode* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapNode alloc] init];
+                } else {
+                    __this__ = [MAHeatMapNode alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1161,9 +1565,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapGradient* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapGradient alloc] init];
+                } else {
+                    __this__ = [MAHeatMapGradient alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1174,9 +1585,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapTileOverlay* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapTileOverlay alloc] init];
+                } else {
+                    __this__ = [MAHeatMapTileOverlay alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1187,9 +1605,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMapStatus* ref = [[MAMapStatus alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMapStatus* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMapStatus alloc] init];
+                } else {
+                    __this__ = [MAMapStatus alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1200,9 +1625,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPointAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAPointAnnotation* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAPointAnnotation alloc] init];
+                } else {
+                    __this__ = [MAPointAnnotation alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1213,9 +1645,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACircle": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MACircle* ref = [[MACircle alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MACircle* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MACircle alloc] init];
+                } else {
+                    __this__ = [MACircle alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1226,9 +1665,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAArcRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAArcRenderer* ref = [[MAArcRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAArcRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAArcRenderer alloc] init];
+                } else {
+                    __this__ = [MAArcRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1239,9 +1685,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineMapViewController": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineMapViewController* ref = [[MAOfflineMapViewController alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineMapViewController* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineMapViewController alloc] init];
+                } else {
+                    __this__ = [MAOfflineMapViewController alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1252,9 +1705,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMapCustomStyleOptions* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMapCustomStyleOptions alloc] init];
+                } else {
+                    __this__ = [MAMapCustomStyleOptions alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1265,9 +1725,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAPolygon* ref = [[MAPolygon alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAPolygon* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAPolygon alloc] init];
+                } else {
+                    __this__ = [MAPolygon alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1278,9 +1745,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleOverlay* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleOverlay alloc] init];
+                } else {
+                    __this__ = [MAParticleOverlay alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1291,9 +1765,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAPolyline* ref = [[MAPolyline alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAPolyline* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAPolyline alloc] init];
+                } else {
+                    __this__ = [MAPolyline alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1304,9 +1785,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiColoredPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMultiColoredPolylineRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMultiColoredPolylineRenderer alloc] init];
+                } else {
+                    __this__ = [MAMultiColoredPolylineRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1317,9 +1805,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAAnimatedAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAAnimatedAnnotation* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAAnimatedAnnotation alloc] init];
+                } else {
+                    __this__ = [MAAnimatedAnnotation alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1330,9 +1825,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiTexturePolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMultiTexturePolylineRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMultiTexturePolylineRenderer alloc] init];
+                } else {
+                    __this__ = [MAMultiTexturePolylineRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1343,9 +1845,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineProvince": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineProvince* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineProvince alloc] init];
+                } else {
+                    __this__ = [MAOfflineProvince alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1356,9 +1865,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapVectorOverlayRender": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapVectorOverlayRender* ref = [[MAHeatMapVectorOverlayRender alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapVectorOverlayRender* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapVectorOverlayRender alloc] init];
+                } else {
+                    __this__ = [MAHeatMapVectorOverlayRender alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1369,9 +1885,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATileOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MATileOverlayRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MATileOverlayRenderer alloc] init];
+                } else {
+                    __this__ = [MATileOverlayRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1382,9 +1905,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineItem* ref = [[MAOfflineItem alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineItem* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineItem alloc] init];
+                } else {
+                    __this__ = [MAOfflineItem alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1395,9 +1925,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAGeodesicPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAGeodesicPolyline* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAGeodesicPolyline alloc] init];
+                } else {
+                    __this__ = [MAGeodesicPolyline alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1408,9 +1945,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATouchPoi": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MATouchPoi* ref = [[MATouchPoi alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MATouchPoi* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MATouchPoi alloc] init];
+                } else {
+                    __this__ = [MATouchPoi alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1437,9 +1981,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItemMunicipality": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineItemMunicipality* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineItemMunicipality alloc] init];
+                } else {
+                    __this__ = [MAOfflineItemMunicipality alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1450,9 +2001,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMultiPolyline* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMultiPolyline alloc] init];
+                } else {
+                    __this__ = [MAMultiPolyline alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1463,9 +2021,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATraceManager": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MATraceManager* ref = [[MATraceManager alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MATraceManager* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MATraceManager alloc] init];
+                } else {
+                    __this__ = [MATraceManager alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1476,9 +2041,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPointOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMultiPointOverlayRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMultiPointOverlayRenderer alloc] init];
+                } else {
+                    __this__ = [MAMultiPointOverlayRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1489,9 +2061,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAIndoorFloorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAIndoorFloorInfo* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAIndoorFloorInfo alloc] init];
+                } else {
+                    __this__ = [MAIndoorFloorInfo alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1502,9 +2081,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAIndoorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAIndoorInfo* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAIndoorInfo alloc] init];
+                } else {
+                    __this__ = [MAIndoorInfo alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1515,9 +2101,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAPolylineRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAPolylineRenderer alloc] init];
+                } else {
+                    __this__ = [MAPolylineRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1528,9 +2121,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAAnnotationMoveAnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAAnnotationMoveAnimation* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAAnnotationMoveAnimation alloc] init];
+                } else {
+                    __this__ = [MAAnnotationMoveAnimation alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1541,9 +2141,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAShape": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAShape* ref = [[MAShape alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAShape* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAShape alloc] init];
+                } else {
+                    __this__ = [MAShape alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1554,9 +2161,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAAnnotationView* ref = [[MAAnnotationView alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAAnnotationView* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAAnnotationView alloc] init];
+                } else {
+                    __this__ = [MAAnnotationView alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1567,9 +2181,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MATileOverlay* ref = [[MATileOverlay alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MATileOverlay* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MATileOverlay alloc] init];
+                } else {
+                    __this__ = [MATileOverlay alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1596,9 +2217,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MACustomCalloutView* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MACustomCalloutView alloc] init];
+                } else {
+                    __this__ = [MACustomCalloutView alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1609,9 +2237,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItemCommonCity": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineItemCommonCity* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineItemCommonCity alloc] init];
+                } else {
+                    __this__ = [MAOfflineItemCommonCity alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1622,9 +2257,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOfflineMap* ref = [[MAOfflineMap alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOfflineMap* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOfflineMap alloc] init];
+                } else {
+                    __this__ = [MAOfflineMap alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1635,9 +2277,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACircleRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MACircleRenderer* ref = [[MACircleRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MACircleRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MACircleRenderer alloc] init];
+                } else {
+                    __this__ = [MACircleRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1648,9 +2297,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleOverlayRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleOverlayRenderer alloc] init];
+                } else {
+                    __this__ = [MAParticleOverlayRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1757,9 +2413,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleRandomVelocityGenerate* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleRandomVelocityGenerate alloc] init];
+                } else {
+                    __this__ = [MAParticleRandomVelocityGenerate alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1770,9 +2433,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleRandomColorGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleRandomColorGenerate* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleRandomColorGenerate alloc] init];
+                } else {
+                    __this__ = [MAParticleRandomColorGenerate alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1783,9 +2453,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleConstantRotationGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleConstantRotationGenerate* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleConstantRotationGenerate alloc] init];
+                } else {
+                    __this__ = [MAParticleConstantRotationGenerate alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1796,9 +2473,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleCurveSizeGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleCurveSizeGenerate* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleCurveSizeGenerate alloc] init];
+                } else {
+                    __this__ = [MAParticleCurveSizeGenerate alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1809,9 +2493,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleEmissionModule* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleEmissionModule alloc] init];
+                } else {
+                    __this__ = [MAParticleEmissionModule alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1822,9 +2513,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleSinglePointShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleSinglePointShapeModule* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleSinglePointShapeModule alloc] init];
+                } else {
+                    __this__ = [MAParticleSinglePointShapeModule alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1835,9 +2533,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleRectShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleRectShapeModule* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleRectShapeModule alloc] init];
+                } else {
+                    __this__ = [MAParticleRectShapeModule alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1848,9 +2553,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleOverLifeModule* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleOverLifeModule alloc] init];
+                } else {
+                    __this__ = [MAParticleOverLifeModule alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1861,9 +2573,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleOverlayOptions* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleOverlayOptions alloc] init];
+                } else {
+                    __this__ = [MAParticleOverlayOptions alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1874,9 +2593,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAParticleOverlayOptionsFactory* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAParticleOverlayOptionsFactory alloc] init];
+                } else {
+                    __this__ = [MAParticleOverlayOptionsFactory alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1887,9 +2613,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOverlayRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOverlayRenderer alloc] init];
+                } else {
+                    __this__ = [MAOverlayRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1900,9 +2633,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAUserLocation* ref = [[MAUserLocation alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAUserLocation* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAUserLocation alloc] init];
+                } else {
+                    __this__ = [MAUserLocation alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1913,9 +2653,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapVectorNode": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapVectorNode* ref = [[MAHeatMapVectorNode alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapVectorNode* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapVectorNode alloc] init];
+                } else {
+                    __this__ = [MAHeatMapVectorNode alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1926,9 +2673,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapVectorItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapVectorItem* ref = [[MAHeatMapVectorItem alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapVectorItem* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapVectorItem alloc] init];
+                } else {
+                    __this__ = [MAHeatMapVectorItem alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1939,9 +2693,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapVectorOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapVectorOverlayOptions* ref = [[MAHeatMapVectorOverlayOptions alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapVectorOverlayOptions* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapVectorOverlayOptions alloc] init];
+                } else {
+                    __this__ = [MAHeatMapVectorOverlayOptions alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1952,9 +2713,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapVectorOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAHeatMapVectorOverlay* ref = [[MAHeatMapVectorOverlay alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAHeatMapVectorOverlay* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAHeatMapVectorOverlay alloc] init];
+                } else {
+                    __this__ = [MAHeatMapVectorOverlay alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1965,9 +2733,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMultiPointItem* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMultiPointItem alloc] init];
+                } else {
+                    __this__ = [MAMultiPointItem alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1978,9 +2753,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMultiPointOverlay* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMultiPointOverlay alloc] init];
+                } else {
+                    __this__ = [MAMultiPointOverlay alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -1991,9 +2773,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MACustomBuildingOverlayOption* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MACustomBuildingOverlayOption alloc] init];
+                } else {
+                    __this__ = [MACustomBuildingOverlayOption alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2004,9 +2793,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MACustomBuildingOverlay* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MACustomBuildingOverlay alloc] init];
+                } else {
+                    __this__ = [MACustomBuildingOverlay alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2017,9 +2813,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MATracePoint* ref = [[MATracePoint alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MATracePoint* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MATracePoint alloc] init];
+                } else {
+                    __this__ = [MATracePoint alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2030,9 +2833,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MATraceLocation* ref = [[MATraceLocation alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MATraceLocation* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MATraceLocation alloc] init];
+                } else {
+                    __this__ = [MATraceLocation alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2043,9 +2853,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAArc* ref = [[MAArc alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAArc* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAArc alloc] init];
+                } else {
+                    __this__ = [MAArc alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2056,9 +2873,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAUserLocationRepresentation* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAUserLocationRepresentation alloc] init];
+                } else {
+                    __this__ = [MAUserLocationRepresentation alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2069,9 +2893,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAMapView* ref = [[MAMapView alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAMapView* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAMapView alloc] init];
+                } else {
+                    __this__ = [MAMapView alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2082,9 +2913,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOverlayPathRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAOverlayPathRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAOverlayPathRenderer alloc] init];
+                } else {
+                    __this__ = [MAOverlayPathRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2095,9 +2933,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAGroundOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MAGroundOverlayRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MAGroundOverlayRenderer alloc] init];
+                } else {
+                    __this__ = [MAGroundOverlayRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);
@@ -2108,9 +2953,16 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomBuildingOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSObject*>* resultList = [NSMutableArray array];
         
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
-                [resultList addObject:ref];
+            NSNumber* length = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"];
+            NSNumber* init = (NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"init"];
+            for (int __i__ = 0; __i__ < [length integerValue]; __i__++) {
+                MACustomBuildingOverlayRenderer* __this__;
+                if ([init boolValue]) {
+                    __this__ = [[MACustomBuildingOverlayRenderer alloc] init];
+                } else {
+                    __this__ = [MACustomBuildingOverlayRenderer alloc];
+                }
+                [resultList addObject:__this__];
             }
         
             methodResult(resultList);

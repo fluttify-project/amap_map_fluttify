@@ -20,17 +20,17 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
   //endregion
 
   //region creators
-  static Future<MAUserLocation> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAUserLocation');
+  static Future<MAUserLocation> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAUserLocation', {'init': init});
     final object = MAUserLocation()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAUserLocation>> create_batch__(int length) async {
+  static Future<List<MAUserLocation>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAUserLocation', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAUserLocation', {'length': length, 'init': init});
   
     final List<MAUserLocation> typedResult = resultBatch.map((result) => MAUserLocation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

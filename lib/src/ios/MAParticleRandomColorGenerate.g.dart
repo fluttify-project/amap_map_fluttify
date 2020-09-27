@@ -20,17 +20,17 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
   //endregion
 
   //region creators
-  static Future<MAParticleRandomColorGenerate> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleRandomColorGenerate');
+  static Future<MAParticleRandomColorGenerate> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleRandomColorGenerate', {'init': init});
     final object = MAParticleRandomColorGenerate()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAParticleRandomColorGenerate>> create_batch__(int length) async {
+  static Future<List<MAParticleRandomColorGenerate>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleRandomColorGenerate', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleRandomColorGenerate', {'length': length, 'init': init});
   
     final List<MAParticleRandomColorGenerate> typedResult = resultBatch.map((result) => MAParticleRandomColorGenerate()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

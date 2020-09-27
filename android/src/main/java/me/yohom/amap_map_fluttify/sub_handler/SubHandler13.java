@@ -445,14 +445,14 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
                     // ref arg
                     byte[] var3 = (byte[]) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
-                    com.amap.api.maps.model.Tile __obj__ = new com.amap.api.maps.model.Tile(var1, var2, var3);
+                    com.amap.api.maps.model.Tile __obj__ = new com.amap.api.maps.model.Tile(var1.intValue(), var2.intValue(), var3);
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -721,14 +721,14 @@ public class SubHandler13 {
                     // ref arg
                     com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
                     // ref arg
-                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
                     // ref arg
-                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+                    Number var4 = (Number) ((Map<String, Object>) __args__).get("var4");
             
                     // create target object
-                    com.amap.api.maps.model.CameraPosition __obj__ = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    com.amap.api.maps.model.CameraPosition __obj__ = new com.amap.api.maps.model.CameraPosition(var1, var2.floatValue(), var3.floatValue(), var4.floatValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -917,18 +917,18 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
                     // ref arg
-                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
                     // ref arg
-                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+                    Number var4 = (Number) ((Map<String, Object>) __args__).get("var4");
                     // ref arg
-                    Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
+                    Number var5 = (Number) ((Map<String, Object>) __args__).get("var5");
             
                     // create target object
-                    com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
+                    com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -964,12 +964,12 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
-                    com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(var1.floatValue(), var2.floatValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -1083,12 +1083,12 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
-                    com.amap.api.maps.model.animation.AlphaAnimation __obj__ = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    com.amap.api.maps.model.animation.AlphaAnimation __obj__ = new com.amap.api.maps.model.animation.AlphaAnimation(var1.floatValue(), var2.floatValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -1124,16 +1124,16 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
                     // ref arg
-                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
                     // ref arg
-                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+                    Number var4 = (Number) ((Map<String, Object>) __args__).get("var4");
             
                     // create target object
-                    com.amap.api.maps.model.animation.ScaleAnimation __obj__ = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    com.amap.api.maps.model.animation.ScaleAnimation __obj__ = new com.amap.api.maps.model.animation.ScaleAnimation(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -1362,12 +1362,12 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    double var3 = (double) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
-                    com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3);
+                    com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1.doubleValue(), var3.doubleValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -1403,14 +1403,14 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    double var3 = (double) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
                     // ref arg
                     boolean var5 = (boolean) ((Map<String, Object>) __args__).get("var5");
             
                     // create target object
-                    com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3, var5);
+                    com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1.doubleValue(), var3.doubleValue(), var5);
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -1446,20 +1446,20 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
                     // ref arg
-                    int var3 = (int) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
                     // ref arg
-                    int var4 = (int) ((Map<String, Object>) __args__).get("var4");
+                    Number var4 = (Number) ((Map<String, Object>) __args__).get("var4");
                     // ref arg
-                    int var5 = (int) ((Map<String, Object>) __args__).get("var5");
+                    Number var5 = (Number) ((Map<String, Object>) __args__).get("var5");
                     // ref arg
-                    int var6 = (int) ((Map<String, Object>) __args__).get("var6");
+                    Number var6 = (Number) ((Map<String, Object>) __args__).get("var6");
             
                     // create target object
-                    com.amap.api.maps.model.TileProjection __obj__ = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
+                    com.amap.api.maps.model.TileProjection __obj__ = new com.amap.api.maps.model.TileProjection(var1.intValue(), var2.intValue(), var3.intValue(), var4.intValue(), var5.intValue(), var6.intValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -1648,20 +1648,20 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
                     // ref arg
-                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
                     // ref arg
-                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+                    Number var4 = (Number) ((Map<String, Object>) __args__).get("var4");
                     // ref arg
-                    Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
+                    Number var5 = (Number) ((Map<String, Object>) __args__).get("var5");
                     // ref arg
-                    Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
+                    Number var6 = (Number) ((Map<String, Object>) __args__).get("var6");
             
                     // create target object
-                    com.amap.api.maps.model.AMapCameraInfo __obj__ = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
+                    com.amap.api.maps.model.AMapCameraInfo __obj__ = new com.amap.api.maps.model.AMapCameraInfo(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue(), var6.floatValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -1737,10 +1737,10 @@ public class SubHandler13 {
                     // ref arg
                     com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    double var2 = (double) ((Map<String, Object>) __args__).get("var2");
+                    Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
-                    com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
+                    com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1, var2.doubleValue());
             
                     // print current HEAP
                     if (getEnableLog()) {
@@ -3008,18 +3008,18 @@ public class SubHandler13 {
             
                     // args
                     // ref arg
-                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                    Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    double var3 = (double) ((Map<String, Object>) __args__).get("var3");
+                    Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
                     // ref arg
-                    Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
+                    Number var5 = (Number) ((Map<String, Object>) __args__).get("var5");
                     // ref arg
-                    Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
+                    Number var6 = (Number) ((Map<String, Object>) __args__).get("var6");
                     // ref arg
-                    Integer var7 = (Integer) ((Map<String, Object>) __args__).get("var7");
+                    Number var7 = (Number) ((Map<String, Object>) __args__).get("var7");
             
                     // create target object
-                    com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
+                    com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation(var1.doubleValue(), var3.doubleValue(), var5.floatValue(), var6.floatValue(), var7.longValue());
             
                     // print current HEAP
                     if (getEnableLog()) {

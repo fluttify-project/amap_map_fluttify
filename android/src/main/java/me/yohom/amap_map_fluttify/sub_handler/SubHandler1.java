@@ -65,7 +65,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setTotalDuration", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.utils.overlay.SmoothMoveMarker __this__ = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) ((Map<String, Object>) __args__).get("__this__");
@@ -78,7 +78,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setTotalDuration(var1);
+                    __this__.setTotalDuration(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -376,7 +376,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setRotate", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.utils.overlay.SmoothMoveMarker __this__ = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) ((Map<String, Object>) __args__).get("__this__");
@@ -389,7 +389,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setRotate(new Double(var1).floatValue());
+                    __this__.setRotate(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -831,7 +831,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.MapsInitializer::setBuildingHeight", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var0 = (int) ((Map<String, Object>) __args__).get("var0");
+                Number var0 = (Number) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -844,7 +844,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    com.amap.api.maps.MapsInitializer.setBuildingHeight(var0);
+                    com.amap.api.maps.MapsInitializer.setBuildingHeight(var0.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -946,7 +946,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.MapsInitializer::setProtocol", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var0 = (int) ((Map<String, Object>) __args__).get("var0");
+                Number var0 = (Number) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -959,7 +959,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    com.amap.api.maps.MapsInitializer.setProtocol(var0);
+                    com.amap.api.maps.MapsInitializer.setProtocol(var0.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1627,7 +1627,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.offlinemap.OfflineMapProvince::setState", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.offlinemap.OfflineMapProvince __this__ = (com.amap.api.maps.offlinemap.OfflineMapProvince) ((Map<String, Object>) __args__).get("__this__");
@@ -1640,7 +1640,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setState(var1);
+                    __this__.setState(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1684,7 +1684,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.offlinemap.OfflineMapProvince::setSize", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer var1 = (Integer) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.offlinemap.OfflineMapProvince __this__ = (com.amap.api.maps.offlinemap.OfflineMapProvince) ((Map<String, Object>) __args__).get("__this__");
@@ -1697,7 +1697,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setSize(var1);
+                    __this__.setSize(var1.longValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1798,7 +1798,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.offlinemap.OfflineMapProvince::setCompleteCode", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.offlinemap.OfflineMapProvince __this__ = (com.amap.api.maps.offlinemap.OfflineMapProvince) ((Map<String, Object>) __args__).get("__this__");
@@ -1811,7 +1811,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setCompleteCode(var1);
+                    __this__.setCompleteCode(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1912,7 +1912,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.offlinemap.DownloadProgressView::setProgress", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.offlinemap.DownloadProgressView __this__ = (com.amap.api.maps.offlinemap.DownloadProgressView) ((Map<String, Object>) __args__).get("__this__");
@@ -1925,7 +1925,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setProgress(var1);
+                    __this__.setProgress(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2882,7 +2882,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.offlinemap.OfflineMapCity::setSize", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer var1 = (Integer) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.offlinemap.OfflineMapCity __this__ = (com.amap.api.maps.offlinemap.OfflineMapCity) ((Map<String, Object>) __args__).get("__this__");
@@ -2895,7 +2895,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setSize(var1);
+                    __this__.setSize(var1.longValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2939,7 +2939,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.offlinemap.OfflineMapCity::setState", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.offlinemap.OfflineMapCity __this__ = (com.amap.api.maps.offlinemap.OfflineMapCity) ((Map<String, Object>) __args__).get("__this__");
@@ -2952,7 +2952,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setState(var1);
+                    __this__.setState(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3053,7 +3053,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.offlinemap.OfflineMapCity::setCompleteCode", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.offlinemap.OfflineMapCity __this__ = (com.amap.api.maps.offlinemap.OfflineMapCity) ((Map<String, Object>) __args__).get("__this__");
@@ -3066,7 +3066,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setCompleteCode(var1);
+                    __this__.setCompleteCode(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3597,7 +3597,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.Projection::toOpenGLWidth", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.Projection __this__ = (com.amap.api.maps.Projection) ((Map<String, Object>) __args__).get("__this__");
@@ -3610,7 +3610,7 @@ public class SubHandler1 {
                 // invoke native method
                 Float __result__ = null;
                 try {
-                    __result__ = __this__.toOpenGLWidth(var1);
+                    __result__ = __this__.toOpenGLWidth(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3656,9 +3656,9 @@ public class SubHandler1 {
                 // ref arg
                 com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+                Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
                 // ref arg
-                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
+                Number var3 = (Number) ((Map<String, Object>) __args__).get("var3");
             
                 // ref
                 com.amap.api.maps.Projection __this__ = (com.amap.api.maps.Projection) ((Map<String, Object>) __args__).get("__this__");
@@ -3671,7 +3671,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.TileProjection __result__ = null;
                 try {
-                    __result__ = __this__.fromBoundsToTile(var1, var2, var3);
+                    __result__ = __this__.fromBoundsToTile(var1, var2.intValue(), var3.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3689,7 +3689,7 @@ public class SubHandler1 {
                 // ref arg
                 com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
                 com.amap.api.maps.Projection __this__ = (com.amap.api.maps.Projection) ((Map<String, Object>) __args__).get("__this__");
@@ -3702,7 +3702,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.LatLngBounds __result__ = null;
                 try {
-                    __result__ = __this__.getMapBounds(var1, new Double(var2).floatValue());
+                    __result__ = __this__.getMapBounds(var1, var2.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3748,7 +3748,7 @@ public class SubHandler1 {
                 // ref arg
                 com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+                Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
                 com.amap.api.maps.Projection __this__ = (com.amap.api.maps.Projection) ((Map<String, Object>) __args__).get("__this__");
@@ -3761,7 +3761,7 @@ public class SubHandler1 {
                 // invoke native method
                 Float __result__ = null;
                 try {
-                    __result__ = __this__.calZoomByTargetPos(var1, var2);
+                    __result__ = __this__.calZoomByTargetPos(var1, var2.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4034,7 +4034,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.Polygon::setStrokeWidth", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.Polygon __this__ = (com.amap.api.maps.model.Polygon) ((Map<String, Object>) __args__).get("__this__");
@@ -4047,7 +4047,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setStrokeWidth(new Double(var1).floatValue());
+                    __this__.setStrokeWidth(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4091,7 +4091,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.Polygon::setStrokeColor", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.Polygon __this__ = (com.amap.api.maps.model.Polygon) ((Map<String, Object>) __args__).get("__this__");
@@ -4104,7 +4104,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setStrokeColor(var1);
+                    __this__.setStrokeColor(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4148,7 +4148,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.Polygon::setFillColor", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.Polygon __this__ = (com.amap.api.maps.model.Polygon) ((Map<String, Object>) __args__).get("__this__");
@@ -4161,7 +4161,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setFillColor(var1);
+                    __this__.setFillColor(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4205,7 +4205,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.Polygon::setZIndex", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.Polygon __this__ = (com.amap.api.maps.model.Polygon) ((Map<String, Object>) __args__).get("__this__");
@@ -4218,7 +4218,7 @@ public class SubHandler1 {
                 // invoke native method
                 Void __result__ = null;
                 try {
-                    __this__.setZIndex(new Double(var1).floatValue());
+                    __this__.setZIndex(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4406,7 +4406,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::size", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4419,7 +4419,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.size(new Double(var1).floatValue());
+                    __result__ = __this__.size(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4464,7 +4464,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::opacity", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4477,7 +4477,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.opacity(new Double(var1).floatValue());
+                    __result__ = __this__.opacity(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4493,7 +4493,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::maxIntensity", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4506,7 +4506,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.maxIntensity(var1);
+                    __result__ = __this__.maxIntensity(var1.doubleValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4522,7 +4522,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::maxZoom", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4535,7 +4535,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.maxZoom(new Double(var1).floatValue());
+                    __result__ = __this__.maxZoom(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4551,7 +4551,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::minZoom", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4564,7 +4564,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.minZoom(new Double(var1).floatValue());
+                    __result__ = __this__.minZoom(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4580,7 +4580,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::gap", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4593,7 +4593,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.gap(new Double(var1).floatValue());
+                    __result__ = __this__.gap(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4609,7 +4609,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::type", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4622,7 +4622,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.type(var1);
+                    __result__ = __this__.type(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4638,7 +4638,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.HeatMapLayerOptions::zIndex", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.HeatMapLayerOptions __this__ = (com.amap.api.maps.model.HeatMapLayerOptions) ((Map<String, Object>) __args__).get("__this__");
@@ -4651,7 +4651,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.HeatMapLayerOptions __result__ = null;
                 try {
-                    __result__ = __this__.zIndex(new Double(var1).floatValue());
+                    __result__ = __this__.zIndex(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5201,7 +5201,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.AMapPara.LineCapType::valueOf", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var0 = (int) ((Map<String, Object>) __args__).get("var0");
+                Number var0 = (Number) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -5214,7 +5214,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.AMapPara.LineCapType __result__ = null;
                 try {
-                    __result__ = com.amap.api.maps.model.AMapPara.LineCapType.valueOf(var0);
+                    __result__ = com.amap.api.maps.model.AMapPara.LineCapType.valueOf(var0.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5371,9 +5371,9 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.MyLocationStyle::anchor", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                Number var2 = (Number) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
                 com.amap.api.maps.model.MyLocationStyle __this__ = (com.amap.api.maps.model.MyLocationStyle) ((Map<String, Object>) __args__).get("__this__");
@@ -5386,7 +5386,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.MyLocationStyle __result__ = null;
                 try {
-                    __result__ = __this__.anchor(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    __result__ = __this__.anchor(var1.floatValue(), var2.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5402,7 +5402,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.MyLocationStyle::radiusFillColor", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.MyLocationStyle __this__ = (com.amap.api.maps.model.MyLocationStyle) ((Map<String, Object>) __args__).get("__this__");
@@ -5415,7 +5415,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.MyLocationStyle __result__ = null;
                 try {
-                    __result__ = __this__.radiusFillColor(var1);
+                    __result__ = __this__.radiusFillColor(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5431,7 +5431,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.MyLocationStyle::strokeColor", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.MyLocationStyle __this__ = (com.amap.api.maps.model.MyLocationStyle) ((Map<String, Object>) __args__).get("__this__");
@@ -5444,7 +5444,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.MyLocationStyle __result__ = null;
                 try {
-                    __result__ = __this__.strokeColor(var1);
+                    __result__ = __this__.strokeColor(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5460,7 +5460,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.MyLocationStyle::strokeWidth", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.MyLocationStyle __this__ = (com.amap.api.maps.model.MyLocationStyle) ((Map<String, Object>) __args__).get("__this__");
@@ -5473,7 +5473,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.MyLocationStyle __result__ = null;
                 try {
-                    __result__ = __this__.strokeWidth(new Double(var1).floatValue());
+                    __result__ = __this__.strokeWidth(var1.floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5489,7 +5489,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.MyLocationStyle::myLocationType", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.MyLocationStyle __this__ = (com.amap.api.maps.model.MyLocationStyle) ((Map<String, Object>) __args__).get("__this__");
@@ -5502,7 +5502,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.MyLocationStyle __result__ = null;
                 try {
-                    __result__ = __this__.myLocationType(var1);
+                    __result__ = __this__.myLocationType(var1.intValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5518,7 +5518,7 @@ public class SubHandler1 {
             put("com.amap.api.maps.model.MyLocationStyle::interval", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                Integer var1 = (Integer) ((Map<String, Object>) __args__).get("var1");
+                Number var1 = (Number) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 com.amap.api.maps.model.MyLocationStyle __this__ = (com.amap.api.maps.model.MyLocationStyle) ((Map<String, Object>) __args__).get("__this__");
@@ -5531,7 +5531,7 @@ public class SubHandler1 {
                 // invoke native method
                 com.amap.api.maps.model.MyLocationStyle __result__ = null;
                 try {
-                    __result__ = __this__.interval(var1);
+                    __result__ = __this__.interval(var1.longValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {

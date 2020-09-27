@@ -21,7 +21,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
 
   //region creators
   static Future<com_amap_api_maps_model_NavigateArrowOptions> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__', );
     final object = com_amap_api_maps_model_NavigateArrowOptions()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

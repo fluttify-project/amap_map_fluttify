@@ -15,8 +15,8 @@ dependencies:
   amap_location_fluttify: ^0.17.0
   amap_search_fluttify: ^0.14.0
   url_launcher: ^5.4.2
-  foundation_fluttify: ^0.9.3
-  core_location_fluttify: ^0.4.0
+  foundation_fluttify: ^0.9.7
+  core_location_fluttify: ^0.4.1
 
 dev_dependencies:
   flutter_test:

@@ -20,17 +20,17 @@ class MAShape extends NSObject with MAAnnotation {
   //endregion
 
   //region creators
-  static Future<MAShape> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAShape');
+  static Future<MAShape> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAShape', {'init': init});
     final object = MAShape()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAShape>> create_batch__(int length) async {
+  static Future<List<MAShape>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAShape', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAShape', {'length': length, 'init': init});
   
     final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

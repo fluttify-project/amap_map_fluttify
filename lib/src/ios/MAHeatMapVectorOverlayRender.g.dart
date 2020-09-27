@@ -20,17 +20,17 @@ class MAHeatMapVectorOverlayRender extends MAOverlayRenderer  {
   //endregion
 
   //region creators
-  static Future<MAHeatMapVectorOverlayRender> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapVectorOverlayRender');
+  static Future<MAHeatMapVectorOverlayRender> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapVectorOverlayRender', {'init': init});
     final object = MAHeatMapVectorOverlayRender()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAHeatMapVectorOverlayRender>> create_batch__(int length) async {
+  static Future<List<MAHeatMapVectorOverlayRender>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapVectorOverlayRender', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapVectorOverlayRender', {'length': length, 'init': init});
   
     final List<MAHeatMapVectorOverlayRender> typedResult = resultBatch.map((result) => MAHeatMapVectorOverlayRender()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;

@@ -21,7 +21,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
 
   //region creators
   static Future<com_amap_api_maps_offlinemap_Province> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_Province__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_Province__', );
     final object = com_amap_api_maps_offlinemap_Province()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

@@ -29,7 +29,7 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
 
   //region creators
   static Future<com_amap_api_maps_model_NaviPara> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NaviPara__');
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NaviPara__', );
     final object = com_amap_api_maps_model_NaviPara()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }

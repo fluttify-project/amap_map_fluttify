@@ -17,6 +17,7 @@ extension MAOfflineMapErrorToX on MAOfflineMapError {
       case MAOfflineMapError.MAOfflineMapErrorCannotWriteToTmp: return -2;
       case MAOfflineMapError.MAOfflineMapErrorCannotOpenZipFile: return -3;
       case MAOfflineMapError.MAOfflineMapErrorCannotExpand: return -4;
+      default: return 0;
     }
   }
 }

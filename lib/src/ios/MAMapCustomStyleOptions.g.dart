@@ -20,17 +20,17 @@ class MAMapCustomStyleOptions extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAMapCustomStyleOptions> create__() async {
-    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMapCustomStyleOptions');
+  static Future<MAMapCustomStyleOptions> create__({ bool init = true /* ios only */ }) async {
+    final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMapCustomStyleOptions', {'init': init});
     final object = MAMapCustomStyleOptions()..refId = refId..tag__ = 'amap_map_fluttify';
     return object;
   }
   
-  static Future<List<MAMapCustomStyleOptions>> create_batch__(int length) async {
+  static Future<List<MAMapCustomStyleOptions>> create_batch__(int length, { bool init = true /* ios only */ }) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMapCustomStyleOptions', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMapCustomStyleOptions', {'length': length, 'init': init});
   
     final List<MAMapCustomStyleOptions> typedResult = resultBatch.map((result) => MAMapCustomStyleOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
     return typedResult;
