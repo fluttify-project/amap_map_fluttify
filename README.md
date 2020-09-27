@@ -11,19 +11,6 @@
 
 [专业版demo apk下载](https://github.com/fluttify-project/fluttify-project/raw/master/resources/amap_map_fluttify/%E5%9C%B0%E5%9B%BE-2020-07-25.apk)
 
-# 静态扩展方案
-现提供静态扩展方案, 如果社区版没有提供你需要的功能, 但是又用不到专业版里的所有功能, 那么本方案提供以`方法`为单位的收费方式.
-计费方式请参考[技术支持方案](https://github.com/fluttify-project/technical-support-plan/blob/master/README.md#%E6%96%B0%E5%8A%9F%E8%83%BD).
-静态扩展方案最终会提供一个**类扩展**(目前支持为`AmapController`进行扩展)给用户.
-
-### 如何使用静态扩展
-把扩展类拷贝进工程, 然后在使用地图的文件内`import`该类扩展之后, 与先前一样使用`AmapController`即可.
-
-### 使用静态扩展方案的前提
-- 必须使用社区版`0.25.0`以上的版本，`0.25.0`版本专门为静态扩展方案做了优化，如果使用之前的版本，将不保证扩展能使用；
-- `0.25.0`版本已整合`amap_location_fluttify`和`amap_search_fluttify`, 因此`amap_all_fluttify`已被标记为`过时`. 如果只需要定位或搜索, 可以只依赖定位或搜索插件, 如果需要地图的同时需要搜索和定位, 则直接依赖`amap_map_fluttify`即可.
-- `0.25.0`版本针对扩展方案进行了优化, 原先所有通过静态方法调用的接口, 一律改成单例模式. 影响到的类主要有`AmapService`, `AmapLocation`, `AmapSearch`, 迁移时只需`AmapService`→`AmapService.instance`, `AmapLocation`→`AmapLocation.instance`, `AmapSearch`→`AmapSearch.instance`即可.
-
 # Fluttify系列插件
 |  名称  | 描述 | 仓库 |
 |:-----:|:-----:|:-----:|
