@@ -9,7 +9,7 @@
 **专业版为付费插件, 如有需要请联系qq 382146139**<br/>
 **专业版为付费插件, 如有需要请联系qq 382146139**<br/>
 
-[专业版demo apk下载](https://github.com/fluttify-project/fluttify-project/raw/master/resources/amap_map_fluttify/%E5%9C%B0%E5%9B%BE-2020-07-25.apk)
+[专业版demo apk下载](https://github.com/fluttify-project/fluttify-project/raw/master/resources/amap_map_fluttify/%E5%9C%B0%E5%9B%BE-demo.apk)
 
 # Fluttify系列插件
 |  名称  | 描述 | 仓库 |
