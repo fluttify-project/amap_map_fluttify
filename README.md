@@ -1,3 +1,5 @@
+# [文档](https://github.com/fluttify-project/amap_map_fluttify/wiki) [文档](https://github.com/fluttify-project/amap_map_fluttify/wiki) [文档](https://github.com/fluttify-project/amap_map_fluttify/wiki)
+
 ![Logo](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Logo-Landscape.png?raw=true)
 
 # 高德地图 地图组件 Flutter插件
@@ -91,9 +93,6 @@ android {
 ```dart
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 ```
-
-## 使用
-参考[wiki](https://github.com/fluttify-project/amap_map_fluttify/wiki).
 
 ## 社区
 | QQ群 |

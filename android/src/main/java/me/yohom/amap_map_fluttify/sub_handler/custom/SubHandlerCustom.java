@@ -84,9 +84,7 @@ public class SubHandlerCustom {
 
                 try {
                     final UrlTileProviderImpl provider = new UrlTileProviderImpl(width, height, urlTemplate);
-
-                    getHEAP().put(String.valueOf(System.identityHashCode(provider)), provider);
-                    __methodResult__.success(System.identityHashCode(provider));
+                    __methodResult__.success(provider);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
