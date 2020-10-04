@@ -16,6 +16,9 @@ class com_amap_api_maps_CameraUpdate extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.maps.CameraUpdate';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
@@ -34,6 +37,11 @@ class com_amap_api_maps_CameraUpdate extends java_lang_Object  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_CameraUpdate{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_CameraUpdate_Batch on List<com_amap_api_maps_CameraUpdate> {

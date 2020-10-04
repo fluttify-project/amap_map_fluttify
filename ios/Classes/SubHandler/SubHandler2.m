@@ -83,7 +83,7 @@ extern BOOL enableLog;
             MAArc* result = ref.arc;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -155,7 +155,7 @@ extern BOOL enableLog;
             MAOfflineMap* result = ref.offlineMap;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -173,7 +173,7 @@ extern BOOL enableLog;
             NSData* result = ref.styleData;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -227,7 +227,7 @@ extern BOOL enableLog;
             NSData* result = ref.styleTextureData;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -245,7 +245,7 @@ extern BOOL enableLog;
             NSData* result = ref.styleExtraData;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -263,7 +263,7 @@ extern BOOL enableLog;
             MAParticleOverlayOptions* result = ref.overlayOption;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -281,7 +281,7 @@ extern BOOL enableLog;
             MAMultiPolyline* result = ref.multiPolyline;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -298,12 +298,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<UIColor*>* result = ref.strokeColors;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -393,7 +389,7 @@ extern BOOL enableLog;
             MAMultiPolyline* result = ref.multiPolyline;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -410,12 +406,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray* result = ref.strokeTextureImages;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -486,12 +478,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray* result = ref.cities;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -509,7 +497,7 @@ extern BOOL enableLog;
             MAHeatMapVectorOverlay* result = ref.heatOverlay;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -527,7 +515,7 @@ extern BOOL enableLog;
             MATileOverlay* result = ref.tileOverlay;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -783,7 +771,7 @@ extern BOOL enableLog;
             UIImage* result = ref.icon;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -837,7 +825,7 @@ extern BOOL enableLog;
             MAMultiPointOverlay* result = ref.multiPointOverlay;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1034,12 +1022,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray* result = ref.floorInfo;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1093,7 +1077,7 @@ extern BOOL enableLog;
             MAPolyline* result = ref.polyline;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1129,7 +1113,7 @@ extern BOOL enableLog;
             UIColor* result = ref.sideColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1291,7 +1275,7 @@ extern BOOL enableLog;
             id<MAAnnotation> result = ref.annotation;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1309,7 +1293,7 @@ extern BOOL enableLog;
             UIImage* result = ref.image;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1327,7 +1311,7 @@ extern BOOL enableLog;
             MACustomCalloutView* result = ref.customCalloutView;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1453,7 +1437,7 @@ extern BOOL enableLog;
             UIView* result = ref.leftCalloutAccessoryView;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1471,7 +1455,7 @@ extern BOOL enableLog;
             UIView* result = ref.rightCalloutAccessoryView;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1749,7 +1733,7 @@ extern BOOL enableLog;
             UIView* result = ref.customView;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1767,7 +1751,7 @@ extern BOOL enableLog;
             NSObject* result = ref.userData;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1785,7 +1769,7 @@ extern BOOL enableLog;
             MAOfflineItem* result = ref.province;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1802,12 +1786,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<MAOfflineProvince*>* result = ref.provinces;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1824,12 +1804,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<MAOfflineItemMunicipality*>* result = ref.municipalities;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1847,7 +1823,7 @@ extern BOOL enableLog;
             MAOfflineItemNationWide* result = ref.nationWide;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1864,12 +1840,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<MAOfflineCity*>* result = ref.cities;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1904,12 +1876,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray* result = ref.offlineCities;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1927,7 +1895,7 @@ extern BOOL enableLog;
             MACircle* result = ref.circle;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -1945,7 +1913,7 @@ extern BOOL enableLog;
             MAParticleOverlay* result = ref.particleOverlay;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2275,7 +2243,7 @@ extern BOOL enableLog;
             UIImage* result = ref.icon;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2329,7 +2297,7 @@ extern BOOL enableLog;
             id<MAParticleColorGenerate> result = ref.particleStartColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2347,7 +2315,7 @@ extern BOOL enableLog;
             id<MAParticleVelocityGenerate> result = ref.particleStartSpeed;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2365,7 +2333,7 @@ extern BOOL enableLog;
             MAParticleEmissionModule* result = ref.particleEmissionModule;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2383,7 +2351,7 @@ extern BOOL enableLog;
             id<MAParticleShapeModule> result = ref.particleShapeModule;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2401,7 +2369,7 @@ extern BOOL enableLog;
             MAParticleOverLifeModule* result = ref.particleOverLifeModule;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2419,7 +2387,7 @@ extern BOOL enableLog;
             id<MAOverlay> result = ref.overlay;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2437,7 +2405,7 @@ extern BOOL enableLog;
             UIImage* result = ref.strokeImage;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2527,7 +2495,7 @@ extern BOOL enableLog;
             CLLocation* result = ref.location;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2545,7 +2513,7 @@ extern BOOL enableLog;
             CLHeading* result = ref.heading;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2688,12 +2656,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<MAHeatMapVectorNode*>* result = ref.inputNodes;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2746,12 +2710,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<UIColor*>* result = ref.colors;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2859,7 +2819,7 @@ extern BOOL enableLog;
             MAHeatMapVectorOverlayOptions* result = ref.option;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -2948,12 +2908,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<MAMultiPointItem*>* result = ref.items;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3007,7 +2963,7 @@ extern BOOL enableLog;
             UIColor* result = ref.topColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3025,7 +2981,7 @@ extern BOOL enableLog;
             UIColor* result = ref.sideColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3061,7 +3017,7 @@ extern BOOL enableLog;
             MACustomBuildingOverlayOption* result = ref.defaultOption;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3078,12 +3034,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<MACustomBuildingOverlayOption*>* result = ref.customOptions;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3317,7 +3269,7 @@ extern BOOL enableLog;
             UIColor* result = ref.fillColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3335,7 +3287,7 @@ extern BOOL enableLog;
             UIColor* result = ref.strokeColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3371,7 +3323,7 @@ extern BOOL enableLog;
             UIColor* result = ref.locationDotBgColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3389,7 +3341,7 @@ extern BOOL enableLog;
             UIColor* result = ref.locationDotFillColor;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -3425,7 +3377,7 @@ extern BOOL enableLog;
             UIImage* result = ref.image;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },

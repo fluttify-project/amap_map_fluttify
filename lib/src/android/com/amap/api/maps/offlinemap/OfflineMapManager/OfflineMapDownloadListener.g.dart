@@ -19,6 +19,9 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
 
   
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   

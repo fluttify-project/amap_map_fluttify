@@ -16,13 +16,16 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
   //region constants
   static const String name__ = 'com.amap.api.maps.model.GroundOverlayOptions';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_model_GroundOverlayOptions> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__', );
-    final object = com_amap_api_maps_model_GroundOverlayOptions()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_GroundOverlayOptions()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_GroundOverlayOptions__', {'length': length});
   
-    final List<com_amap_api_maps_model_GroundOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_GroundOverlayOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_GroundOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_GroundOverlayOptions()..refId = result).toList();
     return typedResult;
   }
   
@@ -69,7 +72,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -92,7 +95,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -115,7 +118,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -138,7 +141,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -161,7 +164,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -184,7 +187,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -207,7 +210,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -230,7 +233,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -253,7 +256,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -276,7 +279,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__;
       return __return__;
     }
   }
@@ -299,7 +302,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__;
       return __return__;
     }
   }
@@ -368,7 +371,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLngBounds()..refId = __result__;
       return __return__;
     }
   }
@@ -512,6 +515,11 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_GroundOverlayOptions{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_api_maps_model_GroundOverlayOptions> {
@@ -537,14 +545,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::image_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::image_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -556,14 +564,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::anchor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::anchor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -575,14 +583,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -594,14 +602,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -613,14 +621,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -632,14 +640,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::bearing_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::bearing_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -651,14 +659,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::zIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::zIndex_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -670,14 +678,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::visible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::visible_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -689,14 +697,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::transparency_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::transparency_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -708,14 +716,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getImage_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getImage_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -727,14 +735,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getLocation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getLocation_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -746,7 +754,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getWidth_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getWidth_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -765,7 +773,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getHeight_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getHeight_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -784,14 +792,14 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getBounds_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getBounds_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_LatLngBounds()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -803,7 +811,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getBearing_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getBearing_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -822,7 +830,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getZIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getZIndex_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -841,7 +849,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getTransparency_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getTransparency_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -860,7 +868,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getAnchorU_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getAnchorU_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -879,7 +887,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getAnchorV_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getAnchorV_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -898,7 +906,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::isVisible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::isVisible_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

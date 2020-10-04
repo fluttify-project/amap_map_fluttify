@@ -19,6 +19,9 @@ mixin com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener on java_la
 
   
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   

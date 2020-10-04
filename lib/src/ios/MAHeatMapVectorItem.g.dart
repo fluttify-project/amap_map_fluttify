@@ -16,13 +16,16 @@ class MAHeatMapVectorItem extends NSObject  {
   //region constants
   static const String name__ = 'MAHeatMapVectorItem';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAHeatMapVectorItem> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapVectorItem', {'init': init});
-    final object = MAHeatMapVectorItem()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAHeatMapVectorItem()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAHeatMapVectorItem extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapVectorItem', {'length': length, 'init': init});
   
-    final List<MAHeatMapVectorItem> typedResult = resultBatch.map((result) => MAHeatMapVectorItem()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAHeatMapVectorItem> typedResult = resultBatch.map((result) => MAHeatMapVectorItem()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MAHeatMapVectorItem extends NSObject  {
   //region getters
   Future<MAMapPoint> get_center() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorItem::get_center", {'__this__': this});
-    return __result__ == null ? null : (MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MAMapPoint()..refId = __result__);
   }
   
   Future<double> get_intensity() async {
@@ -63,6 +66,11 @@ class MAHeatMapVectorItem extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAHeatMapVectorItem{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAHeatMapVectorItem_Batch on List<MAHeatMapVectorItem> {
@@ -70,7 +78,7 @@ extension MAHeatMapVectorItem_Batch on List<MAHeatMapVectorItem> {
   Future<List<MAMapPoint>> get_center_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorItem::get_center_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAMapPoint()..refId = __result__).toList();
     return typedResult;
   }
   

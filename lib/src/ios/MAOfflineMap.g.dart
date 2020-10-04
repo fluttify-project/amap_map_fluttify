@@ -16,13 +16,16 @@ class MAOfflineMap extends NSObject  {
   //region constants
   static const String name__ = 'MAOfflineMap';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAOfflineMap> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAOfflineMap', {'init': init});
-    final object = MAOfflineMap()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAOfflineMap()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAOfflineMap extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAOfflineMap', {'length': length, 'init': init});
   
-    final List<MAOfflineMap> typedResult = resultBatch.map((result) => MAOfflineMap()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAOfflineMap> typedResult = resultBatch.map((result) => MAOfflineMap()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,22 +44,22 @@ class MAOfflineMap extends NSObject  {
   //region getters
   Future<List<MAOfflineProvince>> get_provinces() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_provinces", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAOfflineProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAOfflineProvince()..refId = __it__).toList());
   }
   
   Future<List<MAOfflineItemMunicipality>> get_municipalities() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_municipalities", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAOfflineItemMunicipality()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAOfflineItemMunicipality()..refId = __it__).toList());
   }
   
   Future<MAOfflineItemNationWide> get_nationWide() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_nationWide", {'__this__': this});
-    return __result__ == null ? null : (MAOfflineItemNationWide()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MAOfflineItemNationWide()..refId = __result__);
   }
   
   Future<List<MAOfflineCity>> get_cities() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_cities", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAOfflineCity()..refId = __it__).toList());
   }
   
   Future<String> get_version() async {
@@ -94,7 +97,7 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAOfflineMap()..refId = __result__;
       return __return__;
     }
   }
@@ -481,6 +484,11 @@ class MAOfflineMap extends NSObject  {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAOfflineMap{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAOfflineMap_Batch on List<MAOfflineMap> {
@@ -488,28 +496,28 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   Future<List<List<MAOfflineProvince>>> get_provinces_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_provinces_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAOfflineProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAOfflineProvince()..refId = __it__).toList()).toList();
     return typedResult;
   }
   
   Future<List<List<MAOfflineItemMunicipality>>> get_municipalities_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_municipalities_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAOfflineItemMunicipality()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAOfflineItemMunicipality()..refId = __it__).toList()).toList();
     return typedResult;
   }
   
   Future<List<MAOfflineItemNationWide>> get_nationWide_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_nationWide_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineItemNationWide()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineItemNationWide()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<List<MAOfflineCity>>> get_cities_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMap::get_cities_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAOfflineCity()..refId = __it__).toList()).toList();
     return typedResult;
   }
   
@@ -548,7 +556,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineMap()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -560,7 +568,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::isDownloadingForItem_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"item": item[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::isDownloadingForItem_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"item": item[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -579,7 +587,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::pauseItem_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"item": item[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::pauseItem_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"item": item[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -598,7 +606,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::deleteItem_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"item": item[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::deleteItem_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"item": item[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -617,7 +625,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::cancelAll_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::cancelAll_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -636,7 +644,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::clearDisk_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::clearDisk_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -655,7 +663,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::isDownloadingForCity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"city": city[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::isDownloadingForCity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"city": city[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -674,7 +682,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::pause_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"city": city[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAOfflineMap::pause_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"city": city[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

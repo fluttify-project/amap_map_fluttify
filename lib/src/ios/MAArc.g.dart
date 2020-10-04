@@ -16,13 +16,16 @@ class MAArc extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   static const String name__ = 'MAArc';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAArc> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAArc', {'init': init});
-    final object = MAArc()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAArc()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAArc extends MAShape with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAArc', {'length': length, 'init': init});
   
-    final List<MAArc> typedResult = resultBatch.map((result) => MAArc()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAArc> typedResult = resultBatch.map((result) => MAArc()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,22 +44,22 @@ class MAArc extends MAShape with MAOverlay, MAAnnotation {
   //region getters
   Future<CLLocationCoordinate2D> get_startCoordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_startCoordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<CLLocationCoordinate2D> get_passedCoordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_passedCoordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<CLLocationCoordinate2D> get_endCoordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_endCoordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<MAMapRect> get_boundingMapRect() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_boundingMapRect", {'__this__': this});
-    return __result__ == null ? null : (MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MAMapRect()..refId = __result__);
   }
   
   //endregion
@@ -101,12 +104,17 @@ class MAArc extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAArc()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAArc()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAArc{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAArc_Batch on List<MAArc> {
@@ -114,28 +122,28 @@ extension MAArc_Batch on List<MAArc> {
   Future<List<CLLocationCoordinate2D>> get_startCoordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_startCoordinate_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<CLLocationCoordinate2D>> get_passedCoordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_passedCoordinate_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<CLLocationCoordinate2D>> get_endCoordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_endCoordinate_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<MAMapRect>> get_boundingMapRect_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAArc::get_boundingMapRect_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAMapRect()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -143,19 +151,19 @@ extension MAArc_Batch on List<MAArc> {
 
   //region setters
   Future<void> set_startCoordinate_batch(List<CLLocationCoordinate2D> startCoordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAArc::set_startCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "startCoordinate": startCoordinate[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAArc::set_startCoordinate_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "startCoordinate": startCoordinate[__i__]}]);
   
   
   }
   
   Future<void> set_passedCoordinate_batch(List<CLLocationCoordinate2D> passedCoordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAArc::set_passedCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "passedCoordinate": passedCoordinate[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAArc::set_passedCoordinate_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "passedCoordinate": passedCoordinate[__i__]}]);
   
   
   }
   
   Future<void> set_endCoordinate_batch(List<CLLocationCoordinate2D> endCoordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAArc::set_endCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "endCoordinate": endCoordinate[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAArc::set_endCoordinate_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "endCoordinate": endCoordinate[__i__]}]);
   
   
   }
@@ -177,7 +185,7 @@ extension MAArc_Batch on List<MAArc> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAArc()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAArc()..refId = __result__).toList();
       return typedResult;
     }
   }

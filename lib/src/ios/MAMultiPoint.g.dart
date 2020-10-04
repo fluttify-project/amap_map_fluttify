@@ -16,13 +16,16 @@ class MAMultiPoint extends MAShape with MAAnnotation {
   //region constants
   static const String name__ = 'MAMultiPoint';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAMultiPoint> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMultiPoint', {'init': init});
-    final object = MAMultiPoint()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAMultiPoint()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAMultiPoint extends MAShape with MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMultiPoint', {'length': length, 'init': init});
   
-    final List<MAMultiPoint> typedResult = resultBatch.map((result) => MAMultiPoint()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAMultiPoint> typedResult = resultBatch.map((result) => MAMultiPoint()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MAMultiPoint extends MAShape with MAAnnotation {
   //region getters
   Future<List<MAMapPoint>> get_points() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiPoint::get_points", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAMapPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAMapPoint()..refId = __it__).toList());
   }
   
   Future<int> get_pointCount() async {
@@ -63,6 +66,11 @@ class MAMultiPoint extends MAShape with MAAnnotation {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAMultiPoint{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAMultiPoint_Batch on List<MAMultiPoint> {
@@ -70,7 +78,7 @@ extension MAMultiPoint_Batch on List<MAMultiPoint> {
   Future<List<List<MAMapPoint>>> get_points_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiPoint::get_points_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAMapPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAMapPoint()..refId = __it__).toList()).toList();
     return typedResult;
   }
   

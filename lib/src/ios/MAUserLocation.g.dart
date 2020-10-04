@@ -16,13 +16,16 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
   //region constants
   static const String name__ = 'MAUserLocation';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAUserLocation> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAUserLocation', {'init': init});
-    final object = MAUserLocation()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAUserLocation()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAUserLocation', {'length': length, 'init': init});
   
-    final List<MAUserLocation> typedResult = resultBatch.map((result) => MAUserLocation()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAUserLocation> typedResult = resultBatch.map((result) => MAUserLocation()..refId = result).toList();
     return typedResult;
   }
   
@@ -46,12 +49,12 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
   
   Future<CLLocation> get_location() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocation::get_location", {'__this__': this});
-    return __result__ == null ? null : (CLLocation()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocation()..refId = __result__);
   }
   
   Future<CLHeading> get_heading() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocation::get_heading", {'__this__': this});
-    return __result__ == null ? null : (CLHeading()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLHeading()..refId = __result__);
   }
   
   //endregion
@@ -63,6 +66,11 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAUserLocation{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAUserLocation_Batch on List<MAUserLocation> {
@@ -77,14 +85,14 @@ extension MAUserLocation_Batch on List<MAUserLocation> {
   Future<List<CLLocation>> get_location_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocation::get_location_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocation()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<CLHeading>> get_heading_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocation::get_heading_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLHeading()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLHeading()..refId = __result__).toList();
     return typedResult;
   }
   

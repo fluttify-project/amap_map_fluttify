@@ -16,6 +16,9 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
   //region constants
   static const String name__ = 'com.amap.api.maps.model.UrlTileProvider';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
@@ -34,6 +37,11 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_UrlTileProvider{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_UrlTileProvider_Batch on List<com_amap_api_maps_model_UrlTileProvider> {

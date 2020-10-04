@@ -16,13 +16,16 @@ class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Act
   //region constants
   static const String name__ = 'com.amap.api.offlineservice.AMapPermissionActivity';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_offlineservice_AMapPermissionActivity> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__', );
-    final object = com_amap_api_offlineservice_AMapPermissionActivity()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_offlineservice_AMapPermissionActivity()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Act
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_offlineservice_AMapPermissionActivity__', {'length': length});
   
-    final List<com_amap_api_offlineservice_AMapPermissionActivity> typedResult = resultBatch.map((result) => com_amap_api_offlineservice_AMapPermissionActivity()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_offlineservice_AMapPermissionActivity> typedResult = resultBatch.map((result) => com_amap_api_offlineservice_AMapPermissionActivity()..refId = result).toList();
     return typedResult;
   }
   
@@ -71,6 +74,11 @@ class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Act
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_offlineservice_AMapPermissionActivity{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_offlineservice_AMapPermissionActivity_Batch on List<com_amap_api_offlineservice_AMapPermissionActivity> {
@@ -90,7 +98,7 @@ extension com_amap_api_offlineservice_AMapPermissionActivity_Batch on List<com_a
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.offlineservice.AMapPermissionActivity::onRequestPermissionsResult_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.offlineservice.AMapPermissionActivity::onRequestPermissionsResult_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

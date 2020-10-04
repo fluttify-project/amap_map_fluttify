@@ -30,7 +30,7 @@ Future<MAPathShowRange> MAPathShowRangeMake(double begin, double end) async {
   if (__result__ == null) {
     return null;
   } else {
-    return MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAPathShowRange()..refId = __result__;
   }
 }
 
@@ -51,7 +51,7 @@ Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEa
   if (__result__ == null) {
     return null;
   } else {
-    return MACoordinateBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MACoordinateBounds()..refId = __result__;
   }
 }
 
@@ -72,7 +72,7 @@ Future<MACoordinateSpan> MACoordinateSpanMake(double latitudeDelta, double longi
   if (__result__ == null) {
     return null;
   } else {
-    return MACoordinateSpan()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MACoordinateSpan()..refId = __result__;
   }
 }
 
@@ -93,7 +93,7 @@ Future<MACoordinateRegion> MACoordinateRegionMake(CLLocationCoordinate2D centerC
   if (__result__ == null) {
     return null;
   } else {
-    return MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MACoordinateRegion()..refId = __result__;
   }
 }
 
@@ -114,7 +114,7 @@ Future<MACoordinateRegion> MACoordinateRegionMakeWithDistance(CLLocationCoordina
   if (__result__ == null) {
     return null;
   } else {
-    return MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MACoordinateRegion()..refId = __result__;
   }
 }
 
@@ -135,7 +135,7 @@ Future<MAMapPoint> MAMapPointForCoordinate(CLLocationCoordinate2D coordinate) as
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapPoint()..refId = __result__;
   }
 }
 
@@ -156,7 +156,7 @@ Future<CLLocationCoordinate2D> MACoordinateForMapPoint(MAMapPoint mapPoint) asyn
   if (__result__ == null) {
     return null;
   } else {
-    return CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return CLLocationCoordinate2D()..refId = __result__;
   }
 }
 
@@ -177,7 +177,7 @@ Future<MACoordinateRegion> MACoordinateRegionForMapRect(MAMapRect rect) async {
   if (__result__ == null) {
     return null;
   } else {
-    return MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MACoordinateRegion()..refId = __result__;
   }
 }
 
@@ -198,7 +198,7 @@ Future<MAMapRect> MAMapRectForCoordinateRegion(MACoordinateRegion region) async 
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapRect()..refId = __result__;
   }
 }
 
@@ -303,7 +303,7 @@ Future<MAMapRect> MAMapRectInset(MAMapRect rect, double dx, double dy) async {
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapRect()..refId = __result__;
   }
 }
 
@@ -324,7 +324,7 @@ Future<MAMapRect> MAMapRectUnion(MAMapRect rect1, MAMapRect rect2) async {
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapRect()..refId = __result__;
   }
 }
 
@@ -471,7 +471,7 @@ Future<MAMapPoint> MAGetNearestMapPointFromPolyline(MAMapPoint point, List<MAMap
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapPoint()..refId = __result__;
   }
 }
 
@@ -534,7 +534,7 @@ Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapPoint()..refId = __result__;
   }
 }
 
@@ -576,7 +576,7 @@ Future<MAMapPoint> MAMapPointMake(double x, double y) async {
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapPoint()..refId = __result__;
   }
 }
 
@@ -597,7 +597,7 @@ Future<MAMapSize> MAMapSizeMake(double width, double height) async {
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapSize()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapSize()..refId = __result__;
   }
 }
 
@@ -618,7 +618,7 @@ Future<MAMapRect> MAMapRectMake(double x, double y, double width, double height)
   if (__result__ == null) {
     return null;
   } else {
-    return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+    return MAMapRect()..refId = __result__;
   }
 }
 

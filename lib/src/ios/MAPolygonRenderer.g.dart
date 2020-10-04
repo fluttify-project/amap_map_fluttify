@@ -16,13 +16,16 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   //region constants
   static const String name__ = 'MAPolygonRenderer';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAPolygonRenderer> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAPolygonRenderer', {'init': init});
-    final object = MAPolygonRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAPolygonRenderer()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAPolygonRenderer', {'length': length, 'init': init});
   
-    final List<MAPolygonRenderer> typedResult = resultBatch.map((result) => MAPolygonRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAPolygonRenderer> typedResult = resultBatch.map((result) => MAPolygonRenderer()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   //region getters
   Future<MAPolygon> get_polygon() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAPolygonRenderer::get_polygon", {'__this__': this});
-    return __result__ == null ? null : (MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MAPolygon()..refId = __result__);
   }
   
   //endregion
@@ -69,12 +72,17 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAPolygonRenderer()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAPolygonRenderer{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
@@ -82,7 +90,7 @@ extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
   Future<List<MAPolygon>> get_polygon_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAPolygonRenderer::get_polygon_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAPolygon()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -100,14 +108,14 @@ extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAPolygonRenderer::initWithPolygon_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"polygon": polygon[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAPolygonRenderer::initWithPolygon_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"polygon": polygon[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAPolygonRenderer()..refId = __result__).toList();
       return typedResult;
     }
   }

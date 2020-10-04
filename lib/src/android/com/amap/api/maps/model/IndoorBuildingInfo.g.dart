@@ -16,13 +16,16 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.maps.model.IndoorBuildingInfo';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_model_IndoorBuildingInfo> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__', );
-    final object = com_amap_api_maps_model_IndoorBuildingInfo()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_IndoorBuildingInfo()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_IndoorBuildingInfo__', {'length': length});
   
-    final List<com_amap_api_maps_model_IndoorBuildingInfo> typedResult = resultBatch.map((result) => com_amap_api_maps_model_IndoorBuildingInfo()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_IndoorBuildingInfo> typedResult = resultBatch.map((result) => com_amap_api_maps_model_IndoorBuildingInfo()..refId = result).toList();
     return typedResult;
   }
   
@@ -102,6 +105,11 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_IndoorBuildingInfo{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_IndoorBuildingInfo_Batch on List<com_amap_api_maps_model_IndoorBuildingInfo> {
@@ -145,31 +153,31 @@ extension com_amap_api_maps_model_IndoorBuildingInfo_Batch on List<com_amap_api_
 
   //region setters
   Future<void> set_activeFloorName_batch(List<String> activeFloorName) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "activeFloorName": activeFloorName[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "activeFloorName": activeFloorName[__i__]}]);
   
   
   }
   
   Future<void> set_activeFloorIndex_batch(List<int> activeFloorIndex) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "activeFloorIndex": activeFloorIndex[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorIndex_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "activeFloorIndex": activeFloorIndex[__i__]}]);
   
   
   }
   
   Future<void> set_poiid_batch(List<String> poiid) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_poiid_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "poiid": poiid[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_poiid_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "poiid": poiid[__i__]}]);
   
   
   }
   
   Future<void> set_floor_indexs_batch(List<Int32List> floor_indexs) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "floor_indexs": floor_indexs[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "floor_indexs": floor_indexs[__i__]}]);
   
   
   }
   
   Future<void> set_floor_names_batch(List<List<String>> floor_names) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "floor_names": floor_names[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "floor_names": floor_names[__i__]}]);
   
   
   }

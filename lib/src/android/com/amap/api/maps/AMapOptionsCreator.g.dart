@@ -16,13 +16,16 @@ class com_amap_api_maps_AMapOptionsCreator extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.maps.AMapOptionsCreator';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_AMapOptionsCreator> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__', );
-    final object = com_amap_api_maps_AMapOptionsCreator()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_AMapOptionsCreator()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_AMapOptionsCreator extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_AMapOptionsCreator__', {'length': length});
   
-    final List<com_amap_api_maps_AMapOptionsCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_AMapOptionsCreator()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_AMapOptionsCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_AMapOptionsCreator()..refId = result).toList();
     return typedResult;
   }
   
@@ -49,6 +52,11 @@ class com_amap_api_maps_AMapOptionsCreator extends java_lang_Object  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_AMapOptionsCreator{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_AMapOptionsCreator_Batch on List<com_amap_api_maps_AMapOptionsCreator> {

@@ -12,9 +12,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.amap.api.maps.AMap;
+import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.Marker;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import io.flutter.plugin.common.BinaryMessenger;
@@ -27,7 +30,12 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getSTACK;
 
 @SuppressWarnings("ALL")
 public class SubHandlerCustom {
-    public static Map<String, Handler> getSubHandler(BinaryMessenger messenger, Activity activity) {
+
+    public static SubHandlerCustom instance = new SubHandlerCustom();
+
+    private SubHandlerCustom() { }
+
+    public Map<String, Handler> getSubHandler(BinaryMessenger messenger, Activity activity) {
         return new HashMap<String, Handler>() {{
             put("com.amap.api.maps.AMap::setInfoWindowAdapterX", (__args__, __methodResult__) -> {
                 // ref

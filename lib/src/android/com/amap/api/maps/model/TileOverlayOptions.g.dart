@@ -16,13 +16,16 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   //region constants
   static const String name__ = 'com.amap.api.maps.model.TileOverlayOptions';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_model_TileOverlayOptions> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__', );
-    final object = com_amap_api_maps_model_TileOverlayOptions()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_TileOverlayOptions()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptions__', {'length': length});
   
-    final List<com_amap_api_maps_model_TileOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_TileOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_TileOverlayOptions()..refId = result).toList();
     return typedResult;
   }
   
@@ -65,7 +68,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -88,7 +91,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -111,7 +114,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -134,7 +137,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -157,7 +160,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -180,7 +183,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -203,7 +206,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -226,7 +229,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlayOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -249,7 +252,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_TileProvider.subInstance()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileProvider.subInstance()..refId = __result__;
       return __return__;
     }
   }
@@ -416,6 +419,11 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_TileOverlayOptions{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_maps_model_TileOverlayOptions> {
@@ -435,14 +443,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::tileProvider_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::tileProvider_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -454,14 +462,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::zIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::zIndex_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -473,14 +481,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::visible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::visible_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -492,14 +500,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::memCacheSize_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::memCacheSize_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -511,14 +519,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::diskCacheSize_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::diskCacheSize_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -530,14 +538,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::diskCacheDir_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::diskCacheDir_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -549,14 +557,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::memoryCacheEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::memoryCacheEnabled_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -568,14 +576,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::diskCacheEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::diskCacheEnabled_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -587,14 +595,14 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getTileProvider_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getTileProvider_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileProvider.subInstance()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_TileProvider.subInstance()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -606,7 +614,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getZIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getZIndex_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -625,7 +633,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::isVisible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::isVisible_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -644,7 +652,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getMemCacheSize_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getMemCacheSize_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -663,7 +671,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getDiskCacheSize_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getDiskCacheSize_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -682,7 +690,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getDiskCacheDir_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getDiskCacheDir_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -701,7 +709,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getMemoryCacheEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getMemoryCacheEnabled_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -720,7 +728,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getDiskCacheEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getDiskCacheEnabled_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

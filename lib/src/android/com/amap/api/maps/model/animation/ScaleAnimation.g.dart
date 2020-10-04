@@ -16,13 +16,16 @@ class com_amap_api_maps_model_animation_ScaleAnimation extends com_amap_api_maps
   //region constants
   static const String name__ = 'com.amap.api.maps.model.animation.ScaleAnimation';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_model_animation_ScaleAnimation> create__float__float__float__float(double var1, double var2, double var3, double var4) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_amap_api_maps_model_animation_ScaleAnimation()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_animation_ScaleAnimation()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_model_animation_ScaleAnimation extends com_amap_api_maps
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__]}]);
   
-    final List<com_amap_api_maps_model_animation_ScaleAnimation> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_ScaleAnimation()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_animation_ScaleAnimation> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_ScaleAnimation()..refId = result).toList();
     return typedResult;
   }
   
@@ -49,6 +52,11 @@ class com_amap_api_maps_model_animation_ScaleAnimation extends com_amap_api_maps
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_animation_ScaleAnimation{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_animation_ScaleAnimation_Batch on List<com_amap_api_maps_model_animation_ScaleAnimation> {

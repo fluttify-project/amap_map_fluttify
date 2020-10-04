@@ -19,6 +19,9 @@ mixin com_amap_api_maps_model_animation_Animation_AnimationListener on java_lang
 
   
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   

@@ -16,13 +16,16 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   //region constants
   static const String name__ = 'MAMultiPointItem';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAMultiPointItem> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMultiPointItem', {'init': init});
-    final object = MAMultiPointItem()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAMultiPointItem()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMultiPointItem', {'length': length, 'init': init});
   
-    final List<MAMultiPointItem> typedResult = resultBatch.map((result) => MAMultiPointItem()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAMultiPointItem> typedResult = resultBatch.map((result) => MAMultiPointItem()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   //region getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiPointItem::get_coordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<String> get_customID() async {
@@ -91,6 +94,11 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAMultiPointItem{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAMultiPointItem_Batch on List<MAMultiPointItem> {
@@ -98,7 +106,7 @@ extension MAMultiPointItem_Batch on List<MAMultiPointItem> {
   Future<List<CLLocationCoordinate2D>> get_coordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAMultiPointItem::get_coordinate_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -127,25 +135,25 @@ extension MAMultiPointItem_Batch on List<MAMultiPointItem> {
 
   //region setters
   Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_coordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "coordinate": coordinate[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_coordinate_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "coordinate": coordinate[__i__]}]);
   
   
   }
   
   Future<void> set_customID_batch(List<String> customID) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_customID_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "customID": customID[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_customID_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "customID": customID[__i__]}]);
   
   
   }
   
   Future<void> set_title_batch(List<String> title) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_title_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "title": title[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_title_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "title": title[__i__]}]);
   
   
   }
   
   Future<void> set_subtitle_batch(List<String> subtitle) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_subtitle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "subtitle": subtitle[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMultiPointItem::set_subtitle_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "subtitle": subtitle[__i__]}]);
   
   
   }

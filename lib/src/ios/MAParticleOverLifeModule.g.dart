@@ -16,13 +16,16 @@ class MAParticleOverLifeModule extends NSObject  {
   //region constants
   static const String name__ = 'MAParticleOverLifeModule';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAParticleOverLifeModule> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleOverLifeModule', {'init': init});
-    final object = MAParticleOverLifeModule()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAParticleOverLifeModule()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAParticleOverLifeModule extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleOverLifeModule', {'length': length, 'init': init});
   
-    final List<MAParticleOverLifeModule> typedResult = resultBatch.map((result) => MAParticleOverLifeModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAParticleOverLifeModule> typedResult = resultBatch.map((result) => MAParticleOverLifeModule()..refId = result).toList();
     return typedResult;
   }
   
@@ -140,6 +143,11 @@ class MAParticleOverLifeModule extends NSObject  {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAParticleOverLifeModule{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
@@ -159,7 +167,7 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setVelocityOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"velocity": velocity[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setVelocityOverLife_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"velocity": velocity[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -178,7 +186,7 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setRotationOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"rotation": rotation[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setRotationOverLife_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"rotation": rotation[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -197,7 +205,7 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setSizeOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"size": size[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setSizeOverLife_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"size": size[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -216,7 +224,7 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setColorOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"color": color[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleOverLifeModule::setColorOverLife_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"color": color[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

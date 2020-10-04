@@ -16,13 +16,16 @@ class MAOfflineMapViewController extends UIViewController  {
   //region constants
   static const String name__ = 'MAOfflineMapViewController';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAOfflineMapViewController> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAOfflineMapViewController', {'init': init});
-    final object = MAOfflineMapViewController()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAOfflineMapViewController()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAOfflineMapViewController extends UIViewController  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAOfflineMapViewController', {'length': length, 'init': init});
   
-    final List<MAOfflineMapViewController> typedResult = resultBatch.map((result) => MAOfflineMapViewController()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAOfflineMapViewController> typedResult = resultBatch.map((result) => MAOfflineMapViewController()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MAOfflineMapViewController extends UIViewController  {
   //region getters
   Future<MAOfflineMap> get_offlineMap() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMapViewController::get_offlineMap", {'__this__': this});
-    return __result__ == null ? null : (MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MAOfflineMap()..refId = __result__);
   }
   
   //endregion
@@ -69,12 +72,17 @@ class MAOfflineMapViewController extends UIViewController  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAOfflineMapViewController()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAOfflineMapViewController()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAOfflineMapViewController{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAOfflineMapViewController_Batch on List<MAOfflineMapViewController> {
@@ -82,7 +90,7 @@ extension MAOfflineMapViewController_Batch on List<MAOfflineMapViewController> {
   Future<List<MAOfflineMap>> get_offlineMap_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAOfflineMapViewController::get_offlineMap_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineMap()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -107,7 +115,7 @@ extension MAOfflineMapViewController_Batch on List<MAOfflineMapViewController> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineMapViewController()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAOfflineMapViewController()..refId = __result__).toList();
       return typedResult;
     }
   }

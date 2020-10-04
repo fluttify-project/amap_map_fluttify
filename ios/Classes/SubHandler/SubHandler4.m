@@ -108,7 +108,7 @@ extern BOOL enableLog;
                 UIImage* result = ref.icon;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -168,7 +168,7 @@ extern BOOL enableLog;
                 id<MAParticleColorGenerate> result = ref.particleStartColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -188,7 +188,7 @@ extern BOOL enableLog;
                 id<MAParticleVelocityGenerate> result = ref.particleStartSpeed;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -208,7 +208,7 @@ extern BOOL enableLog;
                 MAParticleEmissionModule* result = ref.particleEmissionModule;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -228,7 +228,7 @@ extern BOOL enableLog;
                 id<MAParticleShapeModule> result = ref.particleShapeModule;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -248,7 +248,7 @@ extern BOOL enableLog;
                 MAParticleOverLifeModule* result = ref.particleOverLifeModule;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -268,7 +268,7 @@ extern BOOL enableLog;
                 id<MAOverlay> result = ref.overlay;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -288,7 +288,7 @@ extern BOOL enableLog;
                 UIImage* result = ref.strokeImage;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -388,7 +388,7 @@ extern BOOL enableLog;
                 CLLocation* result = ref.location;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -408,7 +408,7 @@ extern BOOL enableLog;
                 CLHeading* result = ref.heading;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -567,12 +567,8 @@ extern BOOL enableLog;
         
                 NSArray<MAHeatMapVectorNode*>* result = ref.inputNodes;
         
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -631,12 +627,8 @@ extern BOOL enableLog;
         
                 NSArray<UIColor*>* result = ref.colors;
         
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -756,7 +748,7 @@ extern BOOL enableLog;
                 MAHeatMapVectorOverlayOptions* result = ref.option;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -855,12 +847,8 @@ extern BOOL enableLog;
         
                 NSArray<MAMultiPointItem*>* result = ref.items;
         
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -920,7 +908,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.topColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -940,7 +928,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.sideColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -980,7 +968,7 @@ extern BOOL enableLog;
                 MACustomBuildingOverlayOption* result = ref.defaultOption;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -999,12 +987,8 @@ extern BOOL enableLog;
         
                 NSArray<MACustomBuildingOverlayOption*>* result = ref.customOptions;
         
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1264,7 +1248,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.fillColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1284,7 +1268,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.strokeColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1324,7 +1308,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.locationDotBgColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1344,7 +1328,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.locationDotFillColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1384,7 +1368,7 @@ extern BOOL enableLog;
                 UIImage* result = ref.image;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2163,12 +2147,8 @@ extern BOOL enableLog;
         
                 NSArray* result = ref.annotations;
         
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2187,12 +2167,8 @@ extern BOOL enableLog;
         
                 NSArray* result = ref.selectedAnnotations;
         
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2272,7 +2248,7 @@ extern BOOL enableLog;
                 MAUserLocation* result = ref.userLocation;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2312,7 +2288,7 @@ extern BOOL enableLog;
                 MACircle* result = ref.userLocationAccuracyCircle;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2471,12 +2447,8 @@ extern BOOL enableLog;
         
                 NSArray* result = ref.overlays;
         
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2576,7 +2548,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.fillColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2596,7 +2568,7 @@ extern BOOL enableLog;
                 UIColor* result = ref.strokeColor;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2736,7 +2708,7 @@ extern BOOL enableLog;
                 MAGroundOverlay* result = ref.groundOverlay;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2756,7 +2728,7 @@ extern BOOL enableLog;
                 MACustomBuildingOverlay* result = ref.customBuildingOverlay;
         
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2910,7 +2882,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MAHeatMapGradient* gradient = (MAHeatMapGradient*) args[@"gradient"];
+            MAHeatMapGradient* gradient = (MAHeatMapGradient*) (args[@"gradient"] == [NSNull null] ? nil : args[@"gradient"]);
         
             // ref
             MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) args[@"__this__"];
@@ -3158,7 +3130,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            NSData* styleData = (NSData*) args[@"styleData"];
+            NSData* styleData = (NSData*) (args[@"styleData"] == [NSNull null] ? nil : args[@"styleData"]);
         
             // ref
             MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
@@ -3209,7 +3181,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            NSData* styleTextureData = (NSData*) args[@"styleTextureData"];
+            NSData* styleTextureData = (NSData*) (args[@"styleTextureData"] == [NSNull null] ? nil : args[@"styleTextureData"]);
         
             // ref
             MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
@@ -3226,7 +3198,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            NSData* styleExtraData = (NSData*) args[@"styleExtraData"];
+            NSData* styleExtraData = (NSData*) (args[@"styleExtraData"] == [NSNull null] ? nil : args[@"styleExtraData"]);
         
             // ref
             MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) args[@"__this__"];
@@ -3434,7 +3406,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* icon = (UIImage*) args[@"icon"];
+            UIImage* icon = (UIImage*) (args[@"icon"] == [NSNull null] ? nil : args[@"icon"]);
         
             // ref
             MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) args[@"__this__"];
@@ -3506,7 +3478,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* sideColor = (UIColor*) args[@"sideColor"];
+            UIColor* sideColor = (UIColor*) (args[@"sideColor"] == [NSNull null] ? nil : args[@"sideColor"]);
         
             // ref
             MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
@@ -3644,7 +3616,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+            id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
         
             // ref
             MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -3661,7 +3633,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* image = (UIImage*) args[@"image"];
+            UIImage* image = (UIImage*) (args[@"image"] == [NSNull null] ? nil : args[@"image"]);
         
             // ref
             MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -3678,7 +3650,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MACustomCalloutView* customCalloutView = (MACustomCalloutView*) args[@"customCalloutView"];
+            MACustomCalloutView* customCalloutView = (MACustomCalloutView*) (args[@"customCalloutView"] == [NSNull null] ? nil : args[@"customCalloutView"]);
         
             // ref
             MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -3801,7 +3773,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIView* leftCalloutAccessoryView = (UIView*) args[@"leftCalloutAccessoryView"];
+            UIView* leftCalloutAccessoryView = (UIView*) (args[@"leftCalloutAccessoryView"] == [NSNull null] ? nil : args[@"leftCalloutAccessoryView"]);
         
             // ref
             MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -3818,7 +3790,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIView* rightCalloutAccessoryView = (UIView*) args[@"rightCalloutAccessoryView"];
+            UIView* rightCalloutAccessoryView = (UIView*) (args[@"rightCalloutAccessoryView"] == [NSNull null] ? nil : args[@"rightCalloutAccessoryView"]);
         
             // ref
             MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];

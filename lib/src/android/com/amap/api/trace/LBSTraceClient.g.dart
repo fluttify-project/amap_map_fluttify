@@ -16,6 +16,9 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.trace.LBSTraceClient';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   static final int TYPE_AMAP = 1;
   static final int TYPE_GPS = 2;
   static final int TYPE_BAIDU = 3;
@@ -27,7 +30,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_trace_LBSTraceClient> create__android_content_Context(android_content_Context var1) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context', {"var1": var1});
-    final object = com_amap_api_trace_LBSTraceClient()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_trace_LBSTraceClient()..refId = refId;
     return object;
   }
   
@@ -37,7 +40,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_trace_LBSTraceClient__android_content_Context', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_amap_api_trace_LBSTraceClient> typedResult = resultBatch.map((result) => com_amap_api_trace_LBSTraceClient()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_trace_LBSTraceClient> typedResult = resultBatch.map((result) => com_amap_api_trace_LBSTraceClient()..refId = result).toList();
     return typedResult;
   }
   
@@ -70,7 +73,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_trace_LBSTraceClient()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_trace_LBSTraceClient()..refId = __result__;
       return __return__;
     }
   }
@@ -228,6 +231,11 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_trace_LBSTraceClient{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBSTraceClient> {
@@ -254,7 +262,7 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_trace_LBSTraceClient()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_trace_LBSTraceClient()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -266,7 +274,7 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.LBSTraceClient::stopTrace_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.LBSTraceClient::stopTrace_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -285,7 +293,7 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.LBSTraceClient::destroy_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.LBSTraceClient::destroy_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

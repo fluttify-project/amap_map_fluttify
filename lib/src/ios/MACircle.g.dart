@@ -16,13 +16,16 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   static const String name__ = 'MACircle';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MACircle> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACircle', {'init': init});
-    final object = MACircle()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MACircle()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACircle', {'length': length, 'init': init});
   
-    final List<MACircle> typedResult = resultBatch.map((result) => MACircle()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MACircle> typedResult = resultBatch.map((result) => MACircle()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //region getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACircle::get_coordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<double> get_radius() async {
@@ -51,7 +54,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   
   Future<MAMapRect> get_boundingMapRect() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACircle::get_boundingMapRect", {'__this__': this});
-    return __result__ == null ? null : (MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MAMapRect()..refId = __result__);
   }
   
   //endregion
@@ -90,7 +93,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MACircle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACircle()..refId = __result__;
       return __return__;
     }
   }
@@ -113,7 +116,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MACircle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACircle()..refId = __result__;
       return __return__;
     }
   }
@@ -142,6 +145,11 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MACircle{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MACircle_Batch on List<MACircle> {
@@ -149,7 +157,7 @@ extension MACircle_Batch on List<MACircle> {
   Future<List<CLLocationCoordinate2D>> get_coordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACircle::get_coordinate_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -163,7 +171,7 @@ extension MACircle_Batch on List<MACircle> {
   Future<List<MAMapRect>> get_boundingMapRect_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACircle::get_boundingMapRect_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAMapRect()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -171,13 +179,13 @@ extension MACircle_Batch on List<MACircle> {
 
   //region setters
   Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACircle::set_coordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "coordinate": coordinate[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACircle::set_coordinate_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "coordinate": coordinate[__i__]}]);
   
   
   }
   
   Future<void> set_radius_batch(List<double> radius) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACircle::set_radius_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "radius": radius[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACircle::set_radius_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "radius": radius[__i__]}]);
   
   
   }
@@ -199,7 +207,7 @@ extension MACircle_Batch on List<MACircle> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircle()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircle()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -218,7 +226,7 @@ extension MACircle_Batch on List<MACircle> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircle()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircle()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -230,7 +238,7 @@ extension MACircle_Batch on List<MACircle> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACircle::setCircleWithCenterCoordinate_radius_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coord": coord[__i__], "radius": radius[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACircle::setCircleWithCenterCoordinate_radius_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"coord": coord[__i__], "radius": radius[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

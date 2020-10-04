@@ -19,6 +19,9 @@ mixin com_amap_api_maps_BaseMapView on java_lang_Object {
 
   static com_amap_api_maps_BaseMapView subInstance() => _com_amap_api_maps_BaseMapView_SUB();
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   
@@ -57,7 +60,7 @@ extension com_amap_api_maps_BaseMapView_Batch on List<com_amap_api_maps_BaseMapV
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.BaseMapView::loadWorldVectorMap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.BaseMapView::loadWorldVectorMap_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

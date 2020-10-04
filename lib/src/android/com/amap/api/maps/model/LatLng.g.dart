@@ -16,19 +16,22 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
   //region constants
   static const String name__ = 'com.amap.api.maps.model.LatLng';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_model_LatLng> create__double__double(double var1, double var3) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double', {"var1": var1, "var3": var3});
-    final object = com_amap_api_maps_model_LatLng()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_LatLng()..refId = refId;
     return object;
   }
   
   static Future<com_amap_api_maps_model_LatLng> create__double__double__boolean(double var1, double var3, bool var5) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean', {"var1": var1, "var3": var3, "var5": var5});
-    final object = com_amap_api_maps_model_LatLng()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_LatLng()..refId = refId;
     return object;
   }
   
@@ -38,7 +41,7 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var3": var3[__i__]}]);
   
-    final List<com_amap_api_maps_model_LatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_LatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_LatLng()..refId = result).toList();
     return typedResult;
   }
   
@@ -48,7 +51,7 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double__boolean', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var3": var3[__i__], "var5": var5[__i__]}]);
   
-    final List<com_amap_api_maps_model_LatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_LatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_LatLng()..refId = result).toList();
     return typedResult;
   }
   
@@ -90,12 +93,17 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_LatLng{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_LatLng_Batch on List<com_amap_api_maps_model_LatLng> {
@@ -128,14 +136,14 @@ extension com_amap_api_maps_model_LatLng_Batch on List<com_amap_api_maps_model_L
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.LatLng::clone_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.LatLng::clone_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__).toList();
       return typedResult;
     }
   }

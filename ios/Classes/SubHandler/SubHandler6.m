@@ -150,7 +150,7 @@ extern BOOL enableLog;
                 }
                 // non jsonable
                 else {
-                    userData = HEAP[@([args[@"userData"] integerValue])];
+                    userData = args[@"userData"];
                 }
         
                 // ref
@@ -169,7 +169,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* province = (MAOfflineItem*) args[@"province"];
+                MAOfflineItem* province = (MAOfflineItem*) (args[@"province"] == [NSNull null] ? nil : args[@"province"]);
         
                 // ref
                 MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) args[@"__this__"];
@@ -511,7 +511,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* icon = (UIImage*) args[@"icon"];
+                UIImage* icon = (UIImage*) (args[@"icon"] == [NSNull null] ? nil : args[@"icon"]);
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
@@ -567,7 +567,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) args[@"particleStartColor"];
+                id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) (args[@"particleStartColor"] == [NSNull null] ? nil : args[@"particleStartColor"]);
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
@@ -585,7 +585,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) args[@"particleStartSpeed"];
+                id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) (args[@"particleStartSpeed"] == [NSNull null] ? nil : args[@"particleStartSpeed"]);
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
@@ -603,7 +603,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) args[@"particleEmissionModule"];
+                MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) (args[@"particleEmissionModule"] == [NSNull null] ? nil : args[@"particleEmissionModule"]);
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
@@ -621,7 +621,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) args[@"particleShapeModule"];
+                id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) (args[@"particleShapeModule"] == [NSNull null] ? nil : args[@"particleShapeModule"]);
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
@@ -639,7 +639,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) args[@"particleOverLifeModule"];
+                MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) (args[@"particleOverLifeModule"] == [NSNull null] ? nil : args[@"particleOverLifeModule"]);
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) args[@"__this__"];
@@ -657,7 +657,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* strokeImage = (UIImage*) args[@"strokeImage"];
+                UIImage* strokeImage = (UIImage*) (args[@"strokeImage"] == [NSNull null] ? nil : args[@"strokeImage"]);
         
                 // ref
                 MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
@@ -929,7 +929,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) args[@"option"];
+                MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) (args[@"option"] == [NSNull null] ? nil : args[@"option"]);
         
                 // ref
                 MAHeatMapVectorOverlay* ref = (MAHeatMapVectorOverlay*) args[@"__this__"];
@@ -1057,7 +1057,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* topColor = (UIColor*) args[@"topColor"];
+                UIColor* topColor = (UIColor*) (args[@"topColor"] == [NSNull null] ? nil : args[@"topColor"]);
         
                 // ref
                 MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
@@ -1075,7 +1075,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* sideColor = (UIColor*) args[@"sideColor"];
+                UIColor* sideColor = (UIColor*) (args[@"sideColor"] == [NSNull null] ? nil : args[@"sideColor"]);
         
                 // ref
                 MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) args[@"__this__"];
@@ -1317,7 +1317,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* fillColor = (UIColor*) args[@"fillColor"];
+                UIColor* fillColor = (UIColor*) (args[@"fillColor"] == [NSNull null] ? nil : args[@"fillColor"]);
         
                 // ref
                 MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
@@ -1335,7 +1335,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* strokeColor = (UIColor*) args[@"strokeColor"];
+                UIColor* strokeColor = (UIColor*) (args[@"strokeColor"] == [NSNull null] ? nil : args[@"strokeColor"]);
         
                 // ref
                 MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
@@ -1371,7 +1371,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* locationDotBgColor = (UIColor*) args[@"locationDotBgColor"];
+                UIColor* locationDotBgColor = (UIColor*) (args[@"locationDotBgColor"] == [NSNull null] ? nil : args[@"locationDotBgColor"]);
         
                 // ref
                 MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
@@ -1389,7 +1389,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* locationDotFillColor = (UIColor*) args[@"locationDotFillColor"];
+                UIColor* locationDotFillColor = (UIColor*) (args[@"locationDotFillColor"] == [NSNull null] ? nil : args[@"locationDotFillColor"]);
         
                 // ref
                 MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
@@ -1425,7 +1425,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* image = (UIImage*) args[@"image"];
+                UIImage* image = (UIImage*) (args[@"image"] == [NSNull null] ? nil : args[@"image"]);
         
                 // ref
                 MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) args[@"__this__"];
@@ -2289,7 +2289,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* fillColor = (UIColor*) args[@"fillColor"];
+                UIColor* fillColor = (UIColor*) (args[@"fillColor"] == [NSNull null] ? nil : args[@"fillColor"]);
         
                 // ref
                 MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];
@@ -2307,7 +2307,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* strokeColor = (UIColor*) args[@"strokeColor"];
+                UIColor* strokeColor = (UIColor*) (args[@"strokeColor"] == [NSNull null] ? nil : args[@"strokeColor"]);
         
                 // ref
                 MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) args[@"__this__"];

@@ -130,7 +130,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -164,7 +164,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -198,7 +198,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -281,7 +281,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverlayOptions* option = (MAParticleOverlayOptions*) args[@"option"];
+                MAParticleOverlayOptions* option = (MAParticleOverlayOptions*) (args[@"option"] == [NSNull null] ? nil : args[@"option"]);
         
                 // ref
         
@@ -291,7 +291,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -306,7 +306,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverlayOptions* overlayOption = (MAParticleOverlayOptions*) args[@"overlayOption"];
+                MAParticleOverlayOptions* overlayOption = (MAParticleOverlayOptions*) (args[@"overlayOption"] == [NSNull null] ? nil : args[@"overlayOption"]);
         
                 // ref
                 MAParticleOverlay* ref = (MAParticleOverlay*) args[@"__this__"];
@@ -350,7 +350,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -384,7 +384,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -467,7 +467,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) args[@"multiPolyline"];
+                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) (args[@"multiPolyline"] == [NSNull null] ? nil : args[@"multiPolyline"]);
         
                 // ref
                 MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) args[@"__this__"];
@@ -477,7 +477,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -500,12 +500,8 @@ extern BOOL enableLog;
                 NSArray<MAAnnotationMoveAnimation*>* result = [ref allMoveAnimations];
         
                 // result
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -544,7 +540,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) args[@"multiPolyline"];
+                MAMultiPolyline* multiPolyline = (MAMultiPolyline*) (args[@"multiPolyline"] == [NSNull null] ? nil : args[@"multiPolyline"]);
         
                 // ref
                 MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) args[@"__this__"];
@@ -554,7 +550,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -594,7 +590,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAHeatMapVectorOverlay* heatOverlay = (MAHeatMapVectorOverlay*) args[@"heatOverlay"];
+                MAHeatMapVectorOverlay* heatOverlay = (MAHeatMapVectorOverlay*) (args[@"heatOverlay"] == [NSNull null] ? nil : args[@"heatOverlay"]);
         
                 // ref
                 MAHeatMapVectorOverlayRender* ref = (MAHeatMapVectorOverlayRender*) args[@"__this__"];
@@ -604,7 +600,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -631,7 +627,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -646,7 +642,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MATileOverlay* tileOverlay = (MATileOverlay*) args[@"tileOverlay"];
+                MATileOverlay* tileOverlay = (MATileOverlay*) (args[@"tileOverlay"] == [NSNull null] ? nil : args[@"tileOverlay"]);
         
                 // ref
                 MATileOverlayRenderer* ref = (MATileOverlayRenderer*) args[@"__this__"];
@@ -656,7 +652,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -704,7 +700,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -791,7 +787,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMultiPointOverlay* multiPointOverlay = (MAMultiPointOverlay*) args[@"multiPointOverlay"];
+                MAMultiPointOverlay* multiPointOverlay = (MAMultiPointOverlay*) (args[@"multiPointOverlay"] == [NSNull null] ? nil : args[@"multiPointOverlay"]);
         
                 // ref
                 MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) args[@"__this__"];
@@ -801,7 +797,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -816,7 +812,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAPolyline* polyline = (MAPolyline*) args[@"polyline"];
+                MAPolyline* polyline = (MAPolyline*) (args[@"polyline"] == [NSNull null] ? nil : args[@"polyline"]);
         
                 // ref
                 MAPolylineRenderer* ref = (MAPolylineRenderer*) args[@"__this__"];
@@ -826,7 +822,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1060,7 +1056,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
                 // jsonable arg
                 NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
         
@@ -1072,7 +1068,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1148,7 +1144,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1190,7 +1186,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIView* customView = (UIView*) args[@"customView"];
+                UIView* customView = (UIView*) (args[@"customView"] == [NSNull null] ? nil : args[@"customView"]);
         
                 // ref
                 MACustomCalloutView* ref = (MACustomCalloutView*) args[@"__this__"];
@@ -1200,7 +1196,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1224,7 +1220,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1239,7 +1235,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* item = (MAOfflineItem*) args[@"item"];
+                MAOfflineItem* item = (MAOfflineItem*) (args[@"item"] == [NSNull null] ? nil : args[@"item"]);
         
                 // ref
                 MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
@@ -1264,7 +1260,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* item = (MAOfflineItem*) args[@"item"];
+                MAOfflineItem* item = (MAOfflineItem*) (args[@"item"] == [NSNull null] ? nil : args[@"item"]);
         
                 // ref
                 MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
@@ -1289,7 +1285,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* item = (MAOfflineItem*) args[@"item"];
+                MAOfflineItem* item = (MAOfflineItem*) (args[@"item"] == [NSNull null] ? nil : args[@"item"]);
         
                 // ref
                 MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
@@ -1362,7 +1358,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineCity* city = (MAOfflineCity*) args[@"city"];
+                MAOfflineCity* city = (MAOfflineCity*) (args[@"city"] == [NSNull null] ? nil : args[@"city"]);
         
                 // ref
                 MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
@@ -1387,7 +1383,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineCity* city = (MAOfflineCity*) args[@"city"];
+                MAOfflineCity* city = (MAOfflineCity*) (args[@"city"] == [NSNull null] ? nil : args[@"city"]);
         
                 // ref
                 MAOfflineMap* ref = (MAOfflineMap*) args[@"__this__"];
@@ -1412,7 +1408,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACircle* circle = (MACircle*) args[@"circle"];
+                MACircle* circle = (MACircle*) (args[@"circle"] == [NSNull null] ? nil : args[@"circle"]);
         
                 // ref
                 MACircleRenderer* ref = (MACircleRenderer*) args[@"__this__"];
@@ -1422,7 +1418,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1437,7 +1433,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverlay* particleOverlay = (MAParticleOverlay*) args[@"particleOverlay"];
+                MAParticleOverlay* particleOverlay = (MAParticleOverlay*) (args[@"particleOverlay"] == [NSNull null] ? nil : args[@"particleOverlay"]);
         
                 // ref
                 MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) args[@"__this__"];
@@ -1447,7 +1443,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1650,7 +1646,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1713,7 +1709,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1762,7 +1758,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1866,7 +1862,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1893,7 +1889,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -1972,7 +1968,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2005,7 +2001,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2020,7 +2016,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleVelocityGenerate> velocity = (id<MAParticleVelocityGenerate>) args[@"velocity"];
+                id<MAParticleVelocityGenerate> velocity = (id<MAParticleVelocityGenerate>) (args[@"velocity"] == [NSNull null] ? nil : args[@"velocity"]);
         
                 // ref
                 MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
@@ -2045,7 +2041,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleRotationGenerate> rotation = (id<MAParticleRotationGenerate>) args[@"rotation"];
+                id<MAParticleRotationGenerate> rotation = (id<MAParticleRotationGenerate>) (args[@"rotation"] == [NSNull null] ? nil : args[@"rotation"]);
         
                 // ref
                 MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
@@ -2070,7 +2066,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleSizeGenerate> size = (id<MAParticleSizeGenerate>) args[@"size"];
+                id<MAParticleSizeGenerate> size = (id<MAParticleSizeGenerate>) (args[@"size"] == [NSNull null] ? nil : args[@"size"]);
         
                 // ref
                 MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
@@ -2095,7 +2091,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleColorGenerate> color = (id<MAParticleColorGenerate>) args[@"color"];
+                id<MAParticleColorGenerate> color = (id<MAParticleColorGenerate>) (args[@"color"] == [NSNull null] ? nil : args[@"color"]);
         
                 // ref
                 MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) args[@"__this__"];
@@ -2129,12 +2125,8 @@ extern BOOL enableLog;
                 NSArray<MAParticleOverlayOptions*>* result = [MAParticleOverlayOptionsFactory particleOverlayOptionsWithType: particleType];
         
                 // result
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2149,7 +2141,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
         
                 // ref
                 MAOverlayRenderer* ref = (MAOverlayRenderer*) args[@"__this__"];
@@ -2159,7 +2151,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2367,7 +2359,7 @@ extern BOOL enableLog;
                 // jsonable arg
                 NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
                 // ref arg
-                UIColor* strokeColor = (UIColor*) args[@"strokeColor"];
+                UIColor* strokeColor = (UIColor*) (args[@"strokeColor"] == [NSNull null] ? nil : args[@"strokeColor"]);
                 // jsonable arg
                 CGFloat lineWidth = [args[@"lineWidth"] floatValue];
                 // jsonable arg
@@ -2396,7 +2388,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) args[@"option"];
+                MAHeatMapVectorOverlayOptions* option = (MAHeatMapVectorOverlayOptions*) (args[@"option"] == [NSNull null] ? nil : args[@"option"]);
         
                 // ref
         
@@ -2406,7 +2398,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2431,7 +2423,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2465,7 +2457,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2514,7 +2506,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) args[@"option"];
+                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) (args[@"option"] == [NSNull null] ? nil : args[@"option"]);
         
                 // ref
                 MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) args[@"__this__"];
@@ -2539,7 +2531,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) args[@"option"];
+                MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) (args[@"option"] == [NSNull null] ? nil : args[@"option"]);
         
                 // ref
                 MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) args[@"__this__"];
@@ -2584,7 +2576,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2929,7 +2921,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -2944,7 +2936,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMapStatus* status = (MAMapStatus*) args[@"status"];
+                MAMapStatus* status = (MAMapStatus*) (args[@"status"] == [NSNull null] ? nil : args[@"status"]);
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
@@ -2971,7 +2963,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMapStatus* status = (MAMapStatus*) args[@"status"];
+                MAMapStatus* status = (MAMapStatus*) (args[@"status"] == [NSNull null] ? nil : args[@"status"]);
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
                 // jsonable arg
@@ -3000,7 +2992,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* image = (UIImage*) args[@"image"];
+                UIImage* image = (UIImage*) (args[@"image"] == [NSNull null] ? nil : args[@"image"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3037,7 +3029,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -3081,7 +3073,7 @@ extern BOOL enableLog;
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
                 // ref arg
-                UIView* view = (UIView*) args[@"view"];
+                UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3110,7 +3102,7 @@ extern BOOL enableLog;
                 CGPoint point;
                 [pointValue getValue:&point];
                 // ref arg
-                UIView* view = (UIView*) args[@"view"];
+                UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3139,7 +3131,7 @@ extern BOOL enableLog;
                 MACoordinateRegion region;
                 [regionValue getValue:&region];
                 // ref arg
-                UIView* view = (UIView*) args[@"view"];
+                UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3168,7 +3160,7 @@ extern BOOL enableLog;
                 CGRect rect;
                 [rectValue getValue:&rect];
                 // ref arg
-                UIView* view = (UIView*) args[@"view"];
+                UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3337,7 +3329,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3387,7 +3379,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3437,7 +3429,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3447,7 +3439,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -3472,7 +3464,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -3487,7 +3479,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
@@ -3514,7 +3506,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
                 // jsonable arg
                 BOOL animated = [args[@"animated"] boolValue];
         
@@ -3626,7 +3618,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) args[@"representation"];
+                MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) (args[@"representation"] == [NSNull null] ? nil : args[@"representation"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3660,12 +3652,8 @@ extern BOOL enableLog;
                 NSArray* result = [ref overlaysInLevel: level];
         
                 // result
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -3680,7 +3668,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3730,7 +3718,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
                 // enum arg
                 MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
         
@@ -3784,7 +3772,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3834,7 +3822,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
                 // jsonable arg
                 NSUInteger index = [args[@"index"] unsignedIntegerValue];
                 // enum arg
@@ -3863,9 +3851,9 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
                 // ref arg
-                id<MAOverlay> sibling = (id<MAOverlay>) args[@"sibling"];
+                id<MAOverlay> sibling = (id<MAOverlay>) (args[@"sibling"] == [NSNull null] ? nil : args[@"sibling"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3890,9 +3878,9 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
                 // ref arg
-                id<MAOverlay> sibling = (id<MAOverlay>) args[@"sibling"];
+                id<MAOverlay> sibling = (id<MAOverlay>) (args[@"sibling"] == [NSNull null] ? nil : args[@"sibling"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -3917,7 +3905,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
                 // jsonable arg
                 NSUInteger index = [args[@"index"] unsignedIntegerValue];
         
@@ -4000,9 +3988,9 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay1 = (id<MAOverlay>) args[@"overlay1"];
+                id<MAOverlay> overlay1 = (id<MAOverlay>) (args[@"overlay1"] == [NSNull null] ? nil : args[@"overlay1"]);
                 // ref arg
-                id<MAOverlay> overlay2 = (id<MAOverlay>) args[@"overlay2"];
+                id<MAOverlay> overlay2 = (id<MAOverlay>) (args[@"overlay2"] == [NSNull null] ? nil : args[@"overlay2"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -4027,7 +4015,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+                id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -4037,7 +4025,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -4123,12 +4111,8 @@ extern BOOL enableLog;
                 NSArray* result = [ref getHittedPolylinesWith: tappedCoord traverseAll: traverseAll];
         
                 // result
-                // 返回值: 列表
-                NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-                for (int __i__ = 0; __i__ < result.count; __i__++) {
-                    NSObject* object = [result objectAtIndex:__i__];
-                    [__result__ addObject: object];
-                }
+                // return a ref
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -4219,7 +4203,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* data = (NSData*) args[@"data"];
+                NSData* data = (NSData*) (args[@"data"] == [NSNull null] ? nil : args[@"data"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -4294,7 +4278,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) args[@"styleOptions"];
+                MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) (args[@"styleOptions"] == [NSNull null] ? nil : args[@"styleOptions"]);
         
                 // ref
                 MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -4319,7 +4303,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAGroundOverlay* groundOverlay = (MAGroundOverlay*) args[@"groundOverlay"];
+                MAGroundOverlay* groundOverlay = (MAGroundOverlay*) (args[@"groundOverlay"] == [NSNull null] ? nil : args[@"groundOverlay"]);
         
                 // ref
                 MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) args[@"__this__"];
@@ -4329,7 +4313,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -4344,7 +4328,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomBuildingOverlay* customBuildingOverlay = (MACustomBuildingOverlay*) args[@"customBuildingOverlay"];
+                MACustomBuildingOverlay* customBuildingOverlay = (MACustomBuildingOverlay*) (args[@"customBuildingOverlay"] == [NSNull null] ? nil : args[@"customBuildingOverlay"]);
         
                 // ref
                 MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) args[@"__this__"];
@@ -4354,7 +4338,7 @@ extern BOOL enableLog;
         
                 // result
                 // return a ref
-                id __result__ = result;
+                NSObject* __result__ = result;
         
                 [resultList addObject:__result__];
             }
@@ -4510,7 +4494,7 @@ extern BOOL enableLog;
             UIImage* result = ref.icon;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -4582,7 +4566,7 @@ extern BOOL enableLog;
             MAPolygon* result = ref.polygon;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -4671,12 +4655,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<UIColor*>* result = ref.colors;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -4711,12 +4691,8 @@ extern BOOL enableLog;
             // invoke native method
             NSArray<MAHeatMapNode*>* result = ref.data;
         
-            // 返回值: 列表
-            NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-            for (int __i__ = 0; __i__ < result.count; __i__++) {
-                NSObject* object = [result objectAtIndex:__i__];
-                [__result__ addObject: object];
-            }
+            // return a ref
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },
@@ -4770,7 +4746,7 @@ extern BOOL enableLog;
             MAHeatMapGradient* result = ref.gradient;
         
             // return a ref
-            id __result__ = result;
+            NSObject* __result__ = result;
         
             methodResult(__result__);
         },

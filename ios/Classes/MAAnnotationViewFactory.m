@@ -120,7 +120,7 @@ extern BOOL enableLog;
       @"MAAnnotationView::initWithAnnotation_reuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+          id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
           // jsonable arg
           NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
       
@@ -137,7 +137,7 @@ extern BOOL enableLog;
       
           // result
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -235,7 +235,7 @@ extern BOOL enableLog;
           id<MAAnnotation> result = ref.annotation;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -253,7 +253,7 @@ extern BOOL enableLog;
           UIImage* result = ref.image;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -271,7 +271,7 @@ extern BOOL enableLog;
           MACustomCalloutView* result = ref.customCalloutView;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -397,7 +397,7 @@ extern BOOL enableLog;
           UIView* result = ref.leftCalloutAccessoryView;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -415,7 +415,7 @@ extern BOOL enableLog;
           UIView* result = ref.rightCalloutAccessoryView;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -499,7 +499,7 @@ extern BOOL enableLog;
       
           // args
           // ref arg
-          id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+          id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
       
           // ref
           MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -516,7 +516,7 @@ extern BOOL enableLog;
       
           // args
           // ref arg
-          UIImage* image = (UIImage*) args[@"image"];
+          UIImage* image = (UIImage*) (args[@"image"] == [NSNull null] ? nil : args[@"image"]);
       
           // ref
           MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -533,7 +533,7 @@ extern BOOL enableLog;
       
           // args
           // ref arg
-          MACustomCalloutView* customCalloutView = (MACustomCalloutView*) args[@"customCalloutView"];
+          MACustomCalloutView* customCalloutView = (MACustomCalloutView*) (args[@"customCalloutView"] == [NSNull null] ? nil : args[@"customCalloutView"]);
       
           // ref
           MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -656,7 +656,7 @@ extern BOOL enableLog;
       
           // args
           // ref arg
-          UIView* leftCalloutAccessoryView = (UIView*) args[@"leftCalloutAccessoryView"];
+          UIView* leftCalloutAccessoryView = (UIView*) (args[@"leftCalloutAccessoryView"] == [NSNull null] ? nil : args[@"leftCalloutAccessoryView"]);
       
           // ref
           MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];
@@ -673,7 +673,7 @@ extern BOOL enableLog;
       
           // args
           // ref arg
-          UIView* rightCalloutAccessoryView = (UIView*) args[@"rightCalloutAccessoryView"];
+          UIView* rightCalloutAccessoryView = (UIView*) (args[@"rightCalloutAccessoryView"] == [NSNull null] ? nil : args[@"rightCalloutAccessoryView"]);
       
           // ref
           MAAnnotationView* ref = (MAAnnotationView*) args[@"__this__"];

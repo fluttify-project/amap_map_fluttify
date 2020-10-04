@@ -19,9 +19,12 @@ mixin MAAnnotation on NSObject {
 
   static MAAnnotation subInstance() => _MAAnnotation_SUB();
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAAnnotation::get_coordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<String> get_title() async {
@@ -82,7 +85,7 @@ extension MAAnnotation_Batch on List<MAAnnotation> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnnotation::setCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"newCoordinate": newCoordinate[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAAnnotation::setCoordinate_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"newCoordinate": newCoordinate[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

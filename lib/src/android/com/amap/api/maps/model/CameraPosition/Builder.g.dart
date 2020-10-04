@@ -16,19 +16,22 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.maps.model.CameraPosition.Builder';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_model_CameraPosition_Builder> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__', );
-    final object = com_amap_api_maps_model_CameraPosition_Builder()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_CameraPosition_Builder()..refId = refId;
     return object;
   }
   
   static Future<com_amap_api_maps_model_CameraPosition_Builder> create__com_amap_api_maps_model_CameraPosition(com_amap_api_maps_model_CameraPosition var1) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition', {"var1": var1});
-    final object = com_amap_api_maps_model_CameraPosition_Builder()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_CameraPosition_Builder()..refId = refId;
     return object;
   }
   
@@ -38,7 +41,7 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_CameraPosition_Builder__', {'length': length});
   
-    final List<com_amap_api_maps_model_CameraPosition_Builder> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CameraPosition_Builder()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_CameraPosition_Builder> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CameraPosition_Builder()..refId = result).toList();
     return typedResult;
   }
   
@@ -48,7 +51,7 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_amap_api_maps_model_CameraPosition_Builder> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CameraPosition_Builder()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_CameraPosition_Builder> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CameraPosition_Builder()..refId = result).toList();
     return typedResult;
   }
   
@@ -81,7 +84,7 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__;
       return __return__;
     }
   }
@@ -104,7 +107,7 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__;
       return __return__;
     }
   }
@@ -127,7 +130,7 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__;
       return __return__;
     }
   }
@@ -150,7 +153,7 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__;
       return __return__;
     }
   }
@@ -173,12 +176,17 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_CameraPosition_Builder{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_CameraPosition_Builder_Batch on List<com_amap_api_maps_model_CameraPosition_Builder> {
@@ -198,14 +206,14 @@ extension com_amap_api_maps_model_CameraPosition_Builder_Batch on List<com_amap_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::target_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::target_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -217,14 +225,14 @@ extension com_amap_api_maps_model_CameraPosition_Builder_Batch on List<com_amap_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::zoom_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::zoom_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -236,14 +244,14 @@ extension com_amap_api_maps_model_CameraPosition_Builder_Batch on List<com_amap_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::tilt_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::tilt_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -255,14 +263,14 @@ extension com_amap_api_maps_model_CameraPosition_Builder_Batch on List<com_amap_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::bearing_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::bearing_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -274,14 +282,14 @@ extension com_amap_api_maps_model_CameraPosition_Builder_Batch on List<com_amap_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::build_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::build_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_CameraPosition()..refId = __result__).toList();
       return typedResult;
     }
   }

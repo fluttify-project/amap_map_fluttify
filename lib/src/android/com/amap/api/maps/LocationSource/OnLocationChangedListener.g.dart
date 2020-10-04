@@ -19,6 +19,9 @@ mixin com_amap_api_maps_LocationSource_OnLocationChangedListener on java_lang_Ob
 
   
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   

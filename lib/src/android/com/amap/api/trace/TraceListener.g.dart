@@ -19,6 +19,9 @@ mixin com_amap_api_trace_TraceListener on java_lang_Object {
 
   
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   

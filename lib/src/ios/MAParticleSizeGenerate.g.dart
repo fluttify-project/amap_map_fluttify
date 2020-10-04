@@ -19,6 +19,9 @@ mixin MAParticleSizeGenerate on NSObject {
 
   static MAParticleSizeGenerate subInstance() => _MAParticleSizeGenerate_SUB();
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   
@@ -103,7 +106,7 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeX_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeX_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -122,7 +125,7 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeY_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeY_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -141,7 +144,7 @@ extension MAParticleSizeGenerate_Batch on List<MAParticleSizeGenerate> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeZ_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSizeGenerate::getSizeZ_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"timeFrame": timeFrame[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

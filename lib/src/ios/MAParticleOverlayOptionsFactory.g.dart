@@ -16,13 +16,16 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
   //region constants
   static const String name__ = 'MAParticleOverlayOptionsFactory';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAParticleOverlayOptionsFactory> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleOverlayOptionsFactory', {'init': init});
-    final object = MAParticleOverlayOptionsFactory()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAParticleOverlayOptionsFactory()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleOverlayOptionsFactory', {'length': length, 'init': init});
   
-    final List<MAParticleOverlayOptionsFactory> typedResult = resultBatch.map((result) => MAParticleOverlayOptionsFactory()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAParticleOverlayOptionsFactory> typedResult = resultBatch.map((result) => MAParticleOverlayOptionsFactory()..refId = result).toList();
     return typedResult;
   }
   
@@ -65,12 +68,17 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = (__result__ as List).cast<String>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<String>().map((__it__) => MAParticleOverlayOptions()..refId = __it__).toList();
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAParticleOverlayOptionsFactory{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptionsFactory> {
@@ -97,7 +105,7 @@ extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptions
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAParticleOverlayOptions()..refId = __it__).toList()).toList();
       return typedResult;
     }
   }

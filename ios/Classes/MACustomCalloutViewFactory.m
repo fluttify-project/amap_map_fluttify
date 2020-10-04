@@ -96,7 +96,7 @@ extern BOOL enableLog;
       @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          UIView* customView = (UIView*) args[@"customView"];
+          UIView* customView = (UIView*) (args[@"customView"] == [NSNull null] ? nil : args[@"customView"]);
       
           // ref
           MACustomCalloutView* ref = (MACustomCalloutView*) args[@"__this__"];
@@ -111,7 +111,7 @@ extern BOOL enableLog;
       
           // result
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -128,7 +128,7 @@ extern BOOL enableLog;
           UIView* result = ref.customView;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -146,7 +146,7 @@ extern BOOL enableLog;
           NSObject* result = ref.userData;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -169,7 +169,7 @@ extern BOOL enableLog;
           }
           // non jsonable
           else {
-              userData = HEAP[@([args[@"userData"] integerValue])];
+              userData = args[@"userData"];
           }
       
           // ref

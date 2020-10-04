@@ -16,13 +16,16 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
   //region constants
   static const String name__ = 'com.amap.api.maps.offlinemap.DownloadProgressView';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_offlinemap_DownloadProgressView> create__android_content_Context(android_content_Context var1) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context', {"var1": var1});
-    final object = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_amap_api_maps_offlinemap_DownloadProgressView> typedResult = resultBatch.map((result) => com_amap_api_maps_offlinemap_DownloadProgressView()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_offlinemap_DownloadProgressView> typedResult = resultBatch.map((result) => com_amap_api_maps_offlinemap_DownloadProgressView()..refId = result).toList();
     return typedResult;
   }
   
@@ -71,6 +74,11 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_offlinemap_DownloadProgressView{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_offlinemap_DownloadProgressView_Batch on List<com_amap_api_maps_offlinemap_DownloadProgressView> {
@@ -90,7 +98,7 @@ extension com_amap_api_maps_offlinemap_DownloadProgressView_Batch on List<com_am
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.offlinemap.DownloadProgressView::setProgress_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.offlinemap.DownloadProgressView::setProgress_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

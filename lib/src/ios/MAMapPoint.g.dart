@@ -16,13 +16,16 @@ class MAMapPoint extends NSObject  {
   //region constants
   static const String name__ = 'MAMapPoint';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAMapPoint> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMapPoint', {'init': init});
-    final object = MAMapPoint()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAMapPoint()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAMapPoint extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMapPoint', {'length': length, 'init': init});
   
-    final List<MAMapPoint> typedResult = resultBatch.map((result) => MAMapPoint()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAMapPoint> typedResult = resultBatch.map((result) => MAMapPoint()..refId = result).toList();
     return typedResult;
   }
   
@@ -69,6 +72,11 @@ class MAMapPoint extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAMapPoint{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAMapPoint_Batch on List<MAMapPoint> {
@@ -91,13 +99,13 @@ extension MAMapPoint_Batch on List<MAMapPoint> {
 
   //region setters
   Future<void> set_x_batch(List<double> x) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapPoint::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "x": x[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapPoint::set_x_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "x": x[__i__]}]);
   
   
   }
   
   Future<void> set_y_batch(List<double> y) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapPoint::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "y": y[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapPoint::set_y_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "y": y[__i__]}]);
   
   
   }

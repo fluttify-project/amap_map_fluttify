@@ -19,6 +19,9 @@ mixin MATraceDelegate on NSObject {
 
   
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   

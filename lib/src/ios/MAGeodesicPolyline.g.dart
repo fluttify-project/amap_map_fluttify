@@ -16,13 +16,16 @@ class MAGeodesicPolyline extends MAPolyline with MAOverlay, MAAnnotation {
   //region constants
   static const String name__ = 'MAGeodesicPolyline';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAGeodesicPolyline> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAGeodesicPolyline', {'init': init});
-    final object = MAGeodesicPolyline()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAGeodesicPolyline()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAGeodesicPolyline extends MAPolyline with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAGeodesicPolyline', {'length': length, 'init': init});
   
-    final List<MAGeodesicPolyline> typedResult = resultBatch.map((result) => MAGeodesicPolyline()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAGeodesicPolyline> typedResult = resultBatch.map((result) => MAGeodesicPolyline()..refId = result).toList();
     return typedResult;
   }
   
@@ -49,6 +52,11 @@ class MAGeodesicPolyline extends MAPolyline with MAOverlay, MAAnnotation {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAGeodesicPolyline{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAGeodesicPolyline_Batch on List<MAGeodesicPolyline> {

@@ -16,6 +16,9 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
   //region constants
   static const String name__ = 'com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   static final int PARTICLE_TYPE_SUNNY = 0;
   static final int PARTICLE_TYPE_RAIN = 1;
   static final int PARTICLE_TYPE_SNOWY = 2;
@@ -25,7 +28,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
   //region creators
   static Future<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__', );
-    final object = com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = refId;
     return object;
   }
   
@@ -35,7 +38,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__', {'length': length});
   
-    final List<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = result).toList();
     return typedResult;
   }
   
@@ -68,12 +71,17 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __it__).toList();
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory_Batch on List<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> {
@@ -100,7 +108,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory_Batch o
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __it__).toList()).toList();
       return typedResult;
     }
   }

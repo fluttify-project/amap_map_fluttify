@@ -16,13 +16,16 @@ class MAUserLocationRepresentation extends NSObject  {
   //region constants
   static const String name__ = 'MAUserLocationRepresentation';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAUserLocationRepresentation> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAUserLocationRepresentation', {'init': init});
-    final object = MAUserLocationRepresentation()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAUserLocationRepresentation()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAUserLocationRepresentation extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAUserLocationRepresentation', {'length': length, 'init': init});
   
-    final List<MAUserLocationRepresentation> typedResult = resultBatch.map((result) => MAUserLocationRepresentation()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAUserLocationRepresentation> typedResult = resultBatch.map((result) => MAUserLocationRepresentation()..refId = result).toList();
     return typedResult;
   }
   
@@ -51,12 +54,12 @@ class MAUserLocationRepresentation extends NSObject  {
   
   Future<UIColor> get_fillColor() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_fillColor", {'__this__': this});
-    return __result__ == null ? null : (UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIColor()..refId = __result__);
   }
   
   Future<UIColor> get_strokeColor() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_strokeColor", {'__this__': this});
-    return __result__ == null ? null : (UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIColor()..refId = __result__);
   }
   
   Future<double> get_lineWidth() async {
@@ -66,12 +69,12 @@ class MAUserLocationRepresentation extends NSObject  {
   
   Future<UIColor> get_locationDotBgColor() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_locationDotBgColor", {'__this__': this});
-    return __result__ == null ? null : (UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIColor()..refId = __result__);
   }
   
   Future<UIColor> get_locationDotFillColor() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_locationDotFillColor", {'__this__': this});
-    return __result__ == null ? null : (UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIColor()..refId = __result__);
   }
   
   Future<bool> get_enablePulseAnnimation() async {
@@ -81,7 +84,7 @@ class MAUserLocationRepresentation extends NSObject  {
   
   Future<UIImage> get_image() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_image", {'__this__': this});
-    return __result__ == null ? null : (UIImage()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIImage()..refId = __result__);
   }
   
   //endregion
@@ -146,6 +149,11 @@ class MAUserLocationRepresentation extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAUserLocationRepresentation{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentation> {
@@ -167,14 +175,14 @@ extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentatio
   Future<List<UIColor>> get_fillColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_fillColor_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<UIColor>> get_strokeColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_strokeColor_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -188,14 +196,14 @@ extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentatio
   Future<List<UIColor>> get_locationDotBgColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_locationDotBgColor_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<UIColor>> get_locationDotFillColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_locationDotFillColor_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -209,7 +217,7 @@ extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentatio
   Future<List<UIImage>> get_image_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAUserLocationRepresentation::get_image_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIImage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIImage()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -217,55 +225,55 @@ extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentatio
 
   //region setters
   Future<void> set_showsAccuracyRing_batch(List<bool> showsAccuracyRing) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_showsAccuracyRing_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "showsAccuracyRing": showsAccuracyRing[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_showsAccuracyRing_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "showsAccuracyRing": showsAccuracyRing[__i__]}]);
   
   
   }
   
   Future<void> set_showsHeadingIndicator_batch(List<bool> showsHeadingIndicator) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_showsHeadingIndicator_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "showsHeadingIndicator": showsHeadingIndicator[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_showsHeadingIndicator_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "showsHeadingIndicator": showsHeadingIndicator[__i__]}]);
   
   
   }
   
   Future<void> set_fillColor_batch(List<UIColor> fillColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_fillColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "fillColor": fillColor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_fillColor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "fillColor": fillColor[__i__]}]);
   
   
   }
   
   Future<void> set_strokeColor_batch(List<UIColor> strokeColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_strokeColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "strokeColor": strokeColor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_strokeColor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "strokeColor": strokeColor[__i__]}]);
   
   
   }
   
   Future<void> set_lineWidth_batch(List<double> lineWidth) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_lineWidth_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "lineWidth": lineWidth[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_lineWidth_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "lineWidth": lineWidth[__i__]}]);
   
   
   }
   
   Future<void> set_locationDotBgColor_batch(List<UIColor> locationDotBgColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_locationDotBgColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "locationDotBgColor": locationDotBgColor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_locationDotBgColor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "locationDotBgColor": locationDotBgColor[__i__]}]);
   
   
   }
   
   Future<void> set_locationDotFillColor_batch(List<UIColor> locationDotFillColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_locationDotFillColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "locationDotFillColor": locationDotFillColor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_locationDotFillColor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "locationDotFillColor": locationDotFillColor[__i__]}]);
   
   
   }
   
   Future<void> set_enablePulseAnnimation_batch(List<bool> enablePulseAnnimation) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_enablePulseAnnimation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "enablePulseAnnimation": enablePulseAnnimation[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_enablePulseAnnimation_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "enablePulseAnnimation": enablePulseAnnimation[__i__]}]);
   
   
   }
   
   Future<void> set_image_batch(List<UIImage> image) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_image_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "image": image[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAUserLocationRepresentation::set_image_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "image": image[__i__]}]);
   
   
   }

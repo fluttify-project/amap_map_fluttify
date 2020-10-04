@@ -16,13 +16,16 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   //region constants
   static const String name__ = 'MAParticleSinglePointShapeModule';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAParticleSinglePointShapeModule> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleSinglePointShapeModule', {'init': init});
-    final object = MAParticleSinglePointShapeModule()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAParticleSinglePointShapeModule()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleSinglePointShapeModule', {'length': length, 'init': init});
   
-    final List<MAParticleSinglePointShapeModule> typedResult = resultBatch.map((result) => MAParticleSinglePointShapeModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAParticleSinglePointShapeModule> typedResult = resultBatch.map((result) => MAParticleSinglePointShapeModule()..refId = result).toList();
     return typedResult;
   }
   
@@ -65,12 +68,17 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAParticleSinglePointShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleSinglePointShapeModule()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAParticleSinglePointShapeModule{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointShapeModule> {
@@ -90,14 +98,14 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"x": x[__i__], "y": y[__i__], "z": z[__i__], "isUseRatio": isUseRatio[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"x": x[__i__], "y": y[__i__], "z": z[__i__], "isUseRatio": isUseRatio[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleSinglePointShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleSinglePointShapeModule()..refId = __result__).toList();
       return typedResult;
     }
   }

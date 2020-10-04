@@ -16,13 +16,16 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   //region constants
   static const String name__ = 'com.amap.api.maps.SwipeDismissView';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_SwipeDismissView> create__android_content_Context__android_view_View(android_content_Context var1, android_view_View var2) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', {"var1": var1, "var2": var2});
-    final object = com_amap_api_maps_SwipeDismissView()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_SwipeDismissView()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__]}]);
   
-    final List<com_amap_api_maps_SwipeDismissView> typedResult = resultBatch.map((result) => com_amap_api_maps_SwipeDismissView()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_SwipeDismissView> typedResult = resultBatch.map((result) => com_amap_api_maps_SwipeDismissView()..refId = result).toList();
     return typedResult;
   }
   
@@ -101,6 +104,11 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_SwipeDismissView{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_SwipeDismissView_Batch on List<com_amap_api_maps_SwipeDismissView> {

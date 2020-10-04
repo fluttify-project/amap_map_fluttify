@@ -16,13 +16,16 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   static const String name__ = 'MAGroundOverlay';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAGroundOverlay> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAGroundOverlay', {'init': init});
-    final object = MAGroundOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAGroundOverlay()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAGroundOverlay', {'length': length, 'init': init});
   
-    final List<MAGroundOverlay> typedResult = resultBatch.map((result) => MAGroundOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAGroundOverlay> typedResult = resultBatch.map((result) => MAGroundOverlay()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region getters
   Future<UIImage> get_icon() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAGroundOverlay::get_icon", {'__this__': this});
-    return __result__ == null ? null : (UIImage()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIImage()..refId = __result__);
   }
   
   Future<double> get_alpha() async {
@@ -56,7 +59,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   
   Future<MACoordinateBounds> get_bounds() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAGroundOverlay::get_bounds", {'__this__': this});
-    return __result__ == null ? null : (MACoordinateBounds()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MACoordinateBounds()..refId = __result__);
   }
   
   //endregion
@@ -89,7 +92,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAGroundOverlay()..refId = __result__;
       return __return__;
     }
   }
@@ -112,7 +115,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAGroundOverlay()..refId = __result__;
       return __return__;
     }
   }
@@ -164,6 +167,11 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAGroundOverlay{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
@@ -171,7 +179,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   Future<List<UIImage>> get_icon_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAGroundOverlay::get_icon_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIImage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIImage()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -192,7 +200,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   Future<List<MACoordinateBounds>> get_bounds_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAGroundOverlay::get_bounds_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACoordinateBounds()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACoordinateBounds()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -200,7 +208,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
 
   //region setters
   Future<void> set_alpha_batch(List<double> alpha) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAGroundOverlay::set_alpha_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "alpha": alpha[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAGroundOverlay::set_alpha_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "alpha": alpha[__i__]}]);
   
   
   }
@@ -222,7 +230,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAGroundOverlay()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -241,7 +249,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAGroundOverlay()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -253,7 +261,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"bounds": bounds[__i__], "icon": icon[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"bounds": bounds[__i__], "icon": icon[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -272,7 +280,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coordinate": coordinate[__i__], "zoomLevel": zoomLevel[__i__], "icon": icon[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"coordinate": coordinate[__i__], "zoomLevel": zoomLevel[__i__], "icon": icon[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

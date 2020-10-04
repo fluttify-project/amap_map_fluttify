@@ -16,13 +16,16 @@ class MATouchPoi extends NSObject  {
   //region constants
   static const String name__ = 'MATouchPoi';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MATouchPoi> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATouchPoi', {'init': init});
-    final object = MATouchPoi()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MATouchPoi()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MATouchPoi extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATouchPoi', {'length': length, 'init': init});
   
-    final List<MATouchPoi> typedResult = resultBatch.map((result) => MATouchPoi()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MATouchPoi> typedResult = resultBatch.map((result) => MATouchPoi()..refId = result).toList();
     return typedResult;
   }
   
@@ -46,7 +49,7 @@ class MATouchPoi extends NSObject  {
   
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATouchPoi::get_coordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<String> get_uid() async {
@@ -63,6 +66,11 @@ class MATouchPoi extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MATouchPoi{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MATouchPoi_Batch on List<MATouchPoi> {
@@ -77,7 +85,7 @@ extension MATouchPoi_Batch on List<MATouchPoi> {
   Future<List<CLLocationCoordinate2D>> get_coordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MATouchPoi::get_coordinate_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__).toList();
     return typedResult;
   }
   

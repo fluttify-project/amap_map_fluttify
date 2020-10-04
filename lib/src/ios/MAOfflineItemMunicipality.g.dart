@@ -16,13 +16,16 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
   //region constants
   static const String name__ = 'MAOfflineItemMunicipality';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAOfflineItemMunicipality> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAOfflineItemMunicipality', {'init': init});
-    final object = MAOfflineItemMunicipality()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAOfflineItemMunicipality()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAOfflineItemMunicipality', {'length': length, 'init': init});
   
-    final List<MAOfflineItemMunicipality> typedResult = resultBatch.map((result) => MAOfflineItemMunicipality()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAOfflineItemMunicipality> typedResult = resultBatch.map((result) => MAOfflineItemMunicipality()..refId = result).toList();
     return typedResult;
   }
   
@@ -49,6 +52,11 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAOfflineItemMunicipality{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAOfflineItemMunicipality_Batch on List<MAOfflineItemMunicipality> {

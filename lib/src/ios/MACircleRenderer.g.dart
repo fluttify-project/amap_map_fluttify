@@ -16,13 +16,16 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   //region constants
   static const String name__ = 'MACircleRenderer';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MACircleRenderer> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACircleRenderer', {'init': init});
-    final object = MACircleRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MACircleRenderer()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACircleRenderer', {'length': length, 'init': init});
   
-    final List<MACircleRenderer> typedResult = resultBatch.map((result) => MACircleRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MACircleRenderer> typedResult = resultBatch.map((result) => MACircleRenderer()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   //region getters
   Future<MACircle> get_circle() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACircleRenderer::get_circle", {'__this__': this});
-    return __result__ == null ? null : (MACircle()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MACircle()..refId = __result__);
   }
   
   //endregion
@@ -69,12 +72,17 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MACircleRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACircleRenderer()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MACircleRenderer{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MACircleRenderer_Batch on List<MACircleRenderer> {
@@ -82,7 +90,7 @@ extension MACircleRenderer_Batch on List<MACircleRenderer> {
   Future<List<MACircle>> get_circle_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACircleRenderer::get_circle_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircle()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircle()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -100,14 +108,14 @@ extension MACircleRenderer_Batch on List<MACircleRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"circle": circle[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"circle": circle[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircleRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACircleRenderer()..refId = __result__).toList();
       return typedResult;
     }
   }

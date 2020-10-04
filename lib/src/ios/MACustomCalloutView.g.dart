@@ -16,13 +16,16 @@ class MACustomCalloutView extends UIView  {
   //region constants
   static const String name__ = 'MACustomCalloutView';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MACustomCalloutView> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACustomCalloutView', {'init': init});
-    final object = MACustomCalloutView()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MACustomCalloutView()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MACustomCalloutView extends UIView  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACustomCalloutView', {'length': length, 'init': init});
   
-    final List<MACustomCalloutView> typedResult = resultBatch.map((result) => MACustomCalloutView()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MACustomCalloutView> typedResult = resultBatch.map((result) => MACustomCalloutView()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MACustomCalloutView extends UIView  {
   //region getters
   Future<UIView> get_customView({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomCalloutView::get_customView", {'__this__': this});
-    return __result__ == null ? null : (UIView()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIView()..refId = __result__);
   }
   
   Future<dynamic> get_userData({bool viewChannel = true}) async {
@@ -85,6 +88,11 @@ class MACustomCalloutView extends UIView  {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MACustomCalloutView{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
@@ -92,7 +100,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
   Future<List<UIView>> get_customView_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomCalloutView::get_customView_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIView()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -107,7 +115,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
 
   //region setters
   Future<void> set_userData_batch(List<dynamic> userData, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomCalloutView::set_userData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "userData": userData[__i__]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomCalloutView::set_userData_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "userData": userData[__i__]}]);
   
   
   }
@@ -122,7 +130,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomCalloutView::initWithCustomView_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"customView": customView[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomCalloutView::initWithCustomView_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"customView": customView[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

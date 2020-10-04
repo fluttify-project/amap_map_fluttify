@@ -16,13 +16,16 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   static const String name__ = 'MACustomBuildingOverlay';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MACustomBuildingOverlay> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACustomBuildingOverlay', {'init': init});
-    final object = MACustomBuildingOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MACustomBuildingOverlay()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlay', {'length': length, 'init': init});
   
-    final List<MACustomBuildingOverlay> typedResult = resultBatch.map((result) => MACustomBuildingOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MACustomBuildingOverlay> typedResult = resultBatch.map((result) => MACustomBuildingOverlay()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,12 +44,12 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region getters
   Future<MACustomBuildingOverlayOption> get_defaultOption() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlay::get_defaultOption", {'__this__': this});
-    return __result__ == null ? null : (MACustomBuildingOverlayOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (MACustomBuildingOverlayOption()..refId = __result__);
   }
   
   Future<List<MACustomBuildingOverlayOption>> get_customOptions() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlay::get_customOptions", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MACustomBuildingOverlayOption()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MACustomBuildingOverlayOption()..refId = __it__).toList());
   }
   
   //endregion
@@ -103,6 +106,11 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MACustomBuildingOverlay{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
@@ -110,14 +118,14 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
   Future<List<MACustomBuildingOverlayOption>> get_defaultOption_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlay::get_defaultOption_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACustomBuildingOverlayOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACustomBuildingOverlayOption()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<List<MACustomBuildingOverlayOption>>> get_customOptions_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlay::get_customOptions_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MACustomBuildingOverlayOption()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MACustomBuildingOverlayOption()..refId = __it__).toList()).toList();
     return typedResult;
   }
   
@@ -135,7 +143,7 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlay::addCustomOption_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"option": option[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlay::addCustomOption_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"option": option[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -154,7 +162,7 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlay::removeCustomOption_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"option": option[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlay::removeCustomOption_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"option": option[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

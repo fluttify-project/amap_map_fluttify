@@ -19,6 +19,9 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
 
   
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   
@@ -30,7 +33,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<bool> removeOverlay__String(String var1) {}
   
   @mustCallSuper
-  Future<void> prepareIcon(Object var1) {}
+  Future<void> prepareIcon(String var1, Object var2) {}
   
   @mustCallSuper
   Future<int> getCurrentParticleNum(String var1) {}

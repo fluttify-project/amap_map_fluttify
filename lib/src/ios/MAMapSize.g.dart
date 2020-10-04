@@ -16,13 +16,16 @@ class MAMapSize extends NSObject  {
   //region constants
   static const String name__ = 'MAMapSize';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAMapSize> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAMapSize', {'init': init});
-    final object = MAMapSize()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAMapSize()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAMapSize extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAMapSize', {'length': length, 'init': init});
   
-    final List<MAMapSize> typedResult = resultBatch.map((result) => MAMapSize()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAMapSize> typedResult = resultBatch.map((result) => MAMapSize()..refId = result).toList();
     return typedResult;
   }
   
@@ -69,6 +72,11 @@ class MAMapSize extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAMapSize{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAMapSize_Batch on List<MAMapSize> {
@@ -91,13 +99,13 @@ extension MAMapSize_Batch on List<MAMapSize> {
 
   //region setters
   Future<void> set_width_batch(List<double> width) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapSize::set_width_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "width": width[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapSize::set_width_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "width": width[__i__]}]);
   
   
   }
   
   Future<void> set_height_batch(List<double> height) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapSize::set_height_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "height": height[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAMapSize::set_height_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "height": height[__i__]}]);
   
   
   }

@@ -16,13 +16,16 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.maps.CameraUpdateFactory';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_CameraUpdateFactory> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__', );
-    final object = com_amap_api_maps_CameraUpdateFactory()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_CameraUpdateFactory()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_CameraUpdateFactory__', {'length': length});
   
-    final List<com_amap_api_maps_CameraUpdateFactory> typedResult = resultBatch.map((result) => com_amap_api_maps_CameraUpdateFactory()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_CameraUpdateFactory> typedResult = resultBatch.map((result) => com_amap_api_maps_CameraUpdateFactory()..refId = result).toList();
     return typedResult;
   }
   
@@ -65,7 +68,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -88,7 +91,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -111,7 +114,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -134,7 +137,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -157,7 +160,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -180,7 +183,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -203,7 +206,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -226,7 +229,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -249,7 +252,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -272,7 +275,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -295,7 +298,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -318,7 +321,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -341,7 +344,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -364,7 +367,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
@@ -387,12 +390,17 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_CameraUpdateFactory{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_CameraUpdateFactory> {
@@ -419,7 +427,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -438,7 +446,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -457,7 +465,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -476,7 +484,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -495,7 +503,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -514,7 +522,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -533,7 +541,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -552,7 +560,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -571,7 +579,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -590,7 +598,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -609,7 +617,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -628,7 +636,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -647,7 +655,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -666,7 +674,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -685,7 +693,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__).toList();
       return typedResult;
     }
   }

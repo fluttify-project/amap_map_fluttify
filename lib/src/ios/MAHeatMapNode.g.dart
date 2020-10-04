@@ -16,13 +16,16 @@ class MAHeatMapNode extends NSObject  {
   //region constants
   static const String name__ = 'MAHeatMapNode';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAHeatMapNode> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapNode', {'init': init});
-    final object = MAHeatMapNode()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAHeatMapNode()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAHeatMapNode extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapNode', {'length': length, 'init': init});
   
-    final List<MAHeatMapNode> typedResult = resultBatch.map((result) => MAHeatMapNode()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAHeatMapNode> typedResult = resultBatch.map((result) => MAHeatMapNode()..refId = result).toList();
     return typedResult;
   }
   
@@ -41,7 +44,7 @@ class MAHeatMapNode extends NSObject  {
   //region getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapNode::get_coordinate", {'__this__': this});
-    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (CLLocationCoordinate2D()..refId = __result__);
   }
   
   Future<double> get_intensity() async {
@@ -69,6 +72,11 @@ class MAHeatMapNode extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAHeatMapNode{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAHeatMapNode_Batch on List<MAHeatMapNode> {
@@ -76,7 +84,7 @@ extension MAHeatMapNode_Batch on List<MAHeatMapNode> {
   Future<List<CLLocationCoordinate2D>> get_coordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapNode::get_coordinate_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => CLLocationCoordinate2D()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -91,13 +99,13 @@ extension MAHeatMapNode_Batch on List<MAHeatMapNode> {
 
   //region setters
   Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapNode::set_coordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "coordinate": coordinate[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapNode::set_coordinate_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "coordinate": coordinate[__i__]}]);
   
   
   }
   
   Future<void> set_intensity_batch(List<double> intensity) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapNode::set_intensity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "intensity": intensity[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapNode::set_intensity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "intensity": intensity[__i__]}]);
   
   
   }

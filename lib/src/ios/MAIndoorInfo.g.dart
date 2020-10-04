@@ -16,13 +16,16 @@ class MAIndoorInfo extends NSObject  {
   //region constants
   static const String name__ = 'MAIndoorInfo';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAIndoorInfo> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAIndoorInfo', {'init': init});
-    final object = MAIndoorInfo()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAIndoorInfo()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAIndoorInfo extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAIndoorInfo', {'length': length, 'init': init});
   
-    final List<MAIndoorInfo> typedResult = resultBatch.map((result) => MAIndoorInfo()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAIndoorInfo> typedResult = resultBatch.map((result) => MAIndoorInfo()..refId = result).toList();
     return typedResult;
   }
   
@@ -93,6 +96,11 @@ class MAIndoorInfo extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAIndoorInfo{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAIndoorInfo_Batch on List<MAIndoorInfo> {

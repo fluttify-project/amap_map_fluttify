@@ -16,13 +16,16 @@ class MAParticleEmissionModule extends NSObject  {
   //region constants
   static const String name__ = 'MAParticleEmissionModule';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAParticleEmissionModule> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleEmissionModule', {'init': init});
-    final object = MAParticleEmissionModule()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAParticleEmissionModule()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAParticleEmissionModule extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleEmissionModule', {'length': length, 'init': init});
   
-    final List<MAParticleEmissionModule> typedResult = resultBatch.map((result) => MAParticleEmissionModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAParticleEmissionModule> typedResult = resultBatch.map((result) => MAParticleEmissionModule()..refId = result).toList();
     return typedResult;
   }
   
@@ -65,12 +68,17 @@ class MAParticleEmissionModule extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleEmissionModule()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAParticleEmissionModule{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
@@ -90,14 +98,14 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"rate": rate[__i__], "rateTime": rateTime[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"rate": rate[__i__], "rateTime": rateTime[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleEmissionModule()..refId = __result__).toList();
       return typedResult;
     }
   }

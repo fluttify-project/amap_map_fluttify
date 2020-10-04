@@ -16,13 +16,16 @@ class MAPinAnnotationView extends MAAnnotationView  {
   //region constants
   static const String name__ = 'MAPinAnnotationView';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAPinAnnotationView> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAPinAnnotationView', {'init': init});
-    final object = MAPinAnnotationView()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAPinAnnotationView()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAPinAnnotationView extends MAAnnotationView  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAPinAnnotationView', {'length': length, 'init': init});
   
-    final List<MAPinAnnotationView> typedResult = resultBatch.map((result) => MAPinAnnotationView()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAPinAnnotationView> typedResult = resultBatch.map((result) => MAPinAnnotationView()..refId = result).toList();
     return typedResult;
   }
   
@@ -69,6 +72,11 @@ class MAPinAnnotationView extends MAAnnotationView  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAPinAnnotationView{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAPinAnnotationView_Batch on List<MAPinAnnotationView> {
@@ -91,13 +99,13 @@ extension MAPinAnnotationView_Batch on List<MAPinAnnotationView> {
 
   //region setters
   Future<void> set_pinColor_batch(List<MAPinAnnotationColor> pinColor, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAPinAnnotationView::set_pinColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "pinColor": pinColor[__i__].toValue()}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAPinAnnotationView::set_pinColor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "pinColor": pinColor[__i__].toValue()}]);
   
   
   }
   
   Future<void> set_animatesDrop_batch(List<bool> animatesDrop, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAPinAnnotationView::set_animatesDrop_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "animatesDrop": animatesDrop[__i__]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAPinAnnotationView::set_animatesDrop_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "animatesDrop": animatesDrop[__i__]}]);
   
   
   }

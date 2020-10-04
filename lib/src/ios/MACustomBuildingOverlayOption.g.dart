@@ -16,13 +16,16 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   //region constants
   static const String name__ = 'MACustomBuildingOverlayOption';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MACustomBuildingOverlayOption> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMACustomBuildingOverlayOption', {'init': init});
-    final object = MACustomBuildingOverlayOption()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MACustomBuildingOverlayOption()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayOption', {'length': length, 'init': init});
   
-    final List<MACustomBuildingOverlayOption> typedResult = resultBatch.map((result) => MACustomBuildingOverlayOption()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MACustomBuildingOverlayOption> typedResult = resultBatch.map((result) => MACustomBuildingOverlayOption()..refId = result).toList();
     return typedResult;
   }
   
@@ -51,12 +54,12 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   
   Future<UIColor> get_topColor() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlayOption::get_topColor", {'__this__': this});
-    return __result__ == null ? null : (UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIColor()..refId = __result__);
   }
   
   Future<UIColor> get_sideColor() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlayOption::get_sideColor", {'__this__': this});
-    return __result__ == null ? null : (UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (UIColor()..refId = __result__);
   }
   
   Future<bool> get_visibile() async {
@@ -118,7 +121,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MACustomBuildingOverlayOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACustomBuildingOverlayOption()..refId = __result__;
       return __return__;
     }
   }
@@ -147,6 +150,11 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MACustomBuildingOverlayOption{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOption> {
@@ -168,14 +176,14 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
   Future<List<UIColor>> get_topColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlayOption::get_topColor_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__).toList();
     return typedResult;
   }
   
   Future<List<UIColor>> get_sideColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MACustomBuildingOverlayOption::get_sideColor_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => UIColor()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -190,31 +198,31 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
 
   //region setters
   Future<void> set_height_batch(List<double> height) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_height_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "height": height[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_height_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "height": height[__i__]}]);
   
   
   }
   
   Future<void> set_heightScale_batch(List<double> heightScale) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_heightScale_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "heightScale": heightScale[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_heightScale_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "heightScale": heightScale[__i__]}]);
   
   
   }
   
   Future<void> set_topColor_batch(List<UIColor> topColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_topColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "topColor": topColor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_topColor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "topColor": topColor[__i__]}]);
   
   
   }
   
   Future<void> set_sideColor_batch(List<UIColor> sideColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_sideColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "sideColor": sideColor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_sideColor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "sideColor": sideColor[__i__]}]);
   
   
   }
   
   Future<void> set_visibile_batch(List<bool> visibile) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_visibile_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "visibile": visibile[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MACustomBuildingOverlayOption::set_visibile_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "visibile": visibile[__i__]}]);
   
   
   }
@@ -236,7 +244,7 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACustomBuildingOverlayOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MACustomBuildingOverlayOption()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -248,7 +256,7 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinates_count_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coords": coords[__i__], "count": count[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinates_count_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"coords": coords[__i__], "count": count[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

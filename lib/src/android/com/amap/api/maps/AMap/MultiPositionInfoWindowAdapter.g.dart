@@ -19,6 +19,9 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
 
   static com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter subInstance() => _com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter_SUB();
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
 
   
@@ -41,7 +44,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_view_View()..refId = __result__;
       return __return__;
     }
   }
@@ -64,7 +67,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_view_View()..refId = __result__;
       return __return__;
     }
   }
@@ -87,7 +90,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_view_View()..refId = __result__;
       return __return__;
     }
   }
@@ -103,14 +106,14 @@ extension com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter_Batch on List<co
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getInfoWindowClick_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getInfoWindowClick_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => android_view_View()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -122,14 +125,14 @@ extension com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter_Batch on List<co
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindow_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindow_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => android_view_View()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -141,14 +144,14 @@ extension com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter_Batch on List<co
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindowClick_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindowClick_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => android_view_View()..refId = __result__).toList();
       return typedResult;
     }
   }

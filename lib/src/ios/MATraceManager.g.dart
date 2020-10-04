@@ -16,13 +16,16 @@ class MATraceManager extends NSObject  {
   //region constants
   static const String name__ = 'MATraceManager';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MATraceManager> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATraceManager', {'init': init});
-    final object = MATraceManager()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MATraceManager()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MATraceManager extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATraceManager', {'length': length, 'init': init});
   
-    final List<MATraceManager> typedResult = resultBatch.map((result) => MATraceManager()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MATraceManager> typedResult = resultBatch.map((result) => MATraceManager()..refId = result).toList();
     return typedResult;
   }
   
@@ -100,7 +103,7 @@ class MATraceManager extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MATraceManager()..refId = __result__;
       return __return__;
     }
   }
@@ -188,7 +191,7 @@ class MATraceManager extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = NSOperation()..refId = __result__;
       return __return__;
     }
   }
@@ -307,6 +310,11 @@ class MATraceManager extends NSObject  {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MATraceManager{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MATraceManager_Batch on List<MATraceManager> {
@@ -333,7 +341,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MATraceManager()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -345,7 +353,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATraceManager::stopTrace_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATraceManager::stopTrace_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -364,7 +372,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATraceManager::start_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATraceManager::start_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -383,7 +391,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATraceManager::stop_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MATraceManager::stop_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

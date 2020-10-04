@@ -16,6 +16,9 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
   //region constants
   static const String name__ = 'com.amap.api.maps.model.HeatMapLayerOptions';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   static final int DEFAULT_RADIUS = 12;
   static final double DEFAULT_OPACITY = 0.6;
   static final int TYPE_NORMAL = 0;
@@ -26,7 +29,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
   //region creators
   static Future<com_amap_api_maps_model_HeatMapLayerOptions> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_HeatMapLayerOptions__', );
-    final object = com_amap_api_maps_model_HeatMapLayerOptions()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_HeatMapLayerOptions()..refId = refId;
     return object;
   }
   
@@ -36,7 +39,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_HeatMapLayerOptions__', {'length': length});
   
-    final List<com_amap_api_maps_model_HeatMapLayerOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_HeatMapLayerOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = result).toList();
     return typedResult;
   }
   
@@ -45,7 +48,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
   //region getters
   static Future<com_amap_api_maps_model_Gradient> get_static_DEFAULT_GRADIENT() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("com.amap.api.maps.model.HeatMapLayerOptions::get_DEFAULT_GRADIENT", );
-    return __result__ == null ? null : (com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return __result__ == null ? null : (com_amap_api_maps_model_Gradient()..refId = __result__);
   }
   
   //endregion
@@ -73,7 +76,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -96,7 +99,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -119,7 +122,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -142,7 +145,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -165,7 +168,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -188,7 +191,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -211,7 +214,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -234,7 +237,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -257,7 +260,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -280,7 +283,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -303,7 +306,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -326,7 +329,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__;
       return __return__;
     }
   }
@@ -349,7 +352,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Gradient()..refId = __result__;
       return __return__;
     }
   }
@@ -372,7 +375,7 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_WeightedLatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_WeightedLatLng()..refId = __it__).toList();
       return __return__;
     }
   }
@@ -585,6 +588,11 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_HeatMapLayerOptions{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api_maps_model_HeatMapLayerOptions> {
@@ -592,7 +600,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
   Future<List<com_amap_api_maps_model_Gradient>> get_static_DEFAULT_GRADIENT_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("com.amap.api.maps.model.HeatMapLayerOptions::get_DEFAULT_GRADIENT_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_Gradient()..refId = __result__).toList();
     return typedResult;
   }
   
@@ -610,14 +618,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::data_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::data_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -629,14 +637,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::weightedData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::weightedData_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -648,14 +656,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::size_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::size_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -667,14 +675,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::gradient_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::gradient_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -686,14 +694,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::opacity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::opacity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -705,14 +713,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::maxIntensity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::maxIntensity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -724,14 +732,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::maxZoom_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::maxZoom_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -743,14 +751,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::minZoom_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::minZoom_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -762,14 +770,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::gap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::gap_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -781,14 +789,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::type_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::type_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -800,14 +808,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::zIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::zIndex_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -819,14 +827,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::visible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::visible_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_HeatMapLayerOptions()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -838,14 +846,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getGradient_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getGradient_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => com_amap_api_maps_model_Gradient()..refId = __result__).toList();
       return typedResult;
     }
   }
@@ -857,14 +865,14 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getData_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_WeightedLatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => com_amap_api_maps_model_WeightedLatLng()..refId = __it__).toList()).toList();
       return typedResult;
     }
   }
@@ -876,7 +884,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getSize_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getSize_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -895,7 +903,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getOpacity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getOpacity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -914,7 +922,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getMaxIntensity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getMaxIntensity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -933,7 +941,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getMaxZoom_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getMaxZoom_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -952,7 +960,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getMinZoom_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getMinZoom_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -971,7 +979,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getGap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getGap_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -990,7 +998,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getType_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1009,7 +1017,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getZIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::getZIndex_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1028,7 +1036,7 @@ extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::isVisible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.HeatMapLayerOptions::isVisible_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

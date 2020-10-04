@@ -16,13 +16,16 @@ class MATileOverlayPath extends NSObject  {
   //region constants
   static const String name__ = 'MATileOverlayPath';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MATileOverlayPath> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMATileOverlayPath', {'init': init});
-    final object = MATileOverlayPath()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MATileOverlayPath()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MATileOverlayPath extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMATileOverlayPath', {'length': length, 'init': init});
   
-    final List<MATileOverlayPath> typedResult = resultBatch.map((result) => MATileOverlayPath()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MATileOverlayPath> typedResult = resultBatch.map((result) => MATileOverlayPath()..refId = result).toList();
     return typedResult;
   }
   
@@ -91,6 +94,11 @@ class MATileOverlayPath extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MATileOverlayPath{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MATileOverlayPath_Batch on List<MATileOverlayPath> {
@@ -127,25 +135,25 @@ extension MATileOverlayPath_Batch on List<MATileOverlayPath> {
 
   //region setters
   Future<void> set_x_batch(List<int> x) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "x": x[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_x_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "x": x[__i__]}]);
   
   
   }
   
   Future<void> set_y_batch(List<int> y) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "y": y[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_y_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "y": y[__i__]}]);
   
   
   }
   
   Future<void> set_z_batch(List<int> z) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_z_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "z": z[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_z_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "z": z[__i__]}]);
   
   
   }
   
   Future<void> set_contentScaleFactor_batch(List<double> contentScaleFactor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_contentScaleFactor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "contentScaleFactor": contentScaleFactor[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MATileOverlayPath::set_contentScaleFactor_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "contentScaleFactor": contentScaleFactor[__i__]}]);
   
   
   }

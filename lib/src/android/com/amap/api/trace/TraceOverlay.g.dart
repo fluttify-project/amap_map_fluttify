@@ -16,6 +16,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.trace.TraceOverlay';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   static final int TRACE_STATUS_PROCESSING = 1;
   static final int TRACE_STATUS_FINISH = 2;
   static final int TRACE_STATUS_FAILURE = 3;
@@ -25,13 +28,13 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_trace_TraceOverlay> create__com_amap_api_maps_AMap__List_java_util_List_com_amap_api_maps_model_LatLng__(com_amap_api_maps_AMap var1, List<com_amap_api_maps_model_LatLng> var2) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_', {"var1": var1, "var2": var2});
-    final object = com_amap_api_trace_TraceOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_trace_TraceOverlay()..refId = refId;
     return object;
   }
   
   static Future<com_amap_api_trace_TraceOverlay> create__com_amap_api_maps_AMap(com_amap_api_maps_AMap var1) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap', {"var1": var1});
-    final object = com_amap_api_trace_TraceOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_trace_TraceOverlay()..refId = refId;
     return object;
   }
   
@@ -41,7 +44,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__]}]);
   
-    final List<com_amap_api_trace_TraceOverlay> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_trace_TraceOverlay> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceOverlay()..refId = result).toList();
     return typedResult;
   }
   
@@ -51,7 +54,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_amap_api_trace_TraceOverlay> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_trace_TraceOverlay> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceOverlay()..refId = result).toList();
     return typedResult;
   }
   
@@ -297,6 +300,11 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_trace_TraceOverlay{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_TraceOverlay> {
@@ -316,7 +324,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::add_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::add_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -335,7 +343,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::remove_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::remove_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -354,7 +362,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setProperCamera_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setProperCamera_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -373,7 +381,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::zoopToSpan_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::zoopToSpan_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -392,7 +400,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::getTraceStatus_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::getTraceStatus_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -411,7 +419,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setTraceStatus_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setTraceStatus_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -430,7 +438,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::getDistance_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::getDistance_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -449,7 +457,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setDistance_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setDistance_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -468,7 +476,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::getWaitTime_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::getWaitTime_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -487,7 +495,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setWaitTime_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.trace.TraceOverlay::setWaitTime_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

@@ -16,8 +16,8 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-typedef void DownloadProgressViewCreatedCallback(com_amap_api_maps_offlinemap_DownloadProgressView controller);
-typedef Future<void> _OnAndroidViewDispose();
+typedef DownloadProgressViewCreatedCallback = void Function(com_amap_api_maps_offlinemap_DownloadProgressView controller);
+typedef _OnAndroidViewDispose = Future<void> Function();
 
 class com_amap_api_maps_offlinemap_DownloadProgressView_Android extends StatefulWidget {
   const com_amap_api_maps_offlinemap_DownloadProgressView_Android({
@@ -47,6 +47,33 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
     };
 
     final messageCodec = FluttifyMessageCodec('amap_map_fluttify');
+
+    // hybrid composition version.
+    // PlatformViewLink(
+    //   viewType: 'me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView',
+    //   surfaceFactory: (
+    //     BuildContext context,
+    //     PlatformViewController controller,
+    //   ) {
+    //     return AndroidViewSurface(
+    //       controller: controller,
+    //       gestureRecognizers: gestureRecognizers,
+    //       hitTestBehavior: PlatformViewHitTestBehavior.opaque,
+    //     );
+    //   },
+    //   onCreatePlatformView: (PlatformViewCreationParams params) {
+    //     return PlatformViewsService.initSurfaceAndroidView(
+    //       id: params.id,
+    //       viewType: 'me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView',
+    //       layoutDirection: TextDirection.ltr,
+    //       creationParams: widget.params,
+    //       creationParamsCodec: messageCodec,
+    //     )
+    //       ..addOnPlatformViewCreatedListener(params.onPlatformViewCreated)
+    //       ..addOnPlatformViewCreatedListener((id) => _onViewCreated(id))
+    //       ..create();
+    //   },
+    // );
     return AndroidView(
       viewType: 'me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView',
       gestureRecognizers: gestureRecognizers,
@@ -60,7 +87,7 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
     // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
     // 把viewId转换为refId再使用, 使其与其他对象统一
     final refId = await viewId2RefId((2147483647 - id).toString());
-    _controller = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = refId..tag__ = 'amap_map_fluttify';
+    _controller = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = refId;
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

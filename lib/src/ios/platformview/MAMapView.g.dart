@@ -16,8 +16,8 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-typedef void MAMapViewCreatedCallback(MAMapView controller);
-typedef Future<void> _OnUiKitViewDispose();
+typedef MAMapViewCreatedCallback = void Function(MAMapView controller);
+typedef _OnUiKitViewDispose = Future<void> Function();
 
 class MAMapView_iOS extends StatefulWidget {
   const MAMapView_iOS({
@@ -60,7 +60,7 @@ class _MAMapView_iOSState extends State<MAMapView_iOS> {
     // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
     // 把viewId转换为refId再使用, 使其与其他对象统一
     final refId = await viewId2RefId((2147483647 - id).toString());
-    _controller = MAMapView()..refId = refId..tag__ = 'amap_map_fluttify';
+    _controller = MAMapView()..refId = refId;
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

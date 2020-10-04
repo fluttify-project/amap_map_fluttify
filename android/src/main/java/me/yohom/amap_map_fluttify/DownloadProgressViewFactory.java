@@ -89,7 +89,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
     }};
 
     @Override
-    public PlatformView create(Context __, int id, Object params) {
+    public PlatformView create(Context context, int id, Object params) {
         Map<String, Object> __args__ = (Map<String, Object>) params;
 
         ////////////////////////////////初始化AndroidView////////////////////////////////////////

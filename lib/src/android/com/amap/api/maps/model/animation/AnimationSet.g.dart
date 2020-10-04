@@ -16,13 +16,16 @@ class com_amap_api_maps_model_animation_AnimationSet extends com_amap_api_maps_m
   //region constants
   static const String name__ = 'com.amap.api.maps.model.animation.AnimationSet';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<com_amap_api_maps_model_animation_AnimationSet> create__boolean(bool var1) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean', {"var1": var1});
-    final object = com_amap_api_maps_model_animation_AnimationSet()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_animation_AnimationSet()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends com_amap_api_maps_m
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_animation_AnimationSet__boolean', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_amap_api_maps_model_animation_AnimationSet> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_AnimationSet()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_animation_AnimationSet> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_AnimationSet()..refId = result).toList();
     return typedResult;
   }
   
@@ -94,6 +97,11 @@ class com_amap_api_maps_model_animation_AnimationSet extends com_amap_api_maps_m
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_model_animation_AnimationSet{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_model_animation_AnimationSet_Batch on List<com_amap_api_maps_model_animation_AnimationSet> {
@@ -113,7 +121,7 @@ extension com_amap_api_maps_model_animation_AnimationSet_Batch on List<com_amap_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.animation.AnimationSet::addAnimation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.animation.AnimationSet::addAnimation_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"var1": var1[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
@@ -132,7 +140,7 @@ extension com_amap_api_maps_model_animation_AnimationSet_Batch on List<com_amap_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.animation.AnimationSet::cleanAnimation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('com.amap.api.maps.model.animation.AnimationSet::cleanAnimation_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"__this__": this[__i__]}]);
   
   
     // convert native result to dart side object

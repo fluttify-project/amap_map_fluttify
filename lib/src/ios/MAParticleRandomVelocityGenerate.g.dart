@@ -16,13 +16,16 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
   //region constants
   static const String name__ = 'MAParticleRandomVelocityGenerate';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAParticleRandomVelocityGenerate> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleRandomVelocityGenerate', {'init': init});
-    final object = MAParticleRandomVelocityGenerate()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAParticleRandomVelocityGenerate()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleRandomVelocityGenerate', {'length': length, 'init': init});
   
-    final List<MAParticleRandomVelocityGenerate> typedResult = resultBatch.map((result) => MAParticleRandomVelocityGenerate()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAParticleRandomVelocityGenerate> typedResult = resultBatch.map((result) => MAParticleRandomVelocityGenerate()..refId = result).toList();
     return typedResult;
   }
   
@@ -65,12 +68,17 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleRandomVelocityGenerate()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAParticleRandomVelocityGenerate{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocityGenerate> {
@@ -90,14 +98,14 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"x1": x1[__i__], "y1": y1[__i__], "z1": z1[__i__], "x2": x2[__i__], "y2": y2[__i__], "z2": z2[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"x1": x1[__i__], "y1": y1[__i__], "z1": z1[__i__], "x2": x2[__i__], "y2": y2[__i__], "z2": z2[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleRandomVelocityGenerate()..refId = __result__).toList();
       return typedResult;
     }
   }

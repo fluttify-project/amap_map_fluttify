@@ -16,8 +16,8 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-typedef void MACustomCalloutViewCreatedCallback(MACustomCalloutView controller);
-typedef Future<void> _OnUiKitViewDispose();
+typedef MACustomCalloutViewCreatedCallback = void Function(MACustomCalloutView controller);
+typedef _OnUiKitViewDispose = Future<void> Function();
 
 class MACustomCalloutView_iOS extends StatefulWidget {
   const MACustomCalloutView_iOS({
@@ -60,7 +60,7 @@ class _MACustomCalloutView_iOSState extends State<MACustomCalloutView_iOS> {
     // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
     // 把viewId转换为refId再使用, 使其与其他对象统一
     final refId = await viewId2RefId((2147483647 - id).toString());
-    _controller = MACustomCalloutView()..refId = refId..tag__ = 'amap_map_fluttify';
+    _controller = MACustomCalloutView()..refId = refId;
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

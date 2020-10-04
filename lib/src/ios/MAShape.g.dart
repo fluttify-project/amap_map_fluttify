@@ -16,13 +16,16 @@ class MAShape extends NSObject with MAAnnotation {
   //region constants
   static const String name__ = 'MAShape';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAShape> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAShape', {'init': init});
-    final object = MAShape()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAShape()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAShape extends NSObject with MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAShape', {'length': length, 'init': init});
   
-    final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result).toList();
     return typedResult;
   }
   
@@ -69,6 +72,11 @@ class MAShape extends NSObject with MAAnnotation {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAShape{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAShape_Batch on List<MAShape> {
@@ -91,13 +99,13 @@ extension MAShape_Batch on List<MAShape> {
 
   //region setters
   Future<void> set_title_batch(List<String> title) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAShape::set_title_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "title": title[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAShape::set_title_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "title": title[__i__]}]);
   
   
   }
   
   Future<void> set_subtitle_batch(List<String> subtitle) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAShape::set_subtitle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "subtitle": subtitle[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAShape::set_subtitle_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "subtitle": subtitle[__i__]}]);
   
   
   }

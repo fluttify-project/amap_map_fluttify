@@ -16,6 +16,9 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.amap.api.maps.utils.SpatialRelationUtil';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   static final int MIN_POLYLINE_POINT_SIZE = 2;
   static final int A_HALF_CIRCLE_DEGREE = 180;
   static final int A_CIRCLE_DEGREE = 360;
@@ -25,7 +28,7 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_maps_utils_SpatialRelationUtil> create__() async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__', );
-    final object = com_amap_api_maps_utils_SpatialRelationUtil()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = com_amap_api_maps_utils_SpatialRelationUtil()..refId = refId;
     return object;
   }
   
@@ -35,7 +38,7 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_utils_SpatialRelationUtil__', {'length': length});
   
-    final List<com_amap_api_maps_utils_SpatialRelationUtil> typedResult = resultBatch.map((result) => com_amap_api_maps_utils_SpatialRelationUtil()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_utils_SpatialRelationUtil> typedResult = resultBatch.map((result) => com_amap_api_maps_utils_SpatialRelationUtil()..refId = result).toList();
     return typedResult;
   }
   
@@ -52,6 +55,11 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'com_amap_api_maps_utils_SpatialRelationUtil{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension com_amap_api_maps_utils_SpatialRelationUtil_Batch on List<com_amap_api_maps_utils_SpatialRelationUtil> {

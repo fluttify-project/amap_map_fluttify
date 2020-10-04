@@ -16,13 +16,16 @@ class MAHeatMapVectorOverlayOptions extends NSObject  {
   //region constants
   static const String name__ = 'MAHeatMapVectorOverlayOptions';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAHeatMapVectorOverlayOptions> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAHeatMapVectorOverlayOptions', {'init': init});
-    final object = MAHeatMapVectorOverlayOptions()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAHeatMapVectorOverlayOptions()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAHeatMapVectorOverlayOptions extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAHeatMapVectorOverlayOptions', {'length': length, 'init': init});
   
-    final List<MAHeatMapVectorOverlayOptions> typedResult = resultBatch.map((result) => MAHeatMapVectorOverlayOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAHeatMapVectorOverlayOptions> typedResult = resultBatch.map((result) => MAHeatMapVectorOverlayOptions()..refId = result).toList();
     return typedResult;
   }
   
@@ -51,7 +54,7 @@ class MAHeatMapVectorOverlayOptions extends NSObject  {
   
   Future<List<MAHeatMapVectorNode>> get_inputNodes() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorOverlayOptions::get_inputNodes", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAHeatMapVectorNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => MAHeatMapVectorNode()..refId = __it__).toList());
   }
   
   Future<double> get_size() async {
@@ -66,7 +69,7 @@ class MAHeatMapVectorOverlayOptions extends NSObject  {
   
   Future<List<UIColor>> get_colors() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorOverlayOptions::get_colors", {'__this__': this});
-    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => UIColor()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return __result__ == null ? null : ((__result__ as List).cast<String>().map((__it__) => UIColor()..refId = __it__).toList());
   }
   
   Future<List<num>> get_startPoints() async {
@@ -168,6 +171,11 @@ class MAHeatMapVectorOverlayOptions extends NSObject  {
   //region methods
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAHeatMapVectorOverlayOptions{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAHeatMapVectorOverlayOptions_Batch on List<MAHeatMapVectorOverlayOptions> {
@@ -189,7 +197,7 @@ extension MAHeatMapVectorOverlayOptions_Batch on List<MAHeatMapVectorOverlayOpti
   Future<List<List<MAHeatMapVectorNode>>> get_inputNodes_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorOverlayOptions::get_inputNodes_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAHeatMapVectorNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => MAHeatMapVectorNode()..refId = __it__).toList()).toList();
     return typedResult;
   }
   
@@ -210,7 +218,7 @@ extension MAHeatMapVectorOverlayOptions_Batch on List<MAHeatMapVectorOverlayOpti
   Future<List<List<UIColor>>> get_colors_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod("MAHeatMapVectorOverlayOptions::get_colors_batch", [for (final __item__ in this) {'__this__': __item__}]);
   
-    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => UIColor()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => (__result__ as List).cast<String>().map((__it__) => UIColor()..refId = __it__).toList()).toList();
     return typedResult;
   }
   
@@ -253,67 +261,67 @@ extension MAHeatMapVectorOverlayOptions_Batch on List<MAHeatMapVectorOverlayOpti
 
   //region setters
   Future<void> set_type_batch(List<MAHeatMapType> type) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_type_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "type": type[__i__].toValue()}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_type_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "type": type[__i__].toValue()}]);
   
   
   }
   
   Future<void> set_visible_batch(List<bool> visible) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_visible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "visible": visible[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_visible_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "visible": visible[__i__]}]);
   
   
   }
   
   Future<void> set_inputNodes_batch(List<List<MAHeatMapVectorNode>> inputNodes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_inputNodes_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "inputNodes": inputNodes[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_inputNodes_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "inputNodes": inputNodes[__i__]}]);
   
   
   }
   
   Future<void> set_size_batch(List<double> size) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_size_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "size": size[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_size_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "size": size[__i__]}]);
   
   
   }
   
   Future<void> set_gap_batch(List<double> gap) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_gap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "gap": gap[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_gap_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "gap": gap[__i__]}]);
   
   
   }
   
   Future<void> set_colors_batch(List<List<UIColor>> colors) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_colors_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "colors": colors[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_colors_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "colors": colors[__i__]}]);
   
   
   }
   
   Future<void> set_startPoints_batch(List<List<num>> startPoints) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_startPoints_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "startPoints": startPoints[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_startPoints_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "startPoints": startPoints[__i__]}]);
   
   
   }
   
   Future<void> set_opacity_batch(List<double> opacity) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_opacity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "opacity": opacity[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_opacity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "opacity": opacity[__i__]}]);
   
   
   }
   
   Future<void> set_maxIntensity_batch(List<int> maxIntensity) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_maxIntensity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "maxIntensity": maxIntensity[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_maxIntensity_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "maxIntensity": maxIntensity[__i__]}]);
   
   
   }
   
   Future<void> set_minZoom_batch(List<double> minZoom) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_minZoom_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "minZoom": minZoom[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_minZoom_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "minZoom": minZoom[__i__]}]);
   
   
   }
   
   Future<void> set_maxZoom_batch(List<double> maxZoom) async {
-    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_maxZoom_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'__this__': this[__i__], "maxZoom": maxZoom[__i__]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec())).invokeMethod('MAHeatMapVectorOverlayOptions::set_maxZoom_batch', [for (int __i__ = 0; __i__ < length; __i__++) {'__this__': this[__i__], "maxZoom": maxZoom[__i__]}]);
   
   
   }

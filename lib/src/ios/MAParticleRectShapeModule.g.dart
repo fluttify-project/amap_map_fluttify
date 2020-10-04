@@ -16,13 +16,16 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   //region constants
   static const String name__ = 'MAParticleRectShapeModule';
 
+  @override
+  final String tag__ = 'amap_map_fluttify';
+
   
   //endregion
 
   //region creators
   static Future<MAParticleRectShapeModule> create__({ bool init = true /* ios only */ }) async {
     final refId = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::createMAParticleRectShapeModule', {'init': init});
-    final object = MAParticleRectShapeModule()..refId = refId..tag__ = 'amap_map_fluttify';
+    final object = MAParticleRectShapeModule()..refId = refId;
     return object;
   }
   
@@ -32,7 +35,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('ObjectFactory::create_batchMAParticleRectShapeModule', {'length': length, 'init': init});
   
-    final List<MAParticleRectShapeModule> typedResult = resultBatch.map((result) => MAParticleRectShapeModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    final List<MAParticleRectShapeModule> typedResult = resultBatch.map((result) => MAParticleRectShapeModule()..refId = result).toList();
     return typedResult;
   }
   
@@ -65,12 +68,17 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleRectShapeModule()..refId = __result__;
       return __return__;
     }
   }
   
   //endregion
+
+  @override
+  String toString() {
+    return 'MAParticleRectShapeModule{refId: $refId, runtimeType: $runtimeType, tag__: $tag__}';
+  }
 }
 
 extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
@@ -90,14 +98,14 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"left": left[__i__], "top": top[__i__], "right": right[__i__], "bottom": bottom[__i__], "isUseRatio": isUseRatio[__i__], "__this__": this[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify', StandardMethodCodec(FluttifyMessageCodec('amap_map_fluttify'))).invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch', [for (int __i__ = 0; __i__ < length; __i__++) {"left": left[__i__], "top": top[__i__], "right": right[__i__], "bottom": bottom[__i__], "isUseRatio": isUseRatio[__i__], "__this__": this[__i__]}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => MAParticleRectShapeModule()..refId = __result__).toList();
       return typedResult;
     }
   }

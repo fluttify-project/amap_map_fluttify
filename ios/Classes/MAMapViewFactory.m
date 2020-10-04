@@ -434,14 +434,14 @@ extern BOOL enableLog;
       
           // result
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
       @"MAMapView::setMapStatus_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          MAMapStatus* status = (MAMapStatus*) args[@"status"];
+          MAMapStatus* status = (MAMapStatus*) (args[@"status"] == [NSNull null] ? nil : args[@"status"]);
           // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
@@ -465,7 +465,7 @@ extern BOOL enableLog;
       @"MAMapView::setMapStatus_animated_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          MAMapStatus* status = (MAMapStatus*) args[@"status"];
+          MAMapStatus* status = (MAMapStatus*) (args[@"status"] == [NSNull null] ? nil : args[@"status"]);
           // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
           // jsonable arg
@@ -491,7 +491,7 @@ extern BOOL enableLog;
       @"MAMapView::setCompassImage": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          UIImage* image = (UIImage*) args[@"image"];
+          UIImage* image = (UIImage*) (args[@"image"] == [NSNull null] ? nil : args[@"image"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -530,7 +530,7 @@ extern BOOL enableLog;
       
           // result
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -609,7 +609,7 @@ extern BOOL enableLog;
           CLLocationCoordinate2D coordinate;
           [coordinateValue getValue:&coordinate];
           // ref arg
-          UIView* view = (UIView*) args[@"view"];
+          UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -635,7 +635,7 @@ extern BOOL enableLog;
           CGPoint point;
           [pointValue getValue:&point];
           // ref arg
-          UIView* view = (UIView*) args[@"view"];
+          UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -661,7 +661,7 @@ extern BOOL enableLog;
           MACoordinateRegion region;
           [regionValue getValue:&region];
           // ref arg
-          UIView* view = (UIView*) args[@"view"];
+          UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -687,7 +687,7 @@ extern BOOL enableLog;
           CGRect rect;
           [rectValue getValue:&rect];
           // ref arg
-          UIView* view = (UIView*) args[@"view"];
+          UIView* view = (UIView*) (args[@"view"] == [NSNull null] ? nil : args[@"view"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -835,7 +835,7 @@ extern BOOL enableLog;
       @"MAMapView::addAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+          id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -879,7 +879,7 @@ extern BOOL enableLog;
       @"MAMapView::removeAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+          id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -923,7 +923,7 @@ extern BOOL enableLog;
       @"MAMapView::viewForAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+          id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -938,7 +938,7 @@ extern BOOL enableLog;
       
           // result
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -960,14 +960,14 @@ extern BOOL enableLog;
       
           // result
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
       @"MAMapView::selectAnnotation_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+          id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
           // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
@@ -991,7 +991,7 @@ extern BOOL enableLog;
       @"MAMapView::deselectAnnotation_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAAnnotation> annotation = (id<MAAnnotation>) args[@"annotation"];
+          id<MAAnnotation> annotation = (id<MAAnnotation>) (args[@"annotation"] == [NSNull null] ? nil : args[@"annotation"]);
           // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
@@ -1091,7 +1091,7 @@ extern BOOL enableLog;
       @"MAMapView::updateUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) args[@"representation"];
+          MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) (args[@"representation"] == [NSNull null] ? nil : args[@"representation"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1127,19 +1127,15 @@ extern BOOL enableLog;
           NSArray* result = [ref overlaysInLevel: level];
       
           // result
-          // 返回值: 列表
-          NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-          for (int __i__ = 0; __i__ < result.count; __i__++) {
-              NSObject* object = [result objectAtIndex:__i__];
-              [__result__ addObject: object];
-          }
+          // return a ref
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
       @"MAMapView::addOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1183,7 +1179,7 @@ extern BOOL enableLog;
       @"MAMapView::addOverlay_level": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
           // enum arg
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
@@ -1231,7 +1227,7 @@ extern BOOL enableLog;
       @"MAMapView::removeOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1275,7 +1271,7 @@ extern BOOL enableLog;
       @"MAMapView::insertOverlay_atIndex_level": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
           // jsonable arg
           NSUInteger index = [args[@"index"] unsignedIntegerValue];
           // enum arg
@@ -1301,9 +1297,9 @@ extern BOOL enableLog;
       @"MAMapView::insertOverlay_aboveOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
           // ref arg
-          id<MAOverlay> sibling = (id<MAOverlay>) args[@"sibling"];
+          id<MAOverlay> sibling = (id<MAOverlay>) (args[@"sibling"] == [NSNull null] ? nil : args[@"sibling"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1325,9 +1321,9 @@ extern BOOL enableLog;
       @"MAMapView::insertOverlay_belowOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
           // ref arg
-          id<MAOverlay> sibling = (id<MAOverlay>) args[@"sibling"];
+          id<MAOverlay> sibling = (id<MAOverlay>) (args[@"sibling"] == [NSNull null] ? nil : args[@"sibling"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1349,7 +1345,7 @@ extern BOOL enableLog;
       @"MAMapView::insertOverlay_atIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
           // jsonable arg
           NSUInteger index = [args[@"index"] unsignedIntegerValue];
       
@@ -1423,9 +1419,9 @@ extern BOOL enableLog;
       @"MAMapView::exchangeOverlay_withOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay1 = (id<MAOverlay>) args[@"overlay1"];
+          id<MAOverlay> overlay1 = (id<MAOverlay>) (args[@"overlay1"] == [NSNull null] ? nil : args[@"overlay1"]);
           // ref arg
-          id<MAOverlay> overlay2 = (id<MAOverlay>) args[@"overlay2"];
+          id<MAOverlay> overlay2 = (id<MAOverlay>) (args[@"overlay2"] == [NSNull null] ? nil : args[@"overlay2"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1447,7 +1443,7 @@ extern BOOL enableLog;
       @"MAMapView::rendererForOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          id<MAOverlay> overlay = (id<MAOverlay>) args[@"overlay"];
+          id<MAOverlay> overlay = (id<MAOverlay>) (args[@"overlay"] == [NSNull null] ? nil : args[@"overlay"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1462,7 +1458,7 @@ extern BOOL enableLog;
       
           // result
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -1539,12 +1535,8 @@ extern BOOL enableLog;
           NSArray* result = [ref getHittedPolylinesWith: tappedCoord traverseAll: traverseAll];
       
           // result
-          // 返回值: 列表
-          NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-          for (int __i__ = 0; __i__ < result.count; __i__++) {
-              NSObject* object = [result objectAtIndex:__i__];
-              [__result__ addObject: object];
-          }
+          // return a ref
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -1618,7 +1610,7 @@ extern BOOL enableLog;
       @"MAMapView::setCustomMapStyleWithWebData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          NSData* data = (NSData*) args[@"data"];
+          NSData* data = (NSData*) (args[@"data"] == [NSNull null] ? nil : args[@"data"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -1684,7 +1676,7 @@ extern BOOL enableLog;
       @"MAMapView::setCustomMapStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
-          MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) args[@"styleOptions"];
+          MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) (args[@"styleOptions"] == [NSNull null] ? nil : args[@"styleOptions"]);
       
           // ref
           MAMapView* ref = (MAMapView*) args[@"__this__"];
@@ -2399,12 +2391,8 @@ extern BOOL enableLog;
           // invoke native method
           NSArray* result = ref.annotations;
       
-          // 返回值: 列表
-          NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-          for (int __i__ = 0; __i__ < result.count; __i__++) {
-              NSObject* object = [result objectAtIndex:__i__];
-              [__result__ addObject: object];
-          }
+          // return a ref
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -2421,12 +2409,8 @@ extern BOOL enableLog;
           // invoke native method
           NSArray* result = ref.selectedAnnotations;
       
-          // 返回值: 列表
-          NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-          for (int __i__ = 0; __i__ < result.count; __i__++) {
-              NSObject* object = [result objectAtIndex:__i__];
-              [__result__ addObject: object];
-          }
+          // return a ref
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -2498,7 +2482,7 @@ extern BOOL enableLog;
           MAUserLocation* result = ref.userLocation;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -2534,7 +2518,7 @@ extern BOOL enableLog;
           MACircle* result = ref.userLocationAccuracyCircle;
       
           // return a ref
-          id __result__ = result;
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
@@ -2677,12 +2661,8 @@ extern BOOL enableLog;
           // invoke native method
           NSArray* result = ref.overlays;
       
-          // 返回值: 列表
-          NSMutableArray<NSObject*>* __result__ = [NSMutableArray array];
-          for (int __i__ = 0; __i__ < result.count; __i__++) {
-              NSObject* object = [result objectAtIndex:__i__];
-              [__result__ addObject: object];
-          }
+          // return a ref
+          NSObject* __result__ = result;
       
           methodResult(__result__);
       },
