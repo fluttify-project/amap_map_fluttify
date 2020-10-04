@@ -24,7 +24,7 @@ class _IOSMapDelegate extends NSObject
     MAMapView mapView,
     MAAnnotationView view,
   ) async {
-    super.mapView_didAnnotationViewTapped(mapView, view);
+    await super.mapView_didAnnotationViewTapped(mapView, view);
     if (onMarkerClicked != null) {
       await onMarkerClicked(
         Marker.ios(
@@ -48,7 +48,7 @@ class _IOSMapDelegate extends NSObject
     MAAnnotationViewDragState newState,
     MAAnnotationViewDragState oldState,
   ) async {
-    super.mapView_annotationView_didChangeDragState_fromOldState(
+    await super.mapView_annotationView_didChangeDragState_fromOldState(
       mapView,
       view,
       newState,
@@ -92,7 +92,7 @@ class _IOSMapDelegate extends NSObject
     MAMapView mapView,
     CLLocationCoordinate2D coordinate,
   ) async {
-    super.mapView_didSingleTappedAtCoordinate(mapView, coordinate);
+    await super.mapView_didSingleTappedAtCoordinate(mapView, coordinate);
     if (onMapClicked != null) {
       await onMapClicked(LatLng(
         await coordinate.latitude,
@@ -106,7 +106,7 @@ class _IOSMapDelegate extends NSObject
     MAMapView mapView,
     CLLocationCoordinate2D coordinate,
   ) async {
-    super.mapView_didLongPressedAtCoordinate(mapView, coordinate);
+    await super.mapView_didLongPressedAtCoordinate(mapView, coordinate);
     if (onMapLongClicked != null) {
       await onMapLongClicked(LatLng(
         await coordinate.latitude,
@@ -121,7 +121,7 @@ class _IOSMapDelegate extends NSObject
     bool animated,
     bool wasUserAction,
   ) async {
-    super.mapView_regionWillChangeAnimated_wasUserAction(
+    await super.mapView_regionWillChangeAnimated_wasUserAction(
       mapView,
       animated,
       wasUserAction,
@@ -140,7 +140,7 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapViewRegionChanged(MAMapView mapView) async {
-    super.mapViewRegionChanged(mapView);
+    await super.mapViewRegionChanged(mapView);
     if (onMapMoving != null) {
       final location = await mapView.get_centerCoordinate();
       await onMapMoving(MapMove(
@@ -159,7 +159,7 @@ class _IOSMapDelegate extends NSObject
     bool animated,
     bool wasUserAction,
   ) async {
-    super.mapView_regionDidChangeAnimated_wasUserAction(
+    await super.mapView_regionDidChangeAnimated_wasUserAction(
       mapView,
       animated,
       wasUserAction,
@@ -181,7 +181,7 @@ class _IOSMapDelegate extends NSObject
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapView_mapWillZoomByUser(mapView, wasUserAction);
+    await super.mapView_mapWillZoomByUser(mapView, wasUserAction);
     if (onMapMoveStart != null) {
       final location = await mapView.get_centerCoordinate();
       await onMapMoveStart(MapMove(
@@ -199,7 +199,7 @@ class _IOSMapDelegate extends NSObject
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapView_mapDidZoomByUser(mapView, wasUserAction);
+    await super.mapView_mapDidZoomByUser(mapView, wasUserAction);
     if (onMapMoveEnd != null) {
       final location = await mapView.get_centerCoordinate();
       await onMapMoveEnd(MapMove(
@@ -216,7 +216,7 @@ class _IOSMapDelegate extends NSObject
   Future<void> mapViewRequireLocationAuth(
     CLLocationManager locationManager,
   ) async {
-    super.mapViewRequireLocationAuth(locationManager);
+    await super.mapViewRequireLocationAuth(locationManager);
     if (onRequireAlwaysAuth != null) {
       await onRequireAlwaysAuth(locationManager);
     }
@@ -228,7 +228,7 @@ class _IOSMapDelegate extends NSObject
     MAUserLocation userLocation,
     bool updatingLocation,
   ) async {
-    super.mapView_didUpdateUserLocation_updatingLocation(
+    await super.mapView_didUpdateUserLocation_updatingLocation(
       mapView,
       userLocation,
       updatingLocation,
@@ -243,7 +243,7 @@ class _IOSMapDelegate extends NSObject
     MAMapView mapView,
     MAAnnotationView view,
   ) async {
-    super.mapView_didAnnotationViewCalloutTapped(mapView, view);
+    await super.mapView_didAnnotationViewCalloutTapped(mapView, view);
     if (onInfoWindowClicked != null) {
       await onInfoWindowClicked(
         Marker.ios(
@@ -260,13 +260,13 @@ class _IOSMapDelegate extends NSObject
     MAMapView mapView,
     List<dynamic> overlayRenderers,
   ) async {
-    super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
+    await super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
     if (overlayRenderers.length == 1 &&
         await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
             .is__<MAMultiPointOverlayRenderer>()) {
       final multiPointRenderer = TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
           .as__<MAMultiPointOverlayRenderer>();
-      multiPointRenderer.set_delegate(this);
+      await multiPointRenderer.set_delegate(this);
     }
   }
 
@@ -275,13 +275,13 @@ class _IOSMapDelegate extends NSObject
     MAMultiPointOverlayRenderer renderer,
     MAMultiPointItem item,
   ) async {
-    super.multiPointOverlayRenderer_didItemTapped(renderer, item);
+    await super.multiPointOverlayRenderer_didItemTapped(renderer, item);
     if (onMultiPointClicked != null) {
       final id = await item.get_customID();
       final title = await item.get_title();
       final snippet = await item.get_subtitle();
       final object = await item.getJsonableProperty__(1);
-      onMultiPointClicked(id, title, snippet, object);
+      await onMultiPointClicked(id, title, snippet, object);
     }
   }
 }
@@ -316,7 +316,7 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerClick(var1);
+    await super.onMarkerClick(var1);
     if (onMarkerClicked != null) {
       await onMarkerClicked(Marker.android(var1));
     }
@@ -325,7 +325,7 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerDragStart(var1);
+    await super.onMarkerDragStart(var1);
     if (onMarkerDragStarted != null) {
       await onMarkerDragStarted(Marker.android(var1));
     }
@@ -333,7 +333,7 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerDrag(var1);
+    await super.onMarkerDrag(var1);
     if (onMarkerDragging != null) {
       await onMarkerDragging(Marker.android(var1));
     }
@@ -341,7 +341,7 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerDragEnd(var1);
+    await super.onMarkerDragEnd(var1);
     if (onMarkerDragEnded != null) {
       await onMarkerDragEnded(Marker.android(var1));
     }
@@ -349,7 +349,7 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<void> onMapClick(com_amap_api_maps_model_LatLng var1) async {
-    super.onMapClick(var1);
+    await super.onMapClick(var1);
     if (onMapClicked != null) {
       await onMapClicked(LatLng(
         await var1.get_latitude(),
@@ -362,7 +362,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<void> onCameraChange(
     com_amap_api_maps_model_CameraPosition var1,
   ) async {
-    super.onCameraChange(var1);
+    await super.onCameraChange(var1);
     final location = await var1.get_target();
     if (onMapMoving != null && _moveStarted) {
       await onMapMoving(MapMove(
@@ -399,7 +399,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<void> onCameraChangeFinish(
     com_amap_api_maps_model_CameraPosition var1,
   ) async {
-    super.onCameraChangeFinish(var1);
+    await super.onCameraChangeFinish(var1);
     if (onMapMoveEnd != null) {
       final location = await var1.get_target();
       await onMapMoveEnd(MapMove(
@@ -420,16 +420,16 @@ class _AndroidMapDelegate extends java_lang_Object
   @override
   Future<void> onMapScreenShot__android_graphics_Bitmap(
       android_graphics_Bitmap var1) async {
-    super.onMapScreenShot__android_graphics_Bitmap(var1);
+    await super.onMapScreenShot__android_graphics_Bitmap(var1);
     if (onSnapshot != null) {
       await onSnapshot(await var1.data);
-      var1.recycle(); // 回收原生的Bitmap, 由于没有后续操作, 异步执行也无妨.
+      await var1.recycle(); // 回收原生的Bitmap, 由于没有后续操作, 异步执行也无妨.
     }
   }
 
   @override
   Future<void> onMyLocationChange(android_location_Location var1) async {
-    super.onMyLocationChange(var1);
+    await super.onMyLocationChange(var1);
     if (onLocationChange != null) {
       await onLocationChange(MapLocation.android(var1));
     }
@@ -437,7 +437,7 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<void> onInfoWindowClick(com_amap_api_maps_model_Marker var1) async {
-    super.onInfoWindowClick(var1);
+    await super.onInfoWindowClick(var1);
     if (onInfoWindowClicked != null) {
       await onInfoWindowClicked(Marker.android(var1));
     }
@@ -445,20 +445,20 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<bool> onPointClick(com_amap_api_maps_model_MultiPointItem var1) async {
-    super.onPointClick(var1);
+    await super.onPointClick(var1);
     if (onMultiPointClicked != null) {
       final id = await var1.getCustomerId();
       final title = await var1.getTitle();
       final snippet = await var1.getSnippet();
       final object = await var1.getObject();
-      onMultiPointClicked(id, title, snippet, object);
+      await onMultiPointClicked(id, title, snippet, object);
     }
     return true;
   }
 
   @override
   Future<void> onMapLongClick(com_amap_api_maps_model_LatLng var1) async {
-    super.onMapLongClick(var1);
+    await super.onMapLongClick(var1);
     if (onMapLongClicked != null) {
       await onMapLongClicked(LatLng(
         await var1.get_latitude(),

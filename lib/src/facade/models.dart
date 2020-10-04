@@ -16,10 +16,12 @@ class MyLocationOption {
     this.show = true,
     this.myLocationType = MyLocationType.Locate,
     this.interval = Duration.zero,
-    this.strokeColor,
-    this.strokeWidth,
-    this.fillColor,
+    this.strokeColor = Colors.transparent,
+    this.strokeWidth = 0,
+    this.fillColor = Colors.transparent,
     this.iconProvider,
+    this.anchorU,
+    this.anchorV,
   });
 
   /// 是否显示
@@ -45,9 +47,12 @@ class MyLocationOption {
   /// 资源图片则使用[AssetImage], 网络图片则使用[NetworkImage], 文件图片则使用[FileImage]
   final ImageProvider iconProvider;
 
+  /// 锚点
+  final double anchorU, anchorV;
+
   @override
   String toString() {
-    return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, strokeColor: $strokeColor, strokeWidth: $strokeWidth, fillColor: $fillColor, iconProvider: $iconProvider}';
+    return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, strokeColor: $strokeColor, strokeWidth: $strokeWidth, fillColor: $fillColor, iconProvider: $iconProvider, anchorU: $anchorU, anchorV: $anchorV}';
   }
 }
 
@@ -377,20 +382,6 @@ class MapMove {
   @override
   String toString() {
     return 'MapMove{latLng: $latLng, zoom: $zoom, tilt: $tilt, bearing: $bearing, isAbroad: $isAbroad}';
-  }
-}
-
-/// 屏幕坐标
-@immutable
-class Point {
-  final double x;
-  final double y;
-
-  Point(this.x, this.y);
-
-  @override
-  String toString() {
-    return 'Point{x: $x, y: $y}';
   }
 }
 

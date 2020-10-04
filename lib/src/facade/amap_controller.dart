@@ -2,25 +2,25 @@
 part of 'amap_view.widget.dart';
 
 /// marker点击事件回调签名 输入[Marker]对象
-typedef Future<void> OnMarkerClicked(Marker marker);
+typedef OnMarkerClicked = Future<void> Function(Marker marker);
 
 /// 地图点击事件回调签名
-typedef Future<void> OnMapClicked(LatLng latLng);
+typedef OnMapClicked = Future<void> Function(LatLng latLng);
 
 /// 地图移动事件回调签名
-typedef Future<void> OnMapMove(MapMove move);
+typedef OnMapMove = Future<void> Function(MapMove move);
 
 /// 位置移动事件回调签名
-typedef Future<void> OnLocationChange(MapLocation move);
+typedef OnLocationChange = Future<void> Function(MapLocation move);
 
 /// Marker拖动回调签名
-typedef Future<void> OnMarkerDrag(Marker marker);
+typedef OnMarkerDrag = Future<void> Function(Marker marker);
 
 /// ios请求权限回调签名
-typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
+typedef _OnRequireAlwaysAuth = Future<void> Function(CLLocationManager manager);
 
 /// 海量点点击回调签名
-typedef Future<void> OnMultiPointClicked(
+typedef OnMultiPointClicked = Future<void> Function(
   String id,
   String title,
   String snippet,
@@ -32,21 +32,21 @@ class AmapController extends _Holder
     with WidgetsBindingObserver, _Community, _Pro {
   /// Android构造器
   AmapController.android(com_amap_api_maps_TextureMapView _androidController,
-      _AmapViewState state) {
+      _AmapViewState _state) {
     WidgetsBinding.instance.addObserver(this);
-    this.androidController = _androidController;
-    this.state = state;
+    androidController = _androidController;
+    state = _state;
   }
 
   /// iOS构造器
-  AmapController.ios(MAMapView _iosController, _AmapViewState state) {
+  AmapController.ios(MAMapView _iosController, _AmapViewState _state) {
     WidgetsBinding.instance.addObserver(this);
-    this.iosController = _iosController;
-    this.state = state;
+    iosController = _iosController;
+    state = _state;
   }
 
   Future<void> dispose() async {
-    _locateSubscription?.cancel();
+    await _locateSubscription?.cancel();
 
     await androidController?.onPause();
     await androidController?.onDestroy();
@@ -191,6 +191,10 @@ mixin _Community on _Holder {
           if (option.strokeWidth != null) {
             await locationStyle.strokeWidth(option.strokeWidth);
           }
+          // 锚点
+          if (option.anchorU != null && option.anchorV != null) {
+            await locationStyle.anchor(option.anchorU, option.anchorV);
+          }
 
           // 设置样式
           await androidMap.setMyLocationStyle(locationStyle);
@@ -203,7 +207,7 @@ mixin _Community on _Holder {
 
         if (option.show) {
           if (option.interval != Duration.zero) {
-            _locateSubscription?.cancel();
+            await _locateSubscription?.cancel();
             _locateSubscription = Stream.periodic(option.interval, (_) => _)
                 .listen((_) async =>
                     await iosController.setUserTrackingMode_animated(
@@ -274,7 +278,7 @@ mixin _Community on _Holder {
 
           await iosController.updateUserLocationRepresentation(style);
         } else {
-          _locateSubscription?.cancel();
+          await _locateSubscription?.cancel();
         }
       },
     );
@@ -865,12 +869,14 @@ mixin _Community on _Holder {
           List<Uint8List> iconData =
               await state.widgetToImageData([option.widget]);
 
-          final icon = await UIImage.create(iconData[0]);
+          if (iconData != null) {
+            final icon = await UIImage.create(iconData[0]);
 
-          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.setIcon(icon);
+            // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+            await annotation.setIcon(icon);
 
-          pool..add(icon);
+            pool..add(icon);
+          }
         }
         // 是否可拖拽
         if (option.draggable != null) {
@@ -882,7 +888,7 @@ mixin _Community on _Holder {
         }
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
-          annotation.setInfoWindowEnabled(option.infoWindowEnabled);
+          await annotation.setInfoWindowEnabled(option.infoWindowEnabled);
         }
         // 锚点
         if (option.anchorU != null || option.anchorV != null) {
@@ -1222,31 +1228,31 @@ mixin _Community on _Holder {
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(state.context).devicePixelRatio;
-          polyline.addJsonableProperty__(1, option.width / pixelRatio);
+          await polyline.addJsonableProperty__(1, option.width / pixelRatio);
         }
         // 颜色
         if (option.strokeColor != null) {
-          polyline.addJsonableProperty__(2, option.strokeColor.value);
+          await polyline.addJsonableProperty__(2, option.strokeColor.value);
         }
         // 设置图片
         if (textureData != null) {
           final texture = await UIImage.create(textureData);
 
-          polyline.addProperty__(3, texture);
+          await polyline.addProperty__(3, texture);
 
           pool..add(texture);
         }
         // 线段始末端样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
         if (option.lineCapType != null) {
-          polyline.addJsonableProperty__(4, option.lineCapType.index);
+          await polyline.addJsonableProperty__(4, option.lineCapType.index);
         }
         // 线段连接处样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
         if (option.lineJoinType != null) {
-          polyline.addJsonableProperty__(5, option.lineJoinType.index);
+          await polyline.addJsonableProperty__(5, option.lineJoinType.index);
         }
         // 是否虚线
         if (option.dashType != null) {
-          polyline.addJsonableProperty__(6, option.dashType.index + 1);
+          await polyline.addJsonableProperty__(6, option.dashType.index + 1);
         }
 
         // 设置参数
@@ -1323,13 +1329,13 @@ mixin _Community on _Holder {
 
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(state.context).devicePixelRatio;
-          polygon.addJsonableProperty__(1, option.width / pixelRatio);
+          await polygon.addJsonableProperty__(1, option.width / pixelRatio);
         }
         if (option.strokeColor != null) {
-          polygon.addJsonableProperty__(2, option.strokeColor.value);
+          await polygon.addJsonableProperty__(2, option.strokeColor.value);
         }
         if (option.fillColor != null) {
-          polygon.addJsonableProperty__(3, option.fillColor.value);
+          await polygon.addJsonableProperty__(3, option.fillColor.value);
         }
 
         // 设置参数
@@ -1403,13 +1409,13 @@ mixin _Community on _Holder {
 
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(state.context).devicePixelRatio;
-          circle.addJsonableProperty__(1, option.width / pixelRatio);
+          await circle.addJsonableProperty__(1, option.width / pixelRatio);
         }
         if (option.strokeColor != null) {
-          circle.addJsonableProperty__(2, option.strokeColor.value);
+          await circle.addJsonableProperty__(2, option.strokeColor.value);
         }
         if (option.fillColor != null) {
-          circle.addJsonableProperty__(3, option.fillColor.value);
+          await circle.addJsonableProperty__(3, option.fillColor.value);
         }
 
         // 设置参数
@@ -1627,7 +1633,7 @@ mixin _Community on _Holder {
           northEast.longitude - southWest.longitude,
         );
         final region = await MACoordinateRegionMake(center, span);
-        iosController.set_limitRegion(region);
+        await iosController.set_limitRegion(region);
 
         pool..add(center)..add(span)..add(region);
       },

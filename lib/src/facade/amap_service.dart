@@ -15,13 +15,15 @@ import 'list.x.dart';
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
 
 /// 轨迹纠偏过程回调，一条轨迹分割为多个段，按索引顺序回调其中一段 [index]片段索引 [traceList]当前片段的经纬度列表
-typedef Future<void> OnTraceProcessing(int index, List<LatLng> traceList);
+typedef OnTraceProcessing = Future<void> Function(
+    int index, List<LatLng> traceList);
 
 /// 轨迹纠偏成功回调 [traceList]纠偏后的经纬度列表 [distance]路程
-typedef Future<void> OnTraceFinished(List<LatLng> traceList, int distance);
+typedef OnTraceFinished = Future<void> Function(
+    List<LatLng> traceList, int distance);
 
 /// 轨迹纠偏失败回调
-typedef Future<void> OnTraceFailed(int errorCode, String errorInfo);
+typedef OnTraceFailed = Future<void> Function(int errorCode, String errorInfo);
 
 final _traceListener = _TraceListener();
 
@@ -40,6 +42,7 @@ class AmapService {
     String webApiKey,
   }) async {
     _webKey = webApiKey;
+    await AmapLocation.instance.init(iosKey: iosKey);
     await platform(
       android: (pool) async {
         await com_amap_api_maps_MapsInitializer.setApiKey(androidKey);
@@ -333,12 +336,13 @@ class AmapService {
           AMapCoordinateType.AMapCoordinateTypeAMap,
           (int index, List<MATracePoint> points) async {
             if (onTraceProcessing != null) {
-              onTraceProcessing(index, await points.toDartModel());
+              await onTraceProcessing(index, await points.toDartModel());
             }
           },
           (List<MATracePoint> points, double distance) async {
             if (onTraceFinished != null) {
-              onTraceFinished(await points.toDartModel(), distance.toInt());
+              await onTraceFinished(
+                  await points.toDartModel(), distance.toInt());
             }
           },
           (int errorCode, String errorDesc) {
@@ -353,7 +357,7 @@ class AmapService {
 
   /// 打开离线地图管理器
   Future<void> openOfflineMapManager() async {
-    platform(
+    await platform(
       android: (pool) async {
         await startActivity(
             com_amap_api_maps_offlinemap_OfflineMapActivity.name__);
@@ -395,9 +399,9 @@ class _TraceListener extends java_lang_Object
     int index,
     List<com_amap_api_maps_model_LatLng> segments,
   ) async {
-    super.onTraceProcessing(lineID, index, segments);
+    await super.onTraceProcessing(lineID, index, segments);
     if (_onTraceProcessing != null) {
-      _onTraceProcessing(index, await segments.toDartModel());
+      await _onTraceProcessing(index, await segments.toDartModel());
     }
   }
 
@@ -408,17 +412,17 @@ class _TraceListener extends java_lang_Object
     int distance,
     int waitingtime,
   ) async {
-    super.onFinished(lineID, linepoints, distance, waitingtime);
+    await super.onFinished(lineID, linepoints, distance, waitingtime);
     if (_onTraceFinished != null) {
-      _onTraceFinished(await linepoints.toDartModel(), distance);
+      await _onTraceFinished(await linepoints.toDartModel(), distance);
     }
   }
 
   @override
   Future<void> onRequestFailed(int lineID, String errorInfo) async {
-    super.onRequestFailed(lineID, errorInfo);
+    await super.onRequestFailed(lineID, errorInfo);
     if (_onTraceFailed != null) {
-      _onTraceFailed(lineID, errorInfo);
+      await _onTraceFailed(lineID, errorInfo);
     }
   }
 }

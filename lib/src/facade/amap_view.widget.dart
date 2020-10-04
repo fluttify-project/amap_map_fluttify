@@ -11,6 +11,7 @@ import 'package:amap_search_fluttify/amap_search_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -21,7 +22,7 @@ import 'models.dart';
 part 'amap_controller.dart';
 part 'map_delegates.dart';
 
-typedef Future<void> _OnMapCreated(AmapController controller);
+typedef _OnMapCreated = Future<void> Function(AmapController controller);
 
 /// 高德地图 Widget
 class AmapView extends StatefulWidget {
@@ -49,6 +50,7 @@ class AmapView extends StatefulWidget {
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
     this.autoRelease = true,
+    this.gestureRecognizers,
   })  : assert(
           zoomLevel == null || (zoomLevel >= 3 && zoomLevel <= 19),
           '缩放范围为3-19',
@@ -126,7 +128,11 @@ class AmapView extends StatefulWidget {
   /// 如果你在多个页面有地图widget时, 就设置为false, 防止第二个(以及后续的)地图页面dispose时,
   /// 释放掉了第一个地图页面创建的原生对象, 导致第一个地图所有方法都失效. 在所有地图页面都被pop时,
   /// 调用[releaseAmapObjectPool]来释放掉在地图页面期间创建的原生对象.
+  @Deprecated('已无需使用')
   final bool autoRelease;
+
+  /// 传递给PlatformView的手势识别器
+  final Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers;
 
   @override
   _AmapViewState createState() => _AmapViewState();
@@ -163,6 +169,7 @@ class _AmapViewState extends State<AmapView> {
         widget.centerCoordinate ?? LatLng(39.91667, 116.41667);
     if (Platform.isAndroid) {
       return ScopedReleasePool(
+        tag: 'amap_map_fluttify',
         child: Stack(
           children: <Widget>[
             if (_widgetLayer != null) _widgetLayer,
@@ -182,6 +189,7 @@ class _AmapViewState extends State<AmapView> {
                 'tilt': widget.tilt,
                 'bearing': widget.bearing,
               },
+              gestureRecognizers: widget.gestureRecognizers,
               onDispose: _onPlatformViewDispose,
               onViewCreated: (controller) async {
                 _controller = AmapController.android(controller, this);
@@ -192,6 +200,7 @@ class _AmapViewState extends State<AmapView> {
                 await _initAndroid();
                 if (widget.onMapCreated != null) {
                   // 主动延迟300毫秒, 等待地图加载完成, 防止在onMapCreated里调用方法时空指针
+                  // ignore: unawaited_futures
                   Future.delayed(Duration(milliseconds: 300), () => 0)
                       .then((value) => widget.onMapCreated(_controller));
                 }
@@ -204,6 +213,7 @@ class _AmapViewState extends State<AmapView> {
       );
     } else if (Platform.isIOS) {
       return ScopedReleasePool(
+        tag: 'amap_map_fluttify',
         child: Stack(
           children: <Widget>[
             if (_widgetLayer != null) _widgetLayer,
@@ -223,6 +233,7 @@ class _AmapViewState extends State<AmapView> {
                 'tilt': widget.tilt,
                 'bearing': widget.bearing,
               },
+              gestureRecognizers: widget.gestureRecognizers,
               onDispose: _onPlatformViewDispose,
               onViewCreated: (controller) async {
                 _controller = AmapController.ios(controller, this);
@@ -243,11 +254,15 @@ class _AmapViewState extends State<AmapView> {
   }
 
   Future<List<Uint8List>> widgetToImageData(List<Widget> markerList) {
+    if (!mounted) return null;
+
     final completer = Completer<List<Uint8List>>();
     final ratio = MediaQuery.of(context).devicePixelRatio;
 
     final globalKeyList = <GlobalKey>[];
-    for (int i = 0; i < markerList.length; i++) globalKeyList.add(GlobalKey());
+    for (int i = 0; i < markerList.length; i++) {
+      globalKeyList.add(GlobalKey());
+    }
 
     setState(() {
       _widgetLayer = Stack(
@@ -265,10 +280,10 @@ class _AmapViewState extends State<AmapView> {
       await Future.wait([
         for (final key in globalKeyList)
           (key.currentContext.findRenderObject() as RenderRepaintBoundary)
-              .toImage(pixelRatio: ratio)
-              .then((image) => image.toByteData(format: ImageByteFormat.png))
-              .then((byteData) => byteData.buffer.asUint8List())
-              .then((data) => result.add(data))
+              ?.toImage(pixelRatio: ratio)
+              ?.then((image) => image.toByteData(format: ImageByteFormat.png))
+              ?.then((byteData) => byteData.buffer.asUint8List())
+              ?.then((data) => result.add(data))
       ]);
 
       completer.complete(result);
@@ -284,45 +299,6 @@ class _AmapViewState extends State<AmapView> {
 
   Future<void> _onPlatformViewDispose() async {
     await _controller?.dispose();
-  }
-
-  Future<com_amap_api_maps_AMapOptions> _androidOptions() async {
-    final option = await com_amap_api_maps_AMapOptions.create__();
-    if (widget.mapType != null) {
-      await option.mapType(widget.mapType.index + 1);
-    }
-    if (widget.showZoomControl != null) {
-      await option.zoomControlsEnabled(widget.showZoomControl);
-    }
-    if (widget.showCompass != null) {
-      await option.compassEnabled(widget.showCompass);
-    }
-    if (widget.showScaleControl != null) {
-      await option.scaleControlsEnabled(widget.showScaleControl);
-    }
-    if (widget.zoomGesturesEnabled != null) {
-      await option.zoomGesturesEnabled(widget.zoomGesturesEnabled);
-    }
-    if (widget.scrollGesturesEnabled != null) {
-      await option.scrollGesturesEnabled(widget.scrollGesturesEnabled);
-    }
-    if (widget.rotateGestureEnabled != null) {
-      await option.rotateGesturesEnabled(widget.rotateGestureEnabled);
-    }
-    if (widget.tiltGestureEnabled != null) {
-      await option.tiltGesturesEnabled(widget.tiltGestureEnabled);
-    }
-    if (widget.centerCoordinate != null || widget.zoomLevel != null) {
-      final latLng =
-          await com_amap_api_maps_model_LatLng.create__double__double(
-        widget.centerCoordinate?.latitude ?? 39.92,
-        widget.centerCoordinate?.longitude ?? 116.46,
-      );
-      final cameraUpdate = await com_amap_api_maps_model_CameraPosition
-          .fromLatLngZoom(latLng, widget.zoomLevel ?? 10);
-      await option.camera(cameraUpdate);
-    }
-    return option;
   }
 
   Future<void> _initAndroid() async {

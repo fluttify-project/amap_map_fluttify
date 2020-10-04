@@ -7,11 +7,11 @@ import 'models.dart';
 extension TraceLocationListX on List<TraceLocation> {
   /// 转换为android对象
   Future<List<com_amap_api_trace_TraceLocation>> toAndroidModel() async {
-    final latitudeBatch = this.map((e) => e.latitude).toList();
-    final longitudeBatch = this.map((e) => e.longitude).toList();
-    final speedBatch = this.map((e) => e.speed).toList();
-    final bearingBatch = this.map((e) => e.bearing).toList();
-    final timeBatch = this.map((e) => e.time).toList();
+    final latitudeBatch = map((e) => e.latitude).toList();
+    final longitudeBatch = map((e) => e.longitude).toList();
+    final speedBatch = map((e) => e.speed).toList();
+    final bearingBatch = map((e) => e.bearing).toList();
+    final timeBatch = map((e) => e.time).toList();
 
     return com_amap_api_trace_TraceLocation
         .create_batch__double__double__float__float__long(
@@ -25,11 +25,11 @@ extension TraceLocationListX on List<TraceLocation> {
 
   /// 转换为ios对象
   Future<List<MATraceLocation>> toIOSModel() async {
-    final latitudeBatch = this.map((e) => e.latitude).toList();
-    final longitudeBatch = this.map((e) => e.longitude).toList();
-    final speedBatch = this.map((e) => e.speed).toList();
-    final bearingBatch = this.map((e) => e.bearing).toList();
-    final timeBatch = this.map((e) => e.time.toDouble()).toList();
+    final latitudeBatch = map((e) => e.latitude).toList();
+    final longitudeBatch = map((e) => e.longitude).toList();
+    final speedBatch = map((e) => e.speed).toList();
+    final bearingBatch = map((e) => e.bearing).toList();
+    final timeBatch = map((e) => e.time.toDouble()).toList();
 
     final traceLocationBatch = await MATraceLocation.create_batch__(length);
     final coordBatch = await CLLocationCoordinate2D.create_batch(
