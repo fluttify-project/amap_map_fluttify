@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   amap_core_fluttify: ^0.14.0
   amap_location_fluttify: ^0.20.0
-  amap_search_fluttify: ^0.16.2
+  amap_search_fluttify: 0.18.0
   url_launcher: ^6.0.12
   foundation_fluttify: 0.13.0+1
   core_location_fluttify: 0.7.1
