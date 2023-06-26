@@ -11,12 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  amap_core_fluttify: ^0.12.0
-  amap_location_fluttify: ^0.18.0
-  amap_search_fluttify: ^0.14.0
-  url_launcher: ^5.4.2
-  foundation_fluttify: ^0.9.9
-  core_location_fluttify: ^0.4.1
+  amap_core_fluttify: ^0.14.0
+  amap_location_fluttify: ^0.20.0
+  amap_search_fluttify: ^0.16.2
+  url_launcher: ^6.0.12
+  foundation_fluttify: ^0.11.1
+  core_location_fluttify: ^0.6.0
 
 dev_dependencies:
   flutter_test:
